@@ -57,37 +57,44 @@
                     {{ .Content }}
                 </div>
 
-                <div class="space-y-8">
+                <div class="space-y-10">
                     <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
-                        <div class="text-sm text-blue-400 uppercase tracking-widest mb-1">
+                        <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
                             {{ if eq .Site.Language.Lang "it" }}Esposizione Totale{{ else if eq .Site.Language.Lang "ru" }}Общая экспозиция{{ else }}Total Exposure{{ end }}
                         </div>
                         <div class="text-3xl font-mono font-bold text-white">{{ .Params.total_exposure }}</div>
                     </div>
 
                     <div>
-                        <h3 class="text-white font-bold mb-4 flex items-center">
+                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
                             {{ if eq .Site.Language.Lang "it" }}Attrezzatura{{ else if eq .Site.Language.Lang "ru" }}Оборудование{{ else }}Equipment{{ end }}
                         </h3>
-                        <ul class="space-y-2">
+                        <div class="flex flex-wrap gap-3">
                             {{ range .Params.equipment }}
-                            <li class="flex text-gray-400 text-sm"><span class="text-blue-500 mr-2">•</span> {{ . }}</li>
+                            <a href="{{ "/equipment/" | relURL }}{{ . | urlize }}/" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md">
+                                {{ . }}
+                            </a>
                             {{ end }}
-                        </ul>
+                        </div>
                     </div>
 
                     <div>
-                        <h3 class="text-white font-bold mb-4 flex items-center">
+                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
                             {{ if eq .Site.Language.Lang "it" }}Integrazione{{ else if eq .Site.Language.Lang "ru" }}Интеграция{{ else }}Integration{{ end }}
                         </h3>
-                        <div class="overflow-hidden rounded-xl border border-gray-700 text-sm">
-                            <table class="w-full text-left text-gray-400">
-                                <thead class="bg-gray-800 text-gray-300"><tr><th class="px-4 py-2">Filter</th><th class="px-4 py-2">Subs</th></tr></thead>
+                        <div class="overflow-hidden rounded-xl border border-gray-700">
+                            <table class="w-full text-left text-gray-400 text-sm">
+                                <thead class="bg-gray-800 text-gray-300">
+                                    <tr><th class="px-4 py-2 font-semibold">Filter</th><th class="px-4 py-2 font-semibold">Subs</th></tr>
+                                </thead>
                                 <tbody class="divide-y divide-gray-700">
                                     {{ range .Params.filters }}
-                                    <tr><td class="px-4 py-2 font-bold text-blue-400">{{ .name }}</td><td class="px-4 py-2">{{ .subs }} ({{ .integration }})</td></tr>
+                                    <tr>
+                                        <td class="px-4 py-3 font-bold text-blue-400">{{ .name }}</td>
+                                        <td class="px-4 py-3">{{ .subs }} <span class="text-gray-600">({{ .integration }})</span></td>
+                                    </tr>
                                     {{ end }}
                                 </tbody>
                             </table>
@@ -95,14 +102,14 @@
                     </div>
 
                     <div>
-                        <h3 class="text-white font-bold mb-4 flex items-center">
+                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
                             {{ if eq .Site.Language.Lang "it" }}Luoghi{{ else if eq .Site.Language.Lang "ru" }}Местоположения{{ else }}Locations{{ end }}
                         </h3>
                         {{ range .Params.locations }}
-                        <div class="mb-3">
-                            <div class="text-gray-300 font-medium text-sm">{{ .name }}</div>
-                            <div class="text-gray-500 text-xs font-mono">Bortle {{ .bortle }} • {{ range .dates }}{{ . }}{{ end }}</div>
+                        <div class="bg-gray-800/30 border border-gray-800 rounded-2xl p-4 mb-3 last:mb-0">
+                            <div class="text-gray-300 font-medium">{{ .name }}</div>
+                            <div class="text-gray-500 text-xs font-mono mt-1">Bortle {{ .bortle }} • {{ range .dates }}{{ . }}{{ end }}</div>
                         </div>
                         {{ end }}
                     </div>
@@ -118,7 +125,6 @@
     const nextBtn = document.getElementById('nav-next');
     const prevBtn = document.getElementById('nav-prev');
 
-    // Click logic
     mainImg.addEventListener('click', (e) => {
         e.stopPropagation();
         overlay.classList.remove('hidden');
@@ -129,22 +135,16 @@
         document.body.style.overflow = '';
     });
 
-    // Keyboard logic
     document.addEventListener('keydown', (e) => {
-        // ESC key: Always close overlay
         if (e.key === 'Escape') {
             overlay.classList.add('hidden');
             document.body.style.overflow = '';
         }
-        
-        // Navigation: Only if NOT typing in an input (standard safety)
         if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && nextBtn) {
-                nextBtn.click();
-            } else if (e.key === 'ArrowRight' && prevBtn) {
-                prevBtn.click();
-            }
+            if (e.key === 'ArrowLeft' && nextBtn) { nextBtn.click(); }
+            else if (e.key === 'ArrowRight' && prevBtn) { prevBtn.click(); }
         }
     });
 </script>
 {{ end }}
+

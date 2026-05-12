@@ -1,7 +1,7 @@
 [nav_dso]
-other = "Дальний космос (DSO)"
+other = "Дальний космос"
 [nav_sso]
-other = "Солнечная система (SSO)"
+other = "Солнечная система"
 [nav_equipment]
 other = "По оборудованию"
 [total_integration]

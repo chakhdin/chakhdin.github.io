@@ -1,7 +1,7 @@
 [nav_dso]
-other = "Deep Sky (DSO)"
+other = "Deep Sky"
 [nav_sso]
-other = "Solar System (SSO)"
+other = "Solar System"
 [nav_equipment]
 other = "By Equipment"
 [total_integration]
