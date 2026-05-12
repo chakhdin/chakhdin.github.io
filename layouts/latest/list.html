@@ -1,0 +1,38 @@
+﻿{{ define "main" }}
+<div class="px-4 py-8 max-w-7xl mx-auto">
+    <h1 class="text-4xl font-extrabold text-white mb-10 text-center">{{ .Title }}</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{/* Grab all pages that have a featured image, sort by date descending, grab the top 12 */}}
+        {{ $pages := where .Site.RegularPages "Params.featured_image" "!=" nil }}
+        {{ $latest := $pages.ByDate.Reverse | first 12 }}
+        
+        {{ range $latest }}
+            <a href="{{ .RelPermalink }}" class="block group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-600 hover:shadow-blue-900/20 transition shadow-lg flex flex-col h-full">
+                <div class="aspect-video overflow-hidden bg-black relative shrink-0">
+                    {{ $image := .Resources.GetMatch .Params.featured_image }}
+                    {{ if $image }}
+                        <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                    {{ end }}
+                    
+                    {{/* Floating Date Badge */}}
+                    <div class="absolute top-3 right-3 bg-gray-900/80 backdrop-blur-md text-gray-300 text-xs font-mono font-bold px-3 py-1.5 rounded border border-gray-700 shadow-sm">
+                        {{ .Date.Format "2006-01-02" }}
+                    </div>
+                </div>
+                
+                <div class="p-6 flex flex-col grow">
+                    <h2 class="text-xl font-bold text-gray-100 mb-2 group-hover:text-blue-400 transition">{{ .Title }}</h2>
+                    <p class="text-sm text-gray-400 line-clamp-2 mb-4 grow">{{ .Params.description }}</p>
+                    
+                    <div class="mt-auto pt-4 border-t border-gray-800 flex flex-wrap gap-2">
+                        {{ range .Params.categories }}
+                            <span class="text-xs bg-gray-800 border border-gray-700 text-blue-300 px-2 py-1 rounded uppercase tracking-wider font-semibold">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
