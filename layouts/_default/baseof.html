@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ site.Title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col">
+    <header class="py-6 bg-gray-800 shadow-lg border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="{{ site.Home.RelPermalink }}" class="text-3xl font-extrabold tracking-tight text-blue-400 hover:text-blue-300 transition">{{ site.Title }}</a>
+            
+            <div class="flex items-center mt-4 md:mt-0 space-x-8">
+                <nav class="space-x-6 font-medium">
+                    <a href="{{ relLangURL "dso/" }}" class="hover:text-white transition">{{ i18n "nav_dso" }}</a>
+                    <a href="{{ relLangURL "sso/" }}" class="hover:text-white transition">{{ i18n "nav_sso" }}</a>
+                    <a href="{{ relLangURL "equipment/" }}" class="hover:text-white transition">{{ i18n "nav_equipment" }}</a>
+                </nav>
+                
+                <div class="flex space-x-3 border-l border-gray-600 pl-6">
+                    {{ range .AllTranslations }}
+                    <a href="{{ .Permalink }}" class="text-sm font-bold uppercase transition-colors {{ if eq .Language.Lang $.Site.Language.Lang }}text-blue-400{{ else }}text-gray-500 hover:text-white{{ end }}">
+                        {{ .Language.LanguageName }}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="py-8 bg-gray-900 border-t border-gray-800 text-center text-gray-500 text-sm">
+        &copy; {{ now.Year }} {{ site.Title }}. Generated with Hugo.
+    </footer>
+</body>
+</html>

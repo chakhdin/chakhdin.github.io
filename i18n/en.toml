@@ -1,0 +1,19 @@
+[nav_dso]
+other = "Deep Sky (DSO)"
+[nav_sso]
+other = "Solar System (SSO)"
+[nav_equipment]
+other = "By Equipment"
+[total_integration]
+other = "Total Integration"
+[acquisition_details]
+other = "Acquisition Details"
+[sessions]
+other = "Sessions"
+[filter_breakdown]
+other = "Filter Breakdown"
+[equipment_deck]
+other = "Equipment Deck"
+
+[focal_length]
+other = "Focal Length"

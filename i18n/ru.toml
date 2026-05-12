@@ -1,0 +1,18 @@
+[nav_dso]
+other = "Дальний космос (DSO)"
+[nav_sso]
+other = "Солнечная система (SSO)"
+[nav_equipment]
+other = "По оборудованию"
+[total_integration]
+other = "Общая экспозиция"
+[acquisition_details]
+other = "Детали съемки"
+[sessions]
+other = "Сессии"
+[filter_breakdown]
+other = "Данные по фильтрам"
+[equipment_deck]
+other = "Оборудование"
+[focal_length]
+other = "Фокусное расстояние"
