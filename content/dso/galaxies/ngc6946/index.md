@@ -1,26 +1,23 @@
 ---
-title: "NGC 3718: Peculiar Spiral Galaxy"
-date: 2025-04-26T12:11:00Z
+title: "NGC 6946: The Fireworks Galaxy"
+date: 2024-08-02T12:32:00Z
 categories: ["Galaxy"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
-description: "A highly warped spiral galaxy featuring a twisted dark dust lane and sweeping tidal tails, accompanied by NGC 3729 and the distant Hickson 56 galaxy group."
+description: "A spectacular face-on spiral galaxy known as the Fireworks Galaxy, showcasing a bright golden core, sprawling spiral arms, and vibrant pink star-forming regions."
 total_exposure: "8h 10m"
 focal_length: "2000mm"
 locations:
-  - name: "Saint Barthélemy, Valle d'Aosta, Italy"
-    bortle: "Class 4"
-    dates: ["2025-04-24"]
   - name: "Il Pratone, Lombardy, Italy"
     bortle: "Class 4"
-    dates: ["2024-05-09"]	
+    dates: ["2024-08-01"]	
 featured_image: "NGC6946_2.annotated.png"
 filters:
   - name: "L"
     subs: "49 x 600s"
     integration: "8h 10m"
 ---
-This deep exposure features NGC 3718 (Arp 214), a highly peculiar spiral galaxy located in the constellation Ursa Major. Its most striking feature is the thick, dark dust lane that violently twists across its bright central core, a result of strong gravitational interactions. These same tidal forces have drawn out faint, sweeping gaseous tails that give the galaxy its distinct "S" shape. 
+This deep exposure captures NGC 6946, a spectacular face-on intermediate spiral galaxy situated on the border of the constellations Cepheus and Cygnus. Popularly known as the "Fireworks Galaxy" due to the unusually high number of supernovae observed within it, the galaxy is characterized by a bright, golden central core and intricate dark dust lanes. 
 
-To the upper left is its spiral companion, NGC 3729, the likely gravitational culprit behind this severe distortion. Adding extraordinary depth to the background, the tight, interacting galaxy cluster Hickson 56 (Arp 322) is clearly visible near the bottom edge of the frame.
+Sweeping outward from the center, its sprawling spiral arms are richly decorated with brilliant blue star clusters and prominent pinkish HII regions, indicating areas of intense and active star formation. These vibrant details are beautifully captured here, despite the galaxy being heavily obscured by the interstellar dust of our own Milky Way, given its position near the galactic plane.
 
 Stacked and processed in PixInsight.
