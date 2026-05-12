@@ -1,0 +1,19 @@
+[nav_dso]
+other = "Cielo Profondo(DSO)"
+[nav_sso]
+other = "Sistema Solare (SSO)"
+[nav_equipment]
+other = "Per Attrezzatura"
+[total_integration]
+other = "Integrazione Totale"
+[acquisition_details]
+other = "Dettagli di Acquisizione"
+[sessions]
+other = "Sessioni"
+[filter_breakdown]
+other = "Dettaglio Filtri"
+[equipment_deck]
+other = "Attrezzatura"
+
+[focal_length]
+other = "Lunghezza Focale"

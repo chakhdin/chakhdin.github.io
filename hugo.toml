@@ -1,0 +1,26 @@
+baseURL = "https://chakhdin.github.io/"
+languageCode = "en-us"
+title = "Sergey's Astrophotography"
+disableKinds = ["RSS", "sitemap"]
+defaultContentLanguage = "en"
+
+[taxonomies]
+  category = "categories"
+  equipment = "equipment"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[languages]
+  [languages.en]
+    languageName = "EN"
+    weight = 1
+  [languages.it]
+    languageName = "IT"
+    title = "Astrofotografia di Sergey"
+    weight = 2
+  [languages.ru]
+    languageName = "RU"
+    title = "Астрофотография Сергея"
+    weight = 3
