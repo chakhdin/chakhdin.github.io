@@ -1,97 +1,150 @@
 ﻿{{ define "main" }}
-<article class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
-    {{ $image := .Resources.GetMatch .Params.featured_image }}
-    {{ if $image }}
-        <div class="bg-black flex justify-center border-b border-gray-700">
-            <a href="{{ $image.RelPermalink }}" target="_blank" title="Click for full resolution">
-                <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full object-contain max-h-[75vh]">
-            </a>
-        </div>
-    {{ end }}
+<div class="max-w-6xl mx-auto px-4 py-8">
     
-    <div class="p-8 lg:p-12">
-        <h1 class="text-4xl font-extrabold text-white mb-4">{{ .Title }}</h1>
-        <p class="text-xl text-gray-300 mb-10">{{ .Params.description }}</p>
+    <div class="mb-6">
+        <a href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-gray-400 hover:text-blue-400 transition font-medium group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            {{ if eq .Site.Language.Lang "it" }}Torna a {{ .Parent.Title }}
+            {{ else if eq .Site.Language.Lang "ru" }}Назад в {{ .Parent.Title }}
+            {{ else }}Back to {{ .Parent.Title }}{{ end }}
+        </a>
+    </div>
+
+    <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
-                <h2 class="text-lg font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-800 pb-3">{{ i18n "acquisition_details" }}</h2>
-                
-                <ul class="space-y-4 font-mono text-sm mb-6">
-                    <li class="flex"><span class="text-blue-400 w-32 font-semibold shrink-0">{{ i18n "total_integration" }}:</span> <span class="text-gray-200">{{ .Params.total_exposure }}</span></li>
-                    
-                    {{ with .Params.focal_length }}
-                    <li class="flex"><span class="text-blue-400 w-32 font-semibold shrink-0">{{ i18n "focal_length" }}:</span> <span class="text-gray-200">{{ . }}</span></li>
-                    {{ end }}
-                    
-                    {{ with .Params.locations }}
-                    <li class="flex items-start">
-                        <span class="text-blue-400 w-32 font-semibold shrink-0 mt-1">{{ i18n "sessions" }}:</span> 
-                        <ul class="text-gray-200 space-y-3 w-full">
-                            {{ range . }}
-                            <li class="bg-gray-800/50 p-3 rounded border border-gray-700/50">
-                                <div class="font-medium text-blue-200 mb-1 flex items-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-500 mr-2 mt-0.5 shrink-0">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                    </svg>
-                                    <div>{{ .name }} <span class="text-gray-500 text-xs ml-1 font-normal">(Bortle {{ .bortle }})</span></div>
-                                </div>
-                                {{ with .dates }}
-                                <div class="text-xs text-gray-400 flex items-center ml-6 mt-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5 text-gray-500 mr-2 shrink-0">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
-                                    </svg>
-                                    {{ delimit . ", " }}
-                                </div>
-                                {{ end }}
-                            </li>
+        <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
+            {{ $image := .Resources.GetMatch .Params.featured_image }}
+            {{ if $image }}
+                <img id="main-image" src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="max-h-[85vh] w-auto object-contain">
+            {{ end }}
+
+            {{ with .NextInSection }}
+            <a id="nav-next" href="{{ .RelPermalink }}" class="absolute left-0 top-0 h-full w-24 flex items-center justify-start pl-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-black/60 to-transparent text-white" title="{{ .Title }}">
+                <div class="bg-blue-600/80 p-3 rounded-full shadow-lg hover:scale-110 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </div>
+            </a>
+            {{ end }}
+
+            {{ with .PrevInSection }}
+            <a id="nav-prev" href="{{ .RelPermalink }}" class="absolute right-0 top-0 h-full w-24 flex items-center justify-end pr-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-l from-black/60 to-transparent text-white" title="{{ .Title }}">
+                <div class="bg-gray-700/80 p-3 rounded-full shadow-lg hover:scale-110 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+
+        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out">
+            <img id="fullscreen-image" src="{{ if $image }}{{ $image.RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-6 right-8 text-gray-400 text-sm font-mono">ESC: Close | Arrows: Navigate</div>
+        </div>
+
+        <div class="p-8 md:p-12">
+            <header class="mb-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">{{ .Title }}</h1>
+                <p class="text-xl text-blue-300 font-medium italic">"{{ .Params.description }}"</p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed">
+                    {{ .Content }}
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
+                        <div class="text-sm text-blue-400 uppercase tracking-widest mb-1">
+                            {{ if eq .Site.Language.Lang "it" }}Esposizione Totale{{ else if eq .Site.Language.Lang "ru" }}Общая экспозиция{{ else }}Total Exposure{{ end }}
+                        </div>
+                        <div class="text-3xl font-mono font-bold text-white">{{ .Params.total_exposure }}</div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ if eq .Site.Language.Lang "it" }}Attrezzatura{{ else if eq .Site.Language.Lang "ru" }}Оборудование{{ else }}Equipment{{ end }}
+                        </h3>
+                        <ul class="space-y-2">
+                            {{ range .Params.equipment }}
+                            <li class="flex text-gray-400 text-sm"><span class="text-blue-500 mr-2">•</span> {{ . }}</li>
                             {{ end }}
                         </ul>
-                    </li>
-                    {{ end }}
-                </ul>
+                    </div>
 
-                {{ with .Params.filters }}
-                <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3 border-b border-gray-800 pb-2">{{ i18n "filter_breakdown" }}</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left font-mono text-sm text-gray-300">
-                        <thead>
-                            <tr class="text-gray-500 border-b border-gray-800">
-                                <th class="pb-2 font-semibold">Filter</th>
-                                <th class="pb-2 font-semibold">Subs</th>
-                                <th class="pb-2 font-semibold text-right">Time</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-800/50">
-                            {{ range . }}
-                            <tr>
-                                <td class="py-2 text-blue-300">{{ .name }}</td>
-                                <td class="py-2">{{ .subs }}</td>
-                                <td class="py-2 text-right">{{ .integration }}</td>
-                            </tr>
-                            {{ end }}
-                        </tbody>
-                    </table>
-                </div>
-                {{ end }}
-            </div>
-            
-            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
-                <h2 class="text-lg font-bold text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-800 pb-3">{{ i18n "equipment_deck" }}</h2>
-                <div class="flex flex-wrap gap-3">
-                    {{ range .Params.equipment }}
-                    <a href="{{ relLangURL "equipment/" }}{{ . | urlize }}" class="bg-purple-900/40 border border-purple-800 hover:bg-purple-800 text-purple-200 px-4 py-2 rounded-lg text-sm font-medium transition shadow-sm">{{ . }}</a>
-                    {{ end }}
+                    <div>
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ if eq .Site.Language.Lang "it" }}Integrazione{{ else if eq .Site.Language.Lang "ru" }}Интеграция{{ else }}Integration{{ end }}
+                        </h3>
+                        <div class="overflow-hidden rounded-xl border border-gray-700 text-sm">
+                            <table class="w-full text-left text-gray-400">
+                                <thead class="bg-gray-800 text-gray-300"><tr><th class="px-4 py-2">Filter</th><th class="px-4 py-2">Subs</th></tr></thead>
+                                <tbody class="divide-y divide-gray-700">
+                                    {{ range .Params.filters }}
+                                    <tr><td class="px-4 py-2 font-bold text-blue-400">{{ .name }}</td><td class="px-4 py-2">{{ .subs }} ({{ .integration }})</td></tr>
+                                    {{ end }}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ if eq .Site.Language.Lang "it" }}Luoghi{{ else if eq .Site.Language.Lang "ru" }}Местоположения{{ else }}Locations{{ end }}
+                        </h3>
+                        {{ range .Params.locations }}
+                        <div class="mb-3">
+                            <div class="text-gray-300 font-medium text-sm">{{ .name }}</div>
+                            <div class="text-gray-500 text-xs font-mono">Bortle {{ .bortle }} • {{ range .dates }}{{ . }}{{ end }}</div>
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
+    </article>
+</div>
+
+<script>
+    const overlay = document.getElementById('fullscreen-overlay');
+    const mainImg = document.getElementById('main-image');
+    const nextBtn = document.getElementById('nav-next');
+    const prevBtn = document.getElementById('nav-prev');
+
+    // Click logic
+    mainImg.addEventListener('click', (e) => {
+        e.stopPropagation();
+        overlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
+    overlay.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
+
+    // Keyboard logic
+    document.addEventListener('keydown', (e) => {
+        // ESC key: Always close overlay
+        if (e.key === 'Escape') {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
         
-        {{ if .Content }}
-        <div class="prose prose-invert prose-blue max-w-none bg-gray-900/50 p-6 rounded-xl border border-gray-800">
-            {{ .Content }}
-        </div>
-        {{ end }}
-    </div>
-</article>
+        // Navigation: Only if NOT typing in an input (standard safety)
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            if (e.key === 'ArrowLeft' && nextBtn) {
+                nextBtn.click();
+            } else if (e.key === 'ArrowRight' && prevBtn) {
+                prevBtn.click();
+            }
+        }
+    });
+</script>
 {{ end }}
