@@ -1,70 +1,158 @@
 ﻿$basePath = "C:\Astro\site\astro-gallery-cat"
 Set-Location -Path $basePath
 
-$indexPath = "layouts/index.html"
+$singleHtml = @'
+{{ define "main" }}
+<div class="max-w-6xl mx-auto px-4 py-8">
+    
+    <div class="mb-6">
+        <a href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-gray-400 hover:text-blue-400 transition font-medium group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            {{ if eq .Site.Language.Lang "it" }}Torna a {{ .Parent.Title }}
+            {{ else if eq .Site.Language.Lang "ru" }}Назад в {{ .Parent.Title }}
+            {{ else }}Back to {{ .Parent.Title }}{{ end }}
+        </a>
+    </div>
 
-# 1. Check if the file exists
-if (-Not (Test-Path $indexPath)) {
-    Write-Host "Warning: layouts/index.html not found!" -ForegroundColor Yellow
-    Write-Host "It looks like your homepage is being loaded directly from your theme folder."
-    Write-Host "To fix this, copy the index.html file from your themes/[your-theme-name]/layouts/ folder into your main layouts/ folder, then run this script again."
-    exit
-}
-
-$content = Get-Content -Path $indexPath -Raw
-
-# 2. Prevent duplicate injections
-if ($content -match "") {
-    Write-Host "The Latest Images section is already in your index.html!" -ForegroundColor Cyan
-    exit
-}
-
-# 3. Define the exact HTML block to inject
-$newSection = @'
-    <div class="mt-16 px-4 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-extrabold text-white mb-8 border-b border-gray-800 pb-4">
-            {{ if eq .Site.Language.Lang "it" }}Ultimi Arrivi
-            {{ else if eq .Site.Language.Lang "ru" }}Последние Добавления
-            {{ else }}Latest Additions{{ end }}
-        </h2>
+    <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {{ $pages := where .Site.RegularPages "Params.featured_image" "!=" nil }}
-            {{ $latest := $pages.ByDate.Reverse | first 6 }}
-            
-            {{ range $latest }}
-                <a href="{{ .RelPermalink }}" class="block group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-500 transition shadow-lg">
-                    <div class="aspect-video overflow-hidden bg-black relative">
-                        {{ $image := .Resources.GetMatch .Params.featured_image }}
-                        {{ if $image }}
-                            <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
-                        {{ end }}
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-lg font-bold text-gray-200 group-hover:text-blue-400 transition truncate">{{ .Title }}</h3>
-                        <div class="text-xs text-gray-500 mt-2">{{ .Date.Format "2006-01-02" }}</div>
-                    </div>
-                </a>
+        <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
+            {{ $image := .Resources.GetMatch .Params.featured_image }}
+            {{ if $image }}
+                <img id="main-image" src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="max-h-[85vh] w-auto object-contain">
+            {{ end }}
+
+            {{ with .NextInSection }}
+            <a id="nav-next" href="{{ .RelPermalink }}" class="absolute left-0 top-0 h-full w-24 flex items-center justify-start pl-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-black/60 to-transparent text-white" title="{{ .Title }}">
+                <div class="bg-blue-600/80 p-3 rounded-full shadow-lg hover:scale-110 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </div>
+            </a>
+            {{ end }}
+
+            {{ with .PrevInSection }}
+            <a id="nav-prev" href="{{ .RelPermalink }}" class="absolute right-0 top-0 h-full w-24 flex items-center justify-end pr-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-l from-black/60 to-transparent text-white" title="{{ .Title }}">
+                <div class="bg-gray-700/80 p-3 rounded-full shadow-lg hover:scale-110 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+            </a>
             {{ end }}
         </div>
-        
-        <div class="mt-12 mb-8 text-center">
-            <a href="{{ .Site.BaseURL }}{{ if ne .Site.Language.Lang "en" }}{{ .Site.Language.Lang }}/{{ end }}latest/" class="inline-block bg-blue-900/50 hover:bg-blue-800 text-blue-200 border border-blue-700 px-6 py-3 rounded-lg font-semibold transition shadow-md">
-                {{ if eq .Site.Language.Lang "it" }}Vedi Tutta la Galleria
-                {{ else if eq .Site.Language.Lang "ru" }}Смотреть Всю Галерею
-                {{ else }}View Full Gallery{{ end }} &rarr;
-            </a>
+
+        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out">
+            <img id="fullscreen-image" src="{{ if $image }}{{ $image.RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-6 right-8 text-gray-400 text-sm font-mono">ESC: Close | Arrows: Navigate</div>
         </div>
-    </div>
+
+        <div class="p-8 md:p-12">
+            <header class="mb-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">{{ .Title }}</h1>
+                <p class="text-xl text-blue-300 font-medium italic">"{{ .Params.description }}"</p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed">
+                    {{ .Content }}
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
+                        <div class="text-sm text-blue-400 uppercase tracking-widest mb-1">
+                            {{ if eq .Site.Language.Lang "it" }}Esposizione Totale{{ else if eq .Site.Language.Lang "ru" }}Общая экспозиция{{ else }}Total Exposure{{ end }}
+                        </div>
+                        <div class="text-3xl font-mono font-bold text-white">{{ .Params.total_exposure }}</div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ if eq .Site.Language.Lang "it" }}Attrezzatura{{ else if eq .Site.Language.Lang "ru" }}Оборудование{{ else }}Equipment{{ end }}
+                        </h3>
+                        <ul class="space-y-2">
+                            {{ range .Params.equipment }}
+                            <li class="flex text-gray-400 text-sm"><span class="text-blue-500 mr-2">•</span> {{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ if eq .Site.Language.Lang "it" }}Integrazione{{ else if eq .Site.Language.Lang "ru" }}Интеграция{{ else }}Integration{{ end }}
+                        </h3>
+                        <div class="overflow-hidden rounded-xl border border-gray-700 text-sm">
+                            <table class="w-full text-left text-gray-400">
+                                <thead class="bg-gray-800 text-gray-300"><tr><th class="px-4 py-2">Filter</th><th class="px-4 py-2">Subs</th></tr></thead>
+                                <tbody class="divide-y divide-gray-700">
+                                    {{ range .Params.filters }}
+                                    <tr><td class="px-4 py-2 font-bold text-blue-400">{{ .name }}</td><td class="px-4 py-2">{{ .subs }} ({{ .integration }})</td></tr>
+                                    {{ end }}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold mb-4 flex items-center">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ if eq .Site.Language.Lang "it" }}Luoghi{{ else if eq .Site.Language.Lang "ru" }}Местоположения{{ else }}Locations{{ end }}
+                        </h3>
+                        {{ range .Params.locations }}
+                        <div class="mb-3">
+                            <div class="text-gray-300 font-medium text-sm">{{ .name }}</div>
+                            <div class="text-gray-500 text-xs font-mono">Bortle {{ .bortle }} • {{ range .dates }}{{ . }}{{ end }}</div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<script>
+    const overlay = document.getElementById('fullscreen-overlay');
+    const mainImg = document.getElementById('main-image');
+    const nextBtn = document.getElementById('nav-next');
+    const prevBtn = document.getElementById('nav-prev');
+
+    // Click logic
+    mainImg.addEventListener('click', (e) => {
+        e.stopPropagation();
+        overlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
+    overlay.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
+
+    // Keyboard logic
+    document.addEventListener('keydown', (e) => {
+        // ESC key: Always close overlay
+        if (e.key === 'Escape') {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+        
+        // Navigation: Only if NOT typing in an input (standard safety)
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            if (e.key === 'ArrowLeft' && nextBtn) {
+                nextBtn.click();
+            } else if (e.key === 'ArrowRight' && prevBtn) {
+                prevBtn.click();
+            }
+        }
+    });
+</script>
+{{ end }}
 '@
 
-# 4. Use Regex to find the absolute last {{ end }} tag and insert our code right above it
-$updatedContent = $content -replace '(?s)(.*)\{\{\s*end\s*\}\}(.*)$', "`$1`r`n$newSection`r`n{{ end }}`$2"
-
-# 5. Save the updated file
-if ($updatedContent -cne $content) {
-    Set-Content -Path $indexPath -Value $updatedContent -Encoding UTF8
-    Write-Host "Success! The Latest Images section has been automatically added to your homepage." -ForegroundColor Green
-} else {
-    Write-Host "Error: Could not locate the closing {{ end }} tag in your index.html. You may need to paste the code manually." -ForegroundColor Red
-}
+Set-Content -Path "layouts/_default/single.html" -Value $singleHtml -Encoding UTF8
+Write-Host "Keyboard navigation (Left=Next, Right=Prev, ESC=Close) enabled!" -ForegroundColor Green
