@@ -1,6 +1,6 @@
 ---
 title: "M81, M82 e dintorni"
-date: 2026-05-11T12:00:00Z
+date: 2026-04-25T18:56:00Z
 categories: ["Galassie"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Antlia Pro 3nm SHO 36mm filters", "Antlia LRGB-V Pro 36mm filters"]
 description: "Una ripresa a largo campo della Galassia di Bode (M81) e della Galassia Sigaro (M82), incorniciate dalla delicata Nebulosa di Flusso Integrato (IFN)."

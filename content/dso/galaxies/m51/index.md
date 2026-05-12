@@ -1,6 +1,6 @@
 ---
 title: "M51: The Whirlpool Galaxy"
-date: 2026-05-11T12:00:00Z
+date: 2025-05-24T12:32:00Z
 categories: ["Galaxy"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A stunning grand-design spiral galaxy locked in a gravitational dance with its smaller companion, revealing extensive tidal halos."

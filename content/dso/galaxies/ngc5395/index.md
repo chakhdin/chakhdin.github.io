@@ -1,6 +1,6 @@
 ---
 title: "NGC 5395 & NGC 5394: The Heron Galaxy (Arp 84)"
-date: 2026-05-11T12:00:00Z
+date: 2025-06-01T14:17:00Z
 categories: ["Galaxy"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "An interacting galaxy pair, Arp 84, featuring the large spiral NGC 5395 and its smaller companion NGC 5394 linked by a prominent tidal tail."
