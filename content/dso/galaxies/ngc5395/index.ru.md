@@ -1,6 +1,6 @@
 ---
 title: "NGC 5395 и NGC 5394: Галактика Цапля (Arp 84)"
-date: 2026-05-11T12:00:00Z
+date: 2025-06-01T14:17:00Z
 categories: ["Galaxy"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Взаимодействующая пара галактик Arp 84, состоящая из крупной спиральной галактики NGC 5395 и её меньшего компаньона NGC 5394, соединенных заметным приливным хвостом."

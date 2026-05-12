@@ -1,6 +1,6 @@
 ---
 title: "M81, M82 и окрестности"
-date: 2026-05-11T12:00:00Z
+date: 2026-04-25T18:56:00Z
 categories: ["Галактики"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Antlia Pro 3nm SHO 36mm filters", "Antlia LRGB-V Pro 36mm filters"]
 description: "Широкоугольный снимок Галактики Боде (M81) и Галактики Сигара (M82), обрамленных тонкой Интегрированной флюксовой туманностью (IFN)."
