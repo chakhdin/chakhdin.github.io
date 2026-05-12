@@ -16,11 +16,30 @@ defaultContentLanguage = "en"
   [languages.en]
     languageName = "EN"
     weight = 1
+    
   [languages.it]
     languageName = "IT"
     title = "Astrofotografia di Sergey"
     weight = 2
+    
   [languages.ru]
     languageName = "RU"
     title = "Астрофотография Сергея"
     weight = 3
+
+# --- Navigation Menus ---
+
+[[languages.en.menu.main]]
+  name = "Latest"
+  url = "/latest/"
+  weight = 10
+
+[[languages.it.menu.main]]
+  name = "Ultime"
+  url = "/it/latest/"
+  weight = 10
+
+[[languages.ru.menu.main]]
+  name = "Новое"
+  url = "/ru/latest/"
+  weight = 10
