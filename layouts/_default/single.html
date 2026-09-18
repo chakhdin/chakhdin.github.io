@@ -109,7 +109,7 @@
                         {{ range .Params.locations }}
                         <div class="bg-gray-800/30 border border-gray-800 rounded-2xl p-4 mb-3 last:mb-0">
                             <div class="text-gray-300 font-medium">{{ .name }}</div>
-                            <div class="text-gray-500 text-xs font-mono mt-1">Bortle {{ .bortle }} • {{ range .dates }}{{ . }}{{ end }}</div>
+                            <div class="text-gray-500 text-xs font-mono mt-1">Bortle {{ .bortle }} • {{ delimit .dates ", " }}</div>
                         </div>
                         {{ end }}
                     </div>
@@ -147,4 +147,5 @@
     });
 </script>
 {{ end }}
+
 
