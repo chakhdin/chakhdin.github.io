@@ -6,3 +6,7 @@
 :root {
     color-scheme: dark;
 }
+
+@view-transition {
+    navigation: auto;
+}
