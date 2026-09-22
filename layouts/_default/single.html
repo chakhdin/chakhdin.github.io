@@ -17,7 +17,9 @@
             {{ $displayImage := $image }}
             {{ if $image }}
                 {{ if gt $image.Width 2400 }}
-                    {{ $displayImage = $image.Resize "2400x" }}
+                    {{ $displayImage = $image.Resize "2400x webp q82" }}
+                {{ else }}
+                    {{ $displayImage = $image.Process "webp q82" }}
                 {{ end }}
                 <img id="main-image" src="{{ $displayImage.RelPermalink }}" alt="{{ .Title }}" class="max-h-[85vh] w-auto object-contain">
             {{ end }}
