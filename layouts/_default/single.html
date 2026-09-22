@@ -134,36 +134,6 @@
         </div>
     </article>
 </div>
-
-<script>
-    const overlay = document.getElementById('fullscreen-overlay');
-    const mainImg = document.getElementById('main-image');
-    const nextBtn = document.getElementById('nav-next');
-    const prevBtn = document.getElementById('nav-prev');
-
-    if (mainImg) {
-        mainImg.addEventListener('click', (e) => {
-            e.stopPropagation();
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        });
-    }
-    overlay.addEventListener('click', () => {
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            overlay.classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && nextBtn) { nextBtn.click(); }
-            else if (e.key === 'ArrowRight' && prevBtn) { prevBtn.click(); }
-        }
-    });
-</script>
 {{ end }}
 
 
