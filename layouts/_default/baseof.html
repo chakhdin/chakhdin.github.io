@@ -16,7 +16,7 @@
     {{ if $description }}<meta property="og:description" content="{{ $description }}">{{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ $ogImage := .Resources.GetMatch .Params.featured_image }}
-    {{ if $ogImage }}{{ $ogImage = $ogImage.Fill "1200x630 Center" }}<meta property="og:image" content="{{ $ogImage.Permalink }}">{{ end }}
+    {{ if $ogImage }}{{ $ogImage = $ogImage.Fill "1200x630 Center jpg q85" }}<meta property="og:image" content="{{ $ogImage.Permalink }}">{{ end }}
 
     <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
     <meta name="twitter:title" content="{{ .Title }} | {{ site.Title }}">

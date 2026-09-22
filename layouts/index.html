@@ -10,7 +10,7 @@
         <a href="{{ .RelPermalink }}" class="shrink-0">
             {{ $image := .Resources.GetMatch .Params.featured_image }}
             {{ if $image }}
-                {{ $thumb := $image.Fill "800x500 Center" }}
+                {{ $thumb := $image.Fill "800x500 Center webp q80" }}
                 <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="w-full h-80 object-cover">
             {{ else }}
                 <div class="w-full h-80 bg-gray-700 flex items-center justify-center text-gray-500">Add {{ .Params.featured_image }} to {{ .File.Dir }}</div>
@@ -38,7 +38,7 @@
                 <div class="aspect-video overflow-hidden bg-black relative">
                     {{ $image := .Resources.GetMatch .Params.featured_image }}
                     {{ if $image }}
-                        {{ $thumb := $image.Fill "800x500 Center" }}
+                        {{ $thumb := $image.Fill "800x500 Center webp q80" }}
                         <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
                     {{ end }}
                 </div>
