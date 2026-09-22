@@ -1,4 +1,13 @@
-﻿{{ define "main" }}
+﻿{{ define "head-extra" }}
+{{ with .NextInSection }}
+{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}">{{ end }}
+{{ end }}
+{{ with .PrevInSection }}
+{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}">{{ end }}
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
 <div class="max-w-6xl mx-auto px-4 py-8">
     
     <div class="mb-6">
@@ -13,15 +22,9 @@
     <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
         
         <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
-            {{ $image := .Resources.GetMatch .Params.featured_image }}
-            {{ $displayImage := $image }}
-            {{ if $image }}
-                {{ if gt $image.Width 2400 }}
-                    {{ $displayImage = $image.Resize "2400x webp q82" }}
-                {{ else }}
-                    {{ $displayImage = $image.Process "webp q82" }}
-                {{ end }}
-                <img id="main-image" src="{{ $displayImage.RelPermalink }}" alt="{{ .Title }}" class="max-h-[85vh] w-auto object-contain">
+            {{ $displayImage := partial "hero-image.html" . }}
+            {{ with $displayImage }}
+                <img id="main-image" src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="max-h-[85vh] w-auto object-contain">
             {{ end }}
 
             {{ with .NextInSection }}
