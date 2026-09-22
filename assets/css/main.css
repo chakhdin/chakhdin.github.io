@@ -2,3 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @source "../../layouts";
+
+:root {
+    color-scheme: dark;
+}
