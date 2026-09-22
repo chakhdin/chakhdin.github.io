@@ -1,0 +1,9 @@
+{
+  "name": "astro-gallery-cat",
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "tailwindcss": "^4.3.3"
+  }
+}

@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ site.Title }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    {{ $description := .Description }}
+    {{ if not $description }}{{ $description = .Summary }}{{ end }}
+    {{ $description = $description | plainify | strings.TrimSpace | truncate 160 }}
+    {{ if $description }}<meta name="description" content="{{ $description }}">{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:title" content="{{ .Title }} | {{ site.Title }}">
+    {{ if $description }}<meta property="og:description" content="{{ $description }}">{{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ $ogImage := .Resources.GetMatch .Params.featured_image }}
+    {{ if $ogImage }}{{ $ogImage = $ogImage.Fill "1200x630 Center" }}<meta property="og:image" content="{{ $ogImage.Permalink }}">{{ end }}
+
+    <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
+    <meta name="twitter:title" content="{{ .Title }} | {{ site.Title }}">
+    {{ if $description }}<meta name="twitter:description" content="{{ $description }}">{{ end }}
+    {{ if $ogImage }}<meta name="twitter:image" content="{{ $ogImage.Permalink }}">{{ end }}
+
+    <link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}">
+    <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
+
+    {{ $css := resources.Get "css/main.css" | css.TailwindCSS }}
+    {{ if hugo.IsProduction }}
+        {{ $css = $css | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ else }}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    {{ end }}
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col">
     <header class="py-6 bg-gray-800 shadow-lg border-b border-gray-700">

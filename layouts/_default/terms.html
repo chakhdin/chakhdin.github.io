@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h1 class="text-5xl font-extrabold mb-12 text-white border-b border-gray-800 pb-6">
-    Browse by {{ if eq .Data.Plural "categories" }}Object Type{{ else }}Equipment{{ end }}
+    {{ if eq .Data.Plural "categories" }}{{ i18n "browse_object_type" }}{{ else }}{{ i18n "browse_equipment" }}{{ end }}
 </h1>
 
 <div class="flex flex-wrap gap-6">

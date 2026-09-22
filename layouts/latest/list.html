@@ -12,7 +12,8 @@
                 <div class="aspect-video overflow-hidden bg-black relative shrink-0">
                     {{ $image := .Resources.GetMatch .Params.featured_image }}
                     {{ if $image }}
-                        <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                        {{ $thumb := $image.Fill "800x500 Center" }}
+                        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
                     {{ end }}
                     
                     {{/* Floating Date Badge */}}

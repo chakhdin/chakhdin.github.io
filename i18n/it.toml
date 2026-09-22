@@ -4,16 +4,33 @@ other = "Cielo Profondo"
 other = "Sistema Solare"
 [nav_equipment]
 other = "Per Attrezzatura"
-[total_integration]
-other = "Integrazione Totale"
-[acquisition_details]
-other = "Dettagli di Acquisizione"
-[sessions]
-other = "Sessioni"
-[filter_breakdown]
-other = "Dettaglio Filtri"
-[equipment_deck]
-other = "Attrezzatura"
 
+[back_home]
+other = "Torna alla Home"
+[back_to]
+other = "Torna a {{ .Title }}"
+
+[total_exposure]
+other = "Esposizione Totale"
 [focal_length]
 other = "Lunghezza Focale"
+[equipment_deck]
+other = "Attrezzatura"
+[integration]
+other = "Integrazione"
+[table_filter]
+other = "Filtro"
+[table_subs]
+other = "Pose"
+[locations]
+other = "Luoghi"
+
+[latest_additions]
+other = "Ultimi Arrivi"
+[view_full_gallery]
+other = "Vedi Tutta la Galleria"
+
+[browse_object_type]
+other = "Sfoglia per Tipo di Oggetto"
+[browse_equipment]
+other = "Sfoglia per Attrezzatura"

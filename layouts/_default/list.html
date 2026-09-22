@@ -10,13 +10,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            {{ if eq .Site.Language.Lang "it" }}
-                {{ if $backTarget.IsHome }}Torna alla Home{{ else }}Torna a {{ $backTarget.Title }}{{ end }}
-            {{ else if eq .Site.Language.Lang "ru" }}
-                {{ if $backTarget.IsHome }}На главную{{ else }}Назад в {{ $backTarget.Title }}{{ end }}
-            {{ else }}
-                {{ if $backTarget.IsHome }}Back to Home{{ else }}Back to {{ $backTarget.Title }}{{ end }}
-            {{ end }}
+            {{ if $backTarget.IsHome }}{{ i18n "back_home" }}{{ else }}{{ i18n "back_to" (dict "Title" $backTarget.Title) }}{{ end }}
         </a>
         {{ end }}
     </div>
@@ -34,7 +28,8 @@
             <div class="aspect-video overflow-hidden bg-black">
                 {{ $image := .Resources.GetMatch .Params.featured_image }}
                 {{ if $image }}
-                    <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    {{ $thumb := $image.Fill "800x500 Center" }}
+                    <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                 {{ end }}
             </div>
             <div class="p-6">

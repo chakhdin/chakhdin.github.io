@@ -4,16 +4,33 @@ other = "Deep Sky"
 other = "Solar System"
 [nav_equipment]
 other = "By Equipment"
-[total_integration]
-other = "Total Integration"
-[acquisition_details]
-other = "Acquisition Details"
-[sessions]
-other = "Sessions"
-[filter_breakdown]
-other = "Filter Breakdown"
-[equipment_deck]
-other = "Equipment Deck"
 
+[back_home]
+other = "Back to Home"
+[back_to]
+other = "Back to {{ .Title }}"
+
+[total_exposure]
+other = "Total Exposure"
 [focal_length]
 other = "Focal Length"
+[equipment_deck]
+other = "Equipment"
+[integration]
+other = "Integration"
+[table_filter]
+other = "Filter"
+[table_subs]
+other = "Subs"
+[locations]
+other = "Locations"
+
+[latest_additions]
+other = "Latest Additions"
+[view_full_gallery]
+other = "View Full Gallery"
+
+[browse_object_type]
+other = "Browse by Object Type"
+[browse_equipment]
+other = "Browse by Equipment"

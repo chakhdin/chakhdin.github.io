@@ -4,15 +4,33 @@ other = "Дальний космос"
 other = "Солнечная система"
 [nav_equipment]
 other = "По оборудованию"
-[total_integration]
+
+[back_home]
+other = "На главную"
+[back_to]
+other = "Назад в {{ .Title }}"
+
+[total_exposure]
 other = "Общая экспозиция"
-[acquisition_details]
-other = "Детали съемки"
-[sessions]
-other = "Сессии"
-[filter_breakdown]
-other = "Данные по фильтрам"
-[equipment_deck]
-other = "Оборудование"
 [focal_length]
 other = "Фокусное расстояние"
+[equipment_deck]
+other = "Оборудование"
+[integration]
+other = "Интеграция"
+[table_filter]
+other = "Фильтр"
+[table_subs]
+other = "Кадры"
+[locations]
+other = "Местоположения"
+
+[latest_additions]
+other = "Последние Добавления"
+[view_full_gallery]
+other = "Смотреть Всю Галерею"
+
+[browse_object_type]
+other = "Обзор по Типу Объекта"
+[browse_equipment]
+other = "Обзор по Оборудованию"
