@@ -11,16 +11,20 @@ defaultContentLanguage = "en"
   [markup.goldmark.renderer]
     unsafe = true
 
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
+
 [languages]
   [languages.en]
     languageName = "EN"
     weight = 1
-    
+
   [languages.it]
     languageName = "IT"
     title = "Astrofotografia di Sergey"
     weight = 2
-    
+
   [languages.ru]
     languageName = "RU"
     title = "Астрофотография Сергея"
