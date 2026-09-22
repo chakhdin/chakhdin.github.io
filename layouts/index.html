@@ -26,9 +26,7 @@
 
 <div class="mt-16 px-4 max-w-7xl mx-auto">
     <h2 class="text-3xl font-extrabold text-white mb-8 border-b border-gray-800 pb-4">
-        {{ if eq .Site.Language.Lang "it" }}Ultimi Arrivi
-        {{ else if eq .Site.Language.Lang "ru" }}Последние Добавления
-        {{ else }}Latest Additions{{ end }}
+        {{ i18n "latest_additions" }}
     </h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -40,7 +38,8 @@
                 <div class="aspect-video overflow-hidden bg-black relative">
                     {{ $image := .Resources.GetMatch .Params.featured_image }}
                     {{ if $image }}
-                        <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                        {{ $thumb := $image.Fill "800x500 Center" }}
+                        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
                     {{ end }}
                 </div>
                 <div class="p-4">
@@ -52,10 +51,8 @@
     </div>
     
     <div class="mt-12 mb-8 text-center">
-        <a href="{{ .Site.BaseURL }}{{ if ne .Site.Language.Lang "en" }}{{ .Site.Language.Lang }}/{{ end }}latest/" class="inline-block bg-blue-900/50 hover:bg-blue-800 text-blue-200 border border-blue-700 px-6 py-3 rounded-lg font-semibold transition shadow-md">
-            {{ if eq .Site.Language.Lang "it" }}Vedi Tutta la Galleria
-            {{ else if eq .Site.Language.Lang "ru" }}Смотреть Всю Галерею
-            {{ else }}View Full Gallery{{ end }} &rarr;
+        <a href="{{ relLangURL "latest/" }}" class="inline-block bg-blue-900/50 hover:bg-blue-800 text-blue-200 border border-blue-700 px-6 py-3 rounded-lg font-semibold transition shadow-md">
+            {{ i18n "view_full_gallery" }} &rarr;
         </a>
     </div>
 </div>

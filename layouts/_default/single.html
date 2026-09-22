@@ -6,9 +6,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            {{ if eq .Site.Language.Lang "it" }}Torna a {{ .Parent.Title }}
-            {{ else if eq .Site.Language.Lang "ru" }}Назад в {{ .Parent.Title }}
-            {{ else }}Back to {{ .Parent.Title }}{{ end }}
+            {{ i18n "back_to" (dict "Title" .Parent.Title) }}
         </a>
     </div>
 
@@ -16,8 +14,12 @@
         
         <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
             {{ $image := .Resources.GetMatch .Params.featured_image }}
+            {{ $displayImage := $image }}
             {{ if $image }}
-                <img id="main-image" src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="max-h-[85vh] w-auto object-contain">
+                {{ if gt $image.Width 2400 }}
+                    {{ $displayImage = $image.Resize "2400x" }}
+                {{ end }}
+                <img id="main-image" src="{{ $displayImage.RelPermalink }}" alt="{{ .Title }}" class="max-h-[85vh] w-auto object-contain">
             {{ end }}
 
             {{ with .NextInSection }}
@@ -42,7 +44,7 @@
         </div>
 
         <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out">
-            <img id="fullscreen-image" src="{{ if $image }}{{ $image.RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
+            <img id="fullscreen-image" src="{{ if $displayImage }}{{ $displayImage.RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
             <div class="absolute top-6 right-8 text-gray-400 text-sm font-mono">ESC: Close | Arrows: Navigate</div>
         </div>
 
@@ -60,15 +62,24 @@
                 <div class="space-y-10">
                     <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
                         <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
-                            {{ if eq .Site.Language.Lang "it" }}Esposizione Totale{{ else if eq .Site.Language.Lang "ru" }}Общая экспозиция{{ else }}Total Exposure{{ end }}
+                            {{ i18n "total_exposure" }}
                         </div>
                         <div class="text-3xl font-mono font-bold text-white">{{ .Params.total_exposure }}</div>
                     </div>
 
+                    {{ with .Params.focal_length }}
+                    <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
+                        <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
+                            {{ i18n "focal_length" }}
+                        </div>
+                        <div class="text-3xl font-mono font-bold text-white">{{ . }}</div>
+                    </div>
+                    {{ end }}
+
                     <div>
                         <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
-                            {{ if eq .Site.Language.Lang "it" }}Attrezzatura{{ else if eq .Site.Language.Lang "ru" }}Оборудование{{ else }}Equipment{{ end }}
+                            {{ i18n "equipment_deck" }}
                         </h3>
                         <div class="flex flex-wrap gap-3">
                             {{ range .Params.equipment }}
@@ -82,12 +93,12 @@
                     <div>
                         <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
-                            {{ if eq .Site.Language.Lang "it" }}Integrazione{{ else if eq .Site.Language.Lang "ru" }}Интеграция{{ else }}Integration{{ end }}
+                            {{ i18n "integration" }}
                         </h3>
                         <div class="overflow-hidden rounded-xl border border-gray-700">
                             <table class="w-full text-left text-gray-400 text-sm">
                                 <thead class="bg-gray-800 text-gray-300">
-                                    <tr><th class="px-4 py-2 font-semibold">Filter</th><th class="px-4 py-2 font-semibold">Subs</th></tr>
+                                    <tr><th class="px-4 py-2 font-semibold">{{ i18n "table_filter" }}</th><th class="px-4 py-2 font-semibold">{{ i18n "table_subs" }}</th></tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-700">
                                     {{ range .Params.filters }}
@@ -104,7 +115,7 @@
                     <div>
                         <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
-                            {{ if eq .Site.Language.Lang "it" }}Luoghi{{ else if eq .Site.Language.Lang "ru" }}Местоположения{{ else }}Locations{{ end }}
+                            {{ i18n "locations" }}
                         </h3>
                         {{ range .Params.locations }}
                         <div class="bg-gray-800/30 border border-gray-800 rounded-2xl p-4 mb-3 last:mb-0">
@@ -125,11 +136,13 @@
     const nextBtn = document.getElementById('nav-next');
     const prevBtn = document.getElementById('nav-prev');
 
-    mainImg.addEventListener('click', (e) => {
-        e.stopPropagation();
-        overlay.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    });
+    if (mainImg) {
+        mainImg.addEventListener('click', (e) => {
+            e.stopPropagation();
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+    }
     overlay.addEventListener('click', () => {
         overlay.classList.add('hidden');
         document.body.style.overflow = '';

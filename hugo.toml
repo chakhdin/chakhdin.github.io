@@ -1,7 +1,6 @@
 baseURL = "https://chakhdin.github.io/"
 languageCode = "en-us"
 title = "Sergey's Astrophotography"
-disableKinds = ["RSS", "sitemap"]
 defaultContentLanguage = "en"
 
 [taxonomies]
