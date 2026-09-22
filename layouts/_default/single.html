@@ -24,7 +24,7 @@
         <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
             {{ $displayImage := partial "hero-image.html" . }}
             {{ with $displayImage }}
-                <img id="main-image" src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="max-h-[85vh] w-auto object-contain">
+                <img id="main-image" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}" class="max-h-[85vh] w-auto object-contain" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
             {{ end }}
 
             {{ with .NextInSection }}
