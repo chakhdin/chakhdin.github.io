@@ -4,7 +4,7 @@ date: 2025-09-22T15:35:00Z
 categories: ["Nebulose"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Una profonda vista a largo campo della Nebulosa Anima in Cassiopea, che mostra le sue complesse creste di gas e polvere illuminate da giovani e massicci ammassi stellari."
-total_exposure: "7h 00m"
+total_exposure: "8h 05m"
 focal_length: ""
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
@@ -13,8 +13,8 @@ locations:
 featured_image: "IC1848_1.resample.annotated.png"
 filters:
   - name: "Ha (6nm)"
-    subs: "26 x 600s"
-    integration: "4h 20m"
+    subs: "34 x 600s"
+    integration: "5h 40m"
   - name: "R"
     subs: "10 x 300s"
     integration: "50m"
@@ -22,8 +22,8 @@ filters:
     subs: "10 x 300s"
     integration: "50m"
   - name: "B"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
 ---
 Questa immagine cattura IC 1848, popolarmente conosciuta come la Nebulosa Anima (Soul Nebula), situata a circa 6.500 anni luce di distanza nella costellazione di Cassiopea. Insieme alla sua vicina, la Nebulosa Cuore, forma un enorme complesso di formazione stellare nel braccio a spirale di Perseo della nostra galassia. 
 

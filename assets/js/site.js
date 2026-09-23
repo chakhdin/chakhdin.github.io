@@ -1,16 +1,41 @@
 const pageCache = new Map();
 
+function selectVersion(id, updateHash) {
+    const tabs = [...document.querySelectorAll('[data-version-tab]')];
+    if (!tabs.length) return;
+    const first = tabs[0].dataset.versionTab;
+    if (!tabs.some((tab) => tab.dataset.versionTab === id)) id = first;
+
+    tabs.forEach((tab) => tab.setAttribute('aria-selected', String(tab.dataset.versionTab === id)));
+    document.querySelectorAll('[data-version]').forEach((el) => {
+        el.hidden = el.dataset.version !== id;
+    });
+
+    if (updateHash) {
+        const url = id === first ? location.pathname + location.search : '#' + encodeURIComponent(id);
+        history.replaceState(history.state, '', url);
+    }
+}
+
 function initMedia() {
     document.body.style.overflow = '';
 
-    const mainImg = document.getElementById('main-image');
-    const overlay = document.getElementById('fullscreen-overlay');
-    if (!mainImg || !overlay) return;
+    document.querySelectorAll('[data-version-tab]').forEach((tab) => {
+        tab.addEventListener('click', () => selectVersion(tab.dataset.versionTab, true));
+    });
+    selectVersion(decodeURIComponent(location.hash.slice(1)), false);
 
-    mainImg.addEventListener('click', (e) => {
-        e.stopPropagation();
-        overlay.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
+    const overlay = document.getElementById('fullscreen-overlay');
+    const fullscreenImg = document.getElementById('fullscreen-image');
+    if (!overlay || !fullscreenImg) return;
+
+    document.querySelectorAll('.hero-image').forEach((img) => {
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            fullscreenImg.src = img.currentSrc || img.src;
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
     });
     overlay.addEventListener('click', () => {
         overlay.classList.add('hidden');
@@ -28,7 +53,8 @@ function updatePrefetchLinks(doc) {
 }
 
 async function loadPage(url, push) {
-    let html = pageCache.get(url);
+    const cacheKey = url.split('#')[0];
+    let html = pageCache.get(cacheKey);
     if (!html) {
         let res;
         try {
@@ -42,7 +68,7 @@ async function loadPage(url, push) {
             return;
         }
         html = await res.text();
-        pageCache.set(url, html);
+        pageCache.set(cacheKey, html);
     }
 
     const doc = new DOMParser().parseFromString(html, 'text/html');
@@ -60,7 +86,7 @@ async function loadPage(url, push) {
     const main = document.querySelector('main');
     if (main) {
         main.setAttribute('tabindex', '-1');
-        main.focus();
+        main.focus({ preventScroll: true });
     }
 }
 
@@ -73,6 +99,8 @@ document.addEventListener('click', (e) => {
 
     const url = new URL(link.href, window.location.href);
     if (url.origin !== window.location.origin) return;
+    // Language links keep the selected version of a multi-version page.
+    if (link.hasAttribute('data-keep-hash') && location.hash) url.hash = location.hash;
     if (url.pathname === window.location.pathname && url.search === window.location.search) return;
 
     e.preventDefault();

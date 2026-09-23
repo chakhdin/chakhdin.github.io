@@ -1,17 +1,17 @@
 ---
 title: "M51: Галактика Водоворот"
 date: 2025-05-24T12:32:00Z
-categories: ["Galaxy"]
+categories: ["Галактики"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Потрясающая спиральная галактика с упорядоченной структурой, запертая в гравитационном танце со своим меньшим компаньоном, демонстрирующая обширные приливные гало."
-total_exposure: "4h 40m"
+total_exposure: "4h 50m"
 focal_length: "2000mm"
 locations:
-  - name: "Cegni, Lombardy, Italy"
-    bortle: "Class 4"
+  - name: "Ченьи, Ломбардия, Италия"
+    bortle: "Класс 4"
     dates: ["2024-06-01"]
-  - name: "Saint Barthélemy, Valle d'Aosta, Italy"
-    bortle: "Class 4"
+  - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
+    bortle: "Класс 4"
     dates: ["2025-05-23"]
 
 featured_image: "M51_3.crop.annotated.png"

@@ -2,10 +2,6 @@
 {{ $image := $page.Resources.GetMatch $page.Params.featured_image }}
 {{ $result := "" }}
 {{ if $image }}
-    {{ if gt $image.Width 2400 }}
-        {{ $result = $image.Resize "2400x webp q82" }}
-    {{ else }}
-        {{ $result = $image.Process "webp q82" }}
-    {{ end }}
+    {{ $result = partial "hero-resize.html" $image }}
 {{ end }}
 {{ return $result }}

@@ -4,7 +4,7 @@ date: 2025-09-22T15:35:00Z
 categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "A deep wide-field view of the Soul Nebula in Cassiopeia, showcasing its complex ridges of gas and dust illuminated by young, massive star clusters."
-total_exposure: "7h 00m"
+total_exposure: "8h 05m"
 focal_length: ""
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
@@ -13,8 +13,8 @@ locations:
 featured_image: "IC1848_1.resample.annotated.png"
 filters:
   - name: "Ha (6nm)"
-    subs: "26 x 600s"
-    integration: "4h 20m"
+    subs: "34 x 600s"
+    integration: "5h 40m"
   - name: "R"
     subs: "10 x 300s"
     integration: "50m"
@@ -22,8 +22,8 @@ filters:
     subs: "10 x 300s"
     integration: "50m"
   - name: "B"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
 ---
 This image captures IC 1848, famously known as the Soul Nebula, located approximately 6,500 light-years away in the constellation Cassiopeia. Together with its neighbor, the Heart Nebula, it forms a massive star-forming complex in the Perseus Spiral Arm of our galaxy. 
 

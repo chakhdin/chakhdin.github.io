@@ -4,7 +4,7 @@ date: 2025-09-22T15:35:00Z
 categories: ["Туманности"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Глубокий широкоугольный снимок туманности Душа в Кассиопее, демонстрирующий сложные гребни газа и пыли, освещенные молодыми массивными звездными скоплениями."
-total_exposure: "7h 00m"
+total_exposure: "8h 05m"
 focal_length: ""
 locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
@@ -13,8 +13,8 @@ locations:
 featured_image: "IC1848_1.resample.annotated.png"
 filters:
   - name: "Ha (6nm)"
-    subs: "26 x 600s"
-    integration: "4h 20m"
+    subs: "34 x 600s"
+    integration: "5h 40m"
   - name: "R"
     subs: "10 x 300s"
     integration: "50m"
@@ -22,8 +22,8 @@ filters:
     subs: "10 x 300s"
     integration: "50m"
   - name: "B"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
 ---
 На этом снимке запечатлена IC 1848, широко известная как туманность Душа, расположенная на расстоянии около 6500 световых лет в созвездии Кассиопеи. Вместе со своей соседкой, туманностью Сердце, она образует массивный комплекс звездообразования в спиральном рукаве Персея нашей галактики. 
 

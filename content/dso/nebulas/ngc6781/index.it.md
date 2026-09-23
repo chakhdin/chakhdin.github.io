@@ -7,8 +7,8 @@ description: "Una splendida nebulosa planetaria nell'Aquila, caratterizzata da u
 total_exposure: "4h 10m"
 focal_length: "2000mm"
 locations:
-  - name: "Il Pratone, Lombardy, Italy"
-    bortle: "Class 4"
+  - name: "Il Pratone, Lombardia, Italia"
+    bortle: "Classe 4"
     dates: ["2024-07-10"]	
 featured_image: "NGC6781_3.bxt.annotated.png"
 filters:

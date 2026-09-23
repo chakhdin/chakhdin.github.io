@@ -19,12 +19,30 @@
         </a>
     </div>
 
+    {{/* A page can hold several captures of the same object in a "versions" list;
+         without one, the page's own params are its single version. */}}
+    {{ $versions := slice }}
+    {{ range $i, $v := .Params.versions }}
+        {{ $img := $.Resources.GetMatch $v.image }}
+        {{ if $img }}
+            {{ $versions = $versions | append (dict "id" ($v.id | default (printf "v%d" (add $i 1))) "label" $v.label "image" (partial "hero-resize.html" $img) "data" $v) }}
+        {{ else }}
+            {{ warnf "%s: version %q image %q not found" $.File.Path $v.id $v.image }}
+        {{ end }}
+    {{ end }}
+    {{ if not $versions }}
+        {{ $versions = slice (dict "id" "main" "label" "" "image" (partial "hero-image.html" .) "data" .Params) }}
+    {{ end }}
+    {{ $multi := gt (len $versions) 1 }}
+    {{ $first := index $versions 0 }}
+
     <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
         
         <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
-            {{ $displayImage := partial "hero-image.html" . }}
-            {{ with $displayImage }}
-                <img id="main-image" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}" class="max-h-[85vh] w-auto object-contain" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
+            {{ range $i, $v := $versions }}
+            {{ with $v.image }}
+                <img class="hero-image max-h-[85vh] w-auto object-contain" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ end }} src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
+            {{ end }}
             {{ end }}
 
             {{ with .NextInSection }}
@@ -48,8 +66,18 @@
             {{ end }}
         </div>
 
+        {{ if $multi }}
+        <div class="flex flex-wrap justify-center gap-3 px-6 pt-8" role="tablist" aria-label="{{ i18n "versions" }}">
+            {{ range $i, $v := $versions }}
+            <button type="button" role="tab" data-version-tab="{{ $v.id }}" aria-selected="{{ if $i }}false{{ else }}true{{ end }}" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md aria-selected:bg-gray-700 aria-selected:border-blue-500 aria-selected:text-blue-400">
+                {{ $v.label | default $v.id }}
+            </button>
+            {{ end }}
+        </div>
+        {{ end }}
+
         <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out">
-            <img id="fullscreen-image" src="{{ if $displayImage }}{{ $displayImage.RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
+            <img id="fullscreen-image" src="{{ with $first.image }}{{ .RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
             <div class="absolute top-6 right-8 text-gray-400 text-sm font-mono">ESC: Close | Arrows: Navigate</div>
         </div>
 
@@ -62,78 +90,22 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div class="lg:col-span-2 prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed">
                     {{ .Content }}
-                </div>
-
-                <div class="space-y-10">
-                    <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
-                        <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
-                            {{ i18n "total_exposure" }}
-                        </div>
-                        <div class="text-3xl font-mono font-bold text-white">{{ .Params.total_exposure }}</div>
-                    </div>
-
-                    {{ with .Params.focal_length }}
-                    <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
-                        <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
-                            {{ i18n "focal_length" }}
-                        </div>
-                        <div class="text-3xl font-mono font-bold text-white">{{ . }}</div>
+                    {{ range $i, $v := $versions }}
+                    {{ with $v.data.note }}
+                    <div {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
+                        {{ $.RenderString . }}
                     </div>
                     {{ end }}
-
-                    <div>
-                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
-                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
-                            {{ i18n "equipment_deck" }}
-                        </h3>
-                        <div class="flex flex-wrap gap-3">
-                            {{ range .Params.equipment }}
-                            <a href="{{ "/equipment/" | relURL }}{{ . | urlize }}/" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md">
-                                {{ . }}
-                            </a>
-                            {{ end }}
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
-                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
-                            {{ i18n "integration" }}
-                        </h3>
-                        <div class="overflow-hidden rounded-xl border border-gray-700">
-                            <table class="w-full text-left text-gray-400 text-sm">
-                                <thead class="bg-gray-800 text-gray-300">
-                                    <tr><th class="px-4 py-2 font-semibold">{{ i18n "table_filter" }}</th><th class="px-4 py-2 font-semibold">{{ i18n "table_subs" }}</th></tr>
-                                </thead>
-                                <tbody class="divide-y divide-gray-700">
-                                    {{ range .Params.filters }}
-                                    <tr>
-                                        <td class="px-4 py-3 font-bold text-blue-400">{{ .name }}</td>
-                                        <td class="px-4 py-3">{{ .subs }} <span class="text-gray-600">({{ .integration }})</span></td>
-                                    </tr>
-                                    {{ end }}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
-                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
-                            {{ i18n "locations" }}
-                        </h3>
-                        {{ range .Params.locations }}
-                        <div class="bg-gray-800/30 border border-gray-800 rounded-2xl p-4 mb-3 last:mb-0">
-                            <div class="text-gray-300 font-medium">{{ .name }}</div>
-                            <div class="text-gray-500 text-xs font-mono mt-1">Bortle {{ .bortle }} • {{ delimit .dates ", " }}</div>
-                        </div>
-                        {{ end }}
-                    </div>
+                    {{ end }}
                 </div>
+
+                {{ range $i, $v := $versions }}
+                <div class="space-y-10" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
+                    {{ partial "exposure-panel.html" $v.data }}
+                </div>
+                {{ end }}
             </div>
         </div>
     </article>
 </div>
 {{ end }}
-
-
