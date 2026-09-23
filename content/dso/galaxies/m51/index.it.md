@@ -1,17 +1,17 @@
 ---
 title: "M51: La Galassia Vortice"
 date: 2025-05-24T12:32:00Z
-categories: ["Galaxy"]
+categories: ["Galassie"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Una splendida galassia a spirale grand design bloccata in una danza gravitazionale con la sua compagna più piccola, che rivela estesi aloni mareali."
-total_exposure: "4h 40m"
+total_exposure: "4h 50m"
 focal_length: "2000mm"
 locations:
-  - name: "Cegni, Lombardy, Italy"
-    bortle: "Class 4"
+  - name: "Cegni, Lombardia, Italia"
+    bortle: "Classe 4"
     dates: ["2024-06-01"]
-  - name: "Saint Barthélemy, Valle d'Aosta, Italy"
-    bortle: "Class 4"
+  - name: "Saint Barthélemy, Valle d'Aosta, Italia"
+    bortle: "Classe 4"
     dates: ["2025-05-23"]
 
 featured_image: "M51_3.crop.annotated.png"

@@ -39,3 +39,10 @@ other = "Sfoglia per Attrezzatura"
 other = "Lavori in Corso"
 [wip_message]
 other = "Nuove immagini per questa sezione sono in arrivo. Torna presto a trovarci!"
+
+[versions]
+other = "Versioni"
+
+[object_count]
+one = "{{ .Count }} oggetto"
+other = "{{ .Count }} oggetti"

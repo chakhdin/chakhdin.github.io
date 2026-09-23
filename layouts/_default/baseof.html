@@ -60,7 +60,7 @@
                 
                 <div class="flex space-x-3 border-l border-gray-600 pl-6">
                     {{ range .AllTranslations }}
-                    <a href="{{ .Permalink }}" class="text-sm font-bold uppercase transition-colors {{ if eq .Language.Lang $.Site.Language.Lang }}text-blue-400{{ else }}text-gray-500 hover:text-white{{ end }}">
+                    <a href="{{ .Permalink }}" data-keep-hash class="text-sm font-bold uppercase transition-colors {{ if eq .Language.Lang $.Site.Language.Lang }}text-blue-400{{ else }}text-gray-500 hover:text-white{{ end }}">
                         {{ .Language.LanguageName }}
                     </a>
                     {{ end }}

@@ -1,0 +1,8 @@
+{{ $image := . }}
+{{ $result := "" }}
+{{ if gt $image.Width 2400 }}
+    {{ $result = $image.Resize "2400x webp q82" }}
+{{ else }}
+    {{ $result = $image.Process "webp q82" }}
+{{ end }}
+{{ return $result }}

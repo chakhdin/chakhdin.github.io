@@ -1,14 +1,14 @@
 ---
 title: "NGC 5395 и NGC 5394: Галактика Цапля (Arp 84)"
 date: 2025-06-01T14:17:00Z
-categories: ["Galaxy"]
+categories: ["Галактики"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Взаимодействующая пара галактик Arp 84, состоящая из крупной спиральной галактики NGC 5395 и её меньшего компаньона NGC 5394, соединенных заметным приливным хвостом."
 total_exposure: "4h 40m"
 focal_length: "2000mm"
 locations:
-  - name: "Il Pratone, Lombardy, Italy"
-    bortle: "Class 4"
+  - name: "Иль Пратоне, Ломбардия, Италия"
+    bortle: "Класс 4"
     dates: ["2025-05-30"]
 featured_image: "NGC 5395_2.comb.crop.png"
 filters:

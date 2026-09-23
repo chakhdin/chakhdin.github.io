@@ -51,9 +51,37 @@
             <div class="p-6">
                 <h2 class="text-2xl font-bold text-white group-hover:text-blue-400 transition">{{ .Title }}</h2>
                 <p class="text-gray-500 text-sm mt-2 line-clamp-2">{{ .Params.description }}</p>
+                {{ $meta := slice }}
+                {{ if .IsSection }}
+                    {{ with len .RegularPagesRecursive }}{{ $meta = $meta | append (i18n "object_count" .) }}{{ end }}
+                {{ else }}
+                    {{/* With several versions, the card shows their combined exposure. */}}
+                    {{ $exposure := .Params.total_exposure }}
+                    {{ with .Params.versions }}
+                        {{ $mins := 0 }}
+                        {{ range . }}
+                            {{ with .total_exposure }}
+                                {{ range findRESubmatch `(\d+)\s*h` . 1 }}{{ $mins = add $mins (mul (int (strings.TrimLeft "0" (index . 1) | default "0")) 60) }}{{ end }}
+                                {{ range findRESubmatch `(\d+)\s*m` . 1 }}{{ $mins = add $mins (int (strings.TrimLeft "0" (index . 1) | default "0")) }}{{ end }}
+                            {{ end }}
+                        {{ end }}
+                        {{ if ge $mins 60 }}{{ $exposure = printf "%dh %02dm" (div $mins 60) (mod $mins 60) }}{{ else if $mins }}{{ $exposure = printf "%dm" $mins }}{{ end }}
+                    {{ end }}
+                    {{ with $exposure }}{{ $meta = $meta | append . }}{{ end }}
+                    {{/* Years come from the capture dates, across every version of the object. */}}
+                    {{ $dates := slice }}
+                    {{ range .Params.locations }}{{ range .dates }}{{ $dates = $dates | append (printf "%v" .) }}{{ end }}{{ end }}
+                    {{ range .Params.versions }}{{ range .locations }}{{ range .dates }}{{ $dates = $dates | append (printf "%v" .) }}{{ end }}{{ end }}{{ end }}
+                    {{ $years := slice }}
+                    {{ range $dates }}{{ if ge (len .) 4 }}{{ $years = $years | append (substr . 0 4) }}{{ end }}{{ end }}
+                    {{ if and (not $years) (not .Date.IsZero) }}{{ $years = slice (.Date.Format "2006") }}{{ end }}
+                    {{ with $years }}{{ $meta = $meta | append (delimit (sort (uniq .)) ", ") }}{{ end }}
+                {{ end }}
+                {{ with $meta }}
                 <div class="mt-4 flex items-center text-xs font-mono text-blue-500 uppercase tracking-widest">
-                    {{ .Params.total_exposure }} • {{ .Date.Format "2006" }}
+                    {{ delimit . " • " }}
                 </div>
+                {{ end }}
             </div>
         </a>
         {{ end }}
