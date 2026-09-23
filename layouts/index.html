@@ -12,6 +12,8 @@
             {{ if $image }}
                 {{ $thumb := $image.Fill "800x500 Center webp q80" }}
                 <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="w-full h-80 object-cover">
+            {{ else if hugo.IsProduction }}
+                <div class="w-full h-80 bg-gray-700"></div>
             {{ else }}
                 <div class="w-full h-80 bg-gray-700 flex items-center justify-center text-gray-500">Add {{ .Params.featured_image }} to {{ .File.Dir }}</div>
             {{ end }}

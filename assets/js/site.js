@@ -6,7 +6,11 @@ function selectVersion(id, updateHash) {
     const first = tabs[0].dataset.versionTab;
     if (!tabs.some((tab) => tab.dataset.versionTab === id)) id = first;
 
-    tabs.forEach((tab) => tab.setAttribute('aria-selected', String(tab.dataset.versionTab === id)));
+    tabs.forEach((tab) => {
+        const selected = tab.dataset.versionTab === id;
+        tab.setAttribute('aria-selected', String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+    });
     document.querySelectorAll('[data-version]').forEach((el) => {
         el.hidden = el.dataset.version !== id;
     });
@@ -20,8 +24,20 @@ function selectVersion(id, updateHash) {
 function initMedia() {
     document.body.style.overflow = '';
 
-    document.querySelectorAll('[data-version-tab]').forEach((tab) => {
+    const tabs = [...document.querySelectorAll('[data-version-tab]')];
+    tabs.forEach((tab, i) => {
         tab.addEventListener('click', () => selectVersion(tab.dataset.versionTab, true));
+        tab.addEventListener('keydown', (e) => {
+            let next = null;
+            if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+            else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+            else if (e.key === 'Home') next = tabs[0];
+            else if (e.key === 'End') next = tabs[tabs.length - 1];
+            if (!next) return;
+            e.preventDefault();
+            selectVersion(next.dataset.versionTab, true);
+            next.focus();
+        });
     });
     selectVersion(decodeURIComponent(location.hash.slice(1)), false);
 
@@ -33,6 +49,7 @@ function initMedia() {
         img.addEventListener('click', (e) => {
             e.stopPropagation();
             fullscreenImg.src = img.currentSrc || img.src;
+            fullscreenImg.alt = img.alt;
             overlay.classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         });
