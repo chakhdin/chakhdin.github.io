@@ -34,3 +34,8 @@ other = "View Full Gallery"
 other = "Browse by Object Type"
 [browse_equipment]
 other = "Browse by Equipment"
+
+[wip_badge]
+other = "Work in Progress"
+[wip_message]
+other = "New images for this section are on their way. Check back soon!"

@@ -34,3 +34,8 @@ other = "Vedi Tutta la Galleria"
 other = "Sfoglia per Tipo di Oggetto"
 [browse_equipment]
 other = "Sfoglia per Attrezzatura"
+
+[wip_badge]
+other = "Lavori in Corso"
+[wip_message]
+other = "Nuove immagini per questa sezione sono in arrivo. Torna presto a trovarci!"
