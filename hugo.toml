@@ -1,5 +1,5 @@
 baseURL = "https://chakhdin.github.io/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Sergey's Astrophotography"
 defaultContentLanguage = "en"
 
@@ -17,16 +17,16 @@ defaultContentLanguage = "en"
 
 [languages]
   [languages.en]
-    languageName = "EN"
+    label = "EN"
     weight = 1
 
   [languages.it]
-    languageName = "IT"
+    label = "IT"
     title = "Astrofotografia di Sergey"
     weight = 2
 
   [languages.ru]
-    languageName = "RU"
+    label = "RU"
     title = "Астрофотография Сергея"
     weight = 3
 
