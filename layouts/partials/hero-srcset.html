@@ -1,0 +1,13 @@
+{{/* Builds a srcset for a hero image already capped by hero-resize.html, so
+     phones and small windows don't download the full-width variant. */}}
+{{ $image := . }}
+{{ $widths := slice 640 960 1280 1600 2000 }}
+{{ $parts := slice }}
+{{ range $widths }}
+    {{ if lt . $image.Width }}
+        {{ $r := $image.Resize (printf "%dx webp q82" .) }}
+        {{ $parts = $parts | append (printf "%s %dw" $r.RelPermalink .) }}
+    {{ end }}
+{{ end }}
+{{ $parts = $parts | append (printf "%s %dw" $image.RelPermalink $image.Width) }}
+{{ return delimit $parts ", " }}

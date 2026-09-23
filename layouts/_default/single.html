@@ -25,13 +25,17 @@
     {{ range $i, $v := .Params.versions }}
         {{ $img := $.Resources.GetMatch $v.image }}
         {{ if $img }}
-            {{ $versions = $versions | append (dict "id" ($v.id | default (printf "v%d" (add $i 1))) "label" $v.label "image" (partial "hero-resize.html" $img) "data" $v) }}
+            {{ $hero := partial "hero-resize.html" $img }}
+            {{ $versions = $versions | append (dict "id" ($v.id | default (printf "v%d" (add $i 1))) "label" $v.label "image" $hero "srcset" (partial "hero-srcset.html" $hero) "data" $v) }}
         {{ else }}
             {{ warnf "%s: version %q image %q not found" $.File.Path $v.id $v.image }}
         {{ end }}
     {{ end }}
     {{ if not $versions }}
-        {{ $versions = slice (dict "id" "main" "label" "" "image" (partial "hero-image.html" .) "data" .Params) }}
+        {{ $hero := partial "hero-image.html" . }}
+        {{ $srcset := "" }}
+        {{ with $hero }}{{ $srcset = partial "hero-srcset.html" . }}{{ end }}
+        {{ $versions = slice (dict "id" "main" "label" "" "image" $hero "srcset" $srcset "data" .Params) }}
     {{ end }}
     {{ $multi := gt (len $versions) 1 }}
     {{ $first := index $versions 0 }}
@@ -41,7 +45,7 @@
         <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
             {{ range $i, $v := $versions }}
             {{ with $v.image }}
-                <img class="hero-image max-h-[85vh] w-auto object-contain" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ end }} src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
+                <img id="hero-{{ $v.id }}" class="hero-image max-h-[85vh] w-auto object-contain" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
             {{ end }}
             {{ end }}
 
@@ -69,16 +73,16 @@
         {{ if $multi }}
         <div class="flex flex-wrap justify-center gap-3 px-6 pt-8" role="tablist" aria-label="{{ i18n "versions" }}">
             {{ range $i, $v := $versions }}
-            <button type="button" role="tab" data-version-tab="{{ $v.id }}" aria-selected="{{ if $i }}false{{ else }}true{{ end }}" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md aria-selected:bg-gray-700 aria-selected:border-blue-500 aria-selected:text-blue-400">
+            <button type="button" role="tab" id="tab-{{ $v.id }}" data-version-tab="{{ $v.id }}" aria-controls="hero-{{ $v.id }} note-{{ $v.id }} specs-{{ $v.id }}" aria-selected="{{ if $i }}false{{ else }}true{{ end }}" tabindex="{{ if $i }}-1{{ else }}0{{ end }}" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md aria-selected:bg-gray-700 aria-selected:border-blue-500 aria-selected:text-blue-400">
                 {{ $v.label | default $v.id }}
             </button>
             {{ end }}
         </div>
         {{ end }}
 
-        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out">
-            <img id="fullscreen-image" src="{{ with $first.image }}{{ .RelPermalink }}{{ end }}" class="max-w-full max-h-full object-contain">
-            <div class="absolute top-6 right-8 text-gray-400 text-sm font-mono">ESC: Close | Arrows: Navigate</div>
+        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out" role="dialog" aria-modal="true" aria-label="{{ i18n "fullscreen_view" }}">
+            <img id="fullscreen-image" src="{{ with $first.image }}{{ .RelPermalink }}{{ end }}" alt="" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-6 right-8 text-gray-400 text-sm font-mono">{{ i18n "fullscreen_hint" }}</div>
         </div>
 
         <div class="p-8 md:p-12">
@@ -92,7 +96,7 @@
                     {{ .Content }}
                     {{ range $i, $v := $versions }}
                     {{ with $v.data.note }}
-                    <div {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
+                    <div id="note-{{ $v.id }}" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
                         {{ $.RenderString . }}
                     </div>
                     {{ end }}
@@ -100,7 +104,7 @@
                 </div>
 
                 {{ range $i, $v := $versions }}
-                <div class="space-y-10" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
+                <div id="specs-{{ $v.id }}" class="space-y-10" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
                     {{ partial "exposure-panel.html" $v.data }}
                 </div>
                 {{ end }}

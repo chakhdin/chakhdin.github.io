@@ -48,3 +48,8 @@ one = "{{ .Count }} объект"
 few = "{{ .Count }} объекта"
 many = "{{ .Count }} объектов"
 other = "{{ .Count }} объекта"
+
+[fullscreen_view]
+other = "Просмотр изображения на весь экран"
+[fullscreen_hint]
+other = "ESC: Закрыть | Стрелки: Навигация"

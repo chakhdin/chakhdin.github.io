@@ -46,3 +46,8 @@ other = "Versioni"
 [object_count]
 one = "{{ .Count }} oggetto"
 other = "{{ .Count }} oggetti"
+
+[fullscreen_view]
+other = "Visualizzatore immagine a schermo intero"
+[fullscreen_hint]
+other = "ESC: Chiudi | Frecce: Naviga"
