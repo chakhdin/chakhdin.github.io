@@ -2,3 +2,7 @@
 /resources/
 .hugo_build.lock
 node_modules/
+
+# Originals live in R2 (see scripts/r2-upload.mjs, scripts/r2-sync.mjs) and
+# are fetched into place at build time instead of being committed.
+content/**/*.png
