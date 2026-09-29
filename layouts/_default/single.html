@@ -1,9 +1,11 @@
 ﻿{{ define "head-extra" }}
+{{/* imagesrcset/imagesizes let the prefetch match the exact responsive
+     variant the img tag will request, so it's actually a cache hit. */}}
 {{ with .NextInSection }}
-{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}">{{ end }}
+{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}" imagesrcset="{{ partial "hero-srcset.html" . }}" imagesizes="(min-width: 1200px) 1120px, 100vw">{{ end }}
 {{ end }}
 {{ with .PrevInSection }}
-{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}">{{ end }}
+{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}" imagesrcset="{{ partial "hero-srcset.html" . }}" imagesizes="(min-width: 1200px) 1120px, 100vw">{{ end }}
 {{ end }}
 
 {{ $img := partial "hero-image.html" . }}
