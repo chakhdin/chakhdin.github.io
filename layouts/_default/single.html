@@ -24,7 +24,11 @@
     "height" .Height
     "url" $.Permalink
 }}
-{{ with site.Params.author }}{{ $imageObject = merge $imageObject (dict "creator" (dict "@type" "Person" "name" .)) }}{{ end }}
+{{ with site.Params.author }}
+{{ $imageObject = merge $imageObject (dict "creator" (dict "@type" "Person" "name" .)) }}
+{{ $copyrightYear := strings.Substr $captureDate 0 4 }}
+{{ $imageObject = merge $imageObject (dict "copyrightNotice" (printf "© %s %s. All rights reserved." $copyrightYear .) "creditText" .) }}
+{{ end }}
 {{ with $keywords }}{{ $imageObject = merge $imageObject (dict "keywords" (delimit . ", ")) }}{{ end }}
 <script type="application/ld+json">{{ $imageObject | jsonify | safeJS }}</script>
 {{ end }}
