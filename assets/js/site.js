@@ -69,6 +69,25 @@ function updatePrefetchLinks(doc) {
     });
 }
 
+// Selectors for <head> elements that carry per-page SEO metadata and must be
+// swapped in on client-side navigation, or every page after the first keeps
+// the previous page's description/canonical/structured data.
+const HEAD_META_SELECTOR = [
+    'meta[name="description"]',
+    'link[rel="canonical"]',
+    'link[rel="alternate"][hreflang]',
+    'meta[property^="og:"]',
+    'meta[name^="twitter:"]',
+    'script[type="application/ld+json"]',
+].join(', ');
+
+function updateHeadMeta(doc) {
+    document.head.querySelectorAll(HEAD_META_SELECTOR).forEach((el) => el.remove());
+    doc.head.querySelectorAll(HEAD_META_SELECTOR).forEach((el) => {
+        document.head.appendChild(el.cloneNode(true));
+    });
+}
+
 function preloadImage(img, baseUrl) {
     const src = img.getAttribute('src');
     if (!src) return Promise.resolve();
@@ -113,6 +132,7 @@ async function loadPage(url, push) {
     document.documentElement.lang = doc.documentElement.lang;
     document.body.innerHTML = doc.body.innerHTML;
     updatePrefetchLinks(doc);
+    updateHeadMeta(doc);
 
     if (push) {
         history.pushState({ url }, '', url);
