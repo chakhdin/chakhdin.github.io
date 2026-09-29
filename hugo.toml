@@ -16,7 +16,7 @@ defaultContentLanguage = "en"
     allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
 
 [params]
-  author = "Sergey"
+  author = "Sergey Shakhdinarov"
 
   # Cloudflare Web Analytics beacon token, from the Cloudflare dashboard
   # (Analytics & Logs > Web Analytics > your site > "Manage Site" > snippet).
