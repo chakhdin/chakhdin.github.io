@@ -49,6 +49,10 @@
 
     {{ block "head-extra" . }}{{ end }}
 
+    {{ if and hugo.IsProduction site.Params.cloudflareAnalyticsToken }}
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.Params.cloudflareAnalyticsToken }}"}'></script>
+    {{ end }}
+
     {{ $js := resources.Get "js/site.js" | js.Build }}
     {{ if hugo.IsProduction }}
         {{ $js = $js | minify | fingerprint }}

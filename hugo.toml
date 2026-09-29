@@ -15,6 +15,14 @@ defaultContentLanguage = "en"
   [security.exec]
     allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
 
+[params]
+  author = "Sergey"
+
+  # Cloudflare Web Analytics beacon token, from the Cloudflare dashboard
+  # (Analytics & Logs > Web Analytics > your site > "Manage Site" > snippet).
+  # Leave empty to disable. Only loaded in production builds.
+  cloudflareAnalyticsToken = ""
+
 [languages]
   [languages.en]
     label = "EN"

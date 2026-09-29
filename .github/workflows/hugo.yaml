@@ -40,6 +40,8 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       - name: Build
         run: hugo --minify
+        env:
+          HUGO_PARAMS_CLOUDFLAREANALYTICSTOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

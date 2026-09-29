@@ -5,6 +5,41 @@
 {{ with .PrevInSection }}
 {{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}">{{ end }}
 {{ end }}
+
+{{ $img := partial "hero-image.html" . }}
+{{ with $img }}
+{{ $captureDate := "" }}
+{{ with $.Params.locations }}{{ with index . 0 }}{{ with .dates }}{{ $captureDate = index . 0 }}{{ end }}{{ end }}{{ end }}
+{{ if not $captureDate }}{{ $captureDate = $.Date.Format "2006-01-02" }}{{ end }}
+{{ $keywords := union ($.Params.categories | default slice) ($.Params.equipment | default slice) }}
+{{ $imageObject := dict
+    "@context" "https://schema.org"
+    "@type" "ImageObject"
+    "contentUrl" .Permalink
+    "name" $.Title
+    "description" ($.Params.description | default $.Summary | plainify)
+    "dateCreated" $captureDate
+    "datePublished" ($.Date.Format "2006-01-02")
+    "width" .Width
+    "height" .Height
+    "url" $.Permalink
+}}
+{{ with site.Params.author }}{{ $imageObject = merge $imageObject (dict "creator" (dict "@type" "Person" "name" .)) }}{{ end }}
+{{ with $keywords }}{{ $imageObject = merge $imageObject (dict "keywords" (delimit . ", ")) }}{{ end }}
+<script type="application/ld+json">{{ $imageObject | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" site.Title "item" site.Home.Permalink) }}
+{{ $pos := 1 }}
+{{ range .Ancestors.Reverse }}
+{{ if not .IsHome }}
+{{ $pos = add $pos 1 }}
+{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) }}
+{{ end }}
+{{ end }}
+{{ $pos = add $pos 1 }}
+{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs | jsonify | safeJS }}</script>
 {{ end }}
 
 {{ define "main" }}
