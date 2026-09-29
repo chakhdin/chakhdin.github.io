@@ -8,19 +8,34 @@ import { ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
 import { s3, bucket } from "./r2-client.mjs";
 
 const contentDir = path.resolve(import.meta.dirname, "..", "content");
+const CONCURRENCY = 8;
+
+async function fetchOne(key) {
+    const dest = path.join(contentDir, key);
+    await mkdir(path.dirname(dest), { recursive: true });
+    const got = await s3.send(new GetObjectCommand({ Bucket: bucket, Key: key }));
+    await writeFile(dest, await got.Body.transformToByteArray());
+    console.log(`fetched ${key}`);
+}
+
+async function runPool(keys, limit) {
+    let next = 0;
+    async function worker() {
+        while (next < keys.length) {
+            const key = keys[next++];
+            await fetchOne(key);
+        }
+    }
+    await Promise.all(Array.from({ length: Math.min(limit, keys.length) }, worker));
+}
 
 let token;
 let count = 0;
 do {
     const page = await s3.send(new ListObjectsV2Command({ Bucket: bucket, ContinuationToken: token }));
-    for (const obj of page.Contents ?? []) {
-        const dest = path.join(contentDir, obj.Key);
-        await mkdir(path.dirname(dest), { recursive: true });
-        const got = await s3.send(new GetObjectCommand({ Bucket: bucket, Key: obj.Key }));
-        await writeFile(dest, await got.Body.transformToByteArray());
-        count++;
-        console.log(`fetched ${obj.Key}`);
-    }
+    const keys = (page.Contents ?? []).map((obj) => obj.Key);
+    await runPool(keys, CONCURRENCY);
+    count += keys.length;
     token = page.NextContinuationToken;
 } while (token);
 
