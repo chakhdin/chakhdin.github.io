@@ -69,6 +69,21 @@ function updatePrefetchLinks(doc) {
     });
 }
 
+function preloadImage(img, baseUrl) {
+    const src = img.getAttribute('src');
+    if (!src) return Promise.resolve();
+    const pre = new Image();
+    const sizes = img.getAttribute('sizes');
+    const srcset = img.getAttribute('srcset');
+    if (sizes) pre.sizes = sizes;
+    if (srcset) pre.srcset = srcset;
+    pre.src = new URL(src, baseUrl).href;
+    return pre.decode ? pre.decode().catch(() => {}) : new Promise((resolve) => {
+        pre.addEventListener('load', resolve, { once: true });
+        pre.addEventListener('error', resolve, { once: true });
+    });
+}
+
 async function loadPage(url, push) {
     const cacheKey = url.split('#')[0];
     let html = pageCache.get(cacheKey);
@@ -89,6 +104,11 @@ async function loadPage(url, push) {
     }
 
     const doc = new DOMParser().parseFromString(html, 'text/html');
+    // Wait for the visible hero image to be fully decoded before swapping the
+    // DOM, so the new <img> paints immediately instead of flashing blank.
+    await Promise.all(
+        [...doc.querySelectorAll('.hero-image:not([hidden])')].map((img) => preloadImage(img, url))
+    );
     document.title = doc.title;
     document.documentElement.lang = doc.documentElement.lang;
     document.body.innerHTML = doc.body.innerHTML;
