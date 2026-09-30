@@ -52,7 +52,7 @@
 <div class="max-w-6xl mx-auto px-4 py-8">
     
     <div class="mb-6">
-        <a href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-gray-400 hover:text-blue-400 transition font-medium group">
+        <a id="back-link" href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-gray-400 hover:text-blue-400 transition font-medium group">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -83,32 +83,50 @@
 
     <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
         
-        <div class="relative group w-full bg-black flex justify-center border-b border-gray-800 cursor-zoom-in" id="image-container">
+        <div class="relative w-full border-b border-gray-800" id="image-container">
+            <div class="relative w-fit max-w-full mx-auto bg-black flex justify-center{{ if not $.Params.video }} cursor-zoom-in{{ end }}">
             {{ range $i, $v := $versions }}
-            {{ with $v.image }}
-                <img id="hero-{{ $v.id }}" class="hero-image max-h-[85vh] w-auto object-contain" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }};">
+            {{ if and (eq $v.id "main") $.Params.video }}
+                {{/* A video, when present, always takes the hero slot. Its poster must be an actual
+                     frame from that same video (video_poster) — not the finished processed photo,
+                     which usually looks nothing like the raw footage and makes the play button feel
+                     like a bait-and-switch. The finished photo (if any) gets its own section below instead. */}}
+                {{ $poster := $v.image }}
+                {{ with $.Params.video_poster }}{{ with $.Resources.GetMatch . }}{{ $poster = partial "hero-resize.html" . }}{{ end }}{{ end }}
+                {{ with site.Params.videoBaseURL }}
+                <video class="w-auto min-w-0 object-contain" controls loop muted playsinline preload="metadata" {{ with $poster }}poster="{{ .RelPermalink }}"{{ end }} {{ with $.Params.video_width }}width="{{ . }}"{{ end }} {{ with $.Params.video_height }}height="{{ . }}"{{ end }} {{ if and $.Params.video_width $.Params.video_height }}style="aspect-ratio: {{ $.Params.video_width }} / {{ $.Params.video_height }}; max-width: {{ $.Params.video_width }}px; max-height: min(85vh, {{ $.Params.video_height }}px);"{{ end }}>
+                    <source src="{{ printf "%s/%s" . $.Params.video }}" type="video/mp4">
+                    {{ i18n "video_unsupported" }}
+                </video>
+                {{ end }}
+            {{ else }}
+                {{ with $v.image }}
+                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
+                {{ end }}
             {{ end }}
             {{ end }}
 
+            {{/* Lateral hover bands over the media itself, stopping short of the
+                 bottom edge on video pages so they never sit on top of the native
+                 video controls (scrub bar / play / fullscreen). */}}
             {{ with .NextInSection }}
-            <a id="nav-next" href="{{ .RelPermalink }}" class="absolute left-0 top-0 h-full w-24 flex items-center justify-start pl-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-black/60 to-transparent text-white" title="{{ .Title }}">
-                <div class="bg-blue-600/80 p-3 rounded-full shadow-lg hover:scale-110 transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </div>
+            <a id="nav-next" href="{{ .RelPermalink }}" title="{{ .Title }}" class="group absolute left-0 top-0 {{ if $.Params.video }}bottom-20{{ else }}bottom-0{{ end }} flex items-center pl-3 pr-8 md:pl-4 bg-gradient-to-r from-black/70 via-black/20 to-transparent text-white/70 hover:text-white hover:from-black/85 transition-colors cursor-pointer">
+                <span class="sr-only">{{ .Title }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-shrink-0 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
             </a>
             {{ end }}
 
             {{ with .PrevInSection }}
-            <a id="nav-prev" href="{{ .RelPermalink }}" class="absolute right-0 top-0 h-full w-24 flex items-center justify-end pr-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-l from-black/60 to-transparent text-white" title="{{ .Title }}">
-                <div class="bg-gray-700/80 p-3 rounded-full shadow-lg hover:scale-110 transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                    </svg>
-                </div>
+            <a id="nav-prev" href="{{ .RelPermalink }}" title="{{ .Title }}" class="group absolute right-0 top-0 {{ if $.Params.video }}bottom-20{{ else }}bottom-0{{ end }} flex items-center pr-3 pl-8 md:pr-4 bg-gradient-to-l from-black/70 via-black/20 to-transparent text-white/70 hover:text-white hover:from-black/85 transition-colors cursor-pointer">
+                <span class="sr-only">{{ .Title }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-shrink-0 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
             </a>
             {{ end }}
+            </div>
         </div>
 
         {{ if $multi }}
@@ -139,6 +157,20 @@
                     {{ with $v.data.note }}
                     <div id="note-{{ $v.id }}" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden{{ end }}>
                         {{ $.RenderString . }}
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                    {{/* Only shown when the video took the hero with its own frame as poster — the
+                         finished, fully processed photo still deserves a place on the page. */}}
+                    {{ if $.Params.video_poster }}
+                    {{ with $.Resources.GetMatch $.Params.featured_image }}
+                    {{ $processed := partial "hero-resize.html" . }}
+                    <div class="mt-10 not-prose">
+                        <h3 class="text-white font-bold mb-5 flex items-center uppercase text-sm tracking-widest">
+                            <span class="w-8 h-px bg-blue-500 mr-3"></span>
+                            {{ i18n "processed_image_heading" }}
+                        </h3>
+                        <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $.Title }}" loading="lazy" class="w-full rounded-2xl border border-gray-800" style="aspect-ratio: {{ $processed.Width }} / {{ $processed.Height }};">
                     </div>
                     {{ end }}
                     {{ end }}

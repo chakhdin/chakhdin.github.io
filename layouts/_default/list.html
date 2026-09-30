@@ -54,6 +54,13 @@
                 {{ $meta := slice }}
                 {{ if .IsSection }}
                     {{ with len .RegularPagesRecursive }}{{ $meta = $meta | append (i18n "object_count" .) }}{{ end }}
+                {{ else if eq .Section "sso" }}
+                    {{/* Planetary/lunar/solar shots: the exposure figure is synthetic (a video
+                         capture, not a meaningful integration time), so the card shows the actual
+                         capture date instead of exposure + year. */}}
+                    {{ with .Params.locations }}{{ with index . 0 }}{{ with .dates }}{{ with index . 0 }}
+                        {{ $meta = $meta | append (time.Format ":date_medium" .) }}
+                    {{ end }}{{ end }}{{ end }}{{ end }}
                 {{ else }}
                     {{/* With several versions, the card shows their combined exposure. */}}
                     {{ $exposure := .Params.total_exposure }}

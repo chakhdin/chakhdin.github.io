@@ -2,6 +2,10 @@
 // same layout the PNGs used to have when they were committed directly. Run
 // before `hugo build` in CI. Requires R2_ACCOUNT_ID, R2_BUCKET,
 // R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY in the environment.
+//
+// Objects under the "videos/" prefix are skipped: those are served directly
+// from R2's public URL (see scripts/r2-upload-video.mjs) and never become
+// Hugo page resources, so pulling them here would just waste CI time/disk.
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
@@ -33,7 +37,7 @@ let token;
 let count = 0;
 do {
     const page = await s3.send(new ListObjectsV2Command({ Bucket: bucket, ContinuationToken: token }));
-    const keys = (page.Contents ?? []).map((obj) => obj.Key);
+    const keys = (page.Contents ?? []).map((obj) => obj.Key).filter((key) => !key.startsWith("videos/"));
     await runPool(keys, CONCURRENCY);
     count += keys.length;
     token = page.NextContinuationToken;

@@ -43,6 +43,13 @@ other = "Новые изображения для этого раздела ск
 [versions]
 other = "Версии"
 
+[video_heading]
+other = "Видео"
+[video_unsupported]
+other = "Ваш браузер не поддерживает встроенное воспроизведение видео."
+[processed_image_heading]
+other = "Обработанный Результат"
+
 [object_count]
 one = "{{ .Count }} объект"
 few = "{{ .Count }} объекта"
