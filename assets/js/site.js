@@ -170,9 +170,16 @@ window.addEventListener('popstate', () => {
 
 document.addEventListener('keydown', (e) => {
     const overlay = document.getElementById('fullscreen-overlay');
-    if (e.key === 'Escape' && overlay) {
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
+    if (e.key === 'Escape') {
+        // On a single-image page, Escape closes the fullscreen zoom if it's open;
+        // otherwise it navigates back to the collection, same as clicking "Back to X".
+        if (overlay && !overlay.classList.contains('hidden')) {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        } else {
+            const backLink = document.getElementById('back-link');
+            if (backLink) backLink.click();
+        }
     }
     if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
         const nextBtn = document.getElementById('nav-next');

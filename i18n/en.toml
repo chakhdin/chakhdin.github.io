@@ -43,6 +43,13 @@ other = "New images for this section are on their way. Check back soon!"
 [versions]
 other = "Versions"
 
+[video_heading]
+other = "Video"
+[video_unsupported]
+other = "Your browser doesn't support embedded video."
+[processed_image_heading]
+other = "Processed Result"
+
 [object_count]
 one = "{{ .Count }} object"
 other = "{{ .Count }} objects"

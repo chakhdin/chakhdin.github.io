@@ -43,6 +43,13 @@ other = "Nuove immagini per questa sezione sono in arrivo. Torna presto a trovar
 [versions]
 other = "Versioni"
 
+[video_heading]
+other = "Video"
+[video_unsupported]
+other = "Il tuo browser non supporta la riproduzione video incorporata."
+[processed_image_heading]
+other = "Risultato Elaborato"
+
 [object_count]
 one = "{{ .Count }} oggetto"
 other = "{{ .Count }} oggetti"

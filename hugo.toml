@@ -23,6 +23,11 @@ defaultContentLanguage = "en"
   # Leave empty to disable. Only loaded in production builds.
   cloudflareAnalyticsToken = ""
 
+  # Public R2 base URL videos are served from directly (never synced into
+  # Hugo/content — see scripts/r2-upload-video.mjs and scripts/r2-sync.mjs).
+  # A page's `video` param is a key relative to this, e.g. "videos/jupiter/2025-02-05.mp4".
+  videoBaseURL = "https://pub-31bf1763ca934d78aa1296ab64e4629e.r2.dev"
+
 [languages]
   [languages.en]
     label = "EN"

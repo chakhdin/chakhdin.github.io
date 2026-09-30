@@ -18,6 +18,6 @@ filters:
 
 ---
 Questa immagine cattura Arp 84, una coppia di galassie interagenti comunemente nota come Galassia Airone. La spirale più grande è NGC 5395, che mostra un nucleo luminoso e bracci a spirale polverosi strettamente avvolti. Interagisce gravitazionalmente con la sua compagna più piccola, NGC 5394, che presenta evidenti strutture di code mareali che si estendono lontano dalla coppia principale. Questa danza galattica, situata a circa 160 milioni di anni luce di distanza nella costellazione dei Cani da Caccia, innesca un'intensa formazione stellare visibile come regioni di colore blu lungo i bracci a spirale esterni. Nel campo sono visibili anche diverse galassie lontane sullo sfondo.
-L'immagine è ottenuta in collaborazione Federico Palaia che ha prestato circa 4h con la sua ASI294MC Pro sul C11 (a sua volta gentilmente prestato da Davide Minotti).
+L'immagine è stata realizzata in collaborazione con Federico Palaia, che ha contribuito con circa 4 ore di integrazione usando la sua ASI294MC Pro su un telescopio C11 (a sua volta gentilmente prestato da Davide Minotti).
 
-Stacked and processed in PixInsight.
+Sommato ed elaborato in PixInsight.
