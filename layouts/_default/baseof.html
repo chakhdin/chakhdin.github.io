@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
-    <title>{{ .Title }} | {{ site.Title }}</title>
+    {{ $pageTitle := .Title }}
+    {{ if eq .Kind "404" }}{{ $pageTitle = i18n "not_found_title" }}{{ end }}
+    <title>{{ $pageTitle }} | {{ site.Title }}</title>
 
     {{ $description := .Description }}
     {{ if not $description }}{{ $description = .Summary }}{{ end }}
@@ -24,14 +26,14 @@
     {{ end }}
 
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-    <meta property="og:title" content="{{ .Title }} | {{ site.Title }}">
+    <meta property="og:title" content="{{ $pageTitle }} | {{ site.Title }}">
     {{ if $description }}<meta property="og:description" content="{{ $description }}">{{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ $ogImage := .Resources.GetMatch .Params.featured_image }}
     {{ if $ogImage }}{{ $ogImage = $ogImage.Fill "1200x630 Center jpg q85" }}<meta property="og:image" content="{{ $ogImage.Permalink }}">{{ end }}
 
     <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
-    <meta name="twitter:title" content="{{ .Title }} | {{ site.Title }}">
+    <meta name="twitter:title" content="{{ $pageTitle }} | {{ site.Title }}">
     {{ if $description }}<meta name="twitter:description" content="{{ $description }}">{{ end }}
     {{ if $ogImage }}<meta name="twitter:image" content="{{ $ogImage.Permalink }}">{{ end }}
 
@@ -68,6 +70,7 @@
             
             <div class="flex items-center mt-4 md:mt-0 space-x-8">
                 <nav class="space-x-6 font-medium">
+                    <a href="{{ relLangURL "latest/" }}" class="hover:text-white transition">{{ i18n "nav_latest" }}</a>
                     <a href="{{ relLangURL "dso/" }}" class="hover:text-white transition">{{ i18n "nav_dso" }}</a>
                     <a href="{{ relLangURL "sso/" }}" class="hover:text-white transition">{{ i18n "nav_sso" }}</a>
                     <a href="{{ relLangURL "equipment/" }}" class="hover:text-white transition">{{ i18n "nav_equipment" }}</a>

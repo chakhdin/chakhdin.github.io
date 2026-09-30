@@ -4,6 +4,8 @@ other = "Deep Sky"
 other = "Solar System"
 [nav_equipment]
 other = "By Equipment"
+[nav_latest]
+other = "Latest"
 
 [back_home]
 other = "Back to Home"
@@ -58,3 +60,8 @@ other = "{{ .Count }} objects"
 other = "Fullscreen image viewer"
 [fullscreen_hint]
 other = "ESC: Close | Arrows: Navigate"
+
+[not_found_title]
+other = "Lost in Space"
+[not_found_message]
+other = "This page has drifted out of frame. Let's get you back on target."

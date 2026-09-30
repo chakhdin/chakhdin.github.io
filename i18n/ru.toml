@@ -4,6 +4,8 @@ other = "Дальний космос"
 other = "Солнечная система"
 [nav_equipment]
 other = "По оборудованию"
+[nav_latest]
+other = "Новое"
 
 [back_home]
 other = "На главную"
@@ -60,3 +62,8 @@ other = "{{ .Count }} объекта"
 other = "Просмотр изображения на весь экран"
 [fullscreen_hint]
 other = "ESC: Закрыть | Стрелки: Навигация"
+
+[not_found_title]
+other = "Затеряны в космосе"
+[not_found_message]
+other = "Эта страница вышла из кадра. Вернёмся к цели."
