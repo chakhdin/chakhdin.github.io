@@ -30,20 +30,33 @@
     {{ if $description }}<meta property="og:description" content="{{ $description }}">{{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ $ogImage := .Resources.GetMatch .Params.featured_image }}
+    {{ $ogImageAlt := .Title }}
     {{/* Pages without their own featured_image (home, /latest/, taxonomy lists)
          fall back to the most recently published photo, so a share of the
          homepage URL still carries a preview image instead of none at all. */}}
     {{ if not $ogImage }}
     {{ with (where site.RegularPages "Params.featured_image" "!=" nil).ByDate.Reverse }}
-    {{ with index . 0 }}{{ $ogImage = .Resources.GetMatch .Params.featured_image }}{{ end }}
+    {{ with index . 0 }}
+    {{ $ogImage = .Resources.GetMatch .Params.featured_image }}
+    {{ $ogImageAlt = .Title }}
     {{ end }}
     {{ end }}
-    {{ if $ogImage }}{{ $ogImage = $ogImage.Fill "1200x630 Center jpg q85" }}<meta property="og:image" content="{{ $ogImage.Permalink }}">{{ end }}
+    {{ end }}
+    {{ if $ogImage }}
+    {{ $ogImage = $ogImage.Fill "1200x630 Center jpg q85" }}
+    <meta property="og:image" content="{{ $ogImage.Permalink }}">
+    <meta property="og:image:width" content="{{ $ogImage.Width }}">
+    <meta property="og:image:height" content="{{ $ogImage.Height }}">
+    <meta property="og:image:alt" content="{{ $ogImageAlt }}">
+    {{ end }}
 
     <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
     <meta name="twitter:title" content="{{ $pageTitle }} | {{ site.Title }}">
     {{ if $description }}<meta name="twitter:description" content="{{ $description }}">{{ end }}
-    {{ if $ogImage }}<meta name="twitter:image" content="{{ $ogImage.Permalink }}">{{ end }}
+    {{ if $ogImage }}
+    <meta name="twitter:image" content="{{ $ogImage.Permalink }}">
+    <meta name="twitter:image:alt" content="{{ $ogImageAlt }}">
+    {{ end }}
 
     <link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}">
