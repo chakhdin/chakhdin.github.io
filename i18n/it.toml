@@ -4,6 +4,8 @@ other = "Cielo Profondo"
 other = "Sistema Solare"
 [nav_equipment]
 other = "Per Attrezzatura"
+[nav_latest]
+other = "Ultime"
 
 [back_home]
 other = "Torna alla Home"
@@ -58,3 +60,8 @@ other = "{{ .Count }} oggetti"
 other = "Visualizzatore immagine a schermo intero"
 [fullscreen_hint]
 other = "ESC: Chiudi | Frecce: Naviga"
+
+[not_found_title]
+other = "Persi nello Spazio"
+[not_found_message]
+other = "Questa pagina è uscita dall'inquadratura. Torniamo a puntare l'obiettivo."

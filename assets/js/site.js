@@ -61,7 +61,9 @@ function initMedia() {
 }
 
 function updatePrefetchLinks(doc) {
-    document.querySelectorAll('link[rel="prefetch"][data-pjax]').forEach((el) => el.remove());
+    // Also removes the server-rendered prefetch links from the very first page
+    // load, which carry no data-pjax marker, so they don't linger forever.
+    document.querySelectorAll('link[rel="prefetch"]').forEach((el) => el.remove());
     doc.querySelectorAll('link[rel="prefetch"]').forEach((el) => {
         const clone = el.cloneNode();
         clone.setAttribute('data-pjax', '');

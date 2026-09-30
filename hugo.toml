@@ -42,20 +42,3 @@ defaultContentLanguage = "en"
     label = "RU"
     title = "Астрофотография Сергея"
     weight = 3
-
-# --- Navigation Menus ---
-
-[[languages.en.menu.main]]
-  name = "Latest"
-  url = "/latest/"
-  weight = 10
-
-[[languages.it.menu.main]]
-  name = "Ultime"
-  url = "/it/latest/"
-  weight = 10
-
-[[languages.ru.menu.main]]
-  name = "Новое"
-  url = "/ru/latest/"
-  weight = 10
