@@ -30,6 +30,14 @@
     {{ if $description }}<meta property="og:description" content="{{ $description }}">{{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ $ogImage := .Resources.GetMatch .Params.featured_image }}
+    {{/* Pages without their own featured_image (home, /latest/, taxonomy lists)
+         fall back to the most recently published photo, so a share of the
+         homepage URL still carries a preview image instead of none at all. */}}
+    {{ if not $ogImage }}
+    {{ with (where site.RegularPages "Params.featured_image" "!=" nil).ByDate.Reverse }}
+    {{ with index . 0 }}{{ $ogImage = .Resources.GetMatch .Params.featured_image }}{{ end }}
+    {{ end }}
+    {{ end }}
     {{ if $ogImage }}{{ $ogImage = $ogImage.Fill "1200x630 Center jpg q85" }}<meta property="og:image" content="{{ $ogImage.Permalink }}">{{ end }}
 
     <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
