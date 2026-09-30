@@ -13,13 +13,28 @@ import { s3, bucket } from "./r2-client.mjs";
 
 const contentDir = path.resolve(import.meta.dirname, "..", "content");
 const CONCURRENCY = 8;
+const MAX_ATTEMPTS = 4;
+
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 async function fetchOne(key) {
     const dest = path.join(contentDir, key);
     await mkdir(path.dirname(dest), { recursive: true });
-    const got = await s3.send(new GetObjectCommand({ Bucket: bucket, Key: key }));
-    await writeFile(dest, await got.Body.transformToByteArray());
-    console.log(`fetched ${key}`);
+    for (let attempt = 1; ; attempt++) {
+        try {
+            const got = await s3.send(new GetObjectCommand({ Bucket: bucket, Key: key }));
+            await writeFile(dest, await got.Body.transformToByteArray());
+            console.log(`fetched ${key}`);
+            return;
+        } catch (err) {
+            if (attempt >= MAX_ATTEMPTS) throw err;
+            const delay = 500 * 2 ** (attempt - 1);
+            console.warn(`retrying ${key} after error (attempt ${attempt}/${MAX_ATTEMPTS}): ${err.message}`);
+            await sleep(delay);
+        }
+    }
 }
 
 async function runPool(keys, limit) {
