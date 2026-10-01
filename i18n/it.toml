@@ -37,8 +37,6 @@ other = "Sfoglia per Tipo di Oggetto"
 [browse_equipment]
 other = "Sfoglia per Attrezzatura"
 
-[wip_badge]
-other = "Lavori in Corso"
 [wip_message]
 other = "Nuove immagini per questa sezione sono in arrivo. Torna presto a trovarci!"
 
@@ -55,6 +53,13 @@ other = "Risultato Elaborato"
 [object_count]
 one = "{{ .Count }} oggetto"
 other = "{{ .Count }} oggetti"
+
+[image_count]
+one = "{{ .Count }} immagine"
+other = "{{ .Count }} immagini"
+[video_count]
+one = "{{ .Count }} video"
+other = "{{ .Count }} video"
 
 [fullscreen_view]
 other = "Visualizzatore immagine a schermo intero"

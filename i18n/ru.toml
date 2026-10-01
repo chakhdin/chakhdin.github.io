@@ -37,8 +37,6 @@ other = "Обзор по Типу Объекта"
 [browse_equipment]
 other = "Обзор по Оборудованию"
 
-[wip_badge]
-other = "В процессе"
 [wip_message]
 other = "Новые изображения для этого раздела скоро появятся. Загляните позже!"
 
@@ -57,6 +55,17 @@ one = "{{ .Count }} объект"
 few = "{{ .Count }} объекта"
 many = "{{ .Count }} объектов"
 other = "{{ .Count }} объекта"
+
+[image_count]
+one = "{{ .Count }} изображение"
+few = "{{ .Count }} изображения"
+many = "{{ .Count }} изображений"
+other = "{{ .Count }} изображения"
+[video_count]
+one = "{{ .Count }} видео"
+few = "{{ .Count }} видео"
+many = "{{ .Count }} видео"
+other = "{{ .Count }} видео"
 
 [fullscreen_view]
 other = "Просмотр изображения на весь экран"
