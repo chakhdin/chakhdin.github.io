@@ -37,8 +37,6 @@ other = "Browse by Object Type"
 [browse_equipment]
 other = "Browse by Equipment"
 
-[wip_badge]
-other = "Work in Progress"
 [wip_message]
 other = "New images for this section are on their way. Check back soon!"
 
@@ -55,6 +53,13 @@ other = "Processed Result"
 [object_count]
 one = "{{ .Count }} object"
 other = "{{ .Count }} objects"
+
+[image_count]
+one = "{{ .Count }} image"
+other = "{{ .Count }} images"
+[video_count]
+one = "{{ .Count }} video"
+other = "{{ .Count }} videos"
 
 [fullscreen_view]
 other = "Fullscreen image viewer"

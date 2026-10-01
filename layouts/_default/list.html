@@ -16,14 +16,6 @@
     </div>
 
     <header class="mb-12">
-        {{ if .Params.wip }}
-        <span class="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold uppercase tracking-widest">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-8.25 3.75h.008v.008h-.008v-.008z" />
-            </svg>
-            {{ i18n "wip_badge" }}
-        </span>
-        {{ end }}
         <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">{{ .Title }}</h1>
         {{ with .Description }}
         <p class="text-xl text-gray-400 max-w-3xl">{{ . }}</p>
@@ -53,7 +45,17 @@
                 <p class="text-gray-500 text-sm mt-2 line-clamp-2">{{ .Params.description }}</p>
                 {{ $meta := slice }}
                 {{ if .IsSection }}
-                    {{ with len .RegularPagesRecursive }}{{ $meta = $meta | append (i18n "object_count" .) }}{{ end }}
+                    {{ if eq .Section "sso" }}
+                        {{/* Solar-system sections count images and videos separately: a page with a
+                             video is a video, every other page is an image. */}}
+                        {{ $videos := 0 }}
+                        {{ range .RegularPagesRecursive }}{{ if .Params.video }}{{ $videos = add $videos 1 }}{{ end }}{{ end }}
+                        {{ $images := sub (len .RegularPagesRecursive) $videos }}
+                        {{ if $images }}{{ $meta = $meta | append (i18n "image_count" $images) }}{{ end }}
+                        {{ if $videos }}{{ $meta = $meta | append (i18n "video_count" $videos) }}{{ end }}
+                    {{ else }}
+                        {{ with len .RegularPagesRecursive }}{{ $meta = $meta | append (i18n "object_count" .) }}{{ end }}
+                    {{ end }}
                 {{ else if eq .Section "sso" }}
                     {{/* Planetary/lunar/solar shots: the exposure figure is synthetic (a video
                          capture, not a meaningful integration time), so the card shows the actual
