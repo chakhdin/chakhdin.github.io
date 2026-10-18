@@ -19,7 +19,7 @@
     "@type" "ImageObject"
     "contentUrl" .Permalink
     "name" $.Title
-    "description" ($.Params.description | default $.Summary | plainify)
+    "description" ($.Params.description | default $.Summary | plainify | htmlUnescape)
     "dateCreated" $captureDate
     "datePublished" ($.Date.Format "2006-01-02")
     "width" .Width
