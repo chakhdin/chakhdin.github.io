@@ -10,7 +10,9 @@
 
     {{ $description := .Description }}
     {{ if not $description }}{{ $description = .Summary }}{{ end }}
-    {{ $description = $description | plainify | strings.TrimSpace | truncate 160 }}
+    {{/* plainify keeps the typographer's entities (&rsquo;); unescape them so
+         the attribute does not escape them a second time. */}}
+    {{ $description = $description | plainify | htmlUnescape | strings.TrimSpace | truncate 160 }}
     {{ if $description }}<meta name="description" content="{{ $description }}">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ $defaultLang := hugo.Sites.Default.Language.Lang }}
