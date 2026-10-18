@@ -170,7 +170,13 @@ window.addEventListener('popstate', () => {
     loadPage(window.location.href, false);
 });
 
+// Elements that use the arrow keys themselves: seeking a video, moving a
+// caret, picking an option.
+const OWNS_ARROW_KEYS = 'input, textarea, select, video, audio, [contenteditable]';
+
 document.addEventListener('keydown', (e) => {
+    // Already handled, e.g. by the version tabs moving between versions.
+    if (e.defaultPrevented) return;
     const overlay = document.getElementById('fullscreen-overlay');
     if (e.key === 'Escape') {
         // On a single-image page, Escape closes the fullscreen zoom if it's open;
@@ -183,7 +189,8 @@ document.addEventListener('keydown', (e) => {
             if (backLink) backLink.click();
         }
     }
-    if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    if (!(e.target instanceof Element && e.target.closest(OWNS_ARROW_KEYS))) {
         const nextBtn = document.getElementById('nav-next');
         const prevBtn = document.getElementById('nav-prev');
         if (e.key === 'ArrowLeft' && nextBtn) { nextBtn.click(); }
