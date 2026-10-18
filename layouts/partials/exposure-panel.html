@@ -22,7 +22,7 @@
     </h3>
     <div class="flex flex-wrap gap-3">
         {{ range .equipment }}
-        <a href="{{ "/equipment/" | relURL }}{{ . | urlize }}/" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md">
+        <a href="{{ printf "equipment/%s/" (. | urlize) | relLangURL }}" class="bg-gray-800 border border-gray-700 rounded-xl px-5 py-3 text-white font-bold text-sm hover:bg-gray-700 hover:border-blue-500/50 hover:text-blue-400 transition-all shadow-md">
             {{ . }}
         </a>
         {{ end }}
