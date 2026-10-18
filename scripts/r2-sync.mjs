@@ -20,7 +20,11 @@ function sleep(ms) {
 }
 
 async function fetchOne(key) {
-    const dest = path.join(contentDir, key);
+    const dest = path.resolve(contentDir, key);
+    // Keys come from the bucket; never write outside content/.
+    if (!dest.startsWith(contentDir + path.sep)) {
+        throw new Error(`Refusing key outside content/: ${key}`);
+    }
     await mkdir(path.dirname(dest), { recursive: true });
     for (let attempt = 1; ; attempt++) {
         try {
