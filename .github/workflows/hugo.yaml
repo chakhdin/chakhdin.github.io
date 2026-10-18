@@ -22,12 +22,12 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.166.0'
+          hugo-version: '0.168.0'
           extended: true
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: '22'
+          node-version: '24'
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
