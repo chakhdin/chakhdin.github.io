@@ -10,7 +10,7 @@ other = "Новое"
 [back_home]
 other = "На главную"
 [back_to]
-other = "Назад в {{ .Title }}"
+other = "← {{ .Title }}"
 
 [total_exposure]
 other = "Общая экспозиция"
