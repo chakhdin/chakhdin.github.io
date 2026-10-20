@@ -2,7 +2,7 @@
 title: "LDN 1295: Туманность Жираф"
 date: 2026-09-18T23:18:00Z
 categories: ["Туманности"]
-equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "Глубокий широкоугольный снимок LDN 1295, известной как туманность Жираф, демонстрирующий плотную темную поглощающую пыль на фоне богатого звездного поля в созвездии Жирафа."
 total_exposure: "10h 27m"
 focal_length: "455mm"

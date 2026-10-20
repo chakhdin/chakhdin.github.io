@@ -2,7 +2,7 @@
 title: "LDN 1295: The Giraffe Nebula"
 date: 2026-09-18T23:18:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "A deep wide-field exposure of LDN 1295, known as the Giraffe Nebula, highlighting dense dark absorption dust silhouetted against a rich star field in Camelopardalis."
 total_exposure: "10h 27m"
 focal_length: "455mm"

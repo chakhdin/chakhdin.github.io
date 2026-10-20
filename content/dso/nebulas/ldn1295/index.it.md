@@ -2,7 +2,7 @@
 title: "LDN 1295: La Nebulosa Giraffa"
 date: 2026-09-18T23:18:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "Una profonda esposizione a largo campo di LDN 1295, nota come Nebulosa Giraffa, che mette in risalto la densa polvere oscura che si staglia contro un ricco campo stellare nella Giraffa."
 total_exposure: "10h 27m"
 focal_length: "455mm"
