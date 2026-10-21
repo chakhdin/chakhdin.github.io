@@ -76,3 +76,8 @@ other = "ESC: Закрыть | Стрелки: Навигация"
 other = "Затеряны в космосе"
 [not_found_message]
 other = "Эта страница вышла из кадра. Вернёмся к цели."
+
+[quote_open]
+other = "«"
+[quote_close]
+other = "»"

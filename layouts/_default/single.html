@@ -79,6 +79,9 @@
         {{ $versions = slice (dict "id" "main" "label" "" "image" $hero "srcset" $srcset "data" .Params) }}
     {{ end }}
     {{ $multi := gt (len $versions) 1 }}
+    {{/* Alt text: an explicit "alt" param wins; otherwise title plus a short description. */}}
+    {{ $alt := .Title }}
+    {{ with .Params.alt }}{{ $alt = . }}{{ else }}{{ with $.Params.description }}{{ $alt = printf "%s. %s" $.Title (. | plainify | htmlUnescape | truncate 110) }}{{ end }}{{ end }}
     {{ $first := index $versions 0 }}
 
     <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
@@ -101,7 +104,7 @@
                 {{ end }}
             {{ else }}
                 {{ with $v.image }}
-                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
+                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
                 {{ end }}
             {{ end }}
             {{ end }}
@@ -147,7 +150,7 @@
         <div class="p-8 md:p-12">
             <header class="mb-10 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">{{ .Title }}</h1>
-                <p class="text-xl text-blue-300 font-medium italic">"{{ .Params.description }}"</p>
+                <p class="text-xl text-blue-300 font-medium italic">{{ i18n "quote_open" }}{{ .Params.description }}{{ i18n "quote_close" }}</p>
             </header>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -170,7 +173,7 @@
                             <span class="w-8 h-px bg-blue-500 mr-3"></span>
                             {{ i18n "processed_image_heading" }}
                         </h3>
-                        <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $.Title }}" loading="lazy" class="w-full rounded-2xl border border-gray-800" style="aspect-ratio: {{ $processed.Width }} / {{ $processed.Height }};">
+                        <img src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $alt }}" loading="lazy" class="w-full rounded-2xl border border-gray-800" style="aspect-ratio: {{ $processed.Width }} / {{ $processed.Height }};">
                     </div>
                     {{ end }}
                     {{ end }}

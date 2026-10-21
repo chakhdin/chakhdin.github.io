@@ -9,7 +9,7 @@ focal_length: "455mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"
-    dates: ["2025-08-30"]	
+    dates: ["2025-08-30"]
 featured_image: "LDN 1228_1.resample.annotated.png"
 filters:
   - name: "L"

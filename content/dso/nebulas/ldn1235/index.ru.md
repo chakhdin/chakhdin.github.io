@@ -9,7 +9,7 @@ focal_length: "455mm"
 locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
     bortle: "Класс 4"
-    dates: ["2024-11-01"]	
+    dates: ["2024-11-01"]
 featured_image: "LDN1235_1.annotated.png"
 filters:
   - name: "L"

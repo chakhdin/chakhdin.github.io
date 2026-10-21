@@ -70,3 +70,8 @@ other = "ESC: Close | Arrows: Navigate"
 other = "Lost in Space"
 [not_found_message]
 other = "This page has drifted out of frame. Let's get you back on target."
+
+[quote_open]
+other = "“"
+[quote_close]
+other = "”"
