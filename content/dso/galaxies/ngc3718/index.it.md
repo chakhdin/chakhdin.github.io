@@ -12,7 +12,7 @@ locations:
     dates: ["2025-04-24"]
   - name: "Il Pratone, Lombardia, Italia"
     bortle: "Classe 4"
-    dates: ["2024-05-09"]	
+    dates: ["2024-05-09"]
 featured_image: "NGC3718_2.annotated.png"
 filters:
   - name: "L"

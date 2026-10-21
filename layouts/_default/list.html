@@ -42,7 +42,7 @@
             </div>
             <div class="p-6">
                 <h2 class="text-2xl font-bold text-white group-hover:text-blue-400 transition">{{ .Title }}</h2>
-                <p class="text-gray-500 text-sm mt-2 line-clamp-2">{{ .Params.description }}</p>
+                <p class="text-gray-400 text-sm mt-2 line-clamp-2">{{ .Params.description }}</p>
                 {{ $meta := slice }}
                 {{ if .IsSection }}
                     {{ if eq .Section "sso" }}
@@ -61,7 +61,7 @@
                          capture, not a meaningful integration time), so the card shows the actual
                          capture date instead of exposure + year. */}}
                     {{ with .Params.locations }}{{ with index . 0 }}{{ with .dates }}{{ with index . 0 }}
-                        {{ $meta = $meta | append (time.Format ":date_medium" .) }}
+                        {{ $meta = $meta | append (time.AsTime . | time.Format "2006-01-02") }}
                     {{ end }}{{ end }}{{ end }}{{ end }}
                 {{ else }}
                     {{/* With several versions, the card shows their combined exposure. */}}

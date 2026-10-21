@@ -9,7 +9,7 @@ focal_length: "2000mm"
 locations:
   - name: "Иль Пратоне, Ломбардия, Италия"
     bortle: "Класс 4"
-    dates: ["2024-07-10"]	
+    dates: ["2024-07-10"]
 featured_image: "NGC6781_3.bxt.annotated.png"
 filters:
   - name: "L"

@@ -9,7 +9,7 @@ focal_length: ""
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"
-    dates: ["2025-09-19"]	
+    dates: ["2025-09-19"]
 featured_image: "IC1848_1.resample.annotated.png"
 filters:
   - name: "Ha (6nm)"
