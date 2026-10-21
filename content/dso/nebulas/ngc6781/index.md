@@ -9,7 +9,7 @@ focal_length: "2000mm"
 locations:
   - name: "Il Pratone, Lombardy, Italy"
     bortle: "Class 4"
-    dates: ["2024-07-10"]	
+    dates: ["2024-07-10"]
 featured_image: "NGC6781_3.bxt.annotated.png"
 filters:
   - name: "L"

@@ -2,6 +2,7 @@ baseURL = "https://chakhdin.github.io/"
 locale = "en-us"
 title = "Sergey's Astrophotography"
 defaultContentLanguage = "en"
+enableRobotsTXT = true
 
 [taxonomies]
   category = "categories"
