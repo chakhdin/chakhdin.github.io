@@ -9,7 +9,7 @@ focal_length: "455mm"
 locations:
   - name: "Astrobrallo, Lombardy, Italy"
     bortle: "Class 4"
-    dates: ["2025-07-28"]	
+    dates: ["2025-07-28"]
 featured_image: "Sh2 157_4.resample.annotated.png"
 filters:
   - name: "Ha"

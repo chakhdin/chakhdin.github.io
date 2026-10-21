@@ -70,3 +70,8 @@ other = "ESC: Chiudi | Frecce: Naviga"
 other = "Persi nello Spazio"
 [not_found_message]
 other = "Questa pagina è uscita dall'inquadratura. Torniamo a puntare l'obiettivo."
+
+[quote_open]
+other = "«"
+[quote_close]
+other = "»"

@@ -9,10 +9,10 @@ focal_length: "455mm"
 locations:
   - name: "Astrobrallo, Lombardy, Italy"
     bortle: "Class 4"
-    dates: ["2025-07-31"]	
+    dates: ["2025-07-31"]
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
     bortle: "Class 4"
-    dates: ["2025-08-02"]	
+    dates: ["2025-08-02"]
 featured_image: "Sh2 114_2.crop.annotated.png"
 filters:
   - name: "Ha"
