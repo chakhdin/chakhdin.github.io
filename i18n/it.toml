@@ -2,6 +2,8 @@
 other = "Cielo Profondo"
 [nav_sso]
 other = "Sistema Solare"
+[nav_australia]
+other = "Australia"
 [nav_equipment]
 other = "Per Attrezzatura"
 [nav_latest]

@@ -6,7 +6,8 @@ Sergey's astrophotography gallery: a static **Hugo** site (Tailwind CSS 4), tril
 Hugo 0.168.0 (extended), Node 24. Match them locally.
 
 ## Structure
-- `content/dso/{nebulas,galaxies,clusters}/<slug>/` and `content/sso/<body>/<slug>/` (jupiter, mars, moon, sun, saturn, venus, uranus, neptune, comets); `content/latest` lists recent pages by `date`.
+- `content/dso/{nebulas,galaxies,clusters}/<slug>/`, `content/sso/<body>/<slug>/` (jupiter, mars, moon, sun, saturn, venus, uranus, neptune, comets) and `content/australia/<slug>/` (Swan Reach remote rig, flat); `content/latest` lists recent pages by `date`.
+- A new top-level section needs: `_index` in 3 languages with a cover PNG, a nav link in `layouts/_default/baseof.html`, `nav_<name>` in the 3 `i18n` files, and its name in the section list of `layouts/index.html`.
 - Each image is a page bundle: `index.md` (EN), `index.it.md`, `index.ru.md` plus the PNG.
 - `layouts/` (`_default/{baseof,list,single,terms}.html`, `latest/`, `partials/`, `robots.txt`), `i18n/{en,it,ru}.toml`.
 - Taxonomies: `categories` and `equipment` (equipment names become taxonomy pages, so they must match existing ones exactly).
