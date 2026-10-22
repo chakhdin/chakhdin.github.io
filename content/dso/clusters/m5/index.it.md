@@ -58,8 +58,10 @@ versions:
         subs: "31 x 300s"
         integration: "2h 35m"
 ---
-Questa immagine presenta M5, uno spettacolare ammasso globulare nella costellazione del Serpente, situato a circa 24.500 anni luce di distanza. Con un diametro di circa 165 anni luce, è uno degli ammassi globulari più grandi conosciuti e, con un'età stimata di circa 13 miliardi di anni, è anche uno degli oggetti più antichi della nostra galassia. Fu scoperto da Gottfried Kirch nel 1702.
+Questa immagine presenta M5, uno spettacolare ammasso globulare nella costellazione del Serpente, situato a circa 24.500 anni luce di distanza. Con un diametro di circa 160 anni luce, è uno degli ammassi globulari più grandi conosciuti e, con un'età stimata di oltre 10 miliardi di anni, è anche uno degli oggetti più antichi della nostra galassia. Fu scoperto da Gottfried Kirch nel 1702.
 
 L'immagine mostra il nucleo brillante e fortemente concentrato dell'ammasso, circondato da un ampio alone di stelle risolte. I colori naturali delle stelle sono ben preservati, con numerose giganti rosse arancioni che spiccano sul bagliore bianco-azzurro della densa popolazione stellare, offrendo uno sguardo vivido su uno dei sistemi stellari più antichi della Via Lattea.
+
+M5 ha una magnitudine apparente di 5,6 e un diametro apparente di circa 23 primi d'arco. William Herschel la risolse in singole stelle nel 1791, contandone circa 200. Contiene 105 stelle variabili note, 97 delle quali di tipo RR Lyrae, e due pulsar al millisecondo.
 
 Sommato ed elaborato in PixInsight.

@@ -29,4 +29,6 @@ Questa immagine cattura IC 1848, popolarmente conosciuta come la Nebulosa Anima 
 
 La nebulosa ospita diversi ammassi stellari aperti, come lo stesso IC 1848, le cui intense radiazioni e venti stellari hanno scavato le vaste cavità e le strutture a colonna visibili nel gas idrogeno incandescente. Questa profonda esposizione combina dati a banda stretta Idrogeno-alfa per evidenziare i dettagli strutturali delle nubi ionizzate con dati RGB per garantire colori naturali delle stelle e profondità del fondo cielo.
 
+IC 1848 è catalogata anche come Sh2-199 e Westerhout 5 (W5) ed è nota anche come Nebulosa Embrione. Occupa circa 150 per 75 primi d'arco e la sua distanza è indicata tra 6.500 e 7.500 anni luce. Gli ammassi Collinder 33 e 34 si trovano nella «testa» e IC 1848 (Collinder 32) nel «corpo». Insieme alla Nebulosa Cuore forma la coppia spesso chiamata «Heart and Soul», parte del complesso W3/W4/W5.
+
 Sommato ed elaborato in PixInsight.

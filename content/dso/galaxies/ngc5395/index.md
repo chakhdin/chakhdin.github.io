@@ -19,4 +19,6 @@ filters:
 ---
 This image captures Arp 84, an interacting galaxy pair commonly known as the Heron Galaxy. The larger, face-on spiral is NGC 5395, which exhibits a bright core and tightly wound dusty spiral arms. It is gravitationally interacting with its smaller companion, NGC 5394, which features prominent tidal tail structures extending away from the main pair. This galactic dance, located approximately 160 million light-years away in the constellation Canes Venatici, triggers intense star formation visible as blue-tinted regions along the outer spiral arms. Several distant background galaxies are also visible scattered across the field.
 This image was acquired in collaboration with Federico Palaia, who contributed about 4 hours of integration using his ASI294MC Pro on a C11 telescope (which in turn was kindly lent by Davide Minotti).
+NGC 5395 is about 140,000 light-years across, while the barred spiral NGC 5394 measures about 90,000 light-years. William Herschel discovered both galaxies on 16 May 1787. Arp 84 is the 84th entry of Halton Arp's Atlas of Peculiar Galaxies.
+
 Stacked and processed in PixInsight.

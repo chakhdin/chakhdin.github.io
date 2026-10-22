@@ -29,4 +29,6 @@ Questa profonda esposizione a largo campo cattura una regione del cielo notturno
 
 In alto a destra è chiaramente visibile l'iconica Nebulosa Bolla (NGC 7635), formata dal feroce vento stellare di una massiccia stella centrale che spinge contro la nube molecolare circostante. Appena sopra di essa si trova l'ammasso stellare aperto M52 (l'Ammasso Scorpione), luminoso e compatto, che contrasta magnificamente la profonda emissione rossa dell'idrogeno con la scintillante luce blu e bianca delle sue centinaia di giovani stelle. Ulteriori e più piccole chiazze di emissione sono sparse in tutto questo paesaggio cosmico incredibilmente dinamico.
 
+Si stima che Sh2-157 disti circa 11.000 anni luce, anche se una fonte indica 8.000 anni luce. L'ammasso aperto M52, scoperto da Charles Messier nel 1774 e noto anche come NGC 7654 o Ammasso dello Scorpione, è molto più vicino, a circa 4.600 anni luce: ha una magnitudine apparente di 7,3, un'età di circa 158 milioni di anni e un raggio di circa 9,5 anni luce.
+
 Sommato ed elaborato in PixInsight.

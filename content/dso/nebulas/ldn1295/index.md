@@ -3,7 +3,7 @@ title: "LDN 1295: The Giraffe Nebula"
 date: 2026-09-18T23:18:00Z
 categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
-description: "A deep wide-field exposure of LDN 1295, known as the Giraffe Nebula, highlighting dense dark absorption dust silhouetted against a rich star field in Camelopardalis."
+description: "A deep wide-field exposure of LDN 1295, known as the Giraffe Nebula, highlighting dense dark absorption dust silhouetted against a rich star field in Cassiopeia."
 total_exposure: "10h 27m"
 focal_length: "455mm"
 locations:
@@ -25,7 +25,7 @@ filters:
     subs: "17 x 180s"
     integration: "51m"
 ---
-This deep exposure showcases LDN 1295, popularly known as the Giraffe Nebula, situated in the faint circumpolar constellation Camelopardalis. Unlike glowing emission nebulae, this object is a dense molecular dark nebula cataloged by Beverly Lynds. It is composed of interstellar dust grains and cold gas that physically obstruct the background starlight, creating prominent, sculpted lanes of darkness.
+This deep exposure showcases LDN 1295, popularly known as the Giraffe Nebula, situated in the constellation Cassiopeia. Unlike glowing emission nebulae, this object is a dense molecular dark nebula cataloged by Beverly Lynds. It is composed of interstellar dust grains and cold gas that physically obstruct the background starlight, creating prominent, sculpted lanes of darkness.
 
 Deep luminance integration was essential to reveal the soft gradients, delicate outer fringes, and subtle illumination along the dust structures. Combined with broadband RGB data for natural star colors, this field highlights the vast, quiet expanse of dust lanes threading across our Milky Way.
 

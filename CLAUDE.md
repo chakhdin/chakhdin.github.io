@@ -22,6 +22,7 @@ Hugo 0.168.0 (extended), Node 24. Match them locally.
 - Every image taken from Italy lists `NEQ6 Pro` in `equipment` without asking. Exception: the Swan Reach remote rig (Paramount ME, no NEQ6 Pro); see the skill.
 - Do not guess exposure figures; `total_exposure` is the sum of the filter integrations.
 - Dates in front matter are `YYYY-MM-DD`.
+- Every factual claim in a body text (distance, size, discoverer, year, magnitude, classification) must be checked against a source (Wikipedia plus ESO/NASA/ESA, SIMBAD or the literature) before it goes on the site. Where sources disagree, say so or give a range; never state it from memory. The Russian place name for Swan Reach is `Суон-Рич` (no official transcription exists; confirmed by the user).
 - Local cleanup after test builds: delete `public/` only. **Never delete `resources/_gen`** (image-processing cache, very slow to regenerate).
 - Uploading to R2, committing and pushing need the user's confirmation first. Commit messages in English, short, imperative.
 - Curation: execute literal instructions; do not ask about edge cases the user did not mention.

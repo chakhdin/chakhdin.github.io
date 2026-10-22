@@ -18,4 +18,6 @@ filters:
 ---
 Questa immagine mostra M16, la Nebulosa Aquila, una vasta nebulosa a emissione e regione H II situata nella costellazione del Serpente. Nel cuore della nebulosa si trovano i famosi "Pilastri della Creazione", imponenti colonne di polvere interstellare e gas che fungono da vivai attivi per la formazione stellare. L'intensa radiazione ultravioletta proveniente dall'ammasso aperto di stelle giovani e massicce illumina il gas idrogeno circostante, scavando la cavità e creando il vibrante bagliore rosso.
 
+M16 dista circa 5.700 anni luce e occupa circa 70 per 50 primi d'arco. Jean-Philippe de Chéseaux la scoprì nel 1745-46 e il suo ammasso stellare ha solo da 1 a 2 milioni di anni. I Pilastri della Creazione furono ripresi dal telescopio spaziale Hubble nel 1995 da Jeff Hester e Paul Scowen, e di nuovo nel 2014.
+
 Sommato ed elaborato in PixInsight.

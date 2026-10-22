@@ -20,4 +20,6 @@ Questa immagine cattura M13, il Grande Ammasso Globulare di Ercole, uno degli am
 
 L'immagine risolve le singole stelle dal rado alone esterno fino al nucleo affollato, preservandone i colori naturali: le giganti rosse, fredde ed evolute, brillano in caldi toni arancioni, in contrasto con le stelle blu più calde sparse in tutto l'ammasso. Registrato per la prima volta da Edmond Halley nel 1714, M13 è stato anche il destinatario del celebre messaggio radio di Arecibo del 1974.
 
+M13 ha una magnitudine apparente di 5,8 e un diametro apparente di circa 20 primi d'arco. Le sue stelle contengono solo circa il 5% del ferro del Sole e sono così fitte che le collisioni possono generare nuove stelle giovani, dette blue stragglers. Charles Messier la inserì nel suo catalogo il 1° giugno 1764.
+
 Sommato ed elaborato in PixInsight.

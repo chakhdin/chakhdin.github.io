@@ -20,4 +20,6 @@ This deep exposure captures LDN 1235, famously known as the Shark Nebula, locate
 
 Accompanying the "shark" are two beautiful blue reflection nebulae, vdB 149 and vdB 150, which are illuminated by nearby hot stars and perfectly highlight the edges of the dark dust. Adding further depth to the background, a distant spiral galaxy (PGC 67671) is visible to the right of the main nebula.
 
+The distance to the Shark Nebula is not well established: the two stars that light the reflection nebulae point to 330 to 370 parsecs (about 1,100 to 1,200 light-years), while popular sources quote much smaller values. vdB 149 is lit by the star BD+72 1018 and vdB 150 by BD+72 1020 (HD 210806), both of spectral type B8. Beverly Lynds listed the dark core as LDN 1235 in 1962 and the whole region as the bright nebula LBN 535 in 1965.
+
 Stacked and processed in PixInsight.

@@ -37,4 +37,6 @@ Dominating the center of the frame is M81, a grand-design spiral galaxy presenti
 
 Filling the vast spaces between and around these distant galaxies is the Integrated Flux Nebula. These faint, ghostly clouds of dust and gas reside much closer to home, sitting high above the galactic plane of our own Milky Way. Unlike traditional emission or reflection nebulae, the IFN is weakly illuminated by the combined faint glow of all the stars in the Milky Way rather than a single proximate light source. Bringing these faint tendrils out of the background darkness requires deep integration times and careful processing to preserve the bright galactic cores. Scattered throughout the surrounding field are numerous smaller, distant background galaxies.
 
+Johann Elert Bode discovered both M81 and M82 in 1774. M81 is about 12 million light-years away, roughly 96,000 light-years across, and the largest galaxy of the M81 Group. M82 is about 40,800 light-years across, and young stars form about ten times faster at its centre than in the whole Milky Way. Gravitational interactions between M81, M82 and NGC 3077 stripped hydrogen gas from all three galaxies, and M82's starburst is thought to have been triggered by the interaction with M81. In January 2014 the supernova SN 2014J appeared in M82.
+
 Stacked and processed in PixInsight.

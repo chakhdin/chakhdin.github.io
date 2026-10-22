@@ -20,4 +20,6 @@ This image captures M45, the Pleiades, also known as the Seven Sisters, one of t
 
 The cluster's brightest members are enveloped in a striking blue reflection nebula. Rather than being the remnant of the cloud from which the stars were born, this dust belongs to an unrelated interstellar cloud that the cluster is currently passing through, scattering the intense blue starlight. The image reveals the fine, streaky filaments of this dust, especially around Merope and Maia, as well as the fainter nebulosity extending into the surrounding field.
 
+M45 has an apparent magnitude of 1.6 and spans about 2 degrees of sky. It has more than 1,000 confirmed members, and its brightest star, Alcyone, shines at magnitude 2.9. The reflection nebula around Merope is catalogued as NGC 1435; the dust cloud is moving at about 18 km/s relative to the stars, which is why the cluster is regarded as passing through it.
+
 Stacked and processed in PixInsight.

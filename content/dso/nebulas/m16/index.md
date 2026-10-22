@@ -18,4 +18,6 @@ filters:
 ---
 This image showcases M16, the Eagle Nebula, a vast emission nebula and H II region located in the constellation Serpens. At the heart of the nebula lie the famous "Pillars of Creation," towering columns of interstellar dust and gas that serve as active star-forming nurseries. The intense ultraviolet radiation from the open cluster of young, massive stars illuminates the surrounding hydrogen gas, carving out the cavity and creating the vibrant red glow. 
 
+M16 is about 5,700 light-years away and spans about 70 by 50 arcminutes. Jean-Philippe de Chéseaux discovered it in 1745–46, and its cluster of stars is only 1 to 2 million years old. The Pillars of Creation were imaged by the Hubble Space Telescope in 1995 by Jeff Hester and Paul Scowen, and again in 2014.
+
 Stacked and processed in PixInsight.

@@ -20,4 +20,6 @@ Questa immagine cattura NGC 6781, ampiamente conosciuta come la Nebulosa Palla d
 
 Questa immagine è frutto di una collaborazione tra Rino Morra e Sergey Shakhdinarov.
 
+NGC 6781 dista circa 1.500 anni luce e misura 1,9 per 1,8 primi d'arco, con un raggio reale di circa 0,44 anni luce. William Herschel la scoprì il 30 luglio 1788. Si ritiene che il suo guscio di polvere abbia forma di barile e sia visto quasi dal polo. La nana bianca al centro, di magnitudine 16,9, discende da una stella di circa 2,5 masse solari che ha lasciato il ramo asintotico delle giganti circa 9.400 anni fa.
+
 Sommato ed elaborato in PixInsight.

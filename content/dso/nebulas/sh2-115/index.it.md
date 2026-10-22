@@ -27,6 +27,8 @@ filters:
 ---
 Questa profonda esposizione a largo campo mostra Sh2-115, una prominente ma debole nebulosa a emissione situata nella costellazione del Cigno. Il campo è incredibilmente ricco di gas idrogeno incandescente, caratterizzato da intricate reti di polvere cosmica e deboli Nebulose Brillanti di Lynds (LBN) che si estendono sullo sfondo.
 
-In questo campo profondo è visibile anche la piccola e distinta macchia circolare di Sh2-116 (spesso associata ad Abell 71). Un tempo classificata come nebulosa planetaria per via del suo aspetto morfologico, oggi è ampiamente riconosciuta come una compatta regione HII. Questa immagine evidenzia perfettamente le intense emissioni rosse dell'idrogeno-alfa stratificate con i colori naturali RGB delle stelle.
+In questo campo profondo è visibile anche la piccola e distinta macchia circolare di Sh2-116 (spesso associata ad Abell 71). Un tempo classificata come nebulosa planetaria per via del suo aspetto morfologico, è stata riclassificata nel 1991 come compatta regione HII, anche se la sua classificazione è ancora discussa. Questa immagine evidenzia perfettamente le intense emissioni rosse dell'idrogeno-alfa stratificate con i colori naturali RGB delle stelle.
+
+Sh2-115 è catalogata anche come LBN 357 e 3C 416.1 e si trova a circa 2-2,5 gradi a nordovest di Deneb. La sua distanza è indicata in circa 3.000 parsec, circa 10.000 anni luce. È ionizzata soprattutto dall'ammasso aperto Berkeley 90, in cui la stella di tipo O LS III +46 12 è la responsabile.
 
 Sommato ed elaborato in PixInsight.

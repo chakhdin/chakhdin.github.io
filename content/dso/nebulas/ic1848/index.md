@@ -29,4 +29,6 @@ This image captures IC 1848, famously known as the Soul Nebula, located approxim
 
 The nebula is home to several open star clusters, such as IC 1848 itself, whose intense radiation and stellar winds have carved out the vast cavities and pillar-like structures seen in the glowing hydrogen gas. This deep exposure combines narrowband Hydrogen-alpha data to highlight the intricate structural details of the ionized clouds with RGB data to ensure natural star colors and background depth.
 
+IC 1848 is also catalogued as Sh2-199 and Westerhout 5 (W5), and is known as the Embryo Nebula too. It covers about 150 by 75 arcminutes, and its distance is quoted between 6,500 and 7,500 light-years. The clusters Collinder 33 and 34 lie in the "head" and IC 1848 (Collinder 32) in the "body". Together with the Heart Nebula it forms the pair often called "Heart and Soul", part of the W3/W4/W5 complex.
+
 Stacked and processed in PixInsight.

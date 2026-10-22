@@ -25,4 +25,6 @@ This deep image captures M51, the Whirlpool Galaxy, locked in an ongoing gravita
 
 The intense gravitational interaction with NGC 5195 is responsible for triggering this starburst activity and warping the structure of both galaxies. Notably, the depth of this exposure reveals the faint, expansive tidal streams and halos of gas and stars that surround the entire system, providing striking evidence of their cosmic collision.
 
+M51 is roughly 23 to 31 million light-years away, depending on the study, and about 77,000 light-years across. Charles Messier found it on 13 October 1773, and its spiral structure was first recognised by Lord Rosse with his 72-inch telescope at Birr Castle. NGC 5195 may have passed through the disc of M51 some 500 to 600 million years ago, and three supernovae have been observed in M51: SN 1994I, SN 2005cs and SN 2011dh.
+
 Stacked and processed in PixInsight.

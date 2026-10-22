@@ -23,4 +23,6 @@ This deep exposure captures the fascinating region around the dark nebula LDN 12
 
 Adding brilliant contrast to the scene is the planetary nebula PK 111+11.1, glowing brightly in teal and red in the upper right. Faint sweeps of red hydrogen emission, captured using the dual-band L-eXtreme filter, streak across the rich starry background, highlighting the complex and dynamic interstellar medium of this area.
 
+According to NASA's Astronomy Picture of the Day, vdB 152 is about 1,400 light-years away and lies at the tip of the dark Bok globule Barnard 175, part of the dusty complex nicknamed Wolf's Cave. The illuminating star appears to have wandered into the area by chance, since its velocity through space differs greatly from that of the cloud.
+
 Stacked and processed in PixInsight.

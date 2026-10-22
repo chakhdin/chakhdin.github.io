@@ -30,6 +30,8 @@ filters:
 ---
 Sh2-114, popularly known as the Flying Dragon Nebula, is a faint and complex emission nebula located in the constellation Cygnus. It features delicate, wispy filaments of glowing hydrogen gas that stretch across the star-rich background, creating an unmistakable silhouette of a mythical dragon taking flight across the cosmos. 
 
-The intricate, ribbon-like structures of this nebula are quite unusual and are likely the result of ancient supernova remnants or intense stellar winds from unseen massive stars violently interacting with the surrounding interstellar medium. This image combines deep Hydrogen-alpha data to reveal the structural details, layered with RGB data for natural star colors.
+The intricate, ribbon-like structures of this nebula are quite unusual. This image combines deep Hydrogen-alpha data to reveal the structural details, layered with RGB data for natural star colors.
+
+Sh2-114 is also catalogued as LBN 347 and lies about four degrees east-northeast of Sigma Cygni. Its distance is given as about 1,180 parsecs, roughly 3,800 light-years. The small bipolar planetary nebula Kronberger 26, at its north-eastern edge, is unrelated and appears there only by line-of-sight alignment.
 
 Stacked and processed in PixInsight.

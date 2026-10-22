@@ -18,6 +18,8 @@ filters:
 ---
 Questa immagine presenta M22, il Grande Ammasso del Sagittario, uno degli ammassi globulari più vicini alla Terra, a una distanza di circa 10.600 anni luce. Scoperto nel 1665 da Abraham Ihle, fu uno dei primissimi ammassi globulari mai registrati ed è tra i più luminosi dell'intero cielo.
 
-Poiché M22 si trova in direzione del bulge galattico, l'ammasso è incorniciato da uno sfondo straordinariamente ricco di stelle della Via Lattea, che riempiono l'intero campo in un arazzo di punti blu, bianchi e arancioni. Su questo sfondo affollato, il nucleo poco concentrato dell'ammasso spicca come una sfera luminosa e scintillante di centinaia di migliaia di stelle antiche.
+Poiché M22 si trova in direzione del bulge galattico, l'ammasso è incorniciato da uno sfondo straordinariamente ricco di stelle della Via Lattea, che riempiono l'intero campo in un arazzo di punti blu, bianchi e arancioni. Su questo sfondo affollato, il nucleo poco concentrato dell'ammasso spicca come una sfera luminosa e scintillante di stelle antiche.
+
+M22 ha un diametro apparente di circa 32 primi d'arco, pari a circa 100 anni luce, e un'età stimata di circa 12 miliardi di anni. È uno dei soli quattro ammassi globulari della Via Lattea noti per contenere una nebulosa planetaria, e osservazioni radio vi hanno individuato due buchi neri di 10-20 masse solari, confermati dal telescopio Chandra nel 2012.
 
 Sommato ed elaborato in PixInsight.

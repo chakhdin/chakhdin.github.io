@@ -27,6 +27,8 @@ filters:
 ---
 This deep wide-field exposure showcases Sh2-115, a prominent but faint emission nebula located in the constellation Cygnus. The field is incredibly rich in glowing hydrogen gas, featuring intricate networks of cosmic dust and faint Lynds Bright Nebulae (LBNs) spanning across the background. 
 
-Also visible in this deep field is the small, distinct circular patch of Sh2-116 (often associated with Abell 71). Once classified as a planetary nebula due to its morphological appearance, it is now widely recognized as a compact HII region. This image perfectly highlights the intense red hydrogen-alpha emissions layered with natural RGB star colors.
+Also visible in this deep field is the small, distinct circular patch of Sh2-116 (often associated with Abell 71). Once classified as a planetary nebula due to its morphological appearance, it was reclassified in 1991 as a compact HII region, although its classification is still discussed. This image perfectly highlights the intense red hydrogen-alpha emissions layered with natural RGB star colors.
+
+Sh2-115 is also catalogued as LBN 357 and 3C 416.1 and lies about 2 to 2.5 degrees north-west of Deneb. Its distance is given as about 3,000 parsecs, roughly 10,000 light-years. It is ionised mainly by the open cluster Berkeley 90, in which the O-type star LS III +46 12 is the responsible star.
 
 Stacked and processed in PixInsight.

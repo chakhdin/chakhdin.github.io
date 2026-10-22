@@ -58,8 +58,10 @@ versions:
         subs: "31 x 300s"
         integration: "2h 35m"
 ---
-This image presents M5, a spectacular globular cluster in the constellation Serpens, located roughly 24,500 light-years away. Spanning about 165 light-years, it is one of the larger globular clusters known, and with an estimated age of around 13 billion years, it is also one of the oldest objects in our galaxy. It was discovered by Gottfried Kirch in 1702.
+This image presents M5, a spectacular globular cluster in the constellation Serpens, located roughly 24,500 light-years away. Spanning about 160 light-years, it is one of the larger globular clusters known, and with an estimated age of more than 10 billion years, it is also one of the oldest objects in our galaxy. It was discovered by Gottfried Kirch in 1702.
 
 The image shows the cluster's intensely concentrated, brilliant core surrounded by a wide halo of resolved stars. The natural star colors are well preserved, with numerous orange red giants standing out against the bluish-white glow of the dense stellar population, offering a vivid glimpse into one of the Milky Way's most ancient stellar systems.
+
+M5 has an apparent magnitude of 5.6 and an apparent diameter of about 23 arcminutes. William Herschel resolved it into individual stars in 1791, counting around 200. It contains 105 known variable stars, 97 of them RR Lyrae stars, and two millisecond pulsars.
 
 Stacked and processed in PixInsight.
