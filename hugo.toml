@@ -41,5 +41,5 @@ enableRobotsTXT = true
 
   [languages.ru]
     label = "RU"
-    title = "Астрофотография Сергея"
+    title = "Астрофото Сергея"
     weight = 3
