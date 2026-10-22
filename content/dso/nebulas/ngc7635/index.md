@@ -29,4 +29,6 @@ This image highlights NGC 7635, famously known as the Bubble Nebula, located in 
 
 *Note: This image is a detailed crop taken from the wider field capture of the Lobster Claw Nebula (Sh2-157) and its surrounding region.*
 
+William Herschel discovered NGC 7635 in November 1787. The bubble has a radius of 3 to 5 light-years and the nebula spans about 15 by 8 arcminutes. Its central star, SAO 20575 (BD+60°2522), has a magnitude of 8.7 and a mass of about 44 solar masses. Estimates of the distance vary widely, from 7,100 to 11,000 light-years.
+
 Stacked and processed in PixInsight.

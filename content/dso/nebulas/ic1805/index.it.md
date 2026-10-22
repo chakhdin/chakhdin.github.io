@@ -38,4 +38,6 @@ Questa spettacolare immagine presenta IC 1805, famosa come la Nebulosa Cuore, ri
 
 I profondi dati a banda stretta, in cui lo Zolfo-II è mappato in rosso, l'Idrogeno-alfa in verde e l'Ossigeno-III in blu, rivelano le complesse dinamiche del gas incandescente e la sagoma delle oscure bande di polvere con dettagli sorprendenti. Per preservare un aspetto naturale per lo sfondo stellato, sono stati raccolti anche dati RGB a banda larga, miscelati specificamente per rendere le stelle nei loro colori reali.
 
+IC 1805 si trova nel Braccio di Perseo e si estende per quasi 2 gradi di cielo. William Herschel la scoprì il 3 novembre 1787. Melotte 15 contiene alcune stelle di quasi 50 masse solari e la parte più luminosa della nebulosa, un nodo sul suo bordo occidentale, è catalogata come NGC 896.
+
 Sommato ed elaborato in PixInsight.

@@ -23,4 +23,6 @@ Questa profonda esposizione presenta NGC 3718 (Arp 214), una galassia a spirale 
 
 In alto a sinistra si trova la sua compagna a spirale, NGC 3729, la probabile causa gravitazionale di questa grave distorsione. Ad aggiungere una straordinaria profondità allo sfondo, il compatto gruppo di galassie interagenti Hickson 56 (Arp 322) è chiaramente visibile vicino al bordo inferiore dell'inquadratura.
 
+NGC 3718 dista circa 50 milioni di anni luce e misura circa 150.000 anni luce; appartiene all'Ammasso dell'Orsa Maggiore. La vistosa banda di polvere oscura il bulge centrale e il disco di gas più interno la segue su un'orbita polare attorno al centro, quindi la galassia è classificata come galassia ad anello polare. Il gruppo compatto Hickson 56 è circa otto volte più lontano e quattro dei suoi membri stanno interagendo e dovrebbero fondersi in un'unica grande galassia ellittica.
+
 Sommato ed elaborato in PixInsight.

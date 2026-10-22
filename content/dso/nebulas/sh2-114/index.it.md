@@ -30,6 +30,8 @@ filters:
 ---
 Sh2-114, popolarmente conosciuta come la Nebulosa Drago Volante (Flying Dragon Nebula), è una debole e complessa nebulosa a emissione situata nella costellazione del Cigno. Presenta delicati e sottili filamenti di gas idrogeno incandescente che si estendono attraverso un ricco campo stellare di fondo, creando l'inconfondibile sagoma di un drago mitologico in volo nel cosmo.
 
-Le intricate strutture a nastro di questa nebulosa sono piuttosto insolite e sono probabilmente il risultato di antichi resti di supernova o di intensi venti stellari, provenienti da stelle massicce invisibili, che interagiscono violentemente con il mezzo interstellare circostante. Questa immagine combina dati profondi in H-alpha per rivelare i dettagli strutturali, fusi con dati RGB per i colori naturali delle stelle.
+Le intricate strutture a nastro di questa nebulosa sono piuttosto insolite. Questa immagine combina dati profondi in H-alpha per rivelare i dettagli strutturali, fusi con dati RGB per i colori naturali delle stelle.
+
+Sh2-114 è catalogata anche come LBN 347 e si trova a circa quattro gradi a est-nordest di Sigma Cygni. La sua distanza è indicata in circa 1.180 parsec, circa 3.800 anni luce. La piccola nebulosa planetaria bipolare Kronberger 26, al suo margine nordorientale, non è collegata e appare lì solo per allineamento prospettico.
 
 Sommato ed elaborato in PixInsight.

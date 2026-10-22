@@ -29,4 +29,6 @@ Questa immagine mette in risalto NGC 7635, nota come la Nebulosa Bolla (Bubble N
 
 *Nota: Questa immagine è un ritaglio (crop) dettagliato tratto dalla ripresa a campo largo della Nebulosa Chela di Aragosta (Sh2-157) e della regione circostante.*
 
+William Herschel scoprì NGC 7635 nel novembre 1787. La bolla ha un raggio di 3-5 anni luce e la nebulosa occupa circa 15 per 8 primi d'arco. La stella centrale, SAO 20575 (BD+60°2522), ha magnitudine 8,7 e una massa di circa 44 masse solari. Le stime della distanza variano molto, da 7.100 a 11.000 anni luce.
+
 Sommato ed elaborato in PixInsight.

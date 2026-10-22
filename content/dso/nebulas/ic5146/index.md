@@ -16,8 +16,10 @@ filters:
     subs: "32 x 600s"
     integration: "5h 20m"
 ---
-IC 5146, widely known as the Cocoon Nebula, is a striking star-forming region located approximately 4,000 light-years away in the constellation Cygnus. This image beautifully captures the glowing red emission of ionized hydrogen, illuminated by a newly formed central cluster of young, hot stars. 
+IC 5146, widely known as the Cocoon Nebula, is a striking star-forming region located roughly 2,500 to 3,000 light-years away in the constellation Cygnus. This image beautifully captures the glowing red emission of ionized hydrogen, illuminated by a newly formed central cluster of young, hot stars. 
 
 The bright core is intricately laced with dark, obscuring dust lanes that surround the nebula and stretch outward. Off to the side, a delicate blue reflection nebula is visible, created by starlight scattering off the surrounding interstellar dust particles. 
+
+IC 5146 is about 12 arcminutes across. The star that lights the nebula formed only about 100,000 years ago, and BD+46 3474, a B1 star of about 14 solar masses, is one of the most massive stars in the region. The dark nebula Barnard 168 forms a lane that surrounds the cluster and projects westward, and Spitzer and Chandra observations have identified hundreds of young stellar objects here.
 
 Stacked and processed in PixInsight.

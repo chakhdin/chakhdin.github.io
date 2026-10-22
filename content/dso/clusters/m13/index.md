@@ -20,4 +20,6 @@ This image captures M13, the Great Globular Cluster in Hercules, one of the brig
 
 The image resolves individual stars from the sparse outer halo all the way into the crowded core, while preserving their natural colors: cool, evolved red giants glow in warm orange tones, contrasting with the hotter blue stars scattered throughout the cluster. First recorded by Edmond Halley in 1714, M13 was also the target of the famous 1974 Arecibo radio message.
 
+M13 has an apparent magnitude of 5.8 and an apparent diameter of roughly 20 arcminutes. Its stars contain only about 5% as much iron as the Sun, and they are so tightly packed that collisions sometimes create new, young stars known as blue stragglers. Charles Messier added it to his catalogue on 1 June 1764.
+
 Stacked and processed in PixInsight.

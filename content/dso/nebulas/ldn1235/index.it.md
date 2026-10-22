@@ -20,4 +20,6 @@ Questa profonda esposizione cattura LDN 1235, famosa come la Nebulosa Squalo (Sh
 
 Ad accompagnare lo "squalo" ci sono due bellissime nebulose a riflessione blu, vdB 149 e vdB 150, illuminate da calde stelle vicine che evidenziano perfettamente i bordi della polvere scura. Ad aggiungere ulteriore profondità allo sfondo, una lontana galassia a spirale (PGC 67671) è visibile a destra della nebulosa principale.
 
+La distanza della Nebulosa Squalo non è ben stabilita: le due stelle che illuminano le nebulose a riflessione indicano da 330 a 370 parsec (circa 1.100-1.200 anni luce), mentre le fonti divulgative citano valori molto più piccoli. vdB 149 è illuminata dalla stella BD+72 1018 e vdB 150 da BD+72 1020 (HD 210806), entrambe di tipo spettrale B8. Beverly Lynds catalogò il nucleo oscuro come LDN 1235 nel 1962 e l'intera regione come nebulosa brillante LBN 535 nel 1965.
+
 Sommato ed elaborato in PixInsight.

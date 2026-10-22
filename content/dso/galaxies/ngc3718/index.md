@@ -23,4 +23,6 @@ This deep exposure features NGC 3718 (Arp 214), a highly peculiar spiral galaxy 
 
 To the upper left is its spiral companion, NGC 3729, the likely gravitational culprit behind this severe distortion. Adding extraordinary depth to the background, the tight, interacting galaxy cluster Hickson 56 (Arp 322) is clearly visible near the bottom edge of the frame.
 
+NGC 3718 is roughly 50 million light-years away and about 150,000 light-years across, and belongs to the Ursa Major Cluster. The prominent dust lane obscures the central bulge, and the innermost gas disc follows it on a polar orbit around the centre, so the galaxy is classed as a polar-ring galaxy. The compact group Hickson 56 is about eight times farther away, and four of its members are interacting and expected to merge into one large elliptical galaxy.
+
 Stacked and processed in PixInsight.

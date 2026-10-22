@@ -33,4 +33,6 @@ filters:
 ---
 Questa profonda esposizione di M31, la Galassia di Andromeda, rivela i dettagli intricati della nostra grande vicina galattica più prossima. L'inclusione di quasi 6 ore di dati in banda H-alpha evidenzia le vivaci regioni rosse di formazione stellare sparse lungo i vasti bracci a spirale della galassia. L'immagine mostra chiaramente anche le due galassie satelliti di Andromeda: la compatta galassia ellittica M32, situata vicino al luminoso nucleo galattico, e la più grande galassia nana ellittica M110, situata più in basso. Le scure e ampie bande di polvere sono ben definite, creando un bellissimo contrasto con il bagliore stellare del disco galattico.
 
+M31 dista circa 2,5 milioni di anni luce, misura circa 152.000 anni luce e contiene circa mille miliardi di stelle. Occupa circa 3 per 1 gradi di cielo e ha una magnitudine apparente di 3,4. L'astronomo persiano Abd al-Rahman al-Sufi la descrisse intorno al 964 d.C. come una «piccola nube», il primo riferimento noto.
+
 Sommato ed elaborato in PixInsight.

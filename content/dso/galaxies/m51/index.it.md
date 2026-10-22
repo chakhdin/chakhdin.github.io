@@ -25,4 +25,6 @@ Questa immagine profonda cattura M51, la Galassia Vortice, bloccata in una conti
 
 L'intensa interazione gravitazionale con NGC 5195 è responsabile dell'innesco di questa attività di starburst e della distorsione della struttura di entrambe le galassie. In particolare, la profondità di questa esposizione rivela i deboli e vasti flussi mareali e gli aloni di gas e stelle che circondano l'intero sistema, fornendo una prova impressionante della loro collisione cosmica.
 
+M51 dista da 23 a 31 milioni di anni luce circa, a seconda dello studio, e misura circa 77.000 anni luce. Charles Messier la scoprì il 13 ottobre 1773 e la sua struttura a spirale fu riconosciuta per la prima volta da Lord Rosse con il suo telescopio da 72 pollici a Birr Castle. NGC 5195 potrebbe aver attraversato il disco di M51 tra 500 e 600 milioni di anni fa e in M51 sono state osservate tre supernove: SN 1994I, SN 2005cs e SN 2011dh.
+
 Sommato ed elaborato in PixInsight.

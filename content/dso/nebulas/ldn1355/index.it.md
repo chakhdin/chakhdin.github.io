@@ -20,4 +20,6 @@ Questa profonda esposizione cattura l'intrigante complesso di nebulose oscure co
 
 Il campo circostante è densamente popolato da deboli e ampie nubi di polvere cosmica marrone (spesso indicate come cirri galattici) e delicate macchie di nebulose a riflessione blu. Questo evidenzia l'ambiente incredibilmente dinamico e polveroso di questa affascinante regione.
 
+L'Astronomy Picture of the Day della NASA colloca le nebulose oscure LDN 1355, 1357 e 1358 a quasi 3.000 anni luce, in direzione di Cassiopea, mentre un'altra fonte ritiene incerta la distanza di LDN 1355, tra 700 e 3.000 anni luce.
+
 Sommato ed elaborato in PixInsight.

@@ -33,4 +33,6 @@ filters:
 ---
 This deep exposure of M31, the Andromeda Galaxy, reveals the intricate details of our closest large galactic neighbor. The inclusion of nearly 6 hours of Hydrogen-alpha data highlights the vivid red star-forming regions scattered throughout the galaxy's sprawling spiral arms. The image also prominently features Andromeda's two satellite galaxies: the compact elliptical galaxy M32, situated close to the bright galactic core, and the larger dwarf elliptical galaxy M110, located further below. The dark, sweeping dust lanes are highly defined, contrasting beautifully against the stellar glow of the galactic disk.
 
+M31 is about 2.5 million light-years away, spans about 152,000 light-years and contains roughly one trillion stars. It covers about 3 by 1 degrees of sky and has an apparent magnitude of 3.4. The Persian astronomer Abd al-Rahman al-Sufi described it around 964 AD as a "small cloud", the earliest known reference to it.
+
 Stacked and processed in PixInsight.

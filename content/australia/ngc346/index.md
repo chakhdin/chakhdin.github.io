@@ -25,8 +25,10 @@ filters:
     subs: "10 x 120s"
     integration: "20m"
 ---
-NGC 346 is the largest and brightest star-forming region in the Small Magellanic Cloud, a satellite galaxy of the Milky Way in the constellation Tucana. At its centre sits a young cluster of hot, massive stars whose radiation ionises the surrounding hydrogen, while stellar winds carve filaments and cavities into the gas.
+NGC 346 is a young open cluster with an associated nebula in the constellation Tucana, about 200,000 light-years away. It lies near the centre of N66, the brightest H II region of the Small Magellanic Cloud, a satellite galaxy of the Milky Way. About thirty of its stars are hot, massive stars of spectral type O, and their radiation ionises the surrounding hydrogen. James Dunlop discovered it in 1826.
 
-The H-alpha data shows the structure of the nebula, and the red, green and blue frames add the colour of the stars. The target is too far south to be observed from Italy.
+The Small Magellanic Cloud contains lower concentrations of elements heavier than hydrogen and helium than the Milky Way, so its star-forming regions resemble the conditions of galaxies billions of years ago. NGC 346 has also been observed by the James Webb Space Telescope, which found more dust there than expected.
 
-The data was captured remotely from Swan Reach, South Australia, on a rig operated with NINA at Swan Reach Imaging (https://swanreachimaging.com.au), and was collected jointly by the group sharing the rig. Stacked and processed in PixInsight.
+The H-alpha data shows the structure of the nebula, and the red, green and blue frames add the colour of the stars. The target lies too far south to be observed from Italy.
+
+The data was captured remotely from Swan Reach, South Australia, in a single night, in collaboration with Paride Gabini, Rino Morra, Federico Palaia and Alessio Carmine Scipione, on a rig operated with NINA at Swan Reach Imaging (https://swanreachimaging.com.au). The frames were collected jointly by the group sharing the rig. Stacked and processed in PixInsight.

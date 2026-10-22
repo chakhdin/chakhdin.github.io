@@ -23,4 +23,6 @@ Questa profonda esposizione cattura l'affascinante regione attorno alla nebulosa
 
 Ad aggiungere un brillante contrasto alla scena c'è la nebulosa planetaria PK 111+11.1, che brilla intensamente in verde acqua e rosso in alto a destra. Deboli strisce di emissione di idrogeno rosso, catturate utilizzando il filtro a doppia banda L-eXtreme, attraversano il ricco sfondo stellato, evidenziando il complesso e dinamico mezzo interstellare di questa zona.
 
+Secondo l'Astronomy Picture of the Day della NASA, vdB 152 dista circa 1.400 anni luce e si trova all'estremità del globulo di Bok oscuro Barnard 175, parte del complesso di polveri soprannominato Wolf's Cave. La stella che la illumina sembra essere finita nella zona per caso, perché la sua velocità nello spazio è molto diversa da quella della nube.
+
 Sommato ed elaborato in PixInsight.

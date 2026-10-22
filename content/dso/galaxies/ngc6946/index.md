@@ -20,4 +20,6 @@ This deep exposure captures NGC 6946, a spectacular face-on intermediate spiral 
 
 Sweeping outward from the center, its sprawling spiral arms are richly decorated with brilliant blue star clusters and prominent pinkish HII regions, indicating areas of intense and active star formation. These vibrant details are beautifully captured here, despite the galaxy being heavily obscured by the interstellar dust of our own Milky Way, given its position near the galactic plane.
 
+NGC 6946 is about 25 million light-years away, has an apparent magnitude of 9.6 and covers about 16 by 11 arcminutes. William Herschel discovered it on 9 September 1798. Ten supernovae have been observed in it since SN 1917A, the most recent being SN 2017eaw.
+
 Stacked and processed in PixInsight.

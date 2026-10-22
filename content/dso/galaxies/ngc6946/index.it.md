@@ -20,4 +20,6 @@ Questa profonda esposizione riprende NGC 6946, una spettacolare galassia a spira
 
 Estendendosi verso l'esterno, i suoi ampi bracci a spirale sono riccamente decorati da brillanti ammassi stellari blu e prominenti regioni HII rosate, che indicano aree di intensa e attiva formazione stellare. Questi vibranti dettagli sono catturati magnificamente in questa immagine, nonostante la galassia sia pesantemente oscurata dalle polveri interstellari della nostra Via Lattea, data la sua posizione vicino al piano galattico.
 
+NGC 6946 dista circa 25 milioni di anni luce, ha una magnitudine apparente di 9,6 e occupa circa 16 per 11 primi d'arco. William Herschel la scoprì il 9 settembre 1798. Vi sono state osservate dieci supernove a partire da SN 1917A, l'ultima delle quali è SN 2017eaw.
+
 Sommato ed elaborato in PixInsight.

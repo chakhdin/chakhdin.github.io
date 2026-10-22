@@ -20,4 +20,6 @@ This image captures NGC 6781, widely known as the Snowglobe Nebula, a beautiful 
 
 This image is a collaborative capture by Rino Morra and Sergey Shakhdinarov. 
 
+NGC 6781 is about 1,500 light-years away and measures 1.9 by 1.8 arcminutes, with a physical radius of about 0.44 light-years. William Herschel discovered it on 30 July 1788. Its dust shell is believed to be barrel-shaped and seen nearly pole-on. The white dwarf at its centre, of magnitude 16.9, descends from a star of about 2.5 solar masses that left the asymptotic giant branch about 9,400 years ago.
+
 Stacked and processed in PixInsight.

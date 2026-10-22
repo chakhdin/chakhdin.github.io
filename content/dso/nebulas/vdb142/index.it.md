@@ -20,4 +20,6 @@ Questa immagine profonda mostra vdB 142, popolarmente conosciuta come la Nebulos
 
 I bordi della "proboscide" sono brillantemente illuminati e ionizzati dall'intensa radiazione ultravioletta di una massiccia stella vicina, creando il bordo luminoso e brillante che delinea la struttura contro il ricco sfondo rosso dell'idrogeno.
 
+La Proboscide dell'Elefante dista circa 2.400 anni luce. La stella ionizzante è HD 206267, una stella multipla massiccia e molto luminosa subito a est della nebulosa. Immagini infrarosse del 2003 hanno rivelato nel globulo diverse stelle molto giovani, con meno di 100.000 anni, e si ritiene che la compressione dovuta alla luce della stella ionizzante e ai venti delle giovani stelle abbia innescato l'attuale generazione di protostelle.
+
 Sommato ed elaborato in PixInsight.

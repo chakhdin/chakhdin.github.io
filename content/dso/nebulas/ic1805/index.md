@@ -38,4 +38,6 @@ This spectacular image presents IC 1805, famously known as the Heart Nebula, cap
 
 The deep narrowband data—where Sulfur-II is mapped to red, Hydrogen-alpha to green, and Oxygen-III to blue—reveals the complex dynamics of the glowing gas and the silhouette of dark dust lanes in striking detail. To preserve a natural look for the starry background, broadband RGB data was also collected and blended specifically to render the stars in their true colors.
 
+IC 1805 lies in the Perseus Arm and spans almost 2 degrees of sky. William Herschel discovered it on 3 November 1787. Melotte 15 contains a few stars of nearly 50 solar masses, and the brightest part of the nebula, a knot at its western edge, is catalogued as NGC 896.
+
 Stacked and processed in PixInsight.

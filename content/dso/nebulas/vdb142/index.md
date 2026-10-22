@@ -20,4 +20,6 @@ This deep image features vdB 142, popularly known as the Elephant Trunk Nebula, 
 
 The edges of the "trunk" are brightly illuminated and ionized by the intense ultraviolet radiation from a massive nearby star, creating the glowing bright rim that outlines the structure against the rich, red hydrogen background. 
 
+The Elephant's Trunk is about 2,400 light-years away. The ionising star is HD 206267, a very bright, massive multiple star just east of the nebula. Infrared images taken in 2003 revealed several very young stars, under 100,000 years old, in the globule, and the compression from the ionising star's light and the young stars' winds is thought to have triggered the current generation of protostars.
+
 Stacked and processed in PixInsight.

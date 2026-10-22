@@ -20,4 +20,6 @@ This deep exposure captures the intriguing dark nebula complex of LDN 1355, LDN 
 
 The surrounding field is heavily populated with faint, sweeping, brownish cosmic dust (often referred to as galactic cirrus) and delicate patches of blue reflection nebulae. This highlights the incredibly dynamic and dusty environment of this fascinating region.
 
+NASA's Astronomy Picture of the Day puts the dark nebulae LDN 1355, 1357 and 1358 at nearly 3,000 light-years, toward Cassiopeia, while another source considers the distance of LDN 1355 uncertain, between 700 and 3,000 light-years.
+
 Stacked and processed in PixInsight.

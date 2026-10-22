@@ -20,4 +20,6 @@ Questa immagine cattura M45, le Pleiadi, note anche come le Sette Sorelle, uno d
 
 I membri più luminosi dell'ammasso sono avvolti da una suggestiva nebulosa a riflessione blu. Anziché essere il residuo della nube da cui le stelle sono nate, questa polvere appartiene a una nube interstellare indipendente che l'ammasso sta attualmente attraversando, diffondendo l'intensa luce blu delle stelle. L'immagine rivela i sottili filamenti striati di questa polvere, in particolare attorno a Merope e Maia, oltre alla nebulosità più debole che si estende nel campo circostante.
 
+M45 ha una magnitudine apparente di 1,6 e si estende per circa 2 gradi di cielo. Conta più di 1.000 membri confermati e la sua stella più brillante, Alcione, ha magnitudine 2,9. La nebulosa a riflessione attorno a Merope è catalogata come NGC 1435; la nube di polvere si muove a circa 18 km/s rispetto alle stelle, per questo si ritiene che l'ammasso la stia attraversando.
+
 Sommato ed elaborato in PixInsight.

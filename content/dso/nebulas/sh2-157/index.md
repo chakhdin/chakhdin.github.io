@@ -29,4 +29,6 @@ This wide-field deep exposure captures a remarkably rich and active region of th
 
 To the upper right, the iconic Bubble Nebula (NGC 7635) is clearly visible, formed by the fierce stellar wind from a massive central star pushing against the surrounding molecular cloud. Just above it sits the bright and compact open star cluster M52 (The Scorpion Cluster), beautifully contrasting the deep red hydrogen emission with the sparkling blue and white light of its hundreds of young stars. Additional smaller emission patches are scattered throughout this incredibly dynamic cosmic landscape.
 
+Sh2-157 is estimated to lie roughly 11,000 light-years away, although one source gives 8,000 light-years. The open cluster M52, discovered by Charles Messier in 1774 and also known as NGC 7654 or the Scorpion Cluster, is much closer, at about 4,600 light-years: it has an apparent magnitude of 7.3, an age of about 158 million years and a radius of about 9.5 light-years.
+
 Stacked and processed in PixInsight.
