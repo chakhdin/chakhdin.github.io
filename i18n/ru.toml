@@ -2,6 +2,8 @@
 other = "Дальний космос"
 [nav_sso]
 other = "Солнечная система"
+[nav_australia]
+other = "Австралия"
 [nav_equipment]
 other = "По оборудованию"
 [nav_latest]

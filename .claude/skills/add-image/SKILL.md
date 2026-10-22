@@ -11,7 +11,7 @@ Each image is a Hugo page bundle with three language files. The PNG is **not com
 
 - Image file (PNG) and, if relevant, the annotated version (`*.annotated.png` is the convention).
 - Object name and short descriptive subtitle (e.g. "LDN 1295: The Giraffe Nebula").
-- Section: `dso/nebulas`, `dso/galaxies`, `dso/clusters`, or `sso/<body>` (jupiter, mars, moon, sun, saturn, venus, uranus, neptune, comets).
+- Section: `dso/nebulas`, `dso/galaxies`, `dso/clusters`, `sso/<body>` (jupiter, mars, moon, sun, saturn, venus, uranus, neptune, comets), or `australia` (Swan Reach remote rig).
 - Capture nights, location and Bortle class.
 - Equipment, total exposure, focal length, per-filter subs and integration.
 - Processing notes (default tools: PixInsight; planets add AutoStakkert!3).
@@ -39,11 +39,11 @@ Rules:
 
 ### Remote rig (Swan Reach, South Australia)
 
-Images from the rented, shared remote rig go in the normal sections (`dso/...`, `sso/...`), not in a separate section. Use these values:
+Images from the rented, shared remote rig go in the `australia` section: `content/australia/<slug>/` (flat, no subsections; the first five are ngc346, ngc1851, ngc300, ngc253, ngc6744). Use the same `categories` values as for Italian pages of the same type. Use these values:
 
 - `equipment`: `["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]`. No `NEQ6 Pro`. Before writing, grep existing pages and reuse any matching name exactly (the Astrodon and RCOS names are new to the site until the first page is added, so the first one defines them for all later pages).
 - `focal_length`: `"3660mm"` (the user's stated value for this rig; it differs from the 3360 mm in the user's profile notes, so do not "correct" it). Change it only if the user says a reducer was used.
-- `locations`: name `"Swan Reach, South Australia, Australia"` (IT: `"Swan Reach, Australia Meridionale, Australia"`; check how RU renders other foreign places on the site and follow it). Capture dates in `YYYY-MM-DD`. **Omit `bortle`**; give the sky quality in the body text (about 21.98 SQM at moonless best) only if it helps.
+- `locations`: name `"Swan Reach, South Australia, Australia"` (IT: `"Swan Reach, Australia Meridionale, Australia"`; RU: `"Суон-Рич, Южная Австралия, Австралия"`). Capture dates in `YYYY-MM-DD`. **`bortle`: `"Class 1"`** (IT `"Classe 1"`, RU `"Класс 1"`), as stated by the user for Swan Reach. The sky quality (about 21.98 SQM at moonless best) can go in the body text if it helps.
 - Filters: names as for other pages (`L`, `R`, `G`, `B`, `Ha`, `OIII`, `SII`). Astrodon filters are 2", so they are not the Antlia 36 mm set.
 - The frames belong to the whole group that shares the rig, not to the user alone. Say so in the body text ("data collected jointly by the group sharing the rig"). Do not write any copyright wording for these pages, and do not name the other people unless the user supplies names. The camera is the same ASI2600MM Pro as in the user's Italian setup, so reuse that equipment name unchanged.
 - Ask the user whether the sub counts match the NINA session log, since several people may have captured the same target.
