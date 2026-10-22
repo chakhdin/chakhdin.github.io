@@ -88,11 +88,11 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col">
     <header class="py-6 bg-gray-800 shadow-lg border-b border-gray-700">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:flex-wrap justify-between items-center md:gap-y-4">
             <a href="{{ site.Home.RelPermalink }}" class="text-3xl font-extrabold tracking-tight text-blue-400 hover:text-blue-300 transition">{{ site.Title }}</a>
             
-            <div class="flex items-center mt-4 md:mt-0 space-x-8">
-                <nav class="flex flex-wrap gap-x-6 gap-y-1 font-medium">
+            <div class="flex items-center mt-4 md:mt-0 md:ml-auto space-x-8">
+                <nav class="flex flex-wrap md:flex-nowrap gap-x-6 gap-y-1 font-medium">
                     <a href="{{ relLangURL "latest/" }}" class="hover:text-white transition whitespace-nowrap">{{ i18n "nav_latest" }}</a>
                     <a href="{{ relLangURL "dso/" }}" class="hover:text-white transition whitespace-nowrap">{{ i18n "nav_dso" }}</a>
                     <a href="{{ relLangURL "sso/" }}" class="hover:text-white transition whitespace-nowrap">{{ i18n "nav_sso" }}</a>
