@@ -1,4 +1,4 @@
-baseURL = "https://chakhdin.github.io/"
+baseURL = "https://shakhdinarov.com/"
 locale = "en-us"
 title = "Sergey's Astrophotography"
 defaultContentLanguage = "en"
@@ -11,6 +11,11 @@ enableRobotsTXT = true
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
+
+# Do not publish page-bundle resources (the original PNGs, ~600 MB) to the
+# site output; only processed derivatives (webp/jpg) are referenced.
+[cascade.build]
+  publishResources = false
 
 [security]
   [security.exec]
