@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+"""Build Instagram material for one image page into the git-ignored social/ folder.
+
+Usage:
+  python scripts/social-export.py content/australia/ngc253 [--x 0.5] [--y 0.5] [--zoom 1.0]
+
+--x and --y set the crop centre as a fraction of the image width and height.
+--zoom above 1.0 crops tighter around that centre.
+
+Output in social/<slug>/:
+  1-crop.jpg     3:4 crop (1080x1440), first carousel slide
+  2-full.jpg     whole frame on black (1080x1440), second carousel slide
+  caption.txt    EN and IT caption drafts
+"""
+import argparse
+import re
+from pathlib import Path
+
+from PIL import Image
+
+Image.MAX_IMAGE_PIXELS = None
+
+WIDTH, HEIGHT = 1080, 1440
+HASHTAGS = "#astrophotography #astronomy #deepsky #space #nightsky"
+SOLAR_HASHTAGS = "#astrophotography #astronomy #space #solarsystem #telescope"
+LABELS = {
+    "en": ("Total exposure", "Link in bio.", "collaboration with"),
+    "it": ("Esposizione totale", "Link nella bio.", "collaborazione con"),
+}
+
+
+def scalar(front, key):
+    # Reads a double-quoted top-level front matter value
+    match = re.search(rf'^{key}:\s*"((?:[^"\\]|\\.)*)"', front, re.M)
+    return match.group(1).replace('\\"', '"') if match else ""
+
+
+def read_page(path):
+    _, front, body = path.read_text(encoding="utf-8").split("---", 2)
+    return front, body
+
+
+def fit_to_box(size, x, y, zoom):
+    # Returns the largest 3:4 box inside the image, scaled by zoom and clamped to its edges
+    img_w, img_h = size
+    box_h = min(img_h, img_w * HEIGHT / WIDTH) / zoom
+    box_w = box_h * WIDTH / HEIGHT
+    left = min(max(img_w * x - box_w / 2, 0), img_w - box_w)
+    top = min(max(img_h * y - box_h / 2, 0), img_h - box_h)
+    return (round(left), round(top), round(left + box_w), round(top + box_h))
+
+
+def caption(bundle, lang):
+    name = "index.md" if lang == "en" else f"index.{lang}.md"
+    front, body = read_page(bundle / name)
+    exposure_label, link, credit_key = LABELS[lang]
+    lines = [scalar(front, "title"), "", scalar(front, "description"), ""]
+    exposure = scalar(front, "total_exposure")
+    if exposure:
+        lines.append(f"{exposure_label}: {exposure}")
+    # Keep the name list only: it ends at the "and"/"e" item, or at the first comma if there is one name
+    credit = re.search(rf"{credit_key} ((?:[^,.]+, )*?[^,.]+ (?:and|e) [^,.]+|[^,.]+)", body)
+    if credit:
+        lines.append(f"{credit_key.capitalize()} {credit.group(1).strip()}")
+    lines.append(link)
+    return "\n".join(lines)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("bundle", type=Path)
+    parser.add_argument("--x", type=float, default=0.5)
+    parser.add_argument("--y", type=float, default=0.5)
+    parser.add_argument("--zoom", type=float, default=1.0)
+    args = parser.parse_args()
+
+    front, _ = read_page(args.bundle / "index.md")
+    source = Image.open(args.bundle / scalar(front, "featured_image"))
+    icc = source.info.get("icc_profile")
+    image = source.convert("RGB")
+
+    out = Path("social") / args.bundle.name
+    out.mkdir(parents=True, exist_ok=True)
+
+    box = fit_to_box(image.size, args.x, args.y, args.zoom)
+    crop = image.crop(box).resize((WIDTH, HEIGHT), Image.LANCZOS)
+    crop.save(out / "1-crop.jpg", quality=92, subsampling=0, icc_profile=icc)
+
+    full = image.copy()
+    full.thumbnail((WIDTH, HEIGHT), Image.LANCZOS)
+    canvas = Image.new("RGB", (WIDTH, HEIGHT), "black")
+    canvas.paste(full, ((WIDTH - full.width) // 2, (HEIGHT - full.height) // 2))
+    canvas.save(out / "2-full.jpg", quality=92, subsampling=0, icc_profile=icc)
+
+    tags = SOLAR_HASHTAGS if "sso" in args.bundle.parts else HASHTAGS
+    captions = [caption(args.bundle, lang) for lang in LABELS]
+    (out / "caption.txt").write_text("\n\n".join(captions + [tags]) + "\n", encoding="utf-8")
+    print(f"{out}: crop box {box} of {image.size}")
+
+
+if __name__ == "__main__":
+    main()
