@@ -27,9 +27,18 @@
     "url" $.Permalink
 }}
 {{ with site.Params.author }}
+{{ if eq $.Section "australia" }}
+{{/* Shared remote rig: no copyright notice; the group is credited as co-creators. */}}
+{{ $creators := slice (dict "@type" "Person" "name" .) }}
+{{ range slice "Paride Gabini" "Rino Morra" "Federico Palaia" "Alessio Carmine Scipione" }}
+{{ $creators = $creators | append (dict "@type" "Person" "name" .) }}
+{{ end }}
+{{ $imageObject = merge $imageObject (dict "creator" $creators "creditText" .) }}
+{{ else }}
 {{ $imageObject = merge $imageObject (dict "creator" (dict "@type" "Person" "name" .)) }}
 {{ $copyrightYear := strings.Substr $captureDate 0 4 }}
 {{ $imageObject = merge $imageObject (dict "copyrightNotice" (printf "© %s %s. All rights reserved." $copyrightYear .) "creditText" .) }}
+{{ end }}
 {{ end }}
 {{ with $keywords }}{{ $imageObject = merge $imageObject (dict "keywords" (delimit . ", ")) }}{{ end }}
 <script type="application/ld+json">{{ $imageObject | jsonify | safeJS }}</script>
