@@ -30,7 +30,7 @@ which channels to skip. Repeat this check right before `create_post` (step 12).
    16-bit and mono sources are handled by the code but untested, so check the output. If the file is refused, stop and tell the user.
    Check the result by looking at the JPEG.
 2. **Facts.** `python scripts/pi_logs.py "<object folder>"` (the object folder, not the date folder: it globs `*/output/logs/*.log`)
-   prints the final Light groups, the `SESSION:` nights and the lights' header.
+   prints the final Light groups, the `SESSION:` nights and the lights' header. For a mosaic it prints "Mosaic: N panels" and the counts per panel: follow the mosaic rules in `add-image` section 2 (`mosaic_panels`, `panels` per filter, a sentence in the body text).
    Use the "active" count (never the group total; `Clear` is `L`), recompute `total_exposure` and check subs x seconds.
    Location name and Bortle class come from the git-ignored `scripts/sites.local.json`; if the site is missing, ask the user and
    never write coordinates into the repo. Swan Reach (`australia` section) follows the "Remote rig" rules in `add-image`.

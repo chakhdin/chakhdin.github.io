@@ -9,7 +9,7 @@ Input: a page bundle `content/<section>/<slug>/` (index.md, index.it.md).
 Output: files in `social/<slug>/` (git-ignored). This skill never calls Buffer, never uploads to R2 (the upload belongs to new-target step 6), never commits.
 
 ## 1. Generate the fixed part
-`python scripts/social-export.py content/<section>/<slug>` writes post-instagram.txt and post-web.txt
+`python scripts/social-export.py content/<section>/<slug>` (adds a "Mosaic of N panels" line to the stats block when the page has `mosaic_panels`) writes post-instagram.txt and post-web.txt
 (title, intro placeholder, 📍🔭📷⏱️💻 lines, link, hashtags). Figures come from front matter; do not retype them.
 
 ## 1b. Generate the channel images

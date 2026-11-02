@@ -26,6 +26,10 @@ other = "Integrazione"
 other = "Filtro"
 [table_subs]
 other = "Pose"
+[mosaic_panels]
+other = "Pannelli del Mosaico"
+[panel]
+other = "Pannello"
 [locations]
 other = "Luoghi"
 

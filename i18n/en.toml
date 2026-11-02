@@ -26,6 +26,10 @@ other = "Integration"
 other = "Filter"
 [table_subs]
 other = "Subs"
+[mosaic_panels]
+other = "Mosaic Panels"
+[panel]
+other = "Panel"
 [locations]
 other = "Locations"
 

@@ -29,6 +29,7 @@ Path: `content/<section>/<slug>/` with `index.md` (EN), `index.it.md`, `index.ru
 - Copy the front matter of a sibling page of the same kind (nebula, galaxy, planet) and adapt it. Do not invent new fields.
 
 Front matter fields: `title`, `date` (publication timestamp, drives the Latest page), `categories`, `equipment`, `description`, `total_exposure`, `focal_length`, `locations` (name, bortle, dates as `YYYY-MM-DD`), `featured_image`, `filters` (name, subs as `"96 x 300s"`, integration as `"8h 00m"`).
+Mosaic (the log has `PANEL:` keywords; `pi_logs.py` prints "Mosaic: N panels"): add `mosaic_panels: N` after `description`, and per filter keep `subs` and `integration` as the totals over all panels, with one extra line after them: `panels: [{n: 1, subs: "23 x 600s"}, {n: 2, subs: "25 x 600s"}]` (active count per panel, panel numbers as in the log). `total_exposure` is the sum over all panels. The exposure panel shows a Mosaic Panels card and the frames per panel in each filter row; `social-export.py` adds a "Mosaic of N panels" line to the post stats. Say in the body text (EN, IT, RU) that the image is a mosaic of N panels.
 
 Rules:
 - **List `NEQ6 Pro` in `equipment` for every image taken from Italy** (home-site and Italian dark-site captures all use it). The one exception is the Swan Reach remote rig (see "Remote rig" below), which uses the Paramount ME instead. Never list both on one capture.

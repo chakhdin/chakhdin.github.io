@@ -26,6 +26,10 @@ other = "Интеграция"
 other = "Фильтр"
 [table_subs]
 other = "Кадры"
+[mosaic_panels]
+other = "Панелей в мозаике"
+[panel]
+other = "Панель"
 [locations]
 other = "Местоположения"
 
