@@ -4,23 +4,23 @@ date: 2026-10-22T10:10:00Z
 categories: ["Ammassi"]
 equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
 description: "Un denso ammasso globulare nella costellazione australe della Colomba, a circa 39.500 anni luce, con un nucleo molto compatto e un alone esteso."
-total_exposure: "3h 27m"
+total_exposure: "3h 00m"
 focal_length: "3660mm"
 locations:
   - name: "Swan Reach, Australia Meridionale, Australia"
     bortle: "Classe 1"
     dates: ["2026-10-05"]
-featured_image: "NGC1851_1.png"
+featured_image: "NGC1851_1.jpg"
 filters:
   - name: "R"
     subs: "27 x 180s"
     integration: "1h 21m"
   - name: "G"
-    subs: "27 x 180s"
-    integration: "1h 21m"
+    subs: "23 x 180s"
+    integration: "1h 09m"
   - name: "B"
-    subs: "15 x 180s"
-    integration: "45m"
+    subs: "10 x 180s"
+    integration: "30m"
 ---
 NGC 1851 è un ammasso globulare nella costellazione della Colomba, a circa 39.500 anni luce. Ha un diametro apparente di circa 11 primi d'arco e una magnitudine apparente di circa 7,3. Fu scoperto da James Dunlop nel 1826. Il nucleo è molto compatto, con un alone di stelle che si estende ben oltre, e la lunga focale risolve le regioni esterne in singole stelle.
 

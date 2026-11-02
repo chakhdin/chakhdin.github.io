@@ -4,23 +4,23 @@ date: 2026-10-22T10:10:00Z
 categories: ["Cluster"]
 equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
 description: "A dense globular cluster in the southern constellation Columba, about 39,500 light-years away, with a very compact core and an extended halo."
-total_exposure: "3h 27m"
+total_exposure: "3h 00m"
 focal_length: "3660mm"
 locations:
   - name: "Swan Reach, South Australia, Australia"
     bortle: "Class 1"
     dates: ["2026-10-05"]
-featured_image: "NGC1851_1.png"
+featured_image: "NGC1851_1.jpg"
 filters:
   - name: "R"
     subs: "27 x 180s"
     integration: "1h 21m"
   - name: "G"
-    subs: "27 x 180s"
-    integration: "1h 21m"
+    subs: "23 x 180s"
+    integration: "1h 09m"
   - name: "B"
-    subs: "15 x 180s"
-    integration: "45m"
+    subs: "10 x 180s"
+    integration: "30m"
 ---
 NGC 1851 is a globular cluster in the constellation Columba, about 39,500 light-years away. It is roughly 11 arcminutes across and has an apparent magnitude of about 7.3. James Dunlop discovered it in 1826. Its core is very compact, with a halo of stars extending well beyond it, and the long focal length resolves the outer regions into individual stars.
 
