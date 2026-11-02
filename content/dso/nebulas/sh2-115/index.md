@@ -2,7 +2,7 @@
 title: "Sh2-115, Sh2-116 and surrounding LBNs"
 date: 2025-08-24T17:01:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "A deep wide-field view of the complex emission region Sh2-115 in Cygnus, accompanied by the compact HII region Sh2-116 and expansive networks of glowing hydrogen and Lynds Bright Nebulae."
 total_exposure: "4h 53m"
 focal_length: "455mm"

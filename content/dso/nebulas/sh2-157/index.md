@@ -2,7 +2,7 @@
 title: "Sh2-157: The Lobster Claw Nebula and Surrounding Region"
 date: 2025-08-06T08:15:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "A stunning wide-field view capturing the glowing emission of the Lobster Claw Nebula (Sh2-157), the delicate Bubble Nebula (NGC 7635), and the sparkling open star cluster M52."
 total_exposure: "4h 38m"
 focal_length: "455mm"

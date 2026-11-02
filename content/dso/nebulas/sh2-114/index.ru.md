@@ -2,7 +2,7 @@
 title: "Sh2-114: Туманность Летящий Дракон"
 date: 2025-08-05T09:12:00Z
 categories: ["Туманности"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Тусклая, замысловатая эмиссионная туманность в созвездии Лебедя с тонкими волокнами светящегося водородного газа, придающими ей вид летящего мифического дракона."
 total_exposure: "9h 50m"
 focal_length: "455mm"
