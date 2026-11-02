@@ -4,7 +4,7 @@ date: 2025-08-24T17:01:00Z
 categories: ["Туманности"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Глубокий широкоугольный снимок сложной эмиссионной области Sh2-115 в созвездии Лебедя в сопровождении компактной области HII Sh2-116 и обширных сетей светящегося водорода и Светлых туманностей Линдса."
-total_exposure: "4h 50m"
+total_exposure: "4h 53m"
 focal_length: "455mm"
 locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
@@ -19,8 +19,8 @@ filters:
     subs: "10 x 180s"
     integration: "30m"
   - name: "G"
-    subs: "10 x 180s"
-    integration: "30m"
+    subs: "11 x 180s"
+    integration: "33m"
   - name: "B"
     subs: "10 x 180s"
     integration: "30m"

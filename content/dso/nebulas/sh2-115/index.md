@@ -4,7 +4,7 @@ date: 2025-08-24T17:01:00Z
 categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "A deep wide-field view of the complex emission region Sh2-115 in Cygnus, accompanied by the compact HII region Sh2-116 and expansive networks of glowing hydrogen and Lynds Bright Nebulae."
-total_exposure: "4h 50m"
+total_exposure: "4h 53m"
 focal_length: "455mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
@@ -19,8 +19,8 @@ filters:
     subs: "10 x 180s"
     integration: "30m"
   - name: "G"
-    subs: "10 x 180s"
-    integration: "30m"
+    subs: "11 x 180s"
+    integration: "33m"
   - name: "B"
     subs: "10 x 180s"
     integration: "30m"

@@ -4,7 +4,7 @@ date: 2024-08-02T12:32:00Z
 categories: ["Galassie"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Una spettacolare galassia a spirale vista di faccia, nota come Galassia Fuochi d'Artificio, che mostra un luminoso nucleo dorato, ampi bracci a spirale e vibranti regioni rosate di formazione stellare."
-total_exposure: "8h 10m"
+total_exposure: "3h 40m"
 focal_length: "2000mm"
 locations:
   - name: "Il Pratone, Lombardia, Italia"
@@ -13,8 +13,8 @@ locations:
 featured_image: "NGC6946_2.jpg"
 filters:
   - name: "L"
-    subs: "49 x 600s"
-    integration: "8h 10m"
+    subs: "22 x 600s"
+    integration: "3h 40m"
 ---
 Questa profonda esposizione riprende NGC 6946, una spettacolare galassia a spirale vista di faccia situata al confine tra le costellazioni del Cefeo e del Cigno. Conosciuta come la "Galassia Fuochi d'Artificio" per l'eccezionale numero di supernove osservate al suo interno, si caratterizza per un luminoso nucleo centrale dorato e intricate bande di polvere scura.
 

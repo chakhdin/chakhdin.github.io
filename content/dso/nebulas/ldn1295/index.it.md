@@ -16,14 +16,14 @@ filters:
     subs: "96 x 300s"
     integration: "8h 00m"
   - name: "R"
-    subs: "18 x 180s"
-    integration: "54m"
+    subs: "17 x 180s"
+    integration: "51m"
   - name: "G"
     subs: "14 x 180s"
     integration: "42m"
   - name: "B"
-    subs: "17 x 180s"
-    integration: "51m"
+    subs: "18 x 180s"
+    integration: "54m"
 ---
 Questa profonda esposizione mostra LDN 1295, popolarmente conosciuta come la Nebulosa Giraffa (Giraffe Nebula), situata nella costellazione di Cassiopea. A differenza delle nebulose a emissione luminose, questo oggetto è una densa nebulosa oscura molecolare catalogata da Beverly Lynds. È composta da granelli di polvere interstellare e gas freddo che bloccano la luce delle stelle di fondo, creando sagome e filamenti scuri scolpiti nel cosmo.
 

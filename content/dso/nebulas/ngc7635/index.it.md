@@ -2,32 +2,21 @@
 title: "NGC 7635: La Nebulosa Bolla"
 date: 2025-08-06T08:15:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Un primo piano mozzafiato della Nebulosa Bolla, una bolla cosmica creata dai feroci venti stellari di una massiccia stella centrale, ritagliata da un campo visivo più ampio."
-total_exposure: "4h 50m"
-focal_length: "455mm"
+total_exposure: "5h 40m"
+focal_length: "2000mm"
 locations:
-  - name: "Astrobrallo, Lombardia, Italia"
+  - name: "Il Pratone, Lombardia, Italia"
     bortle: "Classe 4"
-    dates: ["2025-07-28"]
-featured_image: "NGC7635_4.crop.jpg"
+    dates: ["2024-08-29"]
+featured_image: "NGC7635_1.crop.jpg"
 filters:
-  - name: "Ha"
-    subs: "20 x 600s"
-    integration: "3h 20m"
-  - name: "R"
-    subs: "10 x 180s"
-    integration: "30m"
-  - name: "G"
-    subs: "10 x 180s"
-    integration: "30m"
-  - name: "B"
-    subs: "10 x 180s"
-    integration: "30m"
+  - name: "L"
+    subs: "34 x 600s"
+    integration: "5h 40m"
 ---
 Questa immagine mette in risalto NGC 7635, nota come la Nebulosa Bolla (Bubble Nebula), situata nella costellazione di Cassiopea. La delicata sfera luminosa è in realtà una cavità scavata nella nube molecolare circostante dagli intensi venti stellari e dalle radiazioni di una massiccia e calda stella centrale (BD+60°2522). La violenta interazione tra la bolla in espansione e il materiale circostante più denso crea i bordi netti e luminosi visibili in questa profonda ripresa.
-
-*Nota: Questa immagine è un ritaglio (crop) dettagliato tratto dalla ripresa a campo largo della Nebulosa Chela di Aragosta (Sh2-157) e della regione circostante.*
 
 William Herschel scoprì NGC 7635 nel novembre 1787. La bolla ha un raggio di 3-5 anni luce e la nebulosa occupa circa 15 per 8 primi d'arco. La stella centrale, SAO 20575 (BD+60°2522), ha magnitudine 8,7 e una massa di circa 44 masse solari. Le stime della distanza variano molto, da 7.100 a 11.000 anni luce.
 
