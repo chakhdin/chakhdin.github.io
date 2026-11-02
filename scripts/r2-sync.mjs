@@ -6,6 +6,8 @@
 // Objects under the "videos/" prefix are skipped: those are served directly
 // from R2's public URL (see scripts/r2-upload-video.mjs) and never become
 // Hugo page resources, so pulling them here would just waste CI time/disk.
+// The same applies to "social/" (Instagram/Pinterest images, see
+// scripts/r2-upload-social.mjs).
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
@@ -56,7 +58,7 @@ let token;
 let count = 0;
 do {
     const page = await s3.send(new ListObjectsV2Command({ Bucket: bucket, ContinuationToken: token }));
-    const keys = (page.Contents ?? []).map((obj) => obj.Key).filter((key) => !key.startsWith("videos/"));
+    const keys = (page.Contents ?? []).map((obj) => obj.Key).filter((key) => !key.startsWith("videos/") && !key.startsWith("social/"));
     await runPool(keys, CONCURRENCY);
     count += keys.length;
     token = page.NextContinuationToken;
