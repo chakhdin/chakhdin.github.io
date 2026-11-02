@@ -4,7 +4,7 @@ date: 2025-11-23T18:07:00Z
 categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 6nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "A spectacular narrowband image of the Heart Nebula in the Hubble palette, showcasing the intricate pillars of gas and dust shaped by the central star cluster Melotte 15."
-total_exposure: "16h 30m"
+total_exposure: "16h 20m"
 focal_length: ""
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
@@ -28,11 +28,11 @@ filters:
     subs: "10 x 300s"
     integration: "50m"
   - name: "G"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
   - name: "B"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
 ---
 This spectacular image presents IC 1805, famously known as the Heart Nebula, captured using narrowband filters and processed in the classic Hubble Space Telescope (SHO) color palette. Located about 7,500 light-years away in the constellation Cassiopeia, this massive emission nebula is sculpted by the intense stellar winds and ultraviolet radiation from the young, central open star cluster known as Melotte 15.
 

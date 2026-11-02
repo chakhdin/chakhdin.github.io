@@ -4,7 +4,7 @@ date: 2025-08-05T09:12:00Z
 categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "A faint, intricate emission nebula in Cygnus showcasing delicate, wispy filaments of glowing hydrogen gas that give it the appearance of a mythical dragon in flight."
-total_exposure: "10h 10m"
+total_exposure: "9h 50m"
 focal_length: "455mm"
 locations:
   - name: "Astrobrallo, Lombardy, Italy"
@@ -16,8 +16,8 @@ locations:
 featured_image: "Sh2 114_2.crop2.jpg"
 filters:
   - name: "Ha"
-    subs: "52 x 600s"
-    integration: "8h 40m"
+    subs: "50 x 600s"
+    integration: "8h 20m"
   - name: "R"
     subs: "10 x 180s"
     integration: "30m"

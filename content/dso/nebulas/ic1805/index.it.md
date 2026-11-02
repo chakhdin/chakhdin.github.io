@@ -4,7 +4,7 @@ date: 2025-11-23T18:07:00Z
 categories: ["Nebulose"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 6nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "Una spettacolare immagine a banda stretta della Nebulosa Cuore nella tavolozza di Hubble, che mostra gli intricati pilastri di gas e polvere modellati dall'ammasso stellare centrale Melotte 15."
-total_exposure: "16h 30m"
+total_exposure: "16h 20m"
 focal_length: ""
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
@@ -28,11 +28,11 @@ filters:
     subs: "10 x 300s"
     integration: "50m"
   - name: "G"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
   - name: "B"
-    subs: "10 x 300s"
-    integration: "50m"
+    subs: "9 x 300s"
+    integration: "45m"
 ---
 Questa spettacolare immagine presenta IC 1805, famosa come la Nebulosa Cuore, ripresa utilizzando filtri a banda stretta ed elaborata nella classica tavolozza dei colori del Telescopio Spaziale Hubble (SHO). Situata a circa 7.500 anni luce di distanza nella costellazione di Cassiopea, questa massiccia nebulosa a emissione è scolpita dagli intensi venti stellari e dalle radiazioni ultraviolette del giovane ammasso stellare aperto centrale, noto come Melotte 15.
 

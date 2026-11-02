@@ -4,7 +4,7 @@ date: 2024-08-02T12:32:00Z
 categories: ["Galaxy"]
 equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A spectacular face-on spiral galaxy known as the Fireworks Galaxy, showcasing a bright golden core, sprawling spiral arms, and vibrant pink star-forming regions."
-total_exposure: "8h 10m"
+total_exposure: "3h 40m"
 focal_length: "2000mm"
 locations:
   - name: "Il Pratone, Lombardy, Italy"
@@ -13,8 +13,8 @@ locations:
 featured_image: "NGC6946_2.jpg"
 filters:
   - name: "L"
-    subs: "49 x 600s"
-    integration: "8h 10m"
+    subs: "22 x 600s"
+    integration: "3h 40m"
 ---
 This deep exposure captures NGC 6946, a spectacular face-on intermediate spiral galaxy situated on the border of the constellations Cepheus and Cygnus. Popularly known as the "Fireworks Galaxy" due to the unusually high number of supernovae observed within it, the galaxy is characterized by a bright, golden central core and intricate dark dust lanes. 
 

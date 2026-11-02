@@ -4,7 +4,7 @@ date: 2025-08-06T08:15:00Z
 categories: ["Nebulose"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Una splendida vista a largo campo che cattura la luminosa emissione della Nebulosa Chela di Aragosta (Sh2-157), la delicata Nebulosa Bolla (NGC 7635) e lo scintillante ammasso aperto M52."
-total_exposure: "4h 50m"
+total_exposure: "4h 38m"
 focal_length: "455mm"
 locations:
   - name: "Astrobrallo, Lombardia, Italia"
@@ -16,14 +16,14 @@ filters:
     subs: "20 x 600s"
     integration: "3h 20m"
   - name: "R"
-    subs: "10 x 180s"
-    integration: "30m"
+    subs: "8 x 180s"
+    integration: "24m"
   - name: "G"
-    subs: "10 x 180s"
-    integration: "30m"
+    subs: "9 x 180s"
+    integration: "27m"
   - name: "B"
-    subs: "10 x 180s"
-    integration: "30m"
+    subs: "9 x 180s"
+    integration: "27m"
 ---
 Questa profonda esposizione a largo campo cattura una regione del cielo notturno straordinariamente ricca e attiva, situata al confine tra le costellazioni di Cassiopea e Cefeo. A dominare il lato sinistro dell'inquadratura è Sh2-157, spesso chiamata Nebulosa Chela di Aragosta (Lobster Claw Nebula), una grande nebulosa a emissione caratterizzata dalle sue ampie strutture a forma di chela fatte di gas idrogeno ionizzato.
 

@@ -16,14 +16,14 @@ filters:
     subs: "96 x 300s"
     integration: "8h 00m"
   - name: "R"
-    subs: "18 x 180s"
-    integration: "54m"
+    subs: "17 x 180s"
+    integration: "51m"
   - name: "G"
     subs: "14 x 180s"
     integration: "42m"
   - name: "B"
-    subs: "17 x 180s"
-    integration: "51m"
+    subs: "18 x 180s"
+    integration: "54m"
 ---
 This deep exposure showcases LDN 1295, popularly known as the Giraffe Nebula, situated in the constellation Cassiopeia. Unlike glowing emission nebulae, this object is a dense molecular dark nebula cataloged by Beverly Lynds. It is composed of interstellar dust grains and cold gas that physically obstruct the background starlight, creating prominent, sculpted lanes of darkness.
 
