@@ -8,6 +8,15 @@
 </div>
 {{ end }}
 
+{{ with .mosaic_panels }}
+<div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
+    <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
+        {{ i18n "mosaic_panels" }}
+    </div>
+    <div class="text-3xl font-mono font-bold text-white">{{ . }}</div>
+</div>
+{{ end }}
+
 {{ with .focal_length }}
 <div class="bg-blue-900/20 rounded-2xl p-6 border border-blue-500/30">
     <div class="text-xs text-blue-400 uppercase tracking-widest mb-1">
@@ -48,7 +57,10 @@
                 {{ range . }}
                 <tr>
                     <td class="px-4 py-3 font-bold text-blue-400">{{ .name }}</td>
-                    <td class="px-4 py-3">{{ .subs }} <span class="text-gray-400">({{ .integration }})</span></td>
+                    <td class="px-4 py-3">
+                        {{ range .panels }}<div>{{ i18n "panel" }} {{ .n }}: {{ .subs }}</div>{{ end }}
+                        {{ .subs }} <span class="text-gray-400">({{ .integration }})</span>
+                    </td>
                 </tr>
                 {{ end }}
             </tbody>

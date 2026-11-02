@@ -76,11 +76,13 @@ POST_LABELS = {
         "optics": "{scope} at {focal}, {mount} mount", "and": "and", "total": "total exposure",
         "processing": "Stacked and processed in PixInsight",
         "details": "Full-resolution image and details:", "bio": "link in bio.",
+        "mosaic": "Mosaic of {n} panels",
     },
     "it": {
         "optics": "{scope} a {focal}, montatura {mount}", "and": "e", "total": "di esposizione totale",
         "processing": "Integrata ed elaborata con PixInsight",
         "details": "Immagine a piena risoluzione e dettagli:", "bio": "link nella bio.",
+        "mosaic": "Mosaico di {n} pannelli",
     },
 }
 MOUNT_WORDS = ("NEQ6", "Paramount", "EQ6", "HEQ5", "AZ-EQ")
@@ -130,11 +132,15 @@ def post_text(bundle, lang, instagram):
     else:
         path = "/".join(bundle.parts[bundle.parts.index("content") + 1:])
         link = f"{labels['details']} {SITE_URL}{'' if lang == 'en' else '/' + lang}/{path}/"
+    # Optional front matter key of a mosaic page (the exposure panel shows the frames per panel)
+    panels = re.search(r"^mosaic_panels:\s*(\d+)", front, re.M)
+    mosaic = [f"🧩 {labels['mosaic'].format(n=panels.group(1))}"] if panels else []
     return "\n".join([
         scalar(front, "title"), "", scalar(front, "description"), "",
         f"📍 {place} (Bortle {bortle}), {nights(dates, lang)}",
         "🔭 " + labels["optics"].format(scope=scope, focal=focal, mount=mount),
         f"📷 {camera}, {filt}",
+        *mosaic,
         f"⏱️ {frames} = {total} {labels['total']}",
         f"💻 {labels['processing']}", "", link,
     ])
