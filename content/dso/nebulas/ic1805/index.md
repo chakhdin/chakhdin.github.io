@@ -5,7 +5,7 @@ categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 7nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "A spectacular narrowband image of the Heart Nebula in the Hubble palette, showcasing the intricate pillars of gas and dust shaped by the central star cluster Melotte 15."
 total_exposure: "16h 20m"
-focal_length: ""
+focal_length: "455mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
     bortle: "Class 4"

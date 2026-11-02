@@ -5,7 +5,7 @@ categories: ["Nebulose"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Una profonda vista a largo campo della Nebulosa Anima in Cassiopea, che mostra le sue complesse creste di gas e polvere illuminate da giovani e massicci ammassi stellari."
 total_exposure: "8h 05m"
-focal_length: ""
+focal_length: "455mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"

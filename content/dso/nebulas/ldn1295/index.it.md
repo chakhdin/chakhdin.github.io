@@ -5,7 +5,7 @@ categories: ["Nebulose"]
 equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "Una profonda esposizione a largo campo di LDN 1295, nota come Nebulosa Giraffa, che mette in risalto la densa polvere oscura che si staglia contro un ricco campo stellare in Cassiopea."
 total_exposure: "10h 27m"
-focal_length: "455mm"
+focal_length: "332mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"

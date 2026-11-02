@@ -5,7 +5,7 @@ categories: ["Nebulose"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 7nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "Una spettacolare immagine a banda stretta della Nebulosa Cuore nella tavolozza di Hubble, che mostra gli intricati pilastri di gas e polvere modellati dall'ammasso stellare centrale Melotte 15."
 total_exposure: "16h 20m"
-focal_length: ""
+focal_length: "455mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"

@@ -5,7 +5,7 @@ categories: ["Туманности"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Глубокий широкоугольный снимок туманности Душа в Кассиопее, демонстрирующий сложные гребни газа и пыли, освещенные молодыми массивными звездными скоплениями."
 total_exposure: "8h 05m"
-focal_length: ""
+focal_length: "455mm"
 locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
     bortle: "Класс 4"

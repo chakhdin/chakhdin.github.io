@@ -2,7 +2,7 @@
 title: "M31: Галактика Андромеды"
 date: 2025-09-30T15:24:00Z
 categories: ["Галактики"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Antlia Pro 3nm SHO 36mm filters", "Antlia LRGB-V Pro 36mm filters" ]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Наша ближайшая галактическая соседка, демонстрирующая плотные пылевые полосы и галактики-спутники."
 total_exposure: "11h 50m"
 focal_length: "455mm"
@@ -27,7 +27,7 @@ filters:
   - name: "L"
     subs: "22 x 600s"
     integration: "3h 40m"
-  - name: "Ha (3nm)"
+  - name: "Ha (7nm)"
     subs: "34 x 600s"
     integration: "5h 40m"
 ---
