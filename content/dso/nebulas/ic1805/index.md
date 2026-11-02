@@ -2,7 +2,7 @@
 title: "IC 1805: The Heart Nebula in SHO"
 date: 2025-11-23T18:07:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 6nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 7nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "A spectacular narrowband image of the Heart Nebula in the Hubble palette, showcasing the intricate pillars of gas and dust shaped by the central star cluster Melotte 15."
 total_exposure: "16h 20m"
 focal_length: ""
@@ -15,7 +15,7 @@ locations:
     dates: ["2025-11-22"]
 featured_image: "IC1805_SHO_1.resample.jpg"
 filters:
-  - name: "Ha (6nm)"
+  - name: "Ha (7nm)"
     subs: "26 x 600s"
     integration: "4h 20m"
   - name: "SII (3nm)"

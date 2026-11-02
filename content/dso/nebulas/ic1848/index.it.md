@@ -2,7 +2,7 @@
 title: "IC 1848: La Nebulosa Anima"
 date: 2025-09-22T15:35:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Una profonda vista a largo campo della Nebulosa Anima in Cassiopea, che mostra le sue complesse creste di gas e polvere illuminate da giovani e massicci ammassi stellari."
 total_exposure: "8h 05m"
 focal_length: ""
@@ -12,7 +12,7 @@ locations:
     dates: ["2025-09-19"]
 featured_image: "IC1848_1.resample2.jpg"
 filters:
-  - name: "Ha (6nm)"
+  - name: "Ha (7nm)"
     subs: "34 x 600s"
     integration: "5h 40m"
   - name: "R"

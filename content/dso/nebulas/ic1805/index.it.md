@@ -2,7 +2,7 @@
 title: "IC 1805: La Nebulosa Cuore in SHO"
 date: 2025-11-23T18:07:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 6nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 7nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "Una spettacolare immagine a banda stretta della Nebulosa Cuore nella tavolozza di Hubble, che mostra gli intricati pilastri di gas e polvere modellati dall'ammasso stellare centrale Melotte 15."
 total_exposure: "16h 20m"
 focal_length: ""
@@ -15,7 +15,7 @@ locations:
     dates: ["2025-11-22"]
 featured_image: "IC1805_SHO_1.resample.jpg"
 filters:
-  - name: "Ha (6nm)"
+  - name: "Ha (7nm)"
     subs: "26 x 600s"
     integration: "4h 20m"
   - name: "SII (3nm)"

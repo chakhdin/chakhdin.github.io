@@ -2,7 +2,7 @@
 title: "Sh2-157: Туманность Клешня Омара и окружающая область"
 date: 2025-08-06T08:15:00Z
 categories: ["Туманности"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Потрясающий широкоугольный снимок, запечатлевший яркое свечение туманности Клешня Омара (Sh2-157), нежную туманность Пузырь (NGC 7635) и сверкающее рассеянное звездное скопление М52."
 total_exposure: "4h 38m"
 focal_length: "455mm"

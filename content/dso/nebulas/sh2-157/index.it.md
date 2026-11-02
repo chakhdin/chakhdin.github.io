@@ -2,7 +2,7 @@
 title: "Sh2-157: La Nebulosa Chela di Aragosta e la Regione Circostante"
 date: 2025-08-06T08:15:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 6nm 36mm filter", "Baader LRGB 36mm filters"]
+equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "Una splendida vista a largo campo che cattura la luminosa emissione della Nebulosa Chela di Aragosta (Sh2-157), la delicata Nebulosa Bolla (NGC 7635) e lo scintillante ammasso aperto M52."
 total_exposure: "4h 38m"
 focal_length: "455mm"
