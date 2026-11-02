@@ -6,7 +6,7 @@ description: Write the intro, claim list and object-specific hashtags for an Ins
 # Social post text
 
 Input: a page bundle `content/<section>/<slug>/` (index.md, index.it.md).
-Output: files in `social/<slug>/` (git-ignored). This skill never calls Buffer, never uploads to R2, never commits.
+Output: files in `social/<slug>/` (git-ignored). This skill never calls Buffer, never uploads to R2 (the upload belongs to new-target step 6), never commits.
 
 ## 1. Generate the fixed part
 `python scripts/social-export.py content/<section>/<slug>` writes post-instagram.txt and post-web.txt
@@ -17,8 +17,8 @@ Output: files in `social/<slug>/` (git-ignored). This skill never calls Buffer, 
 and `pinterest.jpg` (2:3, 1000x1500). A landscape frame is rotated 90 degrees clockwise (lossless, the sky has no up or down)
 and cropped to fill the canvas; `--rotate none|ccw` and `--x/--y` (crop centre) override it. Show both files to the user.
 Do not re-run `social-export.py` after the intros are written: it overwrites post-instagram.txt and post-web.txt.
-Upload is a separate step: `node scripts/r2-upload-social.mjs <slug>` is a dry run, `--yes` uploads; the user runs it
-(the R2 variables are in the user's environment, never in files or commands).
+Upload is a separate step: `node scripts/r2-upload-social.mjs <slug>` is a dry run, `--yes` uploads; the assistant runs it
+after the user approves (the R2 variables are in the user's environment, never in files or commands).
 
 ## 2. Write the intro (replaces the placeholder)
 - EN first, then IT. Length: 4-5 sentences per language for post-web.txt (Facebook, Pinterest);
@@ -50,4 +50,4 @@ each present in facts.json. Skip if the list is empty.
 ## 6. Show and stop
 Show the user: both intros, the hashtags, the claim list, the final post-instagram.txt and post-web.txt
 with character counts. Wait for approval. Posting is a separate step with its own approval
-(see add-image, "Out of scope").
+(see `new-target`, Gate 3).

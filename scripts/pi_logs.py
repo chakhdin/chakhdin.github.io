@@ -81,12 +81,25 @@ def light_header(light):
     return found
 
 
+def to_degrees(value):
+    # Keywords are decimal ("45.383") or sexagesimal ("+45 23 00.347")
+    parts = value.split()
+    if len(parts) == 1:
+        return float(parts[0])
+    sign = -1 if parts[0].startswith("-") else 1
+    return sign * (abs(float(parts[0])) + float(parts[1]) / 60 + float(parts[2]) / 3600)
+
+
 def match_site(header, table_path=SITE_TABLE):
     # The table is local and git-ignored: [{"lat", "lon", "tolerance_deg", "name": {en,it,ru}, "bortle"}]
     if "SITELAT" not in header or "SITELONG" not in header or not Path(table_path).exists():
         return None
-    lat, lon = float(header["SITELAT"]), float(header["SITELONG"])
+    lat, lon = to_degrees(header["SITELAT"]), to_degrees(header["SITELONG"])
+    date = header.get("DATE-OBS", "")[:10]
     for site in json.loads(Path(table_path).read_text(encoding="utf-8")):
+        # Optional "from"/"until" (YYYY-MM-DD) limit an entry to a date range of the light's DATE-OBS
+        if date and (date < site.get("from", "") or date > site.get("until", "9999-12-31")):
+            continue
         tolerance = site.get("tolerance_deg", 0.01)
         if abs(site["lat"] - lat) <= tolerance and abs(site["lon"] - lon) <= tolerance:
             return site
