@@ -14,7 +14,7 @@ locations:
     bortle: "Classe 4"
     dates: ["2025-05-23"]
 
-featured_image: "M51_3.crop.annotated.png"
+featured_image: "M51_3.crop.jpg"
 filters:
   - name: "L"
     subs: "29 x 600s"

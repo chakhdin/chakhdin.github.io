@@ -1,6 +1,6 @@
 ﻿---
 title: "Звездные скопления"
 description: "Плотные скопления звезд, удерживаемые гравитацией — от молодых рассеянных до древних шаровых скоплений."
-featured_image: "cluster-cover.png"
+featured_image: "cluster-cover.jpg"
 weight: 30
 ---

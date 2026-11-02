@@ -10,7 +10,7 @@ locations:
   - name: "San Giuliano Milanese, Lombardy, Italy"
     bortle: "Class 7"
     dates: ["2024-05-23", "2024-05-25"]
-featured_image: "M5_4.annotated.png"
+featured_image: "M5_4.jpg"
 filters:
   - name: "L"
     subs: "32 x 300s"
@@ -21,7 +21,7 @@ filters:
 versions:
   - id: "meade"
     label: "Meade 8\" ACF · 2000mm"
-    image: "M5_4.annotated.png"
+    image: "M5_4.jpg"
     note: |
       This close-up view was captured with a Meade 8" ACF telescope at 2000mm, a focal length more than four times longer than the wide-field version. The extra reach fills the frame with the cluster itself, resolving individual stars deep toward the dense core and making the color differences between the cool orange red giants and the hotter blue-white stars much easier to see.
     equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
@@ -37,7 +37,7 @@ versions:
         integration: "2h 40m"
   - id: "fsq85"
     label: "Takahashi FSQ85 · 455mm"
-    image: "M5_1.crop.annotated.png"
+    image: "M5_1.crop.jpg"
     note: |
       This wider view, captured with a Takahashi FSQ85 refractor at 455mm, places M5 within its surrounding star field. At this scale the cluster appears as a compact, glowing ball of stars, and its ancient red giants still show as warm orange points around the bright core. The brilliant star to the lower left is 5 Serpentis, a nearby foreground star with no physical connection to the cluster, lying thousands of times closer to us.
     equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]

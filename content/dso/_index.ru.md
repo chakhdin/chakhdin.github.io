@@ -1,5 +1,5 @@
 ﻿---
 title: "Дальний космос (DSO)"
 description: "Галактики, туманности и звездные скопления, находящиеся далеко за пределами нашей солнечной системы."
-featured_image: "dso-cover.png"
+featured_image: "dso-cover.jpg"
 ---

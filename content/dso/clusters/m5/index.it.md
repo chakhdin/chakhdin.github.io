@@ -10,7 +10,7 @@ locations:
   - name: "San Giuliano Milanese, Lombardia, Italia"
     bortle: "Classe 7"
     dates: ["2024-05-23", "2024-05-25"]
-featured_image: "M5_4.annotated.png"
+featured_image: "M5_4.jpg"
 filters:
   - name: "L"
     subs: "32 x 300s"
@@ -21,7 +21,7 @@ filters:
 versions:
   - id: "meade"
     label: "Meade 8\" ACF · 2000mm"
-    image: "M5_4.annotated.png"
+    image: "M5_4.jpg"
     note: |
       Questa vista ravvicinata è stata ripresa con un telescopio Meade 8" ACF a 2000mm, una focale più di quattro volte più lunga di quella della versione a grande campo. La maggiore focale riempie l'inquadratura con l'ammasso stesso, risolvendo le singole stelle fin quasi al denso nucleo e rendendo molto più evidenti le differenze di colore tra le fredde giganti rosse arancioni e le stelle bianco-azzurre più calde.
     equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
@@ -37,7 +37,7 @@ versions:
         integration: "2h 40m"
   - id: "fsq85"
     label: "Takahashi FSQ85 · 455mm"
-    image: "M5_1.crop.annotated.png"
+    image: "M5_1.crop.jpg"
     note: |
       Questa vista più ampia, ripresa con un rifrattore Takahashi FSQ85 a 455mm, colloca M5 nel suo campo stellare circostante. A questa scala l'ammasso appare come una compatta sfera luminosa di stelle, e le sue antiche giganti rosse si distinguono ancora come caldi punti arancioni attorno al nucleo brillante. La stella brillante in basso a sinistra è 5 Serpentis, una vicina stella in primo piano priva di qualsiasi legame fisico con l'ammasso, migliaia di volte più vicina a noi.
     equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]

@@ -10,7 +10,7 @@ locations:
   - name: "San Giuliano Milanese, Lombardia, Italia"
     bortle: "Classe 7"
     dates: ["2023-06-15"]
-featured_image: "M13_1.annotated.png"
+featured_image: "M13_1.jpg"
 filters:
   - name: "L"
     subs: "3 x 120s"

@@ -10,7 +10,7 @@ locations:
   - name: "Иль Пратоне, Ломбардия, Италия"
     bortle: "Класс 4"
     dates: ["2024-09-06"]
-featured_image: "vdB142_1.annotated.png"
+featured_image: "vdB142_1.jpg"
 filters:
   - name: "L"
     subs: "32 x 600s"

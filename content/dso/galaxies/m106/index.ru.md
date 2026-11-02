@@ -10,7 +10,7 @@ locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
     bortle: "Класс 4"
     dates: ["2025-04-25"]
-featured_image: "M106_1.annotated.png"
+featured_image: "M106_1.jpg"
 filters:
   - name: "L"
     subs: "39 x 600s"

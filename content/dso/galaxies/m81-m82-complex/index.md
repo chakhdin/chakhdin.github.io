@@ -13,7 +13,7 @@ locations:
   - name: "Ca' del Monte, Lombardia, Italy"
     bortle: "Class 4"
     dates: ["2026-04-24"]
-featured_image: "M81_M82_4.resample.annotated.png"
+featured_image: "M81_M82_4.resample.jpg"
 filters:
   - name: "R"
     subs: "12 x 300s"
