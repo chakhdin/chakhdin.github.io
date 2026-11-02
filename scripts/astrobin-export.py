@@ -17,6 +17,9 @@ validated by AstroBin (invalid ones are ignored).
 Filter IDs: nothing is guessed. Put the verified IDs in social/astrobin-filters.json, e.g.
   {"L": 12345, "Clear": 12345}   (key = filter name as written by NINA / WBPP log)
 A filter without an ID gets the marker TODO-<name> in the CSV; replace it before pasting.
+The value may be a list of {"from", "until", "site", "id"} entries (all keys but "id" optional). "site" is the
+start of the English site name in scripts/sites.local.json (e.g. "Swan Reach"); an entry with a "site" is used
+only for lights taken there and wins over entries without one.
 
 Rows: one per session, filter and exposure when the lights under <run folder>/process/SESSION_*/lights
 (the run folder of the latest log) add up to the "active" count of the final WBPP group. Otherwise one
@@ -24,8 +27,10 @@ row per filter and exposure with the active count; its date is left empty when t
 nights (a warning says so).
 Bortle: taken per session from the site keywords of its lights, matched in scripts/sites.local.json.
 A site that is not in the table leaves the cell empty.
-Known limitations: mosaics (process/PANEL_* folders or a PANEL: keyword in the log) are not supported yet; the
-script exits non-zero. A group with active < total frames gets one row with an empty date (no per-night split).
+Mosaics (process/PANEL_* folders, PANEL: keyword in the log): each panel is counted on its own (its
+post-calibration group in the log, its lights in process/PANEL_<n>/SESSION_*/lights); the CSV rows of the
+panels with the same date, filter and settings are added together, and the description lists the panels.
+Known limitations: a group with active < total frames gets one row with an empty date (no per-night split).
 Nothing is overwritten without --force. --dry-run prints and writes nothing.
 """
 import argparse
@@ -40,7 +45,7 @@ import pi_logs  # noqa: E402
 REPO = Path(__file__).resolve().parent.parent
 FILTER_MAP = REPO / "social" / "astrobin-filters.json"
 COLUMNS = ["date", "filter", "number", "duration", "binning", "gain", "sensorCooling", "fNumber", "bortle"]
-LIGHT_KEYS = ("FILTER", "EXPTIME", "GAIN", "XBINNING", "SET-TEMP", "FOCRATIO", "SITELAT", "SITELONG")
+LIGHT_KEYS = ("FILTER", "EXPTIME", "GAIN", "XBINNING", "SET-TEMP", "FOCRATIO", "SITELAT", "SITELONG", "DATE-OBS")
 LIGHT_SUFFIXES = (".xisf", ".fits", ".fit")
 
 
@@ -99,10 +104,12 @@ def frame_files(folder):
     return list(unique.values())
 
 
-def session_lights(run_dir):
-    # {session: [header dict, ...]} from <run folder>/process/SESSION_YYYYMMDD/lights; each session counted once
+def session_lights(run_dir, panel=None):
+    # {session: [header dict, ...]} from <run folder>/process/SESSION_YYYYMMDD/lights; each session counted once.
+    # For a mosaic panel: <run folder>/process/PANEL_<n>/SESSION_YYYYMMDD/lights
     result = {}
-    for folder in sorted(Path(run_dir).glob("**/SESSION_*/lights")):
+    pattern = f"**/PANEL_{panel}/SESSION_*/lights" if panel else "**/SESSION_*/lights"
+    for folder in sorted(Path(run_dir).glob(pattern)):
         match = re.fullmatch(r"SESSION_(\d{8})", folder.parent.name)
         if not match or match.group(1) in result:
             continue
@@ -110,13 +117,22 @@ def session_lights(run_dir):
     return result
 
 
-def session_bortle(headers):
-    # Bortle class of the site the session's lights were taken at; None when the site is not in the table
+def session_site(headers):
+    # Site entry of the table that the session's lights were taken at; None when it is not in the table
     for header in headers:
         if "SITELAT" in header and "SITELONG" in header:
-            site = pi_logs.match_site(header)
-            return site.get("bortle") if site else None
+            return pi_logs.match_site(header)
     return None
+
+
+def session_bortle(headers):
+    site = session_site(headers)
+    return site.get("bortle") if site else None
+
+
+def session_site_name(headers):
+    site = session_site(headers)
+    return site["name"]["en"] if site else ""
 
 
 def load_filter_map():
@@ -125,15 +141,19 @@ def load_filter_map():
     return json.loads(FILTER_MAP.read_text(encoding="utf-8"))
 
 
-def filter_cell(name, ids, dates=()):
-    # value = one ID, or a list of {"from": "YYYY-MM-DD", "until": "YYYY-MM-DD", "id": N} (from/until optional);
-    # with a list every date of the row must resolve to the same ID
+def filter_cell(name, ids, dates=(), sites=()):
+    # value = one ID, or a list of {"from": "YYYY-MM-DD", "until": "YYYY-MM-DD", "site": "Swan Reach", "id": N}
+    # (from/until/site optional); with a list every date and site of the row must resolve to the same ID.
+    # An entry with a "site" counts only for that site and wins over the entries without one.
     value = ids.get(name)
     if isinstance(value, list):
         found = set()
         for date in dates or [""]:
-            hit = [e["id"] for e in value if date and e.get("from", "0000-00-00") <= date <= e.get("until", "9999-99-99")]
-            found.add(hit[0] if len(hit) == 1 else None)
+            for site in sites or [""]:
+                hit = [e for e in value if date and e.get("from", "0000-00-00") <= date <= e.get("until", "9999-99-99")]
+                specific = [e for e in hit if e.get("site") and site.startswith(e["site"])]
+                hit = specific or [e for e in hit if not e.get("site")]
+                found.add(hit[0]["id"] if len(hit) == 1 else None)
         value = found.pop() if len(found) == 1 else None
     return str(value) if value else f"TODO-{name}"
 
@@ -142,11 +162,11 @@ def iso_date(session):
     return f"{session[:4]}-{session[4:6]}-{session[6:]}"
 
 
-def build_rows(groups, lights, ids):
+def build_rows(groups, lights, ids, prefix=""):
     rows = []
     for group in groups:
         name, exposure = group["filter"], group["exposure_s"]
-        label = f"{name} {fmt_number(exposure)} s"
+        label = f"{prefix}{name} {fmt_number(exposure)} s"
         nights = group["sessions"] or sorted(lights)  # a log without SESSION keywords: use the nights on disk
         per_session = {}
         sample = None
@@ -180,7 +200,8 @@ def build_rows(groups, lights, ids):
                 bortle = classes.pop() if len(classes) == 1 else None
             rows.append({
                 "date": iso_date(session) if session else "",
-                "filter": filter_cell(name, ids, [iso_date(session)] if session else [iso_date(s) for s in nights]),
+                "filter": filter_cell(name, ids, [iso_date(session)] if session else [iso_date(s) for s in nights],
+                                      [session_site_name(lights.get(s, [])) for s in ([session] if session else nights)]),
                 "number": str(count),
                 "duration": fmt_number(exposure),
                 "binning": sample.get("XBINNING", ""),
@@ -190,6 +211,31 @@ def build_rows(groups, lights, ids):
                 "bortle": str(bortle) if bortle else "",
             })
     return rows
+
+
+def merge_rows(rows):
+    # Rows that differ only in the number of frames (the panels of a mosaic) become one row
+    merged = {}
+    for row in rows:
+        key = tuple(row[c] for c in COLUMNS if c != "number")
+        if key in merged:
+            merged[key]["number"] = str(int(merged[key]["number"]) + int(row["number"]))
+        else:
+            merged[key] = dict(row)
+    return list(merged.values())
+
+
+def merge_panels(panel_groups):
+    # One group per (filter, exposure) for the page check and the description; "panels" keeps the count of each
+    merged = {}
+    for g in panel_groups:
+        entry = merged.setdefault((g["filter"], g["exposure_s"]), {
+            "filter": g["filter"], "exposure_s": g["exposure_s"], "active": 0, "total": 0, "sessions": set(), "panels": {}})
+        entry["active"] += g["active"]
+        entry["total"] += g["total"]
+        entry["sessions"].update(g["sessions"])
+        entry["panels"][g["panel"]] = g["active"]
+    return [{**v, "sessions": sorted(v["sessions"])} for _, v in sorted(merged.items())]
 
 
 def csv_text(rows):
@@ -251,6 +297,9 @@ def description_text(page, groups, sessions):
         nights = [dmy(iso_date(s)) for s in sessions] or [dmy(d) for loc in locations for d in loc["dates"]]
         if nights:
             lines.append("Nights: " + ", ".join(nights))
+    panel_ids = sorted({p for g in groups for p in g.get("panels", {})})
+    if len(panel_ids) > 1:
+        lines.append(f"Mosaic: {len(panel_ids)} panels")
     if gear:
         lines.append(f"Equipment: {gear}")
     lines.append("Software: N.I.N.A. (acquisition), PHD2 (guiding)")
@@ -258,7 +307,9 @@ def description_text(page, groups, sessions):
     for g in groups:
         seconds = g["active"] * g["exposure_s"]
         total += seconds
-        lines.append(f"{g['filter']}: {g['active']} x {fmt_number(g['exposure_s'])} s = {hours(seconds)}")
+        panels = g.get("panels", {})
+        detail = " (" + ", ".join(f"panel {p}: {n}" for p, n in sorted(panels.items())) + ")" if len(panels) > 1 else ""
+        lines.append(f"{g['filter']}: {g['active']} x {fmt_number(g['exposure_s'])} s = {hours(seconds)}{detail}")
     lines.append(f"Total integration: {hours(total)}")
     if "processed in PixInsight" not in body:
         lines.append("Stacked and processed in PixInsight.")
@@ -267,6 +318,7 @@ def description_text(page, groups, sessions):
 
 def check_against_page(front, groups):
     # The page lists "N x Ds" per filter; the filter names can differ (log "Clear" vs page "L"), so compare counts only
+    front = re.sub(r"^\s*panels:.*$", "", front, flags=re.M)  # mosaic pages: the per-panel counts are not extra filters
     page = sorted((int(n), float(s)) for n, s in re.findall(r'subs:\s*"(\d+) x (\d+(?:\.\d+)?)s"', front))
     log = sorted((g["active"], g["exposure_s"]) for g in groups)
     if page != log:
@@ -305,17 +357,23 @@ def main():
     log = pi_logs.latest_log(args.folder)
     if not log:
         sys.exit(f"No WBPP logs under {args.folder}")
-    if is_mosaic(log):
-        sys.exit(f"{log}: mosaics (PANEL_* folders / PANEL: keyword) are not supported yet")
-    groups = pi_logs.final_counts(log)
-    if not groups:
-        sys.exit(f"No light groups in {log}")
-
     ids = load_filter_map()
-
     # <run folder>/output/logs/<log>: only the lights of the run that produced the log
-    lights = session_lights(log.parents[2])
-    rows = build_rows(groups, lights, ids)
+    if is_mosaic(log):
+        panel_groups = pi_logs.panel_counts(log)
+        if not panel_groups:
+            sys.exit(f"No light groups with a PANEL keyword in {log}")
+        rows = []
+        for panel in sorted({g["panel"] for g in panel_groups}):
+            rows += build_rows([g for g in panel_groups if g["panel"] == panel],
+                               session_lights(log.parents[2], panel), ids, prefix=f"Panel {panel}: ")
+        rows = merge_rows(rows)
+        groups = merge_panels(panel_groups)
+    else:
+        groups = pi_logs.final_counts(log)
+        if not groups:
+            sys.exit(f"No light groups in {log}")
+        rows = build_rows(groups, session_lights(log.parents[2]), ids)
     missing = sorted({r["filter"][5:] for r in rows if r["filter"].startswith("TODO-")})
     if missing:
         warn(f"no AstroBin filter ID (for the date) for {missing}; add them to {FILTER_MAP} (cells are marked TODO-<name>)")

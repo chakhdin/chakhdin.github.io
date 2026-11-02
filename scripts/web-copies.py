@@ -167,8 +167,11 @@ def sized_adql(field):
 
 def unsized_adql(field):
     # catalogue objects SIMBAD has no size for, most referenced first
-    return ("SELECT TOP 10 main_id, nbref FROM basic WHERE " + simbad_where(field, SIMBAD_CATALOGUES) +
+    return ("SELECT TOP 10 main_id, nbref FROM basic WHERE " + simbad_where(field, SIMBAD_CATALOGUES + ["NAME"]) +
             " AND galdim_majaxis IS NULL ORDER BY nbref DESC")
+
+
+NAMED_OBJECTS = set()  # clean names of the SIMBAD objects whose main_id is a common name ("NAME ...")
 
 
 def clean_name(raw):
@@ -193,6 +196,9 @@ def simbad_query(adql):
             name = clean_name(row.split("\t")[0])
             if name and name not in names:
                 names.append(name)
+                # a common name, not a catalogue designation with a suffix such as "NGC 253 IRS 1"
+                if re.match(r'^"?NAME\s', row) and not re.match(r"(%s)\s" % "|".join(SIMBAD_CATALOGUES), name):
+                    NAMED_OBJECTS.add(name)
         return names
     return None
 
@@ -284,7 +290,9 @@ def main():
             objects, lookup_status = found, "ok"
             log(f"SIMBAD: {len(objects)} object(s): " + " | ".join(objects))
 
-    object_name = args.name or (objects[0] if objects else re.sub(r"_\d+$", "", source.stem))
+    # a named object (common name) first, else the first one found
+    named = next((o for o in objects if o in NAMED_OBJECTS), None)
+    object_name = args.name or named or (objects[0] if objects else re.sub(r"_\d+$", "", source.stem))
     stem = file_stem(object_name)
     log(f"Object: {object_name} -> files {stem}.*")
 

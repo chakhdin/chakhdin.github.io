@@ -16,7 +16,8 @@ from pathlib import Path
 GROUP = re.compile(r"Group of (\d+) Light frames \((\d+) active\)")
 STAMP = re.compile(r"^\[[^\]]*\] ")
 SESSION = re.compile(r"SESSION: (\d{8})")
-TOTAL_FIELDS = ("Filter", "Exposure", "Keywords")
+TOTAL_FIELDS = ("Filter", "Exposure", "Keywords", "Mode")
+PANEL = re.compile(r"PANEL: (\w+)")
 SITE_KEYS = ("SITELAT", "SITELONG", "SITEELEV", "DATE-OBS", "TELESCOP", "INSTRUME", "FOCALLEN")
 SITE_TABLE = Path(__file__).with_name("sites.local.json")
 
@@ -59,6 +60,37 @@ def final_counts(log):
     return [
         {"filter": f, "exposure_s": e, "active": v["active"], "total": v["total"], "sessions": sorted(v["sessions"])}
         for (f, e), v in sorted(result.items())
+    ]
+
+
+def panel_counts(log):
+    # Mosaic logs: one entry per (panel, filter, exposure). The Light groups with only a PANEL keyword and Mode
+    # "post-calibration" are the registration/integration groups of a panel; the one with the most frames is the
+    # panel's group (smaller ones are reference sub-groups). Sessions come from the groups that also carry SESSION.
+    result = {}
+    per_session = {}
+    for group in read_groups(log):
+        if "Filter" not in group or "Exposure" not in group:
+            continue
+        keywords = group.get("Keywords", "")
+        panel = PANEL.search(keywords)
+        if not panel:
+            continue
+        key = (panel.group(1), group["Filter"], float(group["Exposure"].rstrip("s")))
+        entry = result.setdefault(key, {"sessions": set(), "active": 0, "total": 0})
+        sessions = SESSION.findall(keywords)
+        if sessions:
+            entry["sessions"].update(sessions)
+            per_session[(key, sessions[0])] = group["active"]  # last block of a session wins
+        elif group.get("Mode") == "post-calibration" and group["total"] >= entry["total"]:
+            entry.update(active=group["active"], total=group["total"])
+    for (key, _), active in per_session.items():
+        if not result[key]["total"]:
+            result[key]["fallback"] = result[key].get("fallback", 0) + active  # no panel group in the log
+    return [
+        {"panel": p, "filter": f, "exposure_s": e, "active": v["active"] or v.get("fallback", 0),
+         "total": v["total"] or v.get("fallback", 0), "sessions": sorted(v["sessions"])}
+        for (p, f, e), v in sorted(result.items())
     ]
 
 
@@ -112,7 +144,11 @@ def main():
     if not log:
         sys.exit(f"No logs under {folder}")
     print(log)
-    for row in final_counts(log):
+    panels = panel_counts(log)
+    if panels:
+        # Mosaic: counts per panel (final_counts would mix the panels)
+        print(f"Mosaic: {len({p['panel'] for p in panels})} panels (active count per panel; the page needs mosaic_panels and panels per filter)")
+    for row in panels or final_counts(log):
         print(row)
     light = first_light(folder)
     header = light_header(light) if light else {}
