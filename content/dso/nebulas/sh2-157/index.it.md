@@ -10,7 +10,7 @@ locations:
   - name: "Astrobrallo, Lombardia, Italia"
     bortle: "Classe 4"
     dates: ["2025-07-28"]
-featured_image: "Sh2 157_4.resample.annotated.png"
+featured_image: "Sh2 157_4.resample2.jpg"
 filters:
   - name: "Ha"
     subs: "20 x 600s"

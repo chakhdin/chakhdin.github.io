@@ -13,7 +13,7 @@ locations:
   - name: "Ка' дель Монте, Ломбардия, Италия"
     bortle: "Класс 4"
     dates: ["2025-09-28", "2025-10-05"]
-featured_image: "M31_2.resample.annotated.png"
+featured_image: "M31_2.resample2.jpg"
 filters:
   - name: "R"
     subs: "10 x 300s"

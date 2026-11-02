@@ -10,7 +10,7 @@ locations:
   - name: "Il Pratone, Lombardia, Italia"
     bortle: "Classe 4"
     dates: ["2024-08-09"]
-featured_image: "M16_6.annotated.png"
+featured_image: "M16_6.jpg"
 filters:
   - name: "L"
     subs: "28 x 600s"

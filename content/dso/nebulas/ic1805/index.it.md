@@ -13,7 +13,7 @@ locations:
   - name: "Il Pratone, Lombardia, Italia"
     bortle: "Classe 4"
     dates: ["2025-11-22"]
-featured_image: "IC1805_SHO_1l.annotated.png"
+featured_image: "IC1805_SHO_1.resample.jpg"
 filters:
   - name: "Ha (6nm)"
     subs: "26 x 600s"

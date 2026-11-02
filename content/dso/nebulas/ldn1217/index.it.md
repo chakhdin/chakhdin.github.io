@@ -10,7 +10,7 @@ locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"
     dates: ["2024-11-29", "2024-11-30"]
-featured_image: "LDN1217_1.annotated.png"
+featured_image: "LDN1217_1.jpg"
 filters:
   - name: "L"
     subs: "67 x 600s"

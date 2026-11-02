@@ -1,4 +1,4 @@
-// Uploads content/**/*.png to R2, keyed by its path relative to content/.
+// Uploads content/**/*.png and content/**/*.jpg to R2, keyed by its path relative to content/.
 // Safe to run any time you add or change photos — it skips files whose
 // content already matches what's in R2 (compared by MD5 against the
 // object's ETag), so re-running after a small addition only uploads what's
@@ -16,7 +16,7 @@ async function* walk(dir) {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
         const full = path.join(dir, entry.name);
         if (entry.isDirectory()) yield* walk(full);
-        else if (entry.isFile() && entry.name.toLowerCase().endsWith(".png")) yield full;
+        else if (entry.isFile() && /\.(png|jpe?g)$/i.test(entry.name)) yield full;
     }
 }
 
@@ -44,7 +44,7 @@ for await (const file of walk(contentDir)) {
     }
 
     const { size } = await stat(file);
-    await s3.send(new PutObjectCommand({ Bucket: bucket, Key: key, Body: body, ContentType: "image/png" }));
+    await s3.send(new PutObjectCommand({ Bucket: bucket, Key: key, Body: body, ContentType: /\.png$/i.test(key) ? "image/png" : "image/jpeg" }));
     uploaded++;
     bytes += size;
     console.log(`uploaded ${key} (${(size / 1024 / 1024).toFixed(1)} MB)`);

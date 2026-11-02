@@ -1,6 +1,6 @@
 ﻿---
 title: "Галактики"
 description: "Спиральные и эллиптические галактики за миллионы световых лет от нас, разрешенные до мельчайших деталей структуры."
-featured_image: "galaxy-cover.png"
+featured_image: "galaxy-cover.jpg"
 weight: 10
 ---
