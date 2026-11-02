@@ -5,11 +5,11 @@ description: Add a new astrophoto (DSO, planet, Sun, Moon, comet; still or time-
 
 # Add an image to the gallery
 
-Each image is a Hugo page bundle with three language files. The PNG is **not committed**: it lives in Cloudflare R2 and CI fetches it before building. Order matters: upload to R2 *before* pushing, or the deploy builds without the image.
+Each image is a Hugo page bundle with three language files. The page image (JPEG q95; PNG accepted) is **not committed**: it lives in Cloudflare R2 and CI fetches it before building. Order matters: upload to R2 *before* pushing, or the deploy builds without the image.
 
 ## 1. Gather inputs (ask only for what is missing)
 
-- Image file (PNG) and, if relevant, the annotated version (`*.annotated.png` is the convention).
+- Image file (JPEG, or PNG) and, if relevant, the annotated version (`*.annotated.png` is the convention).
 - Object name and short descriptive subtitle (e.g. "LDN 1295: The Giraffe Nebula").
 - Section: `dso/nebulas`, `dso/galaxies`, `dso/clusters`, `sso/<body>` (jupiter, mars, moon, sun, saturn, venus, uranus, neptune, comets), or `australia` (Swan Reach remote rig).
 - Capture nights, location and Bortle class.
@@ -22,7 +22,7 @@ Do not guess exposure figures. Compute `total_exposure` as the sum of the filter
 
 ## 2. Create the bundle
 
-Path: `content/<section>/<slug>/` with `index.md` (EN), `index.it.md`, `index.ru.md`, plus the PNG.
+Path: `content/<section>/<slug>/` with `index.md` (EN), `index.it.md`, `index.ru.md`, plus the image (JPEG or PNG).
 
 - DSO slug: lowercase catalogue id, e.g. `ldn1295`, `m31-andromeda`, `sh2-114`.
 - Solar-system slug: capture date, e.g. `2024-08-17`, or `YYYY-MM-DD-<designation>` for comets.
@@ -60,7 +60,7 @@ Put a poster frame PNG in the bundle, set `featured_image` and `video_poster` to
 `node scripts/r2-upload-video.mjs <local-file> videos/<body>/<name>.mp4`
 (key must start with `videos/`). Videos are served directly from R2 and never synced into `content/`.
 
-## 3. Upload the PNG to R2
+## 3. Upload the image to R2
 
 `node scripts/r2-upload.mjs` (skips files whose MD5 already matches). It needs `R2_ACCOUNT_ID`, `R2_BUCKET`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` in the environment. Never write these into files or commands; if they are not set, tell the user which are missing and stop.
 
@@ -74,7 +74,7 @@ This writes to external storage: state what will be uploaded and get confirmatio
 
 ## 5. Commit and deploy
 
-Pushing to `main` triggers the GitHub Pages deploy. Show the diff summary and ask before committing or pushing. Commit message in English, short, imperative, e.g. "Add LDN 1295 (Giraffe Nebula)". The PNG must not appear in `git status` (`content/**/*.png` is ignored); if it does, stop.
+Pushing to `main` triggers the GitHub Pages deploy. Show the diff summary and ask before committing or pushing. Commit message in English, short, imperative, e.g. "Add LDN 1295 (Giraffe Nebula)". The image must not appear in `git status` (`content/**/*.png` and `*.jpg` are ignored); if it does, stop.
 
 ## Out of scope
 
