@@ -10,7 +10,7 @@ locations:
   - name: "Суон-Рич, Южная Австралия, Австралия"
     bortle: "Класс 1"
     dates: ["2026-10-06", "2026-10-07", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15"]
-featured_image: "NGC6744_2.png"
+featured_image: "NGC6744_2.jpg"
 filters:
   - name: "L"
     subs: "93 x 300s"

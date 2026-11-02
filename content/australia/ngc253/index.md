@@ -10,7 +10,7 @@ locations:
   - name: "Swan Reach, South Australia, Australia"
     bortle: "Class 1"
     dates: ["2026-10-16", "2026-10-17", "2026-10-18", "2026-10-19", "2026-10-21"]
-featured_image: "NGC253_2.png"
+featured_image: "NGC253_2.jpg"
 filters:
   - name: "L"
     subs: "68 x 300s"

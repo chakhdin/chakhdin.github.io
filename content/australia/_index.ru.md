@@ -1,5 +1,5 @@
 ---
 title: "Австралия"
 description: "Снимки объектов глубокого космоса южного неба, сделанные удалённо из Суон-Рич, Южная Австралия."
-featured_image: "australia-cover.png"
+featured_image: "australia-cover.jpg"
 ---

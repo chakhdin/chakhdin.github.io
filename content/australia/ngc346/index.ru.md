@@ -4,17 +4,17 @@ date: 2026-10-22T10:00:00Z
 categories: ["Туманности"]
 equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
 description: "Самая яркая область звездообразования Малого Магелланова Облака: молодое рассеянное скопление, окружённое светящимся водородом, на расстоянии около 200 000 световых лет в созвездии Тукана."
-total_exposure: "2h 53m"
+total_exposure: "2h 43m"
 focal_length: "3660mm"
 locations:
   - name: "Суон-Рич, Южная Австралия, Австралия"
     bortle: "Класс 1"
     dates: ["2026-10-05"]
-featured_image: "NGC346_1.png"
+featured_image: "NGC346_1.jpg"
 filters:
   - name: "Ha"
-    subs: "23 x 300s"
-    integration: "1h 55m"
+    subs: "21 x 300s"
+    integration: "1h 45m"
   - name: "R"
     subs: "10 x 120s"
     integration: "20m"

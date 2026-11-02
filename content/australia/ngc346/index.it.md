@@ -4,17 +4,17 @@ date: 2026-10-22T10:00:00Z
 categories: ["Nebulose"]
 equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
 description: "La regione di formazione stellare più luminosa della Piccola Nube di Magellano: un giovane ammasso aperto avvolto da gas di idrogeno incandescente, a circa 200.000 anni luce nel Tucano."
-total_exposure: "2h 53m"
+total_exposure: "2h 43m"
 focal_length: "3660mm"
 locations:
   - name: "Swan Reach, Australia Meridionale, Australia"
     bortle: "Classe 1"
     dates: ["2026-10-05"]
-featured_image: "NGC346_1.png"
+featured_image: "NGC346_1.jpg"
 filters:
   - name: "Ha"
-    subs: "23 x 300s"
-    integration: "1h 55m"
+    subs: "21 x 300s"
+    integration: "1h 45m"
   - name: "R"
     subs: "10 x 120s"
     integration: "20m"
