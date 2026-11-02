@@ -21,7 +21,7 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 
 WIDTH, HEIGHT = 1080, 1440
-HASHTAGS = "#astrophotography #astronomy #deepsky #space #nightsky"
+HASHTAGS = "#astrophotography #astronomy #deepsky"
 SOLAR_HASHTAGS = "#astrophotography #astronomy #space #solarsystem #telescope"
 LABELS = {
     "en": ("Total exposure", "Link in bio.", "collaboration with"),
