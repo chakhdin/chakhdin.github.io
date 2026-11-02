@@ -16,6 +16,8 @@ Each image is a Hugo page bundle with three language files. The PNG is **not com
 - Equipment, total exposure, focal length, per-filter subs and integration.
 - Processing notes (default tools: PixInsight; planets add AutoStakkert!3).
 
+If the user names a PixInsight object folder (e.g. `E:\Astro\pixinsight\vdB 142`), read the facts from it instead of asking: `python scripts/pi_logs.py "<folder>"` prints the latest WBPP log's final Light groups per filter and exposure (use the "active" count, never the group total; `Clear` is `L`), the `SESSION:` nights, and the lights' header (SITELAT/SITELONG, telescope, camera, focal length). The location name and Bortle class come from the local, git-ignored `scripts/sites.local.json`; if the site is not in it, ask the user and never write coordinates into the repo. Show the figures to the user before using them.
+
 Do not guess exposure figures. Compute `total_exposure` as the sum of the filter integrations and check the arithmetic (subs x seconds).
 
 ## 2. Create the bundle
@@ -75,4 +77,4 @@ Pushing to `main` triggers the GitHub Pages deploy. Show the diff summary and as
 
 ## Out of scope
 
-Posting to AstroBin, Instagram or other platforms is done by the user. If asked, produce only the text (caption, acquisition summary) in the chat or a git-ignored local folder, never in `content/` or `static/`.
+Posting to AstroBin is done by the user (its API is read-only). Instagram, Pinterest and Facebook posts go through the Buffer MCP, only after the user approves the exact text, image and channel; a queued post publishes by itself, so never call `create_post` without that approval, and the user confirms every R2 upload of a social image. Post text (caption, acquisition summary) goes only into the chat or a git-ignored local folder, never into `content/` or `static/`. `python scripts/social-export.py content/<section>/<slug>` writes `social/<slug>/post-instagram.txt` (link in bio) and `post-web.txt` (page URL, for Facebook and Pinterest), each with English first, then Italian, in the fixed template: title, intro, then 📍 🔭 📷 ⏱️ 💻 lines, link, hashtags. All figures come from the page front matter; the intro is the page description and the hashtags are generic, so edit both by hand per object and check every claim against the page.
