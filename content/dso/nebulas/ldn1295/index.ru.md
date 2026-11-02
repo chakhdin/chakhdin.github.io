@@ -5,7 +5,7 @@ categories: ["Туманности"]
 equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "Глубокий широкоугольный снимок LDN 1295, известной как туманность Жираф, демонстрирующий плотную темную поглощающую пыль на фоне богатого звездного поля в созвездии Кассиопеи."
 total_exposure: "10h 27m"
-focal_length: "455mm"
+focal_length: "332mm"
 locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
     bortle: "Класс 4"

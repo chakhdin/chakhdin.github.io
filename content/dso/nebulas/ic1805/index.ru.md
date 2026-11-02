@@ -5,7 +5,7 @@ categories: ["Туманности"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader LRGB 36mm filters", "Baader Ha 7nm 36mm filter", "Antlia Pro 3nm SHO 36mm filters"]
 description: "Великолепный узкополосный снимок туманности Сердце в палитре Хаббла, демонстрирующий сложные столбы газа и пыли, сформированные центральным звездным скоплением Мелотт 15."
 total_exposure: "16h 20m"
-focal_length: ""
+focal_length: "455mm"
 locations:
   - name: "Сен-Бартелеми, Валле-д'Аоста, Италия"
     bortle: "Класс 4"

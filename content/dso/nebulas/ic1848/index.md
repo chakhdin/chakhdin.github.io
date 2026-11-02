@@ -5,7 +5,7 @@ categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "ASI2600MM Pro", "NEQ6 Pro", "Baader Ha 7nm 36mm filter", "Baader LRGB 36mm filters"]
 description: "A deep wide-field view of the Soul Nebula in Cassiopeia, showcasing its complex ridges of gas and dust illuminated by young, massive star clusters."
 total_exposure: "8h 05m"
-focal_length: ""
+focal_length: "455mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
     bortle: "Class 4"

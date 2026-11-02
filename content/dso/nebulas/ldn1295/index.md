@@ -5,7 +5,7 @@ categories: ["Nebula"]
 equipment: ["Takahashi FSQ85-EDX", "Takahashi Reducer QB 0.73x", "ASI2600MM Pro", "NEQ6 Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "A deep wide-field exposure of LDN 1295, known as the Giraffe Nebula, highlighting dense dark absorption dust silhouetted against a rich star field in Cassiopeia."
 total_exposure: "10h 27m"
-focal_length: "455mm"
+focal_length: "332mm"
 locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
     bortle: "Class 4"
