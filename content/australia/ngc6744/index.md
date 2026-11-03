@@ -1,20 +1,20 @@
 ---
 title: "NGC 6744: Spiral Galaxy in Pavo"
-date: 2026-10-22T10:40:00Z
+date: 2026-11-03T10:00:00Z
 categories: ["Galaxy"]
 equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
 description: "A large intermediate spiral galaxy in Pavo, tens of millions of light-years away, often compared to the Milky Way, with extended arms and a distorted companion, NGC 6744A."
-total_exposure: "15h 45m"
+total_exposure: "26h 15m"
 focal_length: "3660mm"
 locations:
   - name: "Swan Reach, South Australia, Australia"
     bortle: "Class 1"
-    dates: ["2026-10-06", "2026-10-07", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15"]
-featured_image: "NGC6744_2.jpg"
+    dates: ["2026-10-06", "2026-10-07", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-31"]
+featured_image: "NGC6744_3.jpg"
 filters:
   - name: "L"
-    subs: "93 x 300s"
-    integration: "7h 45m"
+    subs: "103 x 300s"
+    integration: "8h 35m"
   - name: "R"
     subs: "32 x 300s"
     integration: "2h 40m"
@@ -24,6 +24,9 @@ filters:
   - name: "B"
     subs: "32 x 300s"
     integration: "2h 40m"
+  - name: "Ha"
+    subs: "29 x 1200s"
+    integration: "9h 40m"
 ---
 NGC 6744 is an intermediate spiral galaxy (SAB(r)bc) in the constellation Pavo. ESO gives its distance as about 30 million light-years, while other estimates are lower, around 24 million. NASA gives its diameter as about 175,000 light-years, larger than the Milky Way. James Dunlop discovered it on 30 June 1826 from Parramatta, Australia.
 
@@ -31,4 +34,4 @@ ESO describes it as close to what our own galaxy would look like from outside, w
 
 The outer arms are faint and need a long integration to show.
 
-The data was captured remotely from Swan Reach, South Australia, over six nights, in collaboration with Paride Gabini, Rino Morra, Federico Palaia and Alessio Carmine Scipione, on a rig operated with NINA at Swan Reach Imaging (https://swanreachimaging.com.au). The frames were collected jointly by the group sharing the rig. Stacked and processed in PixInsight.
+The data was captured remotely from Swan Reach, South Australia, over eleven nights, in collaboration with Paride Gabini, Rino Morra, Federico Palaia and Alessio Carmine Scipione, on a rig operated with NINA at Swan Reach Imaging (https://swanreachimaging.com.au). The frames were collected jointly by the group sharing the rig. Stacked and processed in PixInsight.
