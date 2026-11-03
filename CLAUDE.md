@@ -1,6 +1,6 @@
 # astro-gallery-cat
 
-Sergey's astrophotography gallery: a static **Hugo** site (Tailwind CSS 4), trilingual **EN / IT / RU** (EN is the default language). Published on GitHub Pages (`baseURL` https://chakhdin.github.io/); pushing to `main` triggers the deploy (`.github/workflows/hugo.yaml`).
+Sergey's astrophotography gallery: a static **Hugo** site (Tailwind CSS 4), trilingual **EN / IT / RU** (EN is the default language). Published on GitHub Pages (`baseURL` https://shakhdinarov.com/); pushing to `main` triggers the deploy (`.github/workflows/hugo.yaml`).
 
 ## Pinned versions
 Hugo 0.168.0 (extended), Node 24. Match them locally.
