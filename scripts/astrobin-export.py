@@ -8,6 +8,7 @@ Usage:
 Output in social/<slug>/ (git-ignored):
   acquisition.csv            paste into AstroBin's "Import from CSV" box of the image acquisition form
   astrobin-description.txt   description text built from the page and the WBPP log
+  <slug>.<ext>               copy of the page image (front matter featured_image), the file to upload
 
 CSV columns follow https://welcome.astrobin.com/importing-acquisitions-from-csv (checked 02/11/2026):
 date,filter,number,duration,binning,gain,sensorCooling,fNumber,bortle. "number" and "duration" are
@@ -36,6 +37,7 @@ Nothing is overwritten without --force. --dry-run prints and writes nothing.
 import argparse
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -338,6 +340,14 @@ def check_writable(path, force):
         sys.exit(f"{path} exists; use --force to overwrite")
 
 
+def page_image(page_dir):
+    # The page's featured_image (the JPEG kept in the git-ignored bundle), or None
+    front = (page_dir / "index.md").read_text(encoding="utf-8").split("---", 2)[1]
+    match = re.search(r'^featured_image:\s*"([^"]*)"', front, re.M)
+    path = page_dir / match.group(1) if match else None
+    return path if path and path.exists() else None
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -389,12 +399,21 @@ def main():
         return
     out = Path(args.out) if args.out else REPO / "social" / page_dir.name
     targets = [(out / "acquisition.csv", csv), (out / "astrobin-description.txt", description)]
+    image = page_image(page_dir)
+    if image:
+        image_out = out / f"{page_dir.name}{image.suffix.lower()}"
+        check_writable(image_out, args.force)
+    else:
+        warn(f"no featured_image file found in {page_dir}; the page image was not copied")
     for path, _ in targets:
         check_writable(path, args.force)
     out.mkdir(parents=True, exist_ok=True)
     for path, text in targets:
         path.write_text(text, encoding="utf-8", newline="\n")
         print(f"wrote {path}")
+    if image:
+        shutil.copyfile(image, image_out)
+        print(f"wrote {image_out}")
 
 
 if __name__ == "__main__":
