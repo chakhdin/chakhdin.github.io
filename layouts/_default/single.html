@@ -42,6 +42,23 @@
 {{ end }}
 {{ with $keywords }}{{ $imageObject = merge $imageObject (dict "keywords" (delimit . ", ")) }}{{ end }}
 <script type="application/ld+json">{{ $imageObject | jsonify | safeJS }}</script>
+{{ if and $.Params.video site.Params.videoBaseURL }}
+{{/* Video pages: describe the hero video; thumbnail is the poster frame when set, else the hero image. */}}
+{{ $thumb := .Permalink }}
+{{ with $.Params.video_poster }}{{ with $.Resources.GetMatch . }}{{ $thumb = .Permalink }}{{ end }}{{ end }}
+{{ $videoObject := dict
+    "@context" "https://schema.org"
+    "@type" "VideoObject"
+    "name" $.Title
+    "description" ($.Params.description | default $.Summary | plainify | htmlUnescape)
+    "thumbnailUrl" (slice $thumb)
+    "uploadDate" ($.Date.Format "2006-01-02")
+    "contentUrl" (printf "%s/%s" site.Params.videoBaseURL $.Params.video)
+}}
+{{ with $.Params.video_width }}{{ $videoObject = merge $videoObject (dict "width" .) }}{{ end }}
+{{ with $.Params.video_height }}{{ $videoObject = merge $videoObject (dict "height" .) }}{{ end }}
+<script type="application/ld+json">{{ $videoObject | jsonify | safeJS }}</script>
+{{ end }}
 {{ end }}
 
 {{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" site.Title "item" site.Home.Permalink) }}
