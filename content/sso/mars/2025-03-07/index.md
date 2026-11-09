@@ -2,7 +2,7 @@
 title: "Mars: Late-Season Detail"
 date: 2025-03-07T23:36:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "The smallest and last Mars capture of the 2025 apparition, still resolving a bright polar cap and a faint dark marking."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

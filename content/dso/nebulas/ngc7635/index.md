@@ -2,7 +2,7 @@
 title: "NGC 7635: The Bubble Nebula"
 date: 2025-08-06T08:15:00Z
 categories: ["Nebula"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A stunning close-up of the Bubble Nebula, a cosmic bubble blown by the fierce stellar winds of a massive central star, cropped from a wider field of view."
 total_exposure: "5h 40m"
 focal_length: "2000mm"

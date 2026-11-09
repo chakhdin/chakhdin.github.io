@@ -2,7 +2,7 @@
 title: "Urano"
 date: 2024-12-16T22:45:00Z
 categories: ["Urano"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Il gigante ghiacciato Urano come un piccolo disco verde-azzurro privo di dettagli."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

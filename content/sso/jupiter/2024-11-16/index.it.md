@@ -2,7 +2,7 @@
 title: "Giove: Dettagli Fini nelle Fasce Equatoriali"
 date: 2024-11-16T02:02:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Struttura intrecciata delle fasce, piccoli ovali bianchi e sottili barre scure risolte sul disco di Giove."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

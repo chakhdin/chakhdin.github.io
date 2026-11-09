@@ -2,7 +2,7 @@
 title: "Giove: La Grande Macchia Rossa Vicino al Limbo"
 date: 2025-02-04T21:29:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "La Grande Macchia Rossa che si avvicina al limbo occidentale di Giove, con una forte turbolenza nella nube circostante."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Jupiter: The Great Red Spot Near the Limb"
 date: 2025-02-04T21:29:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "The Great Red Spot approaching Jupiter's western limb, with strong turbulence in the surrounding cloud deck."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

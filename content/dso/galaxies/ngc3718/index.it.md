@@ -2,7 +2,7 @@
 title: "NGC 3718: Galassia a Spirale Peculiare"
 date: 2025-04-26T12:11:00Z
 categories: ["Galassie"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Una galassia a spirale fortemente distorta caratterizzata da una contorta banda di polvere scura e ampie code mareali, accompagnata da NGC 3729 e dal lontano gruppo di galassie Hickson 56."
 total_exposure: "8h 10m"
 focal_length: "2000mm"

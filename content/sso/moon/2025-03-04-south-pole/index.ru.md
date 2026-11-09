@@ -2,7 +2,7 @@
 title: "Область Южного Полюса Луны"
 date: 2025-03-04T18:35:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Драматичный вид южного полюса Луны в скользящем свете, его рельеф в резком рельефе."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

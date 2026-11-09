@@ -2,7 +2,7 @@
 title: "Полярная Область Луны"
 date: 2024-10-11T20:13:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Крупный план полярной области Луны, её пересеченный, густо кратерированный рельеф в резком рельефе."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

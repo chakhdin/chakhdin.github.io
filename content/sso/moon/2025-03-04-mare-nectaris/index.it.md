@@ -2,7 +2,7 @@
 title: "La Luna e il Mare Nectaris"
 date: 2025-03-04T18:34:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano nitido del Mare Nectaris e degli altopiani circostanti lungo il terminatore."
 total_exposure: "Mosaico a due pannelli"
 focal_length: "4000mm"

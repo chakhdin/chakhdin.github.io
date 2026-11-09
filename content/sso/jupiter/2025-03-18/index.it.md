@@ -2,7 +2,7 @@
 title: "Giove: Dettagli di Fine Apparizione"
 date: 2025-03-18T21:05:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una delle ultime riprese di Giove dell'apparizione 2024-2025, che risolve ancora una fine struttura delle fasce e piccole macchie scure."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

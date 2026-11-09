@@ -2,7 +2,7 @@
 title: "Marte: Un Disco che si Restringe"
 date: 2025-02-20T22:53:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Marte notevolmente più piccolo a un mese dall'opposizione, il suo disco avvolto in una foschia blu al limbo con marcature scure ancora visibili al centro."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

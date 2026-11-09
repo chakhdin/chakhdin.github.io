@@ -2,7 +2,7 @@
 title: "The Moon, Sinus Iridum and Plato"
 date: 2024-01-21T23:46:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A sharp close-up of the bay of Sinus Iridum and the walled plain Plato, their rims caught in dramatic low-angle light."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

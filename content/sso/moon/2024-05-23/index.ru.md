@@ -2,7 +2,7 @@
 title: "Минеральная Луна"
 date: 2024-05-23T23:50:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Насыщенная цветопередача Луны, раскрывающая тонкие минеральные вариации на её поверхности, обычно невидимые глазу."
 total_exposure: "Многопанельная мозаика, калибровка по цвету"
 focal_length: "4000mm"

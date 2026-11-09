@@ -2,7 +2,7 @@
 title: "Марс: Детали Конца Сезона"
 date: 2025-03-07T23:36:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Самый маленький и последний снимок Марса за сезон видимости 2025 года, всё ещё разрешающий яркую полярную шапку и тонкую тёмную отметину."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

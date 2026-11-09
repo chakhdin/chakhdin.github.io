@@ -2,7 +2,7 @@
 title: "Марс Вблизи Противостояния"
 date: 2025-01-16T00:51:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Марс на пике своих размеров и яркости, снятый прямо во время противостояния в январе 2025 года с заметной тёмной отметиной и полярным капюшоном."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

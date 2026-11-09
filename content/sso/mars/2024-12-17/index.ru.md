@@ -2,7 +2,7 @@
 title: "Марс: Детали Поверхности Становятся Четче"
 date: 2024-12-17T03:50:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Более чёткий и немного более крупный Марс за несколько недель до противостояния, показывающий отчетливые тёмные отметины на диске."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

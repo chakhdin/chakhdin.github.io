@@ -2,7 +2,7 @@
 title: "Mars: Softening Detail Post-Opposition"
 date: 2025-02-04T23:40:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Mars continuing to recede from Earth, its disk softening as faint dark markings trail along the southern limb."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

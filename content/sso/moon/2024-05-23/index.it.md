@@ -2,7 +2,7 @@
 title: "Una Luna Minerale"
 date: 2024-05-23T23:50:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una resa a colori profondi della Luna che rivela sottili variazioni minerali sulla sua superficie, normalmente invisibili all'occhio."
 total_exposure: "Mosaico multi-pannello, calibrato nei colori"
 focal_length: "4000mm"

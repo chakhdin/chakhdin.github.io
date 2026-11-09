@@ -2,7 +2,7 @@
 title: "IC 5146: Туманность Кокон"
 date: 2024-08-11T15:10:00Z
 categories: ["Туманности"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Прекрасная область звездообразования в Лебеде, демонстрирующая яркое красное свечение ионизированного водорода, переплетенное с темной пылью, и нежную голубую отражательную туманность."
 total_exposure: "5h 20m"
 focal_length: "2000mm"

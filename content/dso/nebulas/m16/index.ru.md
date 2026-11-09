@@ -2,7 +2,7 @@
 title: "M16: Туманность Орел и Столпы Творения"
 date: 2024-08-11T13:37:00Z
 categories: ["Туманности"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Захватывающий вид на M16, туманность Орел, подчеркивающий культовые Столпы Творения среди светящихся облаков водорода и новорожденных звезд."
 total_exposure: "4h 40m"
 focal_length: "2000mm"

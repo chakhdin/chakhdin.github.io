@@ -2,7 +2,7 @@
 title: "The Moon: A Cratered Terminator"
 date: 2024-10-11T20:08:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A sharp close-up along the terminator, showing a dense field of craters in high relief."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

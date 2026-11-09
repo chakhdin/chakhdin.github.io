@@ -2,7 +2,7 @@
 title: "Луна: Длинная Мозаика Терминатора"
 date: 2024-01-21T23:41:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Высокая мозаика из нескольких панелей, прослеживающая терминатор от кратера Платон на севере до Коперника на юге."
 total_exposure: "Мозаика из нескольких панелей"
 focal_length: "4000mm"

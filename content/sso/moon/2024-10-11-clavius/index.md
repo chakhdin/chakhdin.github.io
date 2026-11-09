@@ -2,7 +2,7 @@
 title: "The Moon and Clavius"
 date: 2024-10-11T20:06:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A close-up of the southern limb showing the vast crater Clavius and dramatic terminator relief."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

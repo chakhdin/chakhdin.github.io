@@ -2,7 +2,7 @@
 title: "La Luna e Sinus Iridum"
 date: 2024-01-22T00:08:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano più ravvicinato di Sinus Iridum, la 'Baia degli Iridi', il suo bordo arcuato colto in una drammatica luce radente."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

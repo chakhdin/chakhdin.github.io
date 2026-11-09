@@ -2,7 +2,7 @@
 title: "Уран"
 date: 2024-12-16T22:45:00Z
 categories: ["Уран"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Ледяной гигант Уран в виде небольшого бесструктурного бирюзово-зеленого диска."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

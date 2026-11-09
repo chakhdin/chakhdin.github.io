@@ -2,7 +2,7 @@
 title: "Юпитер: Большое Красное Пятно у Края Диска"
 date: 2025-02-04T21:29:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Большое Красное Пятно, приближающееся к западному краю диска Юпитера, с сильной турбулентностью в окружающем облачном слое."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

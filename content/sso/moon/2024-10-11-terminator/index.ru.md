@@ -2,7 +2,7 @@
 title: "Луна: Кратерированный Терминатор"
 date: 2024-10-11T20:08:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Четкий крупный план вдоль терминатора, показывающий плотное поле кратеров в сильном рельефе."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

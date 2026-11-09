@@ -2,7 +2,7 @@
 title: "Marte: I Dettagli si Ammorbidiscono Dopo l'Opposizione"
 date: 2025-02-04T23:40:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Marte che continua ad allontanarsi dalla Terra, il suo disco si ammorbidisce mentre tenui marcature scure si estendono lungo il limbo meridionale."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

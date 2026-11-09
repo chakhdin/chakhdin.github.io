@@ -2,7 +2,7 @@
 title: "Юпитер: Большое Красное Пятно на Центральном Меридиане"
 date: 2025-01-15T23:31:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Большое Красное Пятно, пересекающее центральный меридиан Юпитера, в окружении насыщенно окрашенных экваториальных поясов."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

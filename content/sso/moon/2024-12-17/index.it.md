@@ -2,7 +2,7 @@
 title: "La Luna e il Mare Crisium"
 date: 2024-12-17T04:24:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un mosaico nitido del Mare Crisium, una pianura lavica isolata vicino al limbo orientale della Luna, lungo il terminatore."
 total_exposure: "Mosaico a due pannelli"
 focal_length: "4000mm"

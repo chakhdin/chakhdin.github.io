@@ -2,7 +2,7 @@
 title: "NGC 7635: La Nebulosa Bolla"
 date: 2025-08-06T08:15:00Z
 categories: ["Nebulose"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Un primo piano mozzafiato della Nebulosa Bolla, una bolla cosmica creata dai feroci venti stellari di una massiccia stella centrale, ritagliata da un campo visivo più ampio."
 total_exposure: "5h 40m"
 focal_length: "2000mm"

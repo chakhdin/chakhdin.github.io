@@ -2,7 +2,7 @@
 title: "NGC 6781: The Snowglobe Nebula"
 date: 2024-07-25T11:05:00Z
 categories: ["Nebula"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A stunning planetary nebula in Aquila, featuring a glowing blue core of ionized oxygen surrounded by a delicate red shell of hydrogen."
 total_exposure: "4h 10m"
 focal_length: "2000mm"

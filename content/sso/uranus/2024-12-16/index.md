@@ -2,7 +2,7 @@
 title: "Uranus"
 date: 2024-12-16T22:45:00Z
 categories: ["Uranus"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "The ice giant Uranus as a small, featureless teal-green disk."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

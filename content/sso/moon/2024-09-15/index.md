@@ -2,7 +2,7 @@
 title: "A Mineral Moon at Waning Gibbous"
 date: 2024-09-15T21:48:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A second mineral-color rendition of the Moon, its waning gibbous phase revealing the same titanium-rich maria in cool blue tones."
 total_exposure: "Multi-pane mosaic, color-calibrated"
 focal_length: "4000mm"

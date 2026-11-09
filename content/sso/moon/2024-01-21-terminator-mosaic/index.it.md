@@ -2,7 +2,7 @@
 title: "La Luna: Un Lungo Mosaico del Terminatore"
 date: 2024-01-21T23:41:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un alto mosaico a più pannelli che segue il terminatore dal cratere Platone a nord fino a Copernico a sud."
 total_exposure: "Mosaico multi-pannello"
 focal_length: "4000mm"

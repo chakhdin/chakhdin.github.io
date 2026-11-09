@@ -2,7 +2,7 @@
 title: "Минеральная Луна в Фазе Убывающей Гиббозности"
 date: 2024-09-15T21:48:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Второе воплощение минеральных цветов Луны — фаза убывающей гиббозности раскрывает те же богатые титаном моря в холодных синих тонах."
 total_exposure: "Многопанельная мозаика, калибровка по цвету"
 focal_length: "4000mm"

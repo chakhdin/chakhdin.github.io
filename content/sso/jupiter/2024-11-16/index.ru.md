@@ -2,7 +2,7 @@
 title: "Юпитер: Тонкие Детали Экваториальных Поясов"
 date: 2024-11-16T02:02:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Переплетенная структура поясов, небольшие белые овалы и тонкие темные перемычки, разрешенные на диске Юпитера."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Mars: A Different Rotational Face"
 date: 2025-01-18T01:47:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Still near opposition, but showing a different side of Mars thanks to the planet's roughly 24.6-hour rotation."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

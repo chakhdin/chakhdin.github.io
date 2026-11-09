@@ -2,7 +2,7 @@
 title: "Venere: Una Sottile Falce"
 date: 2025-03-04T17:52:00Z
 categories: ["Venere"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Venere in una suggestiva fase di sottile falce, che cresce di dimensioni avvicinandosi alla congiunzione inferiore."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

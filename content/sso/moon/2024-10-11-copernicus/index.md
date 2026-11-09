@@ -2,7 +2,7 @@
 title: "The Moon and Copernicus"
 date: 2024-10-11T20:12:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A dramatic close-up of Copernicus, one of the Moon's most prominent rayed craters, near the terminator."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

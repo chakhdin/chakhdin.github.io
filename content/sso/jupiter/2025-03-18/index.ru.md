@@ -2,7 +2,7 @@
 title: "Юпитер: Детали Конца Периода Видимости"
 date: 2025-03-18T21:05:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Один из последних снимков Юпитера сезона видимости 2024-2025, все еще разрешающий тонкую структуру поясов и небольшие темные пятна."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

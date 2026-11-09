@@ -2,7 +2,7 @@
 title: "Луна, Платон и Горы Монтес Альпы"
 date: 2024-01-22T00:13:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Темное, гладкое дно кратера Платон и неровный хребет Монтес Альпы, резко поднимающийся с северного берега Моря Дождей."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

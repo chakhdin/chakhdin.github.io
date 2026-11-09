@@ -2,7 +2,7 @@
 title: "Giove: La Grande Macchia Rossa in Dettaglio Nitido"
 date: 2024-12-27T23:28:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una delle riprese più nitide della collezione: la Grande Macchia Rossa in un vivido arancione, con tre lune galileiane nella stessa inquadratura."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

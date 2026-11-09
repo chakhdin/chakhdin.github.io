@@ -2,7 +2,7 @@
 title: "Марс: Широкая Тёмная Область"
 date: 2025-02-07T01:15:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Широкая, размытая тёмная область, охватывающая большую часть диска Марса, с небольшой полярной шапкой, всё ещё видимой у края."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

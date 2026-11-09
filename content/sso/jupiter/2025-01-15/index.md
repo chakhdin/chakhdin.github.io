@@ -2,7 +2,7 @@
 title: "Jupiter: The Great Red Spot at Central Meridian"
 date: 2025-01-15T23:31:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "The Great Red Spot crossing Jupiter's central meridian, framed by richly colored equatorial belts."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

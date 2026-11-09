@@ -2,7 +2,7 @@
 title: "The Moon: A Long Terminator Mosaic"
 date: 2024-01-21T23:41:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A tall multi-pane mosaic tracing the terminator from the crater Plato in the north down to Copernicus in the south."
 total_exposure: "Multi-pane mosaic"
 focal_length: "4000mm"

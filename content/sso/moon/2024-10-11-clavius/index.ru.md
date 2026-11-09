@@ -2,7 +2,7 @@
 title: "Луна и Кратер Клавий"
 date: 2024-10-11T20:06:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Крупный план южного края, показывающий огромный кратер Клавий и драматичный рельеф у терминатора."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

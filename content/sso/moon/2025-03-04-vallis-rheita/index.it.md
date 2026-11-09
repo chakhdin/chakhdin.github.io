@@ -2,7 +2,7 @@
 title: "La Luna e la Vallis Rheita"
 date: 2025-03-04T18:33:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano nitido della Vallis Rheita, una lunga valle di crateri secondari sovrapposti vicino al limbo sudorientale."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

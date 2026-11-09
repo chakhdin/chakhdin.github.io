@@ -2,7 +2,7 @@
 title: "The Moon and Mare Crisium"
 date: 2024-12-17T04:24:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A sharp mosaic of Mare Crisium, an isolated lava plain near the Moon's eastern limb, along the terminator."
 total_exposure: "Two-pane mosaic"
 focal_length: "4000mm"

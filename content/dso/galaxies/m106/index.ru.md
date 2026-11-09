@@ -2,7 +2,7 @@
 title: "M106: Спиральная галактика в Гончих Псах"
 date: 2025-04-26T12:52:00Z
 categories: ["Галактики"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Поразительная спиральная галактика с ярким ядром, широкими пылевыми полосами и яркими голубыми звездными скоплениями во внешних рукавах."
 total_exposure: "6h 30m"
 focal_length: "2000mm"

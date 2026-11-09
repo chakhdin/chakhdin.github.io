@@ -2,7 +2,7 @@
 title: "The Moon and Sinus Iridum"
 date: 2024-01-22T00:08:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A tighter close-up of Sinus Iridum, the 'Bay of Rainbows,' its arcing rim caught in dramatic low-angle light."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

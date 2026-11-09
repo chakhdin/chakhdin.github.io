@@ -2,7 +2,7 @@
 title: "Mars Near Opposition"
 date: 2025-01-16T00:51:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Mars at its largest and brightest, captured right around the January 2025 opposition with a prominent dark marking and polar hood."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

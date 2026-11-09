@@ -2,7 +2,7 @@
 title: "La Luna e Clavius"
 date: 2024-10-11T20:06:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano del limbo meridionale che mostra il vasto cratere Clavius e un drammatico rilievo al terminatore."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "vdB 142: Туманность Слоновий Хобот"
 date: 2024-09-07T11:02:00Z
 categories: ["Туманности"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Поразительная темная глобула плотного межзвездного газа и пыли в Цефее, сформированная интенсивными звездными ветрами и излучением массивных близлежащих звезд."
 total_exposure: "5h 20m"
 focal_length: "2000mm"

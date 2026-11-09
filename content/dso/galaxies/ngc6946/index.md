@@ -2,7 +2,7 @@
 title: "NGC 6946: The Fireworks Galaxy"
 date: 2024-08-02T12:32:00Z
 categories: ["Galaxy"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A spectacular face-on spiral galaxy known as the Fireworks Galaxy, showcasing a bright golden core, sprawling spiral arms, and vibrant pink star-forming regions."
 total_exposure: "3h 40m"
 focal_length: "2000mm"

@@ -2,7 +2,7 @@
 title: "Венера: Тонкий Серп"
 date: 2025-03-04T17:52:00Z
 categories: ["Венера"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Венера в эффектной фазе тонкого серпа, растущая в размерах по мере приближения к нижнему соединению."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

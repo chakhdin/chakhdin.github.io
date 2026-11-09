@@ -2,7 +2,7 @@
 title: "Marte: Un Volto di Rotazione Diverso"
 date: 2025-01-18T01:47:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Ancora vicino all'opposizione, ma che mostra un lato diverso di Marte grazie alla rotazione del pianeta di circa 24,6 ore."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "A Mineral Moon"
 date: 2024-05-23T23:50:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A deep-color rendition of the Moon revealing subtle mineral variations across its surface, normally invisible to the eye."
 total_exposure: "Multi-pane mosaic, color-calibrated"
 focal_length: "4000mm"

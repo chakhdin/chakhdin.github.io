@@ -2,7 +2,7 @@
 title: "Marte: Dettagli di Fine Stagione"
 date: 2025-03-07T23:36:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "L'ultima e più piccola ripresa di Marte dell'apparizione 2025, che risolve ancora una luminosa calotta polare e una tenue marcatura scura."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "vdB 142: The Elephant's Trunk Nebula"
 date: 2024-09-07T11:02:00Z
 categories: ["Nebula"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A striking dark globule of dense interstellar gas and dust in Cepheus, sculpted by the intense stellar winds and radiation of massive nearby stars."
 total_exposure: "5h 20m"
 focal_length: "2000mm"

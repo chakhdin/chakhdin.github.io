@@ -2,7 +2,7 @@
 title: "Mars with a Bright Polar Hood"
 date: 2024-12-28T03:28:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Mars closing in on opposition, with a prominent blue-white north polar hood and a subtler dark surface marking."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Марс: Раннее Приближение к Противостоянию"
 date: 2024-12-12T04:01:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Марс всё ещё небольшой по видимым размерам, за несколько недель до противостояния в январе 2025 года, с тёмной отметиной на поверхности и ярким северным полярным капюшоном."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

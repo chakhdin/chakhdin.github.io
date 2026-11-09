@@ -2,7 +2,7 @@
 title: "Луна и Море Кризисов"
 date: 2024-12-17T04:24:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Четкая мозаика Моря Кризисов, изолированной лавовой равнины вблизи восточного края Луны, вдоль терминатора."
 total_exposure: "Мозаика из двух панелей"
 focal_length: "4000mm"
