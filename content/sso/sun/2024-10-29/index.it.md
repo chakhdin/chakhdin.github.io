@@ -2,7 +2,7 @@
 title: "Un arco di protuberanza con la Terra in scala"
 date: 2024-10-29T11:40:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Una grande protuberanza ad arco sul bordo con anelli di distanza e la Terra in scala per confronto."
 total_exposure: "Mosaico di riprese video"
 locations:

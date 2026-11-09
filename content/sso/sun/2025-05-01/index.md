@@ -2,7 +2,7 @@
 title: "A Serpentine Filament in H-alpha"
 date: 2025-05-01T11:52:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A colored H-alpha view of a long, S-shaped filament curving across the chromosphere near the limb."
 total_exposure: "Mosaic of video captures"
 locations:

@@ -2,7 +2,7 @@
 title: "AR3697 in Motion"
 date: 2024-06-01T12:04:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "An H-alpha time-lapse of active region AR3697, with bright plage, a sunspot group and a long dark filament."
 total_exposure: "Time-lapse video"
 locations:

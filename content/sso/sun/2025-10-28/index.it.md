@@ -2,7 +2,7 @@
 title: "Macchia, facole e fibrille in H-alpha"
 date: 2025-10-28T14:18:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Un mosaico in H-alpha monocromatico di una macchia solare con facole luminose e una fitta rete di fibrille."
 total_exposure: "Mosaico di riprese video"
 locations:

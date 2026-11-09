@@ -2,7 +2,7 @@
 title: "Активная область в H-alpha: май 2024"
 date: 2024-05-21T13:28:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Цветная мозаика в H-alpha богатой пятнами активной области с яркими флоккулами и закрученными фибриллами."
 total_exposure: "Мозаика из видеосъемок"
 locations:

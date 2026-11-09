@@ -2,7 +2,7 @@
 title: "Filamenti e una regione attiva: aprile 2026"
 date: 2026-04-03T11:23:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Un mosaico in H-alpha monocromatico con un filamento sinuoso, una macchia solare e facole luminose."
 total_exposure: "Mosaico di riprese video"
 locations:

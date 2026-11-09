@@ -2,7 +2,7 @@
 title: "Filaments and an Active Region: April 2026"
 date: 2026-04-03T11:23:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A monochrome H-alpha mosaic with a winding filament, a sunspot and bright plage."
 total_exposure: "Mosaic of video captures"
 locations:

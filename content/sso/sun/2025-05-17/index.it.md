@@ -2,7 +2,7 @@
 title: "Protuberanza sul bordo: maggio 2025"
 date: 2025-05-17T12:09:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Un time-lapse in H-alpha colorato di una protuberanza che si leva sul bordo, con la texture granulare della cromosfera sotto."
 total_exposure: "Video time-lapse"
 locations:

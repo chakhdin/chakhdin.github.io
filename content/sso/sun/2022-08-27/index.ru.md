@@ -2,7 +2,7 @@
 title: "Протуберанец, дрейфующий над лимбом"
 date: 2022-08-27T14:13:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Таймлапс в H-alpha: тонкий протуберанец над краем диска Солнца."
 total_exposure: "Таймлапс-видео"
 locations:

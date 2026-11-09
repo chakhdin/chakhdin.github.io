@@ -2,7 +2,7 @@
 title: "Una protuberanza alla deriva dal bordo"
 date: 2022-08-27T14:13:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Un time-lapse in H-alpha di una sottile protuberanza staccata dal bordo solare."
 total_exposure: "Video time-lapse"
 locations:

@@ -2,7 +2,7 @@
 title: "A Prominence Arch with Earth for Scale"
 date: 2024-10-29T11:40:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A large looping prominence over the limb with distance rings and a to-scale Earth for comparison."
 total_exposure: "Mosaic of video captures"
 locations:
