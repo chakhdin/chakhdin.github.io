@@ -6,6 +6,8 @@ other = "Sistema Solare"
 other = "Australia"
 [nav_equipment]
 other = "Per Attrezzatura"
+[nav_rigs]
+other = "I miei setup"
 [nav_latest]
 other = "Ultime"
 

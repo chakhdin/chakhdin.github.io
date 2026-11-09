@@ -6,6 +6,8 @@ other = "Солнечная система"
 other = "Австралия"
 [nav_equipment]
 other = "По оборудованию"
+[nav_rigs]
+other = "Мои сетапы"
 [nav_latest]
 other = "Новое"
 
