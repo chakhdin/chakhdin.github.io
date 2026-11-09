@@ -3,6 +3,7 @@ title: "Narrow-field deep-sky rig"
 description: "Meade 8\" ACF with the ASI2600MM Pro: my narrow-field rig for galaxies, clusters and small nebulae."
 featured_image: "rig.jpg"
 thumb_y: 560
+hero_crop: [140, 520, 800, 1067]
 weight: 2
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---
