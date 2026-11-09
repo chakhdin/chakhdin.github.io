@@ -2,7 +2,7 @@
 title: "Venus: A Thin Crescent"
 date: 2025-03-04T17:52:00Z
 categories: ["Venus"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Venus in a striking thin crescent phase, growing larger as it approaches inferior conjunction."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

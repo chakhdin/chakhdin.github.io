@@ -2,7 +2,7 @@
 title: "Венера: Тончайший Серп"
 date: 2025-03-07T18:00:00Z
 categories: ["Венера"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Один из самых четких снимков коллекции: Венера, сведенная к чрезвычайно тонкому яркому серпу незадолго до нижнего соединения."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

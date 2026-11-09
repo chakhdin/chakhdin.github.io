@@ -2,7 +2,7 @@
 title: "Луна и Море Нектара"
 date: 2025-03-04T18:34:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Четкий крупный план Моря Нектара и окружающих возвышенностей вдоль терминатора."
 total_exposure: "Мозаика из двух панелей"
 focal_length: "4000mm"

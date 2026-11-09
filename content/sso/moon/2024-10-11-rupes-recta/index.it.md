@@ -2,7 +2,7 @@
 title: "La Luna e Rupes Recta"
 date: 2024-10-11T20:00:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano nitido della Muraglia Diritta (Rupes Recta), una delle formazioni superficiali lineari più famose della Luna."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

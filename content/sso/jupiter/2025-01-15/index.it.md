@@ -2,7 +2,7 @@
 title: "Giove: La Grande Macchia Rossa al Meridiano Centrale"
 date: 2025-01-15T23:31:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "La Grande Macchia Rossa che attraversa il meridiano centrale di Giove, incorniciata da fasce equatoriali riccamente colorate."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

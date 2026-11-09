@@ -2,7 +2,7 @@
 title: "Марс: Полярная Шапка в Чётком Рельефе"
 date: 2025-01-29T00:38:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Марс вскоре после противостояния, с ярко выраженной сине-белой полярной шапкой и компактной тёмной отметиной, всё ещё хорошо разрешённой."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

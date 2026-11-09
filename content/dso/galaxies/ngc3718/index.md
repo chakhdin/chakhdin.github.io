@@ -2,7 +2,7 @@
 title: "NGC 3718: Peculiar Spiral Galaxy"
 date: 2025-04-26T12:11:00Z
 categories: ["Galaxy"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "A highly warped spiral galaxy featuring a twisted dark dust lane and sweeping tidal tails, accompanied by NGC 3729 and the distant Hickson 56 galaxy group."
 total_exposure: "8h 10m"
 focal_length: "2000mm"

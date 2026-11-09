@@ -2,7 +2,7 @@
 title: "Mars: A Broad Dark Region"
 date: 2025-02-07T01:15:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A broad, diffuse dark region spanning much of Mars's disk, with a small polar cap still visible at the limb."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

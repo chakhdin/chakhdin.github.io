@@ -2,7 +2,7 @@
 title: "Venere: Una Falce Sottilissima"
 date: 2025-03-07T18:00:00Z
 categories: ["Venere"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una delle riprese più nitide della collezione: Venere ridotta a una falce sottilissima e luminosa poco prima della congiunzione inferiore."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

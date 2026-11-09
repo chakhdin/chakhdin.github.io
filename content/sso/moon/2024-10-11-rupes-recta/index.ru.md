@@ -2,7 +2,7 @@
 title: "Луна и Прямая Стена (Rupes Recta)"
 date: 2024-10-11T20:00:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Четкий крупный план Прямой Стены (Rupes Recta), одного из самых знаменитых линейных образований на поверхности Луны."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

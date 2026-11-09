@@ -2,7 +2,7 @@
 title: "Marte Vicino all'Opposizione"
 date: 2025-01-16T00:51:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Marte al massimo delle sue dimensioni e luminosità, ripreso proprio attorno all'opposizione di gennaio 2025 con una prominente marcatura scura e cappuccio polare."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

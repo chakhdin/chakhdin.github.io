@@ -2,7 +2,7 @@
 title: "Una Luna Minerale al Gibboso Calante"
 date: 2024-09-15T21:48:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una seconda resa a colori minerali della Luna, la cui fase di gibboso calante rivela gli stessi mari ricchi di titanio in toni blu freddi."
 total_exposure: "Mosaico multi-pannello, calibrato nei colori"
 focal_length: "4000mm"

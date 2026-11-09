@@ -2,7 +2,7 @@
 title: "Марс: Уменьшающийся Диск"
 date: 2025-02-20T22:53:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Марс заметно меньше через месяц после противостояния, его диск окутан голубоватой дымкой у края, а тёмные отметины всё ещё видны в центре."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

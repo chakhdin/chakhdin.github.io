@@ -2,7 +2,7 @@
 title: "Луна и Залив Радуги"
 date: 2024-01-22T00:08:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Более крупный план Залива Радуги, его дугообразный край освещен драматичным низким светом."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

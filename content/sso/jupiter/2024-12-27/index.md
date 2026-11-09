@@ -2,7 +2,7 @@
 title: "Jupiter: The Great Red Spot in Sharp Detail"
 date: 2024-12-27T23:28:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "One of the sharpest captures in the collection: the Great Red Spot in vivid orange, with three Galilean moons in the same frame."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

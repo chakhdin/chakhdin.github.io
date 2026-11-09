@@ -2,7 +2,7 @@
 title: "Venus: A Razor-Thin Crescent"
 date: 2025-03-07T18:00:00Z
 categories: ["Venus"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "One of the sharpest captures in the collection: Venus reduced to an extremely thin, bright crescent just before inferior conjunction."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

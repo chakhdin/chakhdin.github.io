@@ -2,7 +2,7 @@
 title: "Mars: Polar Cap in Sharp Relief"
 date: 2025-01-29T00:38:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Mars just past opposition, with a vivid blue-white polar cap and a compact dark marking still well resolved."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Mars: A Shrinking Disk"
 date: 2025-02-20T22:53:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Mars noticeably smaller a month past opposition, its disk wrapped in a bluish limb haze with dark markings still visible across the center."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "The Moon and Mare Nectaris"
 date: 2025-03-04T18:34:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A sharp close-up of Mare Nectaris and its surrounding highlands along the terminator."
 total_exposure: "Two-pane mosaic"
 focal_length: "4000mm"

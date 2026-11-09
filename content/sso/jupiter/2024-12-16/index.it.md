@@ -2,7 +2,7 @@
 title: "Giove: Fasce Nuvolose Smerlate"
 date: 2024-12-16T23:51:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Ricche fasce nuvolose bruno-ruggine e crema con un bordo smerlato e ondulato lungo la Fascia Equatoriale Sud di Giove."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

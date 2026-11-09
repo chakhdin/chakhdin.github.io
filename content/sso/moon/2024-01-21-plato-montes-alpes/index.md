@@ -2,7 +2,7 @@
 title: "The Moon, Plato and Montes Alpes"
 date: 2024-01-22T00:13:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Plato's dark, smooth floor and the rugged Montes Alpes range, rising sharply from the northern shore of Mare Imbrium."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

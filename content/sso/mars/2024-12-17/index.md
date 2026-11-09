@@ -2,7 +2,7 @@
 title: "Mars: Surface Detail Sharpens"
 date: 2024-12-17T03:50:00Z
 categories: ["Mars"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A sharper, slightly larger Mars a few weeks before opposition, showing distinct dark markings across its disk."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Jupiter: Scalloped Cloud Bands"
 date: 2024-12-16T23:51:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Rich rust and cream cloud bands with a scalloped, wave-like boundary along Jupiter's South Equatorial Belt."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

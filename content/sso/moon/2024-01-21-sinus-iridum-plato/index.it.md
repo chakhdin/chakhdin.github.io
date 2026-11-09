@@ -2,7 +2,7 @@
 title: "La Luna, Sinus Iridum e Platone"
 date: 2024-01-21T23:46:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano nitido della baia di Sinus Iridum e della pianura cinta di mura Platone, i loro bordi colti in una drammatica luce radente."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

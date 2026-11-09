@@ -2,7 +2,7 @@
 title: "M5: Globular Cluster in Serpens"
 date: 2024-05-26T18:19:00Z
 categories: ["Cluster"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Takahashi FSQ85-EDX", "ASI2600MM Pro", "Antlia LRGB-V Pro 36mm filters"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Takahashi FSQ85-EDX", "ASI2600MM Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "One of the oldest and largest globular clusters in the Milky Way, its blazing core surrounded by a vast swarm of red giants and blue stars."
 total_exposure: "2h 40m"
 focal_length: "2000mm"
@@ -24,7 +24,7 @@ versions:
     image: "M5_4.jpg"
     note: |
       This close-up view was captured with a Meade 8" ACF telescope at 2000mm, a focal length more than four times longer than the wide-field version. The extra reach fills the frame with the cluster itself, resolving individual stars deep toward the dense core and making the color differences between the cool orange red giants and the hotter blue-white stars much easier to see.
-    equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+    equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
     total_exposure: "2h 40m"
     focal_length: "2000mm"
     locations:

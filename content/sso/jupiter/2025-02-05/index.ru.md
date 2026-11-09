@@ -2,7 +2,7 @@
 title: "Юпитер: Турбулентные Фестоны и Яркий Овал"
 date: 2025-02-05T20:56:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Одна ночная съемка Юпитера в паре с коротким видео вращения, показывающая турбулентные облачные фестоны и яркий белый овал в Южном Экваториальном поясе."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

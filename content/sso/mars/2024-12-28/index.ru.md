@@ -2,7 +2,7 @@
 title: "Марс с Ярким Полярным Капюшоном"
 date: 2024-12-28T03:28:00Z
 categories: ["Марс"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Марс приближается к противостоянию, с заметным сине-белым северным полярным капюшоном и более тонкой тёмной поверхностной отметиной."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

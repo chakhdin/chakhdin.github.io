@@ -2,7 +2,7 @@
 title: "Giove: Festoni Turbolenti e un Ovale Luminoso"
 date: 2025-02-05T20:56:00Z
 categories: ["Giove"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una sessione notturna su Giove abbinata a un breve video di rotazione, che mostra festoni nuvolosi turbolenti e un ovale bianco luminoso nella Fascia Equatoriale Sud."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

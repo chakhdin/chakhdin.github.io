@@ -2,7 +2,7 @@
 title: "Marte: Il Cappuccio Polare in Nitido Rilievo"
 date: 2025-01-29T00:38:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Marte appena dopo l'opposizione, con un vivido cappuccio polare blu-bianco e una compatta marcatura scura ancora ben risolta."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

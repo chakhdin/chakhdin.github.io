@@ -2,7 +2,7 @@
 title: "M106: Galassia a Spirale nei Cani da Caccia"
 date: 2025-04-26T12:52:00Z
 categories: ["Galassie"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Una suggestiva galassia a spirale che mostra un nucleo brillante, ampie bande di polvere e vivaci ammassi stellari blu nei suoi bracci esterni."
 total_exposure: "6h 30m"
 focal_length: "2000mm"

@@ -2,7 +2,7 @@
 title: "NGC 6781: La Nebulosa Palla di Neve"
 date: 2024-07-25T11:05:00Z
 categories: ["Nebulose"]
-equipment: ["Meade 8\" ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
 description: "Una splendida nebulosa planetaria nell'Aquila, caratterizzata da un luminoso nucleo blu di ossigeno ionizzato circondato da un delicato guscio rosso di idrogeno."
 total_exposure: "4h 10m"
 focal_length: "2000mm"

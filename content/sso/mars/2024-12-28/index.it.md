@@ -2,7 +2,7 @@
 title: "Marte con un Luminoso Cappuccio Polare"
 date: 2024-12-28T03:28:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Marte che si avvicina all'opposizione, con un prominente cappuccio polare nord blu-bianco e una più tenue marcatura scura superficiale."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

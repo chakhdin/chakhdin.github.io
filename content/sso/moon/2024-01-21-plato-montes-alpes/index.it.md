@@ -2,7 +2,7 @@
 title: "La Luna, Platone e i Montes Alpes"
 date: 2024-01-22T00:13:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Il fondo scuro e liscio di Platone e la catena accidentata dei Montes Alpes, che si eleva bruscamente dalla sponda settentrionale del Mare Imbrium."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

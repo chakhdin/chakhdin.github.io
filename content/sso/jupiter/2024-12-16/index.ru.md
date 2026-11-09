@@ -2,7 +2,7 @@
 title: "Юпитер: Волнистые Облачные Пояса"
 date: 2024-12-16T23:51:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Насыщенные ржаво-коричневые и кремовые облачные пояса с волнистой, фестончатой границей вдоль Южного Экваториального пояса Юпитера."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"

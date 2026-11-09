@@ -2,7 +2,7 @@
 title: "Jupiter: Late-Apparition Detail"
 date: 2025-03-18T21:05:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "One of the final Jupiter captures of the 2024-2025 apparition, still resolving fine belt structure and small dark spots."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

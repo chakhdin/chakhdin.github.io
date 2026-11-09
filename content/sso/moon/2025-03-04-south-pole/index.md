@@ -2,7 +2,7 @@
 title: "The Moon's South Pole Region"
 date: 2025-03-04T18:35:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A dramatic grazing-light view of the lunar south pole, its terrain thrown into sharp relief."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Marte: I Dettagli della Superficie si Affinano"
 date: 2024-12-17T03:50:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un Marte più nitido e leggermente più grande poche settimane prima dell'opposizione, che mostra marcature scure distinte sul disco."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Marte: Primo Avvicinamento all'Opposizione"
 date: 2024-12-12T04:01:00Z
 categories: ["Marte"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Marte ancora piccolo in dimensioni apparenti, settimane prima dell'opposizione di gennaio 2025, con una marcatura scura e un luminoso cappuccio polare nord."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"

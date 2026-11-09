@@ -2,7 +2,7 @@
 title: "La Regione del Polo Sud della Luna"
 date: 2025-03-04T18:35:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Una drammatica vista in luce radente del polo sud lunare, il suo terreno messo in forte rilievo."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

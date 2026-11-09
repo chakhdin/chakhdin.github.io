@@ -2,7 +2,7 @@
 title: "Луна, Залив Радуги и Платон"
 date: 2024-01-21T23:46:00Z
 categories: ["Луна"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Четкий крупный план залива Залив Радуги и окруженной валом равнины Платон, их края освещены драматичным низким светом."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4000mm"

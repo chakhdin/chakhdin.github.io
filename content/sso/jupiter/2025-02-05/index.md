@@ -2,7 +2,7 @@
 title: "Jupiter: Turbulent Festoons and a Bright Oval"
 date: 2025-02-05T20:56:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A single night's Jupiter session paired with a short rotation video, showing turbulent cloud festoons and a bright white oval in the South Equatorial Belt."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

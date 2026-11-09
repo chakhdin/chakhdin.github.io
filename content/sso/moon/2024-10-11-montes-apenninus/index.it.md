@@ -2,7 +2,7 @@
 title: "La Luna e i Montes Apenninus"
 date: 2024-10-11T20:18:00Z
 categories: ["Luna"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Un primo piano nitido della catena montuosa degli Appennini lunari, con un grande cratere nelle vicinanze."
 total_exposure: "Singola ripresa video"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Jupiter: Fine Detail in the Equatorial Belts"
 date: 2024-11-16T02:02:00Z
 categories: ["Jupiter"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Braided belt structure, small white ovals and subtle dark barges resolved across Jupiter's disk."
 total_exposure: "~3 min video, derotated with WinJUPOS"
 focal_length: "4000mm"

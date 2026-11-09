@@ -2,7 +2,7 @@
 title: "The Moon and Vallis Rheita"
 date: 2025-03-04T18:33:00Z
 categories: ["Moon"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "A sharp close-up of Vallis Rheita, a long valley of overlapping secondary craters near the southeastern limb."
 total_exposure: "Single video capture"
 focal_length: "4000mm"

@@ -2,7 +2,7 @@
 title: "Юпитер: Большое Красное Пятно в Четкой Детализации"
 date: 2024-12-27T23:28:00Z
 categories: ["Юпитер"]
-equipment: ["Meade 8\" ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
+equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
 description: "Один из самых четких снимков коллекции: Большое Красное Пятно насыщенного оранжевого цвета с тремя галилеевыми спутниками в одном кадре."
 total_exposure: "~3 мин видео, с деротацией в WinJUPOS"
 focal_length: "4000mm"
