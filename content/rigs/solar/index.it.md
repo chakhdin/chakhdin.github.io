@@ -2,6 +2,7 @@
 title: "Setup solare"
 description: "Bresser 127L con la ASI174MM: il mio setup solare, in luce bianca e in H-alfa."
 featured_image: "rig.jpg"
+thumb_y: 700
 weight: 4
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---

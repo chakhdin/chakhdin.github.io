@@ -2,6 +2,7 @@
 title: "Setup deep-sky a grande campo"
 description: "Takahashi FSQ-85EDX con la ASI2600MM Pro: il mio setup a grande campo per nebulose e campi estesi."
 featured_image: "rig.jpg"
+thumb_y: 600
 weight: 1
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---

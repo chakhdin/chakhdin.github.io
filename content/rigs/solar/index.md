@@ -2,6 +2,7 @@
 title: "Solar rig"
 description: "Bresser 127L with the ASI174MM: my solar rig, in white light and in H-alpha."
 featured_image: "rig.jpg"
+thumb_y: 700
 weight: 4
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---

@@ -39,7 +39,14 @@
             <div class="aspect-video overflow-hidden bg-black">
                 {{ $image := .Resources.GetMatch .Params.featured_image }}
                 {{ if $image }}
-                    {{ $thumb := $image.Fill "800x500 Center webp q80" }}
+                    {{/* thumb_y: top edge, in source pixels, of the full-width 1.6:1 card crop */}}
+                    {{ $src := $image }}
+                    {{ $anchor := "Center" }}
+                    {{ with .Params.thumb_y }}
+                        {{ $src = $image.Crop (printf "%dx%d TopLeft" $image.Width (add . (div (mul $image.Width 5) 8))) }}
+                        {{ $anchor = "Bottom" }}
+                    {{ end }}
+                    {{ $thumb := $src.Fill (printf "800x500 %s webp q80" $anchor) }}
                     <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                 {{ end }}
             </div>

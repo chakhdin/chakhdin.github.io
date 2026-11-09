@@ -2,6 +2,7 @@
 title: "Wide-field deep-sky rig"
 description: "Takahashi FSQ-85EDX with the ASI2600MM Pro: my wide-field rig for nebulae and large fields."
 featured_image: "rig.jpg"
+thumb_y: 600
 weight: 1
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---
