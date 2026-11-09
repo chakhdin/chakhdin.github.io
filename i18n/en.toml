@@ -6,6 +6,8 @@ other = "Solar System"
 other = "Australia"
 [nav_equipment]
 other = "By Equipment"
+[nav_rigs]
+other = "My Rigs"
 [nav_latest]
 other = "Latest"
 
