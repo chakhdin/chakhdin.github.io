@@ -3,6 +3,7 @@ title: "Длиннофокусный сетап для дальнего косм
 description: "Meade 8\" ACF с ASI2600MM Pro: мой длиннофокусный сетап для галактик, скоплений и небольших туманностей."
 featured_image: "rig.jpg"
 thumb_y: 560
+hero_crop: [140, 520, 800, 1067]
 weight: 2
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---

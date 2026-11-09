@@ -21,8 +21,14 @@
         {{/* Rig photos are portrait phone shots: a narrow column keeps them from
              filling the screen, and a click opens the larger version. */}}
         {{ with .Resources.GetMatch .Params.featured_image }}
-        {{ $small := .Resize "720x webp q82" }}
-        {{ $large := .Resize "1400x webp q85" }}
+        {{/* hero_crop: [x, y, width, height] in source pixels, framing the rig */}}
+        {{ $img := . }}
+        {{ with $.Params.hero_crop }}
+            {{ $x := index . 0 }}{{ $y := index . 1 }}{{ $w := index . 2 }}{{ $h := index . 3 }}
+            {{ $img = ($img.Crop (printf "%dx%d TopLeft" (add $x $w) (add $y $h))).Crop (printf "%dx%d BottomRight" $w $h) }}
+        {{ end }}
+        {{ $small := $img.Resize "720x webp q82" }}
+        {{ $large := $img.Resize "1400x webp q85" }}
         <a href="{{ $large.RelPermalink }}" class="md:col-span-2 block self-start">
             <img src="{{ $small.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="{{ $.Title }}" class="w-full max-w-sm mx-auto md:max-w-none rounded-2xl border border-gray-800">
         </a>

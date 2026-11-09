@@ -3,6 +3,7 @@ title: "Планетный сетап"
 description: "Meade 8\" ACF при f/20 с ASI174MM: мой сетап для планет и Луны."
 featured_image: "rig.jpg"
 thumb_y: 520
+hero_crop: [40, 330, 1035, 1380]
 weight: 3
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---
