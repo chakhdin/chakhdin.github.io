@@ -2,6 +2,7 @@
 title: "Широкоугольный сетап для дальнего космоса"
 description: "Takahashi FSQ-85EDX с ASI2600MM Pro: мой широкоугольный сетап для туманностей и больших полей."
 featured_image: "rig.jpg"
+thumb_y: 600
 weight: 1
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---
