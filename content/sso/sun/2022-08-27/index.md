@@ -2,7 +2,7 @@
 title: "A Prominence Drifting off the Limb"
 date: 2022-08-27T14:13:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A time-lapse in H-alpha of a wispy prominence standing off the solar limb."
 total_exposure: "Time-lapse video"
 locations:

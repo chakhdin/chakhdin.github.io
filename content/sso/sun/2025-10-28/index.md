@@ -2,7 +2,7 @@
 title: "Sunspot, Plage and Fibrils in H-alpha"
 date: 2025-10-28T14:18:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A monochrome H-alpha mosaic of a sunspot with surrounding bright plage and a dense web of fibrils."
 total_exposure: "Mosaic of video captures"
 locations:

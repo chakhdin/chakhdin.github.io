@@ -2,7 +2,7 @@
 title: "Limb Prominence and Chromospheric Texture"
 date: 2025-04-10T11:22:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "An H-alpha view of the limb, with prominence material above the chromosphere's fine granular texture."
 total_exposure: "Mosaic of video captures"
 locations:

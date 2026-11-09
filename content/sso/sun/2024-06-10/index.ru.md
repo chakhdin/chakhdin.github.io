@@ -2,7 +2,7 @@
 title: "Панорама лимба Солнца в H-alpha"
 date: 2024-06-10T12:06:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Широкая панорама в H-alpha вдоль солнечного лимба с активными областями, флоккулами и волокнами."
 total_exposure: "Мозаика из видеосъемок"
 locations:

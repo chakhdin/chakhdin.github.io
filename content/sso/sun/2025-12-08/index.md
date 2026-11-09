@@ -2,7 +2,7 @@
 title: "Twisted Fibrils Around a Spot Group"
 date: 2025-12-08T12:10:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A monochrome H-alpha view of a sunspot group surrounded by bright plage and twisting fibrils."
 total_exposure: "Single video capture"
 locations:

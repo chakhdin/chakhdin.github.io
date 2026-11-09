@@ -2,7 +2,7 @@
 title: "Протуберанец над лимбом: май 2025"
 date: 2025-05-17T12:09:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Цветной таймлапс в H-alpha: протуберанец над лимбом и мелкозернистая хромосфера под ним."
 total_exposure: "Таймлапс-видео"
 locations:

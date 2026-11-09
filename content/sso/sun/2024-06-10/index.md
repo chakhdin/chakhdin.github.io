@@ -2,7 +2,7 @@
 title: "H-alpha Limb Panorama"
 date: 2024-06-10T12:06:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A wide H-alpha panorama along the solar limb with active regions, plage and filaments."
 total_exposure: "Mosaic of video captures"
 locations:

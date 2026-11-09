@@ -2,7 +2,7 @@
 title: "Protuberanza al bordo e texture cromosferica"
 date: 2025-04-10T11:22:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Una vista in H-alpha del bordo, con materiale di protuberanza sopra la fine texture granulare della cromosfera."
 total_exposure: "Mosaico di riprese video"
 locations:

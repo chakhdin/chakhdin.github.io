@@ -2,7 +2,7 @@
 title: "Fibrille contorte attorno a un gruppo di macchie"
 date: 2025-12-08T12:10:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Una vista in H-alpha monocromatico di un gruppo di macchie solari circondato da facole luminose e fibrille contorte."
 total_exposure: "Singola ripresa video"
 locations:

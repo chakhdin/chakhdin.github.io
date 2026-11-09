@@ -2,7 +2,7 @@
 title: "Закрученные фибриллы вокруг группы пятен"
 date: 2025-12-08T12:10:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Монохромный вид группы пятен в H-alpha, окружённой яркими флоккулами и закрученными фибриллами."
 total_exposure: "Одиночная видеосъемка"
 locations:

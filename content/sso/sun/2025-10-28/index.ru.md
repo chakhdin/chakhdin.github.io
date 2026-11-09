@@ -2,7 +2,7 @@
 title: "Пятно, флоккулы и фибриллы в H-alpha"
 date: 2025-10-28T14:18:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Монохромная мозаика в H-alpha: солнечное пятно, яркие флоккулы и плотная сеть фибрилл."
 total_exposure: "Мозаика из видеосъемок"
 locations:

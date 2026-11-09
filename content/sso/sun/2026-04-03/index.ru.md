@@ -2,7 +2,7 @@
 title: "Волокна и активная область: апрель 2026"
 date: 2026-04-03T11:23:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Монохромная мозаика в H-alpha с извилистым волокном, солнечным пятном и яркими флоккулами."
 total_exposure: "Мозаика из видеосъемок"
 locations:

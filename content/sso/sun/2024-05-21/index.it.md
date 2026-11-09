@@ -2,7 +2,7 @@
 title: "Regione attiva in H-alpha: maggio 2024"
 date: 2024-05-21T13:28:00Z
 categories: ["Sole"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Un mosaico in H-alpha colorato di una regione attiva ricca di macchie, con facole luminose e fibrille a spirale."
 total_exposure: "Mosaico di riprese video"
 locations:

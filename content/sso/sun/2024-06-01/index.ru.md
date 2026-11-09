@@ -2,7 +2,7 @@
 title: "AR3697 в движении"
 date: 2024-06-01T12:04:00Z
 categories: ["Солнце"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "Таймлапс активной области AR3697 в H-alpha: яркие флоккулы, группа пятен и длинное тёмное волокно."
 total_exposure: "Таймлапс-видео"
 locations:

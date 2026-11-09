@@ -2,7 +2,7 @@
 title: "Active Region in H-alpha: May 2024"
 date: 2024-05-21T13:28:00Z
 categories: ["Sun"]
-equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt35 Etalon (double stack)", "ASI174MM", "NEQ6 Pro"]
+equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
 description: "A colored H-alpha mosaic of a sunspot-rich active region with bright plage and swirling fibrils."
 total_exposure: "Mosaic of video captures"
 locations:
