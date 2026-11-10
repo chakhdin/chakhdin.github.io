@@ -12,7 +12,7 @@ locations:
     dates: ["2025-07-31"]
   - name: "Saint Barthélemy, Valle d'Aosta, Italia"
     bortle: "Classe 4"
-    dates: ["2025-08-01"]
+    dates: ["2025-08-02"]
 featured_image: "Sh2 114_2.crop2.jpg"
 filters:
   - name: "Ha"
