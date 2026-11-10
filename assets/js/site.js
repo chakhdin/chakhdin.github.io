@@ -180,7 +180,17 @@ window.addEventListener('scroll', () => {
     scrollSaveTimer = setTimeout(saveScroll, 150);
 }, { passive: true });
 
-async function loadPage(url, push, restoreY = 0) {
+// After a back link, centre the card that links to the page just left.
+function scrollToCardFor(fromUrl) {
+    const path = new URL(fromUrl).pathname;
+    const card = [...document.querySelectorAll('main a[href]')]
+        .find((a) => a.id !== 'back-link' && new URL(a.href).pathname === path);
+    if (!card) return false;
+    card.scrollIntoView({ block: 'center' });
+    return true;
+}
+
+async function loadPage(url, push, restoreY = 0, fromUrl = null) {
     let html = null;
     try {
         html = await fetchPage(url);
@@ -212,7 +222,7 @@ async function loadPage(url, push, restoreY = 0) {
     if (push) {
         history.pushState({ url }, '', url);
     }
-    window.scrollTo(0, push ? 0 : restoreY);
+    if (!(fromUrl && scrollToCardFor(fromUrl))) window.scrollTo(0, push ? 0 : restoreY);
     initMedia();
 
     const main = document.querySelector('main');
@@ -238,7 +248,7 @@ document.addEventListener('click', (e) => {
     if (url.pathname === window.location.pathname && url.search === window.location.search) return;
 
     e.preventDefault();
-    loadPage(url.href, true);
+    loadPage(url.href, true, 0, link.id === 'back-link' ? window.location.href : null);
 });
 
 window.addEventListener('popstate', () => {
