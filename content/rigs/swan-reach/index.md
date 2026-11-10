@@ -10,7 +10,8 @@ weight: 5
 The remote rig works under a roll-off roof at Swan Reach Imaging, in South Australia, under a Bortle 1 sky. I share it with Paride Gabini, Rino Morra, Federico Palaia and Alessio Carmine Scipione: it is operated with NINA, and the frames are collected jointly. Its images are in the [Australia](/australia/) section.
 
 - **Telescope:** [RCOS 16"](/equipment/rcos-16/), 16-inch Ritchey-Chrétien, 3660 mm (measured)
-- **Rotator and focuser:** PrimaLuceLab; the focuser moves the secondary mirror
+- **Rotator:** PrimaLuceLab
+- **Focuser:** PrimaLuceLab, moves the secondary mirror
 - **Camera:** [ASI2600MM Pro](/equipment/asi2600mm-pro/), cooled monochrome APS-C, belonging to the rig
 - **Filters:** ZWO EFW 7 × 2" filter wheel with [Astrodon LRGBSHO 2" filters](/equipment/astrodon-lrgbsho-2-filters/): E-series Gen 2 LRGB and 3 nm Ha, OIII and SII
 - **Guiding:** off-axis guider with a ZWO ASI174MM Mini

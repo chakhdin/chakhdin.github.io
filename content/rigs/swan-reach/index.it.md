@@ -10,7 +10,8 @@ weight: 5
 Il setup remoto lavora sotto un tetto scorrevole presso Swan Reach Imaging, nell'Australia Meridionale, sotto un cielo di classe Bortle 1. Lo condivido con Paride Gabini, Rino Morra, Federico Palaia e Alessio Carmine Scipione: è gestito con NINA, e i fotogrammi sono raccolti in comune. Le sue immagini sono nella sezione [Australia](/it/australia/).
 
 - **Telescopio:** [RCOS 16"](/it/equipment/rcos-16/), Ritchey-Chrétien da 16 pollici, 3660 mm (misurati)
-- **Rotatore e focheggiatore:** PrimaLuceLab; il focheggiatore muove lo specchio secondario
+- **Rotatore:** PrimaLuceLab
+- **Focheggiatore:** PrimaLuceLab, muove lo specchio secondario
 - **Camera:** [ASI2600MM Pro](/it/equipment/asi2600mm-pro/), monocromatica APS-C raffreddata, di proprietà del setup
 - **Filtri:** ruota portafiltri ZWO EFW 7 × 2" con [filtri Astrodon LRGBSHO 2"](/it/equipment/astrodon-lrgbsho-2-filters/): LRGB E-series Gen 2 e Ha, OIII e SII da 3 nm
 - **Guida:** guida fuori asse con una ZWO ASI174MM Mini
