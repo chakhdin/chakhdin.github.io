@@ -41,6 +41,17 @@ function initMedia() {
     });
     selectVersion(decodeURIComponent(location.hash.slice(1)), false);
 
+    // Neighbour pages load when their link is pointed at or focused; with a
+    // mouse (arrow-key browsing) also shortly after this page has loaded.
+    ['nav-next', 'nav-prev'].forEach((id) => {
+        const link = document.getElementById(id);
+        if (!link) return;
+        const prefetch = () => prefetchPage(link.href);
+        link.addEventListener('pointerenter', prefetch);
+        link.addEventListener('focus', prefetch);
+        if (window.matchMedia('(pointer: fine)').matches) setTimeout(prefetch, 1000);
+    });
+
     const overlay = document.getElementById('fullscreen-overlay');
     const fullscreenImg = document.getElementById('fullscreen-image');
     if (!overlay || !fullscreenImg) return;
@@ -48,28 +59,78 @@ function initMedia() {
     document.querySelectorAll('.hero-image').forEach((img) => {
         img.addEventListener('click', (e) => {
             e.stopPropagation();
-            // data-full: a larger version than the one shown (rig photos).
-            fullscreenImg.src = img.dataset.full || img.currentSrc || img.src;
-            fullscreenImg.alt = img.alt;
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+            openFullscreen(img);
+        });
+        // Same keys as a native button: Enter on keydown, Space on keyup (so the
+        // keyup does not land on the close button and shut the viewer at once).
+        img.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') { e.preventDefault(); openFullscreen(img); }
+            else if (e.key === ' ') e.preventDefault();
+        });
+        img.addEventListener('keyup', (e) => {
+            if (e.key === ' ') openFullscreen(img);
         });
     });
-    overlay.addEventListener('click', () => {
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
+    // Also handles the close button, whose click bubbles up to the overlay.
+    overlay.addEventListener('click', closeFullscreen);
+    overlay.addEventListener('keydown', (e) => {
+        // The close button is the only focusable element: keep focus on it.
+        if (e.key !== 'Tab') return;
+        e.preventDefault();
+        const closeBtn = document.getElementById('fullscreen-close');
+        if (closeBtn) closeBtn.focus();
     });
 }
 
-function updatePrefetchLinks(doc) {
-    // Also removes the server-rendered prefetch links from the very first page
-    // load, which carry no data-pjax marker, so they don't linger forever.
-    document.querySelectorAll('link[rel="prefetch"]').forEach((el) => el.remove());
-    doc.querySelectorAll('link[rel="prefetch"]').forEach((el) => {
-        const clone = el.cloneNode();
-        clone.setAttribute('data-pjax', '');
-        document.head.appendChild(clone);
-    });
+let fullscreenOpener = null;
+
+function openFullscreen(img) {
+    const overlay = document.getElementById('fullscreen-overlay');
+    const fullscreenImg = document.getElementById('fullscreen-image');
+    // data-full: a larger version than the one shown (rig photos).
+    fullscreenImg.src = img.dataset.full || img.currentSrc || img.src;
+    fullscreenImg.alt = img.alt;
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    fullscreenOpener = img;
+    const closeBtn = document.getElementById('fullscreen-close');
+    if (closeBtn) closeBtn.focus();
+}
+
+function closeFullscreen() {
+    const overlay = document.getElementById('fullscreen-overlay');
+    if (!overlay || overlay.classList.contains('hidden')) return;
+    overlay.classList.add('hidden');
+    document.body.style.overflow = '';
+    if (fullscreenOpener && fullscreenOpener.isConnected) fullscreenOpener.focus({ preventScroll: true });
+    fullscreenOpener = null;
+}
+
+async function fetchPage(url) {
+    const cacheKey = url.split('#')[0];
+    let html = pageCache.get(cacheKey);
+    if (html) return html;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    html = await res.text();
+    pageCache.set(cacheKey, html);
+    return html;
+}
+
+const prefetched = new Set();
+
+// Fetches a page and its hero image in the srcset variant this screen will
+// use, so a later click finds both in the cache.
+function prefetchPage(url) {
+    if (navigator.connection && navigator.connection.saveData) return;
+    const key = url.split('#')[0];
+    if (prefetched.has(key)) return;
+    prefetched.add(key);
+    fetchPage(url).then((html) => {
+        if (!html) return;
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        doc.querySelectorAll('.hero-image:not([hidden])').forEach((img) => preloadImage(img, url));
+    }).catch(() => {});
 }
 
 // Selectors for <head> elements that carry per-page SEO metadata and must be
@@ -106,23 +167,29 @@ function preloadImage(img, baseUrl) {
     });
 }
 
-async function loadPage(url, push) {
-    const cacheKey = url.split('#')[0];
-    let html = pageCache.get(cacheKey);
+// Back/Forward restore each page's scroll position from its history entry.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+function saveScroll() {
+    history.replaceState({ ...history.state, scrollY: window.scrollY }, '');
+}
+
+let scrollSaveTimer;
+window.addEventListener('scroll', () => {
+    clearTimeout(scrollSaveTimer);
+    scrollSaveTimer = setTimeout(saveScroll, 150);
+}, { passive: true });
+
+async function loadPage(url, push, restoreY = 0) {
+    let html = null;
+    try {
+        html = await fetchPage(url);
+    } catch (e) {
+        // Network error: fall through to a normal page load.
+    }
     if (!html) {
-        let res;
-        try {
-            res = await fetch(url);
-        } catch (e) {
-            window.location.href = url;
-            return;
-        }
-        if (!res.ok) {
-            window.location.href = url;
-            return;
-        }
-        html = await res.text();
-        pageCache.set(cacheKey, html);
+        window.location.href = url;
+        return;
     }
 
     const doc = new DOMParser().parseFromString(html, 'text/html');
@@ -131,16 +198,21 @@ async function loadPage(url, push) {
     await Promise.all(
         [...doc.querySelectorAll('.hero-image:not([hidden])')].map((img) => preloadImage(img, url))
     );
+    if (push) {
+        // Record the outgoing page's position now; a pending debounced save
+        // would otherwise write it into the new entry.
+        clearTimeout(scrollSaveTimer);
+        saveScroll();
+    }
     document.title = doc.title;
     document.documentElement.lang = doc.documentElement.lang;
     document.body.innerHTML = doc.body.innerHTML;
-    updatePrefetchLinks(doc);
     updateHeadMeta(doc);
 
     if (push) {
         history.pushState({ url }, '', url);
     }
-    window.scrollTo(0, 0);
+    window.scrollTo(0, push ? 0 : restoreY);
     initMedia();
 
     const main = document.querySelector('main');
@@ -170,7 +242,9 @@ document.addEventListener('click', (e) => {
 });
 
 window.addEventListener('popstate', () => {
-    loadPage(window.location.href, false);
+    // Read the target entry's position before a pending save can overwrite it.
+    clearTimeout(scrollSaveTimer);
+    loadPage(window.location.href, false, (history.state && history.state.scrollY) || 0);
 });
 
 // Elements that use the arrow keys themselves: seeking a video, moving a
@@ -185,8 +259,7 @@ document.addEventListener('keydown', (e) => {
         // On a single-image page, Escape closes the fullscreen zoom if it's open;
         // otherwise it navigates back to the collection, same as clicking "Back to X".
         if (overlay && !overlay.classList.contains('hidden')) {
-            overlay.classList.add('hidden');
-            document.body.style.overflow = '';
+            closeFullscreen();
         } else {
             const backLink = document.getElementById('back-link');
             if (backLink) backLink.click();
@@ -202,3 +275,5 @@ document.addEventListener('keydown', (e) => {
 });
 
 initMedia();
+// Manual restoration also covers a reload: go back to the saved position.
+if (history.state && history.state.scrollY) window.scrollTo(0, history.state.scrollY);

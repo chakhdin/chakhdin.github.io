@@ -1,13 +1,4 @@
 ﻿{{ define "head-extra" }}
-{{/* imagesrcset/imagesizes let the prefetch match the exact responsive
-     variant the img tag will request, so it's actually a cache hit. */}}
-{{ with .NextInSection }}
-{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}" imagesrcset="{{ partial "hero-srcset.html" . }}" imagesizes="(min-width: 1200px) 1120px, 100vw">{{ end }}
-{{ end }}
-{{ with .PrevInSection }}
-{{ with (partial "hero-image.html" .) }}<link rel="prefetch" as="image" href="{{ .RelPermalink }}" imagesrcset="{{ partial "hero-srcset.html" . }}" imagesizes="(min-width: 1200px) 1120px, 100vw">{{ end }}
-{{ end }}
-
 {{ $img := partial "hero-image.html" . }}
 {{ with $img }}
 {{ $captureDate := "" }}
@@ -108,7 +99,6 @@
     {{/* Alt text: an explicit "alt" param wins; otherwise title plus a short description. */}}
     {{ $alt := .Title }}
     {{ with .Params.alt }}{{ $alt = . }}{{ else }}{{ with $.Params.description }}{{ $alt = printf "%s. %s" $.Title (. | plainify | htmlUnescape | truncate 110) }}{{ end }}{{ end }}
-    {{ $first := index $versions 0 }}
 
     <article class="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
         
@@ -130,7 +120,7 @@
                 {{ end }}
             {{ else }}
                 {{ with $v.image }}
-                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
+                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" tabindex="0" role="button" aria-haspopup="dialog" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
                 {{ end }}
             {{ end }}
             {{ end }}
@@ -169,8 +159,14 @@
         {{ end }}
 
         <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out" role="dialog" aria-modal="true" aria-label="{{ i18n "fullscreen_view" }}">
-            <img id="fullscreen-image" src="{{ with $first.image }}{{ .RelPermalink }}{{ end }}" alt="" class="max-w-full max-h-full object-contain">
-            <div class="absolute top-3 right-4 md:top-6 md:right-8 text-gray-400 text-sm font-mono">{{ i18n "fullscreen_hint" }}</div>
+            {{/* No src until opened (site.js sets it), so the hidden overlay downloads nothing. */}}
+            <img id="fullscreen-image" alt="" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-4 left-4 md:top-6 md:left-8 text-gray-400 text-sm font-mono"><span class="pointer-coarse:hidden">{{ i18n "fullscreen_hint" }}</span><span class="hidden pointer-coarse:inline">{{ i18n "fullscreen_hint_touch" }}</span></div>
+            <button type="button" id="fullscreen-close" aria-label="{{ i18n "fullscreen_close" }}" class="absolute top-2 right-2 md:top-4 md:right-6 flex items-center justify-center w-11 h-11 rounded-full bg-gray-900/80 text-gray-300 hover:text-white hover:bg-gray-800 transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
 
         <div class="p-5 sm:p-8 md:p-12">

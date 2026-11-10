@@ -79,6 +79,10 @@ other = "{{ .Count }} видео"
 other = "Просмотр изображения на весь экран"
 [fullscreen_hint]
 other = "ESC: Закрыть | Стрелки: Навигация"
+[fullscreen_hint_touch]
+other = "Коснитесь, чтобы закрыть"
+[fullscreen_close]
+other = "Закрыть"
 
 [not_found_title]
 other = "Затеряны в космосе"
