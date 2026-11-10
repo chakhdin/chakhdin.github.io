@@ -1,4 +1,5 @@
 ---
+translationKey: "category-galaxy"
 title: "Галактики"
 description: "Галактики за пределами нашего Млечного Пути."
 ---
