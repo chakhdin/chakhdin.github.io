@@ -2,7 +2,7 @@
 <div class="max-w-6xl mx-auto md:px-4 py-4 md:py-8">
 
     <div class="mb-8">
-        <a href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-gray-400 hover:text-blue-400 transition font-medium group">
+        <a id="back-link" href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-gray-400 hover:text-blue-400 transition font-medium group">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -19,7 +19,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
         {{/* Rig photos are portrait phone shots: a narrow column keeps them from
-             filling the screen, and a click opens the larger version. */}}
+             filling the screen, and a click opens the larger version fullscreen. */}}
         {{ with .Resources.GetMatch .Params.featured_image }}
         {{/* hero_crop: [x, y, width, height] in source pixels, framing the rig */}}
         {{ $img := . }}
@@ -29,9 +29,13 @@
         {{ end }}
         {{ $small := $img.Resize "720x webp q82" }}
         {{ $large := $img.Resize "1400x webp q85" }}
-        <a href="{{ $large.RelPermalink }}" class="md:col-span-2 block self-start">
-            <img src="{{ $small.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="{{ $.Title }}" class="w-full max-w-sm mx-auto md:max-w-none rounded-2xl border border-gray-800">
-        </a>
+        <div class="md:col-span-2 self-start cursor-zoom-in">
+            <img src="{{ $small.RelPermalink }}" data-full="{{ $large.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="{{ $.Title }}" class="hero-image w-full max-w-sm mx-auto md:max-w-none rounded-2xl border border-gray-800">
+        </div>
+        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out" role="dialog" aria-modal="true" aria-label="{{ i18n "fullscreen_view" }}">
+            <img id="fullscreen-image" src="{{ $large.RelPermalink }}" alt="" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-3 right-4 md:top-6 md:right-8 text-gray-400 text-sm font-mono">{{ i18n "fullscreen_hint" }}</div>
+        </div>
         {{ end }}
         <div class="md:col-span-3 prose prose-invert md:prose-lg max-w-none min-w-0 break-words text-gray-300 leading-relaxed">
             {{ .Content }}
