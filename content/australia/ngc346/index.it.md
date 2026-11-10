@@ -2,7 +2,7 @@
 title: "NGC 346: Nebulosa di Formazione Stellare nella Piccola Nube di Magellano"
 date: 2026-10-22T10:00:00Z
 categories: ["Nebulose"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "La regione di formazione stellare più luminosa della Piccola Nube di Magellano: un giovane ammasso aperto avvolto da gas di idrogeno incandescente, a circa 200.000 anni luce nel Tucano."
 total_exposure: "2h 43m"
 focal_length: "3660mm"

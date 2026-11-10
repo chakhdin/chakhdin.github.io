@@ -11,3 +11,5 @@ It is my main deep-sky camera, used on two setups that share the same imaging tr
 - Pegasus Astro Pocket Powerbox Advance Gen2 for power, dew heaters and USB
 
 Earlier images with this camera used [Baader LRGB](/equipment/baader-lrgb-36mm-filters/) and [Baader Ha 7 nm](/equipment/baader-ha-7nm-36mm-filter/) 36 mm filters.
+
+A second ASI2600MM Pro, belonging to the rig, works at Swan Reach, South Australia, on the [RCOS 16"](/equipment/rcos-16/) and the [Paramount ME](/equipment/paramount-me/) of the [Swan Reach remote rig](/rigs/swan-reach/). Its train: a ZWO EFW 7 × 2" filter wheel with [Astrodon LRGBSHO 2" filters](/equipment/astrodon-lrgbsho-2-filters/), an off-axis guider with a ZWO ASI174MM Mini guide camera, and a Pegasus Astro Pocket Powerbox Advance Gen2.

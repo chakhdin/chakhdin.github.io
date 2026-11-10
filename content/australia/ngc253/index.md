@@ -2,7 +2,7 @@
 title: "NGC 253: The Sculptor Galaxy"
 date: 2026-10-22T10:30:00Z
 categories: ["Galaxy"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "The brightest galaxy of the Sculptor Group, about 11 million light-years away: a dusty starburst spiral seen at a high inclination, with prominent dust lanes and bright star-forming knots."
 total_exposure: "14h 55m"
 focal_length: "3660mm"

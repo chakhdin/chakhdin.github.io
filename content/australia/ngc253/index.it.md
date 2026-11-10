@@ -2,7 +2,7 @@
 title: "NGC 253: La Galassia dello Scultore"
 date: 2026-10-22T10:30:00Z
 categories: ["Galassie"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "La galassia più luminosa del Gruppo dello Scultore, a circa 11 milioni di anni luce: una spirale starburst ricca di polveri e fortemente inclinata, con evidenti bande scure e luminosi addensamenti di stelle giovani."
 total_exposure: "14h 55m"
 focal_length: "3660mm"

@@ -2,7 +2,7 @@
 title: "NGC 1851: шаровое скопление в созвездии Голубя"
 date: 2026-10-22T10:10:00Z
 categories: ["Скопления"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Плотное шаровое скопление в южном созвездии Голубя на расстоянии около 39 500 световых лет, с очень компактным ядром и протяжённым гало."
 total_exposure: "3h 00m"
 focal_length: "3660mm"

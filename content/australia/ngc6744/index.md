@@ -2,7 +2,7 @@
 title: "NGC 6744: Spiral Galaxy in Pavo"
 date: 2026-11-03T10:00:00Z
 categories: ["Galaxy"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "A large intermediate spiral galaxy in Pavo, tens of millions of light-years away, often compared to the Milky Way, with extended arms and a distorted companion, NGC 6744A."
 total_exposure: "26h 15m"
 focal_length: "3660mm"

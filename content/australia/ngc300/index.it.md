@@ -2,7 +2,7 @@
 title: "NGC 300: Galassia a Spirale nello Scultore"
 date: 2026-10-22T10:20:00Z
 categories: ["Galassie"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Una galassia a spirale di tipo tardo a circa 6 milioni di anni luce nello Scultore, nota anche come Sculptor Pinwheel Galaxy, con bracci poco avvolti."
 total_exposure: "38h 50m"
 focal_length: "3660mm"

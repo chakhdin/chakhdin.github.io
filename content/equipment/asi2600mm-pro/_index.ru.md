@@ -11,3 +11,5 @@ ZWO ASI2600MM Pro — охлаждаемая монохромная камера
 - Pegasus Astro Pocket Powerbox Advance Gen2 для питания, антиросников и USB
 
 Более ранние снимки этой камерой сделаны с 36-мм фильтрами [Baader LRGB](/ru/equipment/baader-lrgb-36mm-filters/) и [Baader Ha 7 nm](/ru/equipment/baader-ha-7nm-36mm-filter/).
+
+Вторая ASI2600MM Pro, принадлежащая сетапу, работает в Суон-Риче (Южная Австралия) на [RCOS 16"](/ru/equipment/rcos-16/) и [Paramount ME](/ru/equipment/paramount-me/) [удалённого сетапа](/ru/rigs/swan-reach/). Её тракт: колесо фильтров ZWO EFW 7 × 2" с [фильтрами Astrodon LRGBSHO 2"](/ru/equipment/astrodon-lrgbsho-2-filters/), внеосевой гид с гид-камерой ZWO ASI174MM Mini и Pegasus Astro Pocket Powerbox Advance Gen2.

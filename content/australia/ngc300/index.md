@@ -2,7 +2,7 @@
 title: "NGC 300: Spiral Galaxy in Sculptor"
 date: 2026-10-22T10:20:00Z
 categories: ["Galaxy"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "A late-type spiral galaxy about 6 million light-years away in Sculptor, also known as the Sculptor Pinwheel Galaxy, with loosely wound arms."
 total_exposure: "38h 50m"
 focal_length: "3660mm"
