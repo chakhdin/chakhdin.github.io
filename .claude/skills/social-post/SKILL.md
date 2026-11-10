@@ -21,9 +21,12 @@ Upload is a separate step: `node scripts/r2-upload-social.mjs <slug>` is a dry r
 after the user approves (the R2 variables are in the user's environment, never in files or commands).
 
 ## 2. Write the intro (replaces the placeholder)
-- EN first, then IT. Length: 4-5 sentences per language for post-web.txt (Facebook, Pinterest);
+- EN first, then IT. Length: 4-5 sentences per language for post-web.txt (Facebook);
   at most 3 sentences per language for post-instagram.txt, because the caption carries both languages
   and Instagram caps a caption at 2,200 characters. Check the final character count.
+- Pinterest: write `post-pinterest.txt` by hand, English only, at most 500 characters including title and hashtags
+  (title, a shortened EN intro with the key data, the hashtags; the link goes on the pin, not in the text).
+  Shorten or reword as needed to stay under the limit; same sourcing rules.
 - Plain and factual, no hype, no hashtags in the intro.
 - Source only: the page body, the front matter, `<object>.facts.json` (SIMBAD/plate solve).
   No outside knowledge. If a fact is not on the page, leave it out.
@@ -48,6 +51,6 @@ If facts.json lists objects in the field, add one line "In the field: A, B, C" (
 each present in facts.json. Skip if the list is empty.
 
 ## 6. Show and stop
-Show the user: both intros, the hashtags, the claim list, the final post-instagram.txt and post-web.txt
+Show the user: both intros, the hashtags, the claim list, the final post-instagram.txt, post-web.txt and post-pinterest.txt
 with character counts. Wait for approval. Posting is a separate step with its own approval
 (see `new-target`, Gate 3).
