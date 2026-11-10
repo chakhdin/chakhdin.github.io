@@ -23,8 +23,9 @@
 {{- $pages := slice }}
 {{- if or $.IsHome $.IsSection }}
 	{{- /* Hugo 0.168.0 embedded rss.xml, except: the undated, weighted rig
-	     pages would sort first, so the home feed leaves them out. */}}
-	{{- $pages = where $pctx.RegularPages "Section" "ne" "rigs" }}
+	     pages would sort first, so the home feed leaves them out, and the
+	     undated About page too. */}}
+	{{- $pages = where (where $pctx.RegularPages "Section" "ne" "rigs") "Type" "ne" "page" }}
 {{- else }}
 	{{- $pages = $pctx.Pages }}
 {{- end }}
