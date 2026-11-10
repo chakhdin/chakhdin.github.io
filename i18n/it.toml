@@ -73,6 +73,10 @@ other = "{{ .Count }} video"
 other = "Visualizzatore immagine a schermo intero"
 [fullscreen_hint]
 other = "ESC: Chiudi | Frecce: Naviga"
+[fullscreen_hint_touch]
+other = "Tocca per chiudere"
+[fullscreen_close]
+other = "Chiudi"
 
 [not_found_title]
 other = "Persi nello Spazio"

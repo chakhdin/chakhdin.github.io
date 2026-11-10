@@ -73,6 +73,10 @@ other = "{{ .Count }} videos"
 other = "Fullscreen image viewer"
 [fullscreen_hint]
 other = "ESC: Close | Arrows: Navigate"
+[fullscreen_hint_touch]
+other = "Tap to close"
+[fullscreen_close]
+other = "Close"
 
 [not_found_title]
 other = "Lost in Space"

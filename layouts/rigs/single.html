@@ -31,11 +31,17 @@
         {{ $small := $img.Resize (printf "%dx webp q82" (int (math.Min 720 $img.Width))) }}
         {{ $large := $img.Resize (printf "%dx webp q85" (int (math.Min 1400 $img.Width))) }}
         <div class="md:col-span-2 self-start cursor-zoom-in">
-            <img src="{{ $small.RelPermalink }}" data-full="{{ $large.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="{{ $.Title }}" class="hero-image w-full max-w-sm mx-auto md:max-w-none rounded-2xl border border-gray-800">
+            <img src="{{ $small.RelPermalink }}" data-full="{{ $large.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="{{ $.Title }}" tabindex="0" role="button" aria-haspopup="dialog" class="hero-image w-full max-w-sm mx-auto md:max-w-none rounded-2xl border border-gray-800">
         </div>
         <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out" role="dialog" aria-modal="true" aria-label="{{ i18n "fullscreen_view" }}">
-            <img id="fullscreen-image" src="{{ $large.RelPermalink }}" alt="" class="max-w-full max-h-full object-contain">
-            <div class="absolute top-3 right-4 md:top-6 md:right-8 text-gray-400 text-sm font-mono">{{ i18n "fullscreen_hint" }}</div>
+            {{/* No src until opened (site.js sets it from data-full), so the hidden overlay downloads nothing. */}}
+            <img id="fullscreen-image" alt="" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-4 left-4 md:top-6 md:left-8 text-gray-400 text-sm font-mono"><span class="pointer-coarse:hidden">{{ i18n "fullscreen_hint" }}</span><span class="hidden pointer-coarse:inline">{{ i18n "fullscreen_hint_touch" }}</span></div>
+            <button type="button" id="fullscreen-close" aria-label="{{ i18n "fullscreen_close" }}" class="absolute top-2 right-2 md:top-4 md:right-6 flex items-center justify-center w-11 h-11 rounded-full bg-gray-900/80 text-gray-300 hover:text-white hover:bg-gray-800 transition-colors cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
         {{ end }}
         <div class="md:col-span-3 prose prose-invert md:prose-lg max-w-none min-w-0 break-words text-gray-300 leading-relaxed">
