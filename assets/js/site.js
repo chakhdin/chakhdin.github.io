@@ -48,7 +48,8 @@ function initMedia() {
     document.querySelectorAll('.hero-image').forEach((img) => {
         img.addEventListener('click', (e) => {
             e.stopPropagation();
-            fullscreenImg.src = img.currentSrc || img.src;
+            // data-full: a larger version than the one shown (rig photos).
+            fullscreenImg.src = img.dataset.full || img.currentSrc || img.src;
             fullscreenImg.alt = img.alt;
             overlay.classList.remove('hidden');
             document.body.style.overflow = 'hidden';
@@ -158,6 +159,8 @@ document.addEventListener('click', (e) => {
 
     const url = new URL(link.href, window.location.href);
     if (url.origin !== window.location.origin) return;
+    // Files (e.g. the full-size rig photos) open natively, not as pages.
+    if (/\.\w+$/.test(url.pathname) && !url.pathname.endsWith('.html')) return;
     // Language links keep the selected version of a multi-version page.
     if (link.hasAttribute('data-keep-hash') && location.hash) url.hash = location.hash;
     if (url.pathname === window.location.pathname && url.search === window.location.search) return;
