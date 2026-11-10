@@ -87,6 +87,8 @@ other = "Questa pagina è uscita dall'inquadratura. Torniamo a puntare l'obietti
 
 [footer_rights]
 other = "Tutti i diritti riservati. Generato con Hugo."
+[footer_privacy]
+other = "Privacy"
 
 [quote_open]
 other = "«"

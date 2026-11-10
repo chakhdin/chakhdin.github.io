@@ -87,6 +87,8 @@ other = "This page has drifted out of frame. Let's get you back on target."
 
 [footer_rights]
 other = "All rights reserved. Generated with Hugo."
+[footer_privacy]
+other = "Privacy"
 
 [quote_open]
 other = "“"
