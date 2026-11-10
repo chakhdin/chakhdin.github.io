@@ -83,6 +83,9 @@ other = "Lost in Space"
 [not_found_message]
 other = "This page has drifted out of frame. Let's get you back on target."
 
+[footer_rights]
+other = "All rights reserved. Generated with Hugo."
+
 [quote_open]
 other = "“"
 [quote_close]

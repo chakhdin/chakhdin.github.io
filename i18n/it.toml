@@ -83,6 +83,9 @@ other = "Persi nello Spazio"
 [not_found_message]
 other = "Questa pagina è uscita dall'inquadratura. Torniamo a puntare l'obiettivo."
 
+[footer_rights]
+other = "Tutti i diritti riservati. Generato con Hugo."
+
 [quote_open]
 other = "«"
 [quote_close]

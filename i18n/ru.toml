@@ -89,6 +89,9 @@ other = "Затеряны в космосе"
 [not_found_message]
 other = "Эта страница вышла из кадра. Вернёмся к цели."
 
+[footer_rights]
+other = "Все права защищены. Создано на Hugo."
+
 [quote_open]
 other = "«"
 [quote_close]
