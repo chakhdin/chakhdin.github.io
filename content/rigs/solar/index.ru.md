@@ -3,7 +3,7 @@ title: "Солнечный сетап"
 description: "Bresser 127L с ASI174MM: мой солнечный сетап, в белом свете и в линии H-альфа."
 featured_image: "rig.jpg"
 thumb_y: 700
-hero_crop: [0, 200, 1075, 1433]
+hero_crop: [0, 200, 1075, 1820]
 weight: 4
 # No date on purpose: undated pages stay out of Latest and the og:image fallback.
 ---
