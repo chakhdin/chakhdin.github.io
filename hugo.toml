@@ -10,7 +10,7 @@ enableRobotsTXT = true
 
 [markup]
   [markup.goldmark.renderer]
-    unsafe = true
+    unsafe = false
 
 # Do not publish page-bundle resources (the original PNGs, ~600 MB) to the
 # site output; only processed derivatives (webp/jpg) are referenced.
