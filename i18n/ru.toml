@@ -93,6 +93,8 @@ other = "Эта страница вышла из кадра. Вернёмся к
 
 [footer_rights]
 other = "Все права защищены. Создано на Hugo."
+[footer_privacy]
+other = "Конфиденциальность"
 
 [quote_open]
 other = "«"
