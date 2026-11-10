@@ -14,7 +14,7 @@ other = "Ultime"
 [back_home]
 other = "Torna alla Home"
 [back_to]
-other = "Torna a {{ .Title }}"
+other = "Torna alla sezione {{ .Title }}"
 
 [total_exposure]
 other = "Esposizione Totale"
