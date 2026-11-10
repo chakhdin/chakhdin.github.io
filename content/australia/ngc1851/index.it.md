@@ -2,7 +2,7 @@
 title: "NGC 1851: Ammasso Globulare nella Colomba"
 date: 2026-10-22T10:10:00Z
 categories: ["Ammassi"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Un denso ammasso globulare nella costellazione australe della Colomba, a circa 39.500 anni luce, con un nucleo molto compatto e un alone esteso."
 total_exposure: "3h 00m"
 focal_length: "3660mm"

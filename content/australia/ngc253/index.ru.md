@@ -2,7 +2,7 @@
 title: "NGC 253: галактика Скульптора"
 date: 2026-10-22T10:30:00Z
 categories: ["Галактики"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Самая яркая галактика Группы Скульптора на расстоянии около 11 миллионов световых лет: пылевая спираль со вспышкой звездообразования, сильно наклонённая к лучу зрения, с заметными пылевыми полосами и яркими узлами звездообразования."
 total_exposure: "14h 55m"
 focal_length: "3660mm"

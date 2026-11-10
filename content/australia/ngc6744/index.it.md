@@ -2,7 +2,7 @@
 title: "NGC 6744: Galassia a Spirale nel Pavone"
 date: 2026-11-03T10:00:00Z
 categories: ["Galassie"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Una grande galassia a spirale intermedia nel Pavone, a decine di milioni di anni luce, spesso paragonata alla Via Lattea, con bracci estesi e una galassia compagna deformata, NGC 6744A."
 total_exposure: "26h 15m"
 focal_length: "3660mm"

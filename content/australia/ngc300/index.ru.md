@@ -2,7 +2,7 @@
 title: "NGC 300: спиральная галактика в созвездии Скульптора"
 date: 2026-10-22T10:20:00Z
 categories: ["Галактики"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Спиральная галактика позднего типа на расстоянии около 6 миллионов световых лет в Скульпторе, известная также как Sculptor Pinwheel Galaxy, с слабо закрученными рукавами."
 total_exposure: "38h 50m"
 focal_length: "3660mm"

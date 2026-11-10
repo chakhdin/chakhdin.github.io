@@ -2,7 +2,7 @@
 title: "NGC 346: Star-Forming Nebula in the Small Magellanic Cloud"
 date: 2026-10-22T10:00:00Z
 categories: ["Nebula"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "The brightest star-forming region of the Small Magellanic Cloud: a young open cluster wrapped in glowing hydrogen gas, about 200,000 light-years away in Tucana."
 total_exposure: "2h 43m"
 focal_length: "3660mm"

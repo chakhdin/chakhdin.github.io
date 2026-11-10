@@ -27,8 +27,9 @@
             {{ $x := index . 0 }}{{ $y := index . 1 }}{{ $w := index . 2 }}{{ $h := index . 3 }}
             {{ $img = ($img.Crop (printf "%dx%d TopLeft" (add $x $w) (add $y $h))).Crop (printf "%dx%d BottomRight" $w $h) }}
         {{ end }}
-        {{ $small := $img.Resize "720x webp q82" }}
-        {{ $large := $img.Resize "1400x webp q85" }}
+        {{/* Never upscale: small source photos keep their own width */}}
+        {{ $small := $img.Resize (printf "%dx webp q82" (int (math.Min 720 $img.Width))) }}
+        {{ $large := $img.Resize (printf "%dx webp q85" (int (math.Min 1400 $img.Width))) }}
         <div class="md:col-span-2 self-start cursor-zoom-in">
             <img src="{{ $small.RelPermalink }}" data-full="{{ $large.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="{{ $.Title }}" class="hero-image w-full max-w-sm mx-auto md:max-w-none rounded-2xl border border-gray-800">
         </div>

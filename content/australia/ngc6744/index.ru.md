@@ -2,7 +2,7 @@
 title: "NGC 6744: спиральная галактика в созвездии Павлина"
 date: 2026-11-03T10:00:00Z
 categories: ["Галактики"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Крупная спиральная галактика промежуточного типа в Павлине на расстоянии в десятки миллионов световых лет, которую часто сравнивают с Млечным Путём, с протяжёнными рукавами и деформированной галактикой-спутником NGC 6744A."
 total_exposure: "26h 15m"
 focal_length: "3660mm"

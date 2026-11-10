@@ -11,3 +11,5 @@ La ZWO ASI2600MM Pro è una camera monocromatica raffreddata con sensore Sony IM
 - Pegasus Astro Pocket Powerbox Advance Gen2 per alimentazione, fasce anticondensa e USB
 
 Le immagini precedenti con questa camera usavano filtri [Baader LRGB](/it/equipment/baader-lrgb-36mm-filters/) e [Baader Ha 7 nm](/it/equipment/baader-ha-7nm-36mm-filter/) da 36 mm.
+
+Una seconda ASI2600MM Pro, di proprietà del setup, lavora a Swan Reach, nell'Australia Meridionale, sull'[RCOS 16"](/it/equipment/rcos-16/) e sulla [Paramount ME](/it/equipment/paramount-me/) del [setup remoto di Swan Reach](/it/rigs/swan-reach/). Il suo treno: ruota portafiltri ZWO EFW 7 × 2" con [filtri Astrodon LRGBSHO 2"](/it/equipment/astrodon-lrgbsho-2-filters/), guida fuori asse con camera di guida ZWO ASI174MM Mini e Pegasus Astro Pocket Powerbox Advance Gen2.

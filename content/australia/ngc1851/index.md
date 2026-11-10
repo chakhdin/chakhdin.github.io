@@ -2,7 +2,7 @@
 title: "NGC 1851: Globular Cluster in Columba"
 date: 2026-10-22T10:10:00Z
 categories: ["Cluster"]
-equipment: ["RCOS 16\"", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2\" filters"]
+equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "A dense globular cluster in the southern constellation Columba, about 39,500 light-years away, with a very compact core and an extended halo."
 total_exposure: "3h 00m"
 focal_length: "3660mm"
