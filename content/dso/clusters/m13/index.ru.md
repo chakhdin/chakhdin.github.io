@@ -2,7 +2,7 @@
 title: "M13: Большое шаровое скопление в Геркулесе"
 date: 2023-12-29T16:45:00Z
 categories: ["Скопления"]
-equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "Одно из самых впечатляющих шаровых скоплений северного неба — плотная сфера из нескольких сотен тысяч древних звезд, разрешенная вплоть до самого ядра."
 total_exposure: "6m"
 focal_length: "750mm"

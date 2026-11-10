@@ -2,7 +2,7 @@
 title: "NGC 6946: La Galassia Fuochi d'Artificio"
 date: 2024-08-02T12:32:00Z
 categories: ["Galassie"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Una spettacolare galassia a spirale vista di faccia, nota come Galassia Fuochi d'Artificio, che mostra un luminoso nucleo dorato, ampi bracci a spirale e vibranti regioni rosate di formazione stellare."
 total_exposure: "3h 40m"
 focal_length: "2000mm"

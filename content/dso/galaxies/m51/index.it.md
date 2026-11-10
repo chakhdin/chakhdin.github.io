@@ -2,7 +2,7 @@
 title: "M51: La Galassia Vortice"
 date: 2025-05-24T12:32:00Z
 categories: ["Galassie"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Una splendida galassia a spirale grand design bloccata in una danza gravitazionale con la sua compagna più piccola, che rivela estesi aloni mareali."
 total_exposure: "4h 50m"
 focal_length: "2000mm"

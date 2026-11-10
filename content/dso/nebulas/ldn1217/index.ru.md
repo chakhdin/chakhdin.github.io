@@ -2,7 +2,7 @@
 title: "LDN 1217 и PK 111+11.1: Область Волчьей Пещеры"
 date: 2024-12-01T12:25:00Z
 categories: ["Туманности"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Optolong L-eXtreme 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter", "Optolong L-eXtreme 2 filter"]
 description: "Потрясающий портрет глубокого космоса с пылевой нитью темной туманности LDN 1217, оканчивающейся голубой отражательной туманностью vdB 152, на контрасте с яркой планетарной туманностью PK 111+11.1."
 total_exposure: "19h 25m"
 focal_length: "455mm"

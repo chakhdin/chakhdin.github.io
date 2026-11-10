@@ -2,7 +2,7 @@
 title: "NGC 6781: Туманность Снежный Шар"
 date: 2024-07-25T11:05:00Z
 categories: ["Туманности"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Потрясающая планетарная туманность в созвездии Орла с ярким синим ядром из ионизированного кислорода, окруженным тонкой красной оболочкой из водорода."
 total_exposure: "4h 10m"
 focal_length: "2000mm"

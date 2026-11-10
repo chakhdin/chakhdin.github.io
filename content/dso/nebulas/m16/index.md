@@ -2,7 +2,7 @@
 title: "M16: The Eagle Nebula and The Pillars of Creation"
 date: 2024-08-11T13:37:00Z
 categories: ["Nebula"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "A breathtaking view of M16, the Eagle Nebula, highlighting the iconic Pillars of Creation amidst glowing clouds of hydrogen gas and newly born stars."
 total_exposure: "4h 40m"
 focal_length: "2000mm"

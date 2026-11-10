@@ -2,7 +2,7 @@
 title: "LDN 1217 e PK 111+11.1: Regione della Grotta del Lupo"
 date: 2024-12-01T12:25:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Optolong L-eXtreme 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter", "Optolong L-eXtreme 2 filter"]
 description: "Uno splendido ritratto del cielo profondo che mostra il filamento polveroso della nebulosa oscura LDN 1217 che termina nella nebulosa a riflessione blu vdB 152, in contrasto con la luminosa nebulosa planetaria PK 111+11.1."
 total_exposure: "19h 25m"
 focal_length: "455mm"

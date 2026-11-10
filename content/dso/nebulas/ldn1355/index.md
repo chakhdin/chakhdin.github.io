@@ -2,7 +2,7 @@
 title: "LDN 1355, 1357 & 1358: The Helping Hand Nebula"
 date: 2024-09-29T21:19:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "A mesmerizing dark nebula complex in Cassiopeia, resembling a giant hand reaching across a rich field of dusty, faint interstellar clouds and blue reflection nebulae."
 total_exposure: "8h 20m"
 focal_length: "455mm"

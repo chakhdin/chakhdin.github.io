@@ -2,7 +2,7 @@
 title: "M22: Большое скопление Стрельца"
 date: 2023-10-12T15:14:00Z
 categories: ["Скопления"]
-equipment: ["Skywatcher 150PDS", "ASI533MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI533MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "Одно из ближайших к Земле шаровых скоплений на фоне плотных звездных полей Млечного Пути в направлении центра Галактики."
 total_exposure: "6h 10m"
 focal_length: "750mm"

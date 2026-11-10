@@ -2,7 +2,7 @@
 title: "M45: Плеяды"
 date: 2022-11-30T17:14:00Z
 categories: ["Скопления"]
-equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "Знаменитое рассеянное скопление Семь сестер, чьи горячие голубые звезды окутаны тонкими прожилками отражательной туманности."
 total_exposure: "7h 15m"
 focal_length: "750mm"

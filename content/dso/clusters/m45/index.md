@@ -2,7 +2,7 @@
 title: "M45: The Pleiades"
 date: 2022-11-30T17:14:00Z
 categories: ["Cluster"]
-equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "The famous Seven Sisters open cluster, its hot blue stars wrapped in delicate wisps of reflection nebula."
 total_exposure: "7h 15m"
 focal_length: "750mm"

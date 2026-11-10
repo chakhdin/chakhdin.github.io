@@ -2,7 +2,7 @@
 title: "M51: Галактика Водоворот"
 date: 2025-05-24T12:32:00Z
 categories: ["Галактики"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Потрясающая спиральная галактика с упорядоченной структурой, запертая в гравитационном танце со своим меньшим компаньоном, демонстрирующая обширные приливные гало."
 total_exposure: "4h 50m"
 focal_length: "2000mm"

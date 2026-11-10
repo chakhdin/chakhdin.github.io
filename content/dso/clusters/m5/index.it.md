@@ -2,7 +2,7 @@
 title: "M5: Ammasso Globulare nel Serpente"
 date: 2024-05-26T18:19:00Z
 categories: ["Ammassi"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Takahashi FSQ85-EDX", "ASI2600MM Pro", "Antlia LRGB-V Pro 36mm filters"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter", "Takahashi FSQ85-EDX", "ASI2600MM Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "Uno degli ammassi globulari più antichi e grandi della Via Lattea, con il suo nucleo abbagliante circondato da un vasto sciame di giganti rosse e stelle blu."
 total_exposure: "2h 40m"
 focal_length: "2000mm"
@@ -24,7 +24,7 @@ versions:
     image: "M5_4.jpg"
     note: |
       Questa vista ravvicinata è stata ripresa con un telescopio Meade 8" ACF a 2000mm, una focale più di quattro volte più lunga di quella della versione a grande campo. La maggiore focale riempie l'inquadratura con l'ammasso stesso, risolvendo le singole stelle fin quasi al denso nucleo e rendendo molto più evidenti le differenze di colore tra le fredde giganti rosse arancioni e le stelle bianco-azzurre più calde.
-    equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+    equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
     total_exposure: "2h 40m"
     focal_length: "2000mm"
     locations:
