@@ -87,6 +87,7 @@ POST_LABELS = {
 }
 MOUNT_WORDS = ("NEQ6", "Paramount", "EQ6", "HEQ5", "AZ-EQ")
 FILTER_WORDS = ("filter", "UV-IR", "Astrodon", "Antlia", "Astronomik", "Optolong")
+DATE = r"\d{4}-\d{2}-\d{2}"
 
 
 def quoted_list(front, key):
@@ -115,12 +116,18 @@ def post_text(bundle, lang, instagram):
     labels = POST_LABELS[lang]
     gear = quoted_list(front, "equipment")
     mount = next((g for g in gear if any(w in g for w in MOUNT_WORDS)), "")
-    filt = next((g for g in gear if any(w in g for w in FILTER_WORDS)), "")
-    camera = next((g for g in gear if g.startswith("ASI") and g not in (mount, filt)), "")
-    scope = next((g for g in gear if g not in (mount, filt, camera)), "")
-    place = re.search(r'- name: "([^"]*)"', front).group(1).rsplit(", ", 1)[0]
-    bortle = re.search(r'bortle: "[^"\d]*(\d+)"', front).group(1)
-    dates = re.findall(r"\d{4}-\d{2}-\d{2}", front.split("locations:", 1)[1].split("featured_image:", 1)[0])
+    filters = [g for g in gear if any(w in g for w in FILTER_WORDS)]
+    camera = next((g for g in gear if g.startswith("ASI") and g != mount and g not in filters), "")
+    scope = next((g for g in gear if g not in (mount, camera) and g not in filters), "")
+    # One "place (Bortle N), nights" part per location block
+    sites = re.findall(
+        r'- name: "([^"]*)"\s+bortle: "[^"\d]*(\d+)"\s+dates: \[([^\]]*)\]',
+        front.split("locations:", 1)[1].split("featured_image:", 1)[0],
+    )
+    places = "; ".join(
+        f"{name.rsplit(', ', 1)[0]} (Bortle {bortle}), {nights(re.findall(DATE, dates), lang)}"
+        for name, bortle, dates in sites
+    )
     subs = re.findall(r'- name: "([^"]*)"\s+subs: "([^"]*)"', front.split("filters:", 1)[1])
     frames = ", ".join(
         (s if len(subs) == 1 else f"{n} {s}").replace(" x ", " × ").replace("s", " s") for n, s in subs
@@ -137,9 +144,9 @@ def post_text(bundle, lang, instagram):
     mosaic = [f"🧩 {labels['mosaic'].format(n=panels.group(1))}"] if panels else []
     return "\n".join([
         scalar(front, "title"), "", scalar(front, "description"), "",
-        f"📍 {place} (Bortle {bortle}), {nights(dates, lang)}",
+        f"📍 {places}",
         "🔭 " + labels["optics"].format(scope=scope, focal=focal, mount=mount),
-        f"📷 {camera}, {filt}",
+        f"📷 {', '.join([camera, *filters])}",
         *mosaic,
         f"⏱️ {frames} = {total} {labels['total']}",
         f"💻 {labels['processing']}", "", link,
