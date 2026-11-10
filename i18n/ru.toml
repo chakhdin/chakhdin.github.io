@@ -10,6 +10,8 @@ other = "По оборудованию"
 other = "Мои сетапы"
 [nav_latest]
 other = "Новое"
+[nav_about]
+other = "Обо мне"
 
 [back_home]
 other = "На главную"

@@ -10,6 +10,8 @@ other = "Per Attrezzatura"
 other = "I miei setup"
 [nav_latest]
 other = "Ultime"
+[nav_about]
+other = "Chi sono"
 
 [back_home]
 other = "Torna alla Home"

@@ -1,6 +1,6 @@
 {{ define "head-extra" }}
 {{/* Site identity for search engines: the site and its author, linked to the profiles in the footer. */}}
-{{ $person := dict "@type" "Person" "@id" (printf "%s#person" hugo.Sites.Default.Home.Permalink) "name" site.Params.author "url" site.Home.Permalink "sameAs" (slice "https://app.astrobin.com/u/podumal" "https://www.instagram.com/chakhdin/" "https://www.facebook.com/chakhdin" "https://www.pinterest.com/chakhdin/") }}
+{{ $person := dict "@type" "Person" "@id" (printf "%s#person" hugo.Sites.Default.Home.Permalink) "name" site.Params.author "url" (site.GetPage "/about").Permalink "sameAs" (slice "https://app.astrobin.com/u/podumal" "https://www.instagram.com/chakhdin/" "https://www.facebook.com/chakhdin" "https://www.pinterest.com/chakhdin/") }}
 {{ $website := dict "@context" "https://schema.org" "@type" "WebSite" "@id" (printf "%s#website" site.Home.Permalink) "name" site.Title "url" site.Home.Permalink "inLanguage" site.Language.Lang "author" $person "publisher" (dict "@id" (printf "%s#person" hugo.Sites.Default.Home.Permalink)) }}
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 {{ end }}

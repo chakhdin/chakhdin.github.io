@@ -10,6 +10,8 @@ other = "By Equipment"
 other = "My Rigs"
 [nav_latest]
 other = "Latest"
+[nav_about]
+other = "About"
 
 [back_home]
 other = "Back to Home"
