@@ -2,7 +2,7 @@
 title: "LDN 1355, 1357 и 1358: Туманность Рука Помощи"
 date: 2024-09-29T21:19:00Z
 categories: ["Туманности"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Завораживающий комплекс темных туманностей в Кассиопее, напоминающий гигантскую руку, тянущуюся сквозь богатое поле пылевых межзвездных облаков и голубых отражательных туманностей."
 total_exposure: "8h 20m"
 focal_length: "455mm"

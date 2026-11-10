@@ -2,7 +2,7 @@
 title: "NGC 7635: Туманность Пузырь"
 date: 2025-08-06T08:15:00Z
 categories: ["Туманности"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Потрясающий крупный план туманности Пузырь — космического пузыря, выдутого сильными звездными ветрами массивной центральной звезды, вырезанный из более широкого поля."
 total_exposure: "5h 40m"
 focal_length: "2000mm"

@@ -2,7 +2,7 @@
 title: "LDN 1217 and PK 111+11.1: Wolf's Cave Region"
 date: 2024-12-01T12:25:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Optolong L-eXtreme 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter", "Optolong L-eXtreme 2 filter"]
 description: "A stunning deep-sky portrait featuring the dusty filament of dark nebula LDN 1217 terminating in the blue reflection nebula vdB 152, contrasted against the bright planetary nebula PK 111+11.1."
 total_exposure: "19h 25m"
 focal_length: "455mm"

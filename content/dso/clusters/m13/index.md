@@ -2,7 +2,7 @@
 title: "M13: The Great Globular Cluster in Hercules"
 date: 2023-12-29T16:45:00Z
 categories: ["Cluster"]
-equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "One of the most spectacular globular clusters in the northern sky, a dense sphere of several hundred thousand ancient stars resolved right down to its core."
 total_exposure: "6m"
 focal_length: "750mm"

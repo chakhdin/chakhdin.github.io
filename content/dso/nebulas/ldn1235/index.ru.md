@@ -2,7 +2,7 @@
 title: "LDN 1235: Туманность Акула"
 date: 2024-11-02T17:28:00Z
 categories: ["Туманности"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Поразительный комплекс темных туманностей в Цефее, зловеще напоминающий акулу, плывущую в глубоком океане галактических перистых облаков, в сопровождении светящихся голубых отражательных туманностей."
 total_exposure: "9h 30m"
 focal_length: "455mm"

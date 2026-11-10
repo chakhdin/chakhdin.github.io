@@ -2,7 +2,7 @@
 title: "NGC 6946: Галактика Фейерверк"
 date: 2024-08-02T12:32:00Z
 categories: ["Галактики"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Впечатляющая спиральная галактика, видимая плашмя и известная как Галактика Фейерверк, с ярким золотистым ядром, раскидистыми рукавами и розовыми областями звездообразования."
 total_exposure: "3h 40m"
 focal_length: "2000mm"

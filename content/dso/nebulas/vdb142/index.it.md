@@ -2,7 +2,7 @@
 title: "vdB 142: La Nebulosa Proboscide d'Elefante"
 date: 2024-09-07T11:02:00Z
 categories: ["Nebulose"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Un sorprendente globulo scuro di denso gas e polvere interstellare nel Cefeo, scolpito dagli intensi venti stellari e dalle radiazioni di massicce stelle vicine."
 total_exposure: "5h 20m"
 focal_length: "2000mm"

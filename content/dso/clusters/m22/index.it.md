@@ -2,7 +2,7 @@
 title: "M22: Il Grande Ammasso del Sagittario"
 date: 2023-10-12T15:14:00Z
 categories: ["Ammassi"]
-equipment: ["Skywatcher 150PDS", "ASI533MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI533MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "Uno degli ammassi globulari più vicini alla Terra, immerso nei densi campi stellari della Via Lattea in direzione del centro galattico."
 total_exposure: "6h 10m"
 focal_length: "750mm"

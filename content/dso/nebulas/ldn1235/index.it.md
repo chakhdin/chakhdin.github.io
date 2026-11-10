@@ -2,7 +2,7 @@
 title: "LDN 1235: La Nebulosa Squalo"
 date: 2024-11-02T17:28:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Un sorprendente complesso di nebulose oscure in Cefeo che ricorda in modo inquietante uno squalo che nuota in un profondo oceano di cirri galattici, accompagnato da luminose nebulose a riflessione blu."
 total_exposure: "9h 30m"
 focal_length: "455mm"

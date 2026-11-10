@@ -2,7 +2,7 @@
 title: "LDN 1235: The Shark Nebula"
 date: 2024-11-02T17:28:00Z
 categories: ["Nebula"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "A striking dark nebula complex in Cepheus that eerily resembles a shark swimming through a deep ocean of galactic cirrus, accompanied by glowing blue reflection nebulae."
 total_exposure: "9h 30m"
 focal_length: "455mm"

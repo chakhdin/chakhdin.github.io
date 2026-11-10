@@ -2,7 +2,7 @@
 title: "M22: The Great Sagittarius Cluster"
 date: 2023-10-12T15:14:00Z
 categories: ["Cluster"]
-equipment: ["Skywatcher 150PDS", "ASI533MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI533MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "One of the nearest globular clusters to Earth, set against the dense star fields of the Milky Way toward the galactic center."
 total_exposure: "6h 10m"
 focal_length: "750mm"

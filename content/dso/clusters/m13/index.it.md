@@ -2,7 +2,7 @@
 title: "M13: Il Grande Ammasso Globulare di Ercole"
 date: 2023-12-29T16:45:00Z
 categories: ["Ammassi"]
-equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "Uno degli ammassi globulari più spettacolari del cielo boreale, una densa sfera di diverse centinaia di migliaia di stelle antiche risolta fino al nucleo."
 total_exposure: "6m"
 focal_length: "750mm"

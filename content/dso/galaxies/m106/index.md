@@ -2,7 +2,7 @@
 title: "M106: Spiral Galaxy in Canes Venatici"
 date: 2025-04-26T12:52:00Z
 categories: ["Galaxy"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "A striking spiral galaxy showcasing a brilliant core, sweeping dust lanes, and vibrant blue star clusters in its outer arms."
 total_exposure: "6h 30m"
 focal_length: "2000mm"

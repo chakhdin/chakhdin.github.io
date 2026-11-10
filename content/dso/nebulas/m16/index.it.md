@@ -2,7 +2,7 @@
 title: "M16: La Nebulosa Aquila e i Pilastri della Creazione"
 date: 2024-08-11T13:37:00Z
 categories: ["Nebulose"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Una vista mozzafiato di M16, la Nebulosa Aquila, che mette in risalto gli iconici Pilastri della Creazione tra nubi incandescenti di idrogeno e stelle neonate."
 total_exposure: "4h 40m"
 focal_length: "2000mm"

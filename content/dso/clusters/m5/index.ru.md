@@ -2,7 +2,7 @@
 title: "M5: Шаровое скопление в Змее"
 date: 2024-05-26T18:19:00Z
 categories: ["Скопления"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter", "Takahashi FSQ85-EDX", "ASI2600MM Pro", "Antlia LRGB-V Pro 36mm filters"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter", "Takahashi FSQ85-EDX", "ASI2600MM Pro", "Antlia LRGB-V Pro 36mm filters"]
 description: "Одно из старейших и крупнейших шаровых скоплений Млечного Пути, чье ослепительное ядро окружено огромным роем красных гигантов и голубых звезд."
 total_exposure: "2h 40m"
 focal_length: "2000mm"
@@ -24,7 +24,7 @@ versions:
     image: "M5_4.jpg"
     note: |
       Этот крупный план снят телескопом Meade 8" ACF с фокусным расстоянием 2000 мм — более чем в четыре раза длиннее, чем у широкоугольной версии. Такое увеличение заполняет кадр самим скоплением, разрешая отдельные звезды почти до плотного ядра и делая гораздо заметнее разницу в цвете между холодными оранжевыми красными гигантами и более горячими бело-голубыми звездами.
-    equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+    equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
     total_exposure: "2h 40m"
     focal_length: "2000mm"
     locations:

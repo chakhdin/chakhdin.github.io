@@ -2,7 +2,7 @@
 title: "NGC 3718: Пекьюлиарная спиральная галактика"
 date: 2025-04-26T12:11:00Z
 categories: ["Галактики"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Сильно искаженная спиральная галактика с искривленной темной пылевой полосой и широкими приливными хвостами, в сопровождении NGC 3729 и далекой компактной группы галактик Hickson 56."
 total_exposure: "8h 10m"
 focal_length: "2000mm"

@@ -2,7 +2,7 @@
 title: "M45: Le Pleiadi"
 date: 2022-11-30T17:14:00Z
 categories: ["Ammassi"]
-equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2\" filter"]
+equipment: ["Skywatcher 150PDS", "ASI294MC Pro", "NEQ6 Pro", "Optolong L-Pro 2 filter"]
 description: "Il celebre ammasso aperto delle Sette Sorelle, con le sue calde stelle blu avvolte da delicati filamenti di nebulosa a riflessione."
 total_exposure: "7h 15m"
 focal_length: "750mm"

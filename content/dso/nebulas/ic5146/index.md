@@ -2,7 +2,7 @@
 title: "IC 5146: The Cocoon Nebula"
 date: 2024-08-11T15:10:00Z
 categories: ["Nebula"]
-equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Meade 8 ACF", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "A beautiful star-forming region in Cygnus, showcasing the glowing red emission of ionized hydrogen laced with dark dust and a delicate blue reflection nebula."
 total_exposure: "5h 20m"
 focal_length: "2000mm"

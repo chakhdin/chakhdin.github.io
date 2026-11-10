@@ -2,7 +2,7 @@
 title: "LDN 1355, 1357 e 1358: La Nebulosa Helping Hand"
 date: 2024-09-29T21:19:00Z
 categories: ["Nebulose"]
-equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2\" filter"]
+equipment: ["Takahashi FSQ85-EDX", "ASI294MC Pro", "NEQ6 Pro", "Astronomik L-2 UV-IR Block 2 filter"]
 description: "Un ipnotico complesso di nebulose oscure in Cassiopea, che ricorda una mano gigante che si protende attraverso un ricco campo di polveri interstellari e nebulose a riflessione blu."
 total_exposure: "8h 20m"
 focal_length: "455mm"
