@@ -3,6 +3,8 @@ locale = "en"
 title = "Sergey's Astrophotography"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
+# lastmod (sitemap, RSS) from the last commit of each content file; CI needs full history.
+enableGitInfo = true
 
 [taxonomies]
   category = "categories"
