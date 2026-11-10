@@ -7,13 +7,13 @@
         {{ $pages := where .Site.RegularPages "Params.featured_image" "!=" nil }}
         {{ $latest := $pages.ByDate.Reverse | first 12 }}
         
-        {{ range $latest }}
+        {{ range $i, $_ := $latest }}
             <a href="{{ .RelPermalink }}" class="block group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-600 hover:shadow-blue-900/20 transition shadow-lg flex flex-col h-full">
                 <div class="aspect-video overflow-hidden bg-black relative shrink-0">
                     {{ $image := .Resources.GetMatch .Params.featured_image }}
                     {{ if $image }}
                         {{ $thumb := $image.Fill "800x500 Center webp q80" }}
-                        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="{{ if lt $i 3 }}eager{{ else }}lazy{{ end }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
                     {{ end }}
                     
                     {{/* Floating Date Badge */}}
