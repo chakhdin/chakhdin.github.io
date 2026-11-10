@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
+    {{/* GitHub Pages cannot send security headers, so the policy goes in a meta tag
+         (browsers ignore frame-ancestors, HSTS and nosniff there). Hero images size
+         themselves with style attributes, so those stay allowed; style elements do not.
+         Production only: hugo server injects an inline live-reload script. */}}
+    {{ if hugo.IsProduction }}
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; media-src 'self'{{ with site.Params.videoBaseURL }} {{ . }}{{ end }}; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    {{ end }}
     {{ $pageTitle := .Title }}
     {{ if eq .Kind "404" }}{{ $pageTitle = i18n "not_found_title" }}{{ end }}
     <title>{{ $pageTitle }} | {{ site.Title }}</title>
