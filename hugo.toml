@@ -1,6 +1,6 @@
-baseURL = "https://shakhdinarov.com/"
+baseURL = "https://sleepytelescope.com/"
 locale = "en"
-title = "Sergey's Astrophotography"
+title = "Sleepy Telescope"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 # lastmod (sitemap, RSS) from the last commit of each content file; CI needs full history.
@@ -43,10 +43,10 @@ enableGitInfo = true
 
   [languages.it]
     label = "IT"
-    title = "Astrofotografia di Sergey"
+    title = "Sleepy Telescope"
     weight = 2
 
   [languages.ru]
     label = "RU"
-    title = "Астрофотография Сергея"
+    title = "Sleepy Telescope"
     weight = 3
