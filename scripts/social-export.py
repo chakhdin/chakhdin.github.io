@@ -66,7 +66,7 @@ def caption(bundle, lang):
     return "\n".join(lines)
 
 
-SITE_URL = "https://shakhdinarov.com"
+SITE_URL = "https://sleepytelescope.com"
 MONTHS = {
     "en": "January February March April May June July August September October November December".split(),
     "it": "gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split(),
