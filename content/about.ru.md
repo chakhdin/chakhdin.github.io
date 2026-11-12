@@ -21,4 +21,4 @@ type: page
 
 ## Где ещё
 
-Мои снимки есть также на [AstroBin](https://app.astrobin.com/u/podumal), в [Instagram](https://www.instagram.com/chakhdin/), на [Facebook](https://www.facebook.com/chakhdin) и в [Pinterest](https://www.pinterest.com/chakhdin/).
+Мои снимки есть также на [AstroBin](https://app.astrobin.com/u/podumal), в [Instagram](https://www.instagram.com/sleepytelescope/), на [Facebook](https://www.facebook.com/sleepytelescope) и в [Pinterest](https://www.pinterest.com/sleepytelescope/).

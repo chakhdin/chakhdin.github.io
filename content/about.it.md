@@ -21,4 +21,4 @@ Tutti i miei setup in Italia montano sulla stessa montatura NEQ6 Pro; sono descr
 
 ## Altrove
 
-Le mie immagini sono anche su [AstroBin](https://app.astrobin.com/u/podumal), [Instagram](https://www.instagram.com/chakhdin/), [Facebook](https://www.facebook.com/chakhdin) e [Pinterest](https://www.pinterest.com/chakhdin/).
+Le mie immagini sono anche su [AstroBin](https://app.astrobin.com/u/podumal), [Instagram](https://www.instagram.com/sleepytelescope/), [Facebook](https://www.facebook.com/sleepytelescope) e [Pinterest](https://www.pinterest.com/sleepytelescope/).

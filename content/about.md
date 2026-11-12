@@ -21,4 +21,4 @@ All my rigs in Italy ride on the same NEQ6 Pro mount; the setups are described i
 
 ## Elsewhere
 
-You can also find my images on [AstroBin](https://app.astrobin.com/u/podumal), [Instagram](https://www.instagram.com/chakhdin/), [Facebook](https://www.facebook.com/chakhdin) and [Pinterest](https://www.pinterest.com/chakhdin/).
+You can also find my images on [AstroBin](https://app.astrobin.com/u/podumal), [Instagram](https://www.instagram.com/sleepytelescope/), [Facebook](https://www.facebook.com/sleepytelescope) and [Pinterest](https://www.pinterest.com/sleepytelescope/).

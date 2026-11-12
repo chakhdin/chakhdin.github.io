@@ -76,7 +76,7 @@ Buffer MCP (`https://mcp.buffer.com/mcp`), organisation "My organization", timez
 `list_channels` / `get_channel` in the session rather than from memory; the notes that follow were true on 02/11/2026.
 
 10. **Prepare.** One post per channel with the public R2 image URL as asset and required alt text:
-    - Instagram (@chakhdin): `social/<slug>/post-instagram.txt`, `instagram.jpg`, English then Italian, "Link in bio" wording, no `linkAttachment`.
+    - Instagram (@sleepytelescope): `social/<slug>/post-instagram.txt`, `instagram.jpg`, English then Italian, "Link in bio" wording, no `linkAttachment`.
     - Facebook Page: `post-web.txt`, `instagram.jpg`, English then Italian; `linkAttachment` cannot go with assets, so the text carries the page URLs.
     - Pinterest: `post-pinterest.txt` (English only, at most 500 characters; show the count), `pinterest.jpg`,
       the board for the object type (Nebulae, Galaxies or Star Clusters: Astrophotography; look up the `serviceId` with `get_channel`), link to the page.
