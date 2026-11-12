@@ -100,3 +100,8 @@ other = "Конфиденциальность"
 other = "«"
 [quote_close]
 other = "»"
+
+[category_label]
+other = "Категория"
+[credit_swan_reach]
+other = "Группа Суон-Рич"

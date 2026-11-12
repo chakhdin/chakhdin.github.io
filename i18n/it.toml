@@ -94,3 +94,8 @@ other = "Privacy"
 other = "«"
 [quote_close]
 other = "»"
+
+[category_label]
+other = "Categoria"
+[credit_swan_reach]
+other = "Gruppo Swan Reach"
