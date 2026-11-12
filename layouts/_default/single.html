@@ -24,7 +24,9 @@
 {{ range slice "Paride Gabini" "Rino Morra" "Federico Palaia" "Alessio Carmine Scipione" }}
 {{ $creators = $creators | append (dict "@type" "Person" "name" .) }}
 {{ end }}
-{{ $imageObject = merge $imageObject (dict "creator" $creators "creditText" .) }}
+{{/* Credit line: the whole group, alphabetical by surname. */}}
+{{ $credit := slice "Paride Gabini" "Rino Morra" "Federico Palaia" "Alessio Carmine Scipione" . }}
+{{ $imageObject = merge $imageObject (dict "creator" $creators "creditText" (printf "%s: %s" (i18n "credit_swan_reach") (delimit $credit ", "))) }}
 {{ else }}
 {{ $imageObject = merge $imageObject (dict "creator" (dict "@type" "Person" "name" .)) }}
 {{ $copyrightYear := strings.Substr $captureDate 0 4 }}
@@ -120,7 +122,7 @@
                 {{ end }}
             {{ else }}
                 {{ with $v.image }}
-                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" tabindex="0" role="button" aria-haspopup="dialog" {{ if $multi }}data-version="{{ $v.id }}" role="tabpanel" aria-labelledby="tab-{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
+                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" tabindex="0" role="button" aria-haspopup="dialog" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
                 {{ end }}
             {{ end }}
             {{ end }}
