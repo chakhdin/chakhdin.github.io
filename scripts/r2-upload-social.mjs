@@ -1,4 +1,4 @@
-// Uploads the social JPEGs of one image to R2 under "social/<slug>/", so Buffer
+// Uploads the social JPEGs of one image to the R2 media bucket under "social/<slug>/", so Buffer
 // can fetch them from the public URL. Never synced into Hugo/content.
 // Default is a dry run: it lists the files and keys, with no network access.
 // Add --yes to upload. Uploading requires R2_ACCOUNT_ID, R2_BUCKET,
@@ -39,7 +39,7 @@ for (const file of files) {
         continue;
     }
     const body = await readFile(path.join(dir, file));
-    await client.s3.send(new PutObjectCommand({ Bucket: client.bucket, Key: key, Body: body, ContentType: "image/jpeg" }));
+    await client.s3.send(new PutObjectCommand({ Bucket: client.mediaBucket, Key: key, Body: body, ContentType: "image/jpeg" }));
     console.log(`uploaded ${label}`);
 }
 if (!apply) console.log("Dry run only. Add --yes to upload.");

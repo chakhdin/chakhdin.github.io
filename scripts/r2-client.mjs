@@ -10,6 +10,9 @@ for (const name of required) {
 
 export const bucket = process.env.R2_BUCKET;
 
+// Public bucket behind media.sleepytelescope.com: videos/ and social/ only.
+export const mediaBucket = "media-sleepytelescope-com";
+
 export const s3 = new S3Client({
     region: "auto",
     endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
