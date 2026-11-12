@@ -1,5 +1,5 @@
 ---
 translationKey: "category-galaxy"
 title: "Galaxy"
-description: "Galaxies beyond our own Milky Way."
+description: "My images of galaxies beyond our own Milky Way: large spirals like Andromeda, interacting pairs and the galaxy group around M81 and M82."
 ---

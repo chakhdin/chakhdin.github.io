@@ -1,5 +1,5 @@
 ---
-title: "Uranus"
+title: "Uranus, December 2024"
 date: 2024-12-16T22:45:00Z
 categories: ["Uranus"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

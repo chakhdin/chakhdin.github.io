@@ -1,5 +1,5 @@
 ---
 translationKey: "category-cluster"
 title: "Cluster"
-description: "Open and globular star clusters."
+description: "My images of open and globular star clusters, from loose groups of young stars to dense, ancient spheres of very old stars."
 ---

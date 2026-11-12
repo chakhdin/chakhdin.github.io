@@ -1,6 +1,6 @@
 ---
 title: "Chi sono"
-description: "Chi scatta le foto di questa galleria, da dove e con quale strumentazione."
+description: "Chi scatta le foto di questa galleria, da dove e con quale strumentazione: i siti di ripresa in Italia, il setup remoto in Australia e l'attrezzatura."
 type: page
 ---
 

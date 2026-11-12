@@ -1,6 +1,6 @@
 ---
 title: "Planetary rig"
-description: "Meade 8\" ACF at f/20 with the ASI174MM: my rig for the planets and the Moon."
+description: "Meade 8\" ACF at f/20 with the ASI174MM: my rig for the planets and the Moon, on the NEQ6 Pro with a TeleVue 2× Barlow and Optolong LRGB filters."
 featured_image: "rig.jpg"
 thumb_y: 520
 hero_crop: [40, 330, 1035, 1380]

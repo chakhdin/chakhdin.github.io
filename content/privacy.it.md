@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-description: "Cosa succede ai tuoi dati quando visiti questo sito."
+description: "Cosa succede ai tuoi dati quando visiti questo sito: nessun cookie, cosa registrano l'hosting e le statistiche, quali link portano altrove."
 type: page
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Neptune"
+title: "Neptune, October 2022"
 date: 2022-10-29T19:27:00Z
 categories: ["Neptune"]
 equipment: ["Meade Maksutov 127/1900", "ASI224MC", "NEQ6 Pro"]

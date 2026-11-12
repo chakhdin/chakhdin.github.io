@@ -1,4 +1,4 @@
 ---
-title: "Astrophotography Collection"
+title: "Astrophotography by Sergey Shakhdinarov"
 ---
-Welcome to my astrophotography portfolio. Select a category below to explore the universe.
+Nebulae, galaxies, planets, the Moon and the Sun, imaged from northern Italy and with a remote telescope in South Australia.

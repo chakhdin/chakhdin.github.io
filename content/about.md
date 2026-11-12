@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Who takes the pictures in this gallery, where and with what."
+description: "Who takes the pictures in this gallery, where and with what: the imaging sites in Italy, the remote rig in Australia and the equipment."
 type: page
 ---
 

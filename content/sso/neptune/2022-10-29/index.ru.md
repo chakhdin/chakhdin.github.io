@@ -1,5 +1,5 @@
 ---
-title: "Нептун"
+title: "Нептун, октябрь 2022"
 date: 2022-10-29T19:27:00Z
 categories: ["Нептун"]
 equipment: ["Meade Maksutov 127/1900", "ASI224MC", "NEQ6 Pro"]
