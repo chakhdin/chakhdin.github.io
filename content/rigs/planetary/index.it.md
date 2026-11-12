@@ -1,6 +1,6 @@
 ---
 title: "Setup planetario"
-description: "Meade 8\" ACF a f/20 con la ASI174MM: il mio setup per i pianeti e la Luna."
+description: "Meade 8\" ACF a f/20 con la ASI174MM: il mio setup per pianeti e Luna, sulla NEQ6 Pro con Barlow TeleVue 2× e filtri Optolong LRGB."
 featured_image: "rig.jpg"
 thumb_y: 520
 hero_crop: [40, 330, 1035, 1380]

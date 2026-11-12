@@ -1,4 +1,4 @@
 ---
-title: "Collezione di Astrofotografie"
+title: "Astrofotografia di Sergey Shakhdinarov"
 ---
-Benvenuto nel mio portfolio di astrofotografia. Seleziona una categoria qui sotto per esplorare l'universo.
+Nebulose, galassie, pianeti, la Luna e il Sole, ripresi dal Nord Italia e con un telescopio remoto nell'Australia Meridionale.

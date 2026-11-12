@@ -1,5 +1,5 @@
 ---
 translationKey: "category-moon"
 title: "Luna"
-description: "L'unico satellite naturale della Terra."
+description: "Le mie immagini della Luna, l'unico satellite naturale della Terra: crateri, montagne e mari lungo il terminatore, riprese dall'Italia."
 ---

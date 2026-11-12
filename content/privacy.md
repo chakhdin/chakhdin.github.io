@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-description: "What happens to your data when you visit this site."
+description: "What happens to your data when you visit this site: no cookies, what the hosting and the analytics record, and which links lead elsewhere."
 type: page
 ---
 

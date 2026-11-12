@@ -1,6 +1,6 @@
 ---
 title: "Планетный сетап"
-description: "Meade 8\" ACF при f/20 с ASI174MM: мой сетап для планет и Луны."
+description: "Meade 8\" ACF при f/20 с ASI174MM: мой сетап для планет и Луны на NEQ6 Pro, с линзой Барлоу TeleVue 2× и фильтрами Optolong LRGB."
 featured_image: "rig.jpg"
 thumb_y: 520
 hero_crop: [40, 330, 1035, 1380]
