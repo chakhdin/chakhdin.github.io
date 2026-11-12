@@ -10,12 +10,13 @@ Hugo 0.168.0 (extended), Node 24. Match them locally.
 - A new top-level section needs: `_index` in 3 languages with a cover PNG, a nav link in `layouts/_default/baseof.html`, `nav_<name>` in the 3 `i18n` files, and its name in the section list of `layouts/index.html`.
 - Each image is a page bundle: `index.md` (EN), `index.it.md`, `index.ru.md` plus the PNG.
 - `layouts/` (`_default/{baseof,list,single,terms}.html`, `latest/`, `partials/`, `robots.txt`), `i18n/{en,it,ru}.toml`.
-- Taxonomies: `categories` and `equipment` (equipment names become taxonomy pages, so they must match existing ones exactly).
+- Taxonomies: `categories` and `equipment` (equipment names become taxonomy pages, so they must match existing ones exactly). A term page folder under `content/equipment/` keeps the name's special characters (e.g. the apostrophe in `gar's-…`); without them Hugo does not bind the content to the term and builds two pages on one URL.
 - `scripts/r2-*.mjs`: upload/sync to Cloudflare R2 (needs `R2_ACCOUNT_ID`, `R2_BUCKET`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` in the environment; never write them to files).
 
 ## Images and video
 - PNGs are **not committed** (`content/**/*.png` is git-ignored). They live in R2 and CI fetches them before building. Upload to R2 *before* pushing.
 - Videos/time-lapses are served directly from R2 (`videoBaseURL` in `hugo.toml`, keys under `videos/`) and are never synced into `content/`.
+- Two buckets: `astro-site` (private originals, `R2_BUCKET`) and `media-sleepytelescope-com` (public via media.sleepytelescope.com, `videos/` and `social/` only; `mediaBucket` in `scripts/r2-client.mjs`).
 - To add or edit an image page use the project skill `add-image` (`.claude/skills/add-image/SKILL.md`).
 
 ## Rules

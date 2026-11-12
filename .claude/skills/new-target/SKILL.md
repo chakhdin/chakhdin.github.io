@@ -54,7 +54,7 @@ which channels to skip. Repeat this check right before `create_post` (step 12).
    Social JPEGs: `node scripts/r2-upload-social.mjs <slug> --yes` uploads to `social/<slug>/`.
    The `R2_ACCOUNT_ID`, `R2_BUCKET`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` variables are in the user's environment;
    never write them into files or commands, and if one is missing, name it and stop.
-   Public check: `https://pub-31bf1763ca934d78aa1296ab64e4629e.r2.dev/social/<slug>/instagram.jpg` with curl (Python urllib gets 403).
+   Public check: `https://media.sleepytelescope.com/social/<slug>/instagram.jpg` with curl (Python urllib gets 403).
 
 ## Gate 2: local test, commit, push
 
