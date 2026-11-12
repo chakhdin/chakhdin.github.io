@@ -1,9 +1,9 @@
 ---
-title: "Venere Appena Dopo la Dicotomia"
+title: "Venere Verso la Dicotomia"
 date: 2023-04-26T18:34:00Z
 categories: ["Venere"]
 equipment: ["Meade Maksutov 127/1900", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]
-description: "Venere appena oltre il suo punto di dicotomia, in transizione verso una falce più spessa."
+description: "Venere come disco gibboso nell'aprile 2023, con la parte illuminata che si riduce verso la dicotomia, raggiunta a inizio giugno."
 total_exposure: "Singola ripresa video"
 focal_length: "3800mm"
 locations:
@@ -16,6 +16,6 @@ filters:
     subs: "1 video"
     integration: "singola cattura, senza derotazione"
 ---
-Appena due giorni dopo la ripresa precedente, Venere è passata appena oltre la dicotomia, con la sua porzione illuminata ora visibilmente inferiore alla metà mentre transita da gibbosa a falce, con il disco apparente notevolmente più grande rispetto all'inizio dell'anno.
+Qui Venere è ancora gibbosa, illuminata per più della metà, mentre si avvicina alla Terra durante l'apparizione serale del 2023. La parte illuminata si riduce di settimana in settimana verso la dicotomia, la fase a metà illuminata raggiunta all'inizio di giugno 2023, mentre il disco apparente continua a crescere.
 
 Ripreso come singolo video e sommato in AutoStakkert!3, quindi elaborato in PixInsight.
