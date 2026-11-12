@@ -80,7 +80,7 @@ Buffer MCP (`https://mcp.buffer.com/mcp`), organisation "My organization", timez
     - Facebook Page: `post-web.txt`, `instagram.jpg`, English then Italian; `linkAttachment` cannot go with assets, so the text carries the page URLs.
     - Pinterest: `post-pinterest.txt` (English only, at most 500 characters; show the count), `pinterest.jpg`,
       the board for the object type (Nebulae, Galaxies or Star Clusters: Astrophotography; look up the `serviceId` with `get_channel`), link to the page.
-    - Instagram and Facebook slot is Wednesday 18:58; Pinterest Friday 16:24. Free plan: 10 scheduled posts per channel.
+    - Queue slots (Europe/Rome): Instagram and Pinterest Tue 19:00, Thu 09:00, Sun 21:00; Facebook Tue 08:00, Thu 09:00, Sun 10:00. Free plan: 10 scheduled posts per channel.
 11. **Show and stop.** For each post show the exact text, image, channel, `mode` and `dueAt` (Europe/Rome, with offset). Wait for approval.
     A queued post publishes by itself.
 12. **Create as drafts.** Repeat the duplicate check of step 0. Then call `create_post` with `saveToDraft: true` for each channel,
