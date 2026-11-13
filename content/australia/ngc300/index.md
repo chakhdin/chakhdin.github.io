@@ -1,23 +1,23 @@
 ---
 title: "NGC 300: Spiral Galaxy in Sculptor"
-date: 2026-10-22T10:20:00Z
+date: 2026-11-14T00:00:00+01:00
 categories: ["Galaxy"]
 equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "A late-type spiral galaxy about 6 million light-years away in Sculptor, also known as the Sculptor Pinwheel Galaxy, with loosely wound arms."
-total_exposure: "38h 50m"
+total_exposure: "40h 55m"
 focal_length: "3660mm"
 locations:
   - name: "Swan Reach, South Australia, Australia"
     bortle: "Class 1"
-    dates: ["2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28"]
-featured_image: "NGC300_3.jpg"
+    dates: ["2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-11-03", "2026-11-04", "2026-11-09"]
+featured_image: "NGC300_4.jpg"
 filters:
   - name: "L"
-    subs: "140 x 300s"
-    integration: "11h 40m"
+    subs: "158 x 300s"
+    integration: "13h 10m"
   - name: "R"
-    subs: "42 x 300s"
-    integration: "3h 30m"
+    subs: "49 x 300s"
+    integration: "4h 05m"
   - name: "G"
     subs: "48 x 300s"
     integration: "4h 00m"
@@ -34,4 +34,4 @@ Its distance has been measured from Cepheid variable stars. NGC 300 was traditio
 
 Blue knots of young stars and pink star-forming regions are scattered along the arms. The outer regions of the disc are faint, which is why a long luminance integration was used to bring them out.
 
-The data was captured remotely from Swan Reach, South Australia, over eleven nights, in collaboration with Paride Gabini, Rino Morra, Federico Palaia and Alessio Carmine Scipione, on a rig operated with NINA at Swan Reach Imaging (https://swanreachimaging.com.au). The frames were collected jointly by the group sharing the rig. Stacked and processed in PixInsight.
+The data was captured remotely from Swan Reach, South Australia, over fourteen nights, in collaboration with Paride Gabini, Rino Morra, Federico Palaia and Alessio Carmine Scipione, on a rig operated with NINA at Swan Reach Imaging (https://swanreachimaging.com.au). The frames were collected jointly by the group sharing the rig. Stacked and processed in PixInsight.
