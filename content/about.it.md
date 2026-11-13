@@ -6,6 +6,8 @@ type: page
 
 Sono Sergey Shakhdinarov, astrofotografo amatoriale e vivo vicino a Milano. Fotografo il cielo notturno da gennaio 2022 e sono socio del [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), l'associazione di astrofili che gestisce il Civico Osservatorio Astronomico di Rozzano.
 
+![Sergey Shakhdinarov accanto al telescopio Meade ACF da 16 pollici del Gruppo Astrofili Rozzano](/images/about/sergey.webp)
+
 ## Da dove
 
 Per gli oggetti del profondo cielo vado sotto cieli più bui: Il Pratone nell'Oltrepò Pavese e Saint Barthélemy in Valle d'Aosta. Luna, Sole e pianeti li riprendo per lo più da casa, a San Giuliano Milanese, sotto un cielo suburbano inquinato dalla luce.

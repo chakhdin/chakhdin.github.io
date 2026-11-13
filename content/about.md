@@ -6,6 +6,8 @@ type: page
 
 I'm Sergey Shakhdinarov, an amateur astrophotographer living near Milan, Italy. I have been imaging the night sky since January 2022, and I'm a member of [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), the amateur astronomy club that runs the Civico Osservatorio Astronomico di Rozzano.
 
+![Sergey Shakhdinarov next to the Meade 16-inch ACF telescope of Gruppo Astrofili Rozzano](/images/about/sergey.webp)
+
 ## Where I image
 
 For deep-sky targets I drive to darker skies: Il Pratone in the Oltrepò Pavese and Saint Barthélemy in Valle d'Aosta. The Moon, the Sun and the planets are mostly shot from home in San Giuliano Milanese, under a light-polluted suburban sky.
