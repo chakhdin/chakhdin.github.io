@@ -16,12 +16,12 @@ Since October 2026 I also share a remote rig at [Swan Reach](/rigs/swan-reach/),
 
 ## How
 
-All my rigs in Italy ride on the same NEQ6 Pro mount; the setups are described in [My Rigs](/rigs/), and every image links to the equipment it was taken with.
+All my rigs in Italy ride on the same NEQ6 Pro mount. The remote rig at Swan Reach is an RCOS 16" Ritchey-Chrétien on a Paramount ME, with an ASI2600MM Pro camera and Astrodon LRGB and narrowband filters. The setups are described in [My Rigs](/rigs/), and every image links to the equipment it was taken with.
 
 - **Deep sky:** capture with NINA, processing in PixInsight with the RC Astro tools.
 - **Planets, Moon and Sun:** capture with SharpCap, stacking with AutoStakkert! 4, solar deconvolution with ImPPG, mosaics stitched in Microsoft ICE, final processing in PixInsight.
 
-## Away from the telescope
+## Daylight hours
 
 By day I'm a Senior Software Architect in the aviation business, with 26 years of experience, and an Oracle DBA. Italian and Russian are both my native languages, which is why this site comes in English, Italian and Russian.
 
