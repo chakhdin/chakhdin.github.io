@@ -1,23 +1,23 @@
 ---
 title: "NGC 300: Galassia a Spirale nello Scultore"
-date: 2026-10-22T10:20:00Z
+date: 2026-11-14T00:00:00+01:00
 categories: ["Galassie"]
 equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
 description: "Una galassia a spirale di tipo tardo a circa 6 milioni di anni luce nello Scultore, nota anche come Sculptor Pinwheel Galaxy, con bracci poco avvolti."
-total_exposure: "38h 50m"
+total_exposure: "40h 55m"
 focal_length: "3660mm"
 locations:
   - name: "Swan Reach, Australia Meridionale, Australia"
     bortle: "Classe 1"
-    dates: ["2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28"]
-featured_image: "NGC300_3.jpg"
+    dates: ["2026-10-06", "2026-10-07", "2026-10-08", "2026-10-09", "2026-10-10", "2026-10-13", "2026-10-15", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-11-03", "2026-11-04", "2026-11-09"]
+featured_image: "NGC300_4.jpg"
 filters:
   - name: "L"
-    subs: "140 x 300s"
-    integration: "11h 40m"
+    subs: "158 x 300s"
+    integration: "13h 10m"
   - name: "R"
-    subs: "42 x 300s"
-    integration: "3h 30m"
+    subs: "49 x 300s"
+    integration: "4h 05m"
   - name: "G"
     subs: "48 x 300s"
     integration: "4h 00m"
@@ -34,4 +34,4 @@ La sua distanza è stata misurata attraverso le stelle variabili Cefeidi. NGC 30
 
 Lungo i bracci sono sparsi addensamenti blu di stelle giovani e regioni rosate di formazione stellare. Le regioni esterne del disco sono deboli, per questo è stata usata una lunga integrazione in luminanza per farle emergere.
 
-I dati sono stati ripresi in remoto da Swan Reach, Australia Meridionale, nell'arco di undici notti, in collaborazione con Paride Gabini, Rino Morra, Federico Palaia e Alessio Carmine Scipione, con un telescopio gestito tramite NINA presso Swan Reach Imaging (https://swanreachimaging.com.au). Le pose sono state raccolte congiuntamente dal gruppo che condivide il telescopio. Sommato ed elaborato in PixInsight.
+I dati sono stati ripresi in remoto da Swan Reach, Australia Meridionale, nell'arco di quattordici notti, in collaborazione con Paride Gabini, Rino Morra, Federico Palaia e Alessio Carmine Scipione, con un telescopio gestito tramite NINA presso Swan Reach Imaging (https://swanreachimaging.com.au). Le pose sono state raccolte congiuntamente dal gruppo che condivide il telescopio. Sommato ed elaborato in PixInsight.
