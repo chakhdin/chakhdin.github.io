@@ -4,7 +4,7 @@ description: "Кто снимает фотографии этой галереи
 type: page
 ---
 
-Меня зовут Сергей Шахдинаров, я астрофотограф-любитель и живу под Миланом. Снимаю ночное небо с января 2022 года и состою в [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), клубе любителей астрономии при городской обсерватории Роццано (Civico Osservatorio Astronomico di Rozzano).
+Меня зовут Сергей Шахдинаров, я астрофотограф-любитель и живу под Миланом. Снимаю ночное небо с января 2022 года и состою в [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), клубе любителей астрономии, который управляет городской обсерваторией Роццано (Civico Osservatorio Astronomico di Rozzano).
 
 ## Где я снимаю
 

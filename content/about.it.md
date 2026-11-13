@@ -4,7 +4,7 @@ description: "Chi scatta le foto di questa galleria, da dove e con quale strumen
 type: page
 ---
 
-Sono Sergey Shakhdinarov, astrofotografo amatoriale e vivo vicino a Milano. Fotografo il cielo notturno da gennaio 2022 e sono socio del [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), l'associazione di astrofili con sede al Civico Osservatorio Astronomico di Rozzano.
+Sono Sergey Shakhdinarov, astrofotografo amatoriale e vivo vicino a Milano. Fotografo il cielo notturno da gennaio 2022 e sono socio del [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), l'associazione di astrofili che gestisce il Civico Osservatorio Astronomico di Rozzano.
 
 ## Da dove
 
