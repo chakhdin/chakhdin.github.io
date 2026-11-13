@@ -4,7 +4,7 @@ description: "Who takes the pictures in this gallery, where and with what: the i
 type: page
 ---
 
-I'm Sergey Shakhdinarov, an amateur astrophotographer living near Milan, Italy. I have been imaging the night sky since January 2022, and I'm a member of [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), the amateur astronomy club based at the Civico Osservatorio Astronomico di Rozzano.
+I'm Sergey Shakhdinarov, an amateur astrophotographer living near Milan, Italy. I have been imaging the night sky since January 2022, and I'm a member of [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), the amateur astronomy club that runs the Civico Osservatorio Astronomico di Rozzano.
 
 ## Where I image
 
