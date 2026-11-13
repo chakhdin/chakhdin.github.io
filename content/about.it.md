@@ -16,12 +16,12 @@ Da ottobre 2026 condivido con quattro amici anche un setup remoto a [Swan Reach]
 
 ## Con cosa
 
-Tutti i miei setup in Italia montano sulla stessa montatura NEQ6 Pro; sono descritti in [I miei setup](/it/rigs/) e ogni immagine rimanda alla strumentazione con cui è stata ripresa.
+Tutti i miei setup in Italia montano sulla stessa montatura NEQ6 Pro. Il setup remoto di Swan Reach è un Ritchey-Chrétien RCOS 16" su montatura Paramount ME, con una camera ASI2600MM Pro e filtri Astrodon LRGB e a banda stretta. I setup sono descritti in [I miei setup](/it/rigs/) e ogni immagine rimanda alla strumentazione con cui è stata ripresa.
 
 - **Profondo cielo:** acquisizione con NINA, elaborazione in PixInsight con gli strumenti RC Astro.
 - **Pianeti, Luna e Sole:** acquisizione con SharpCap, stacking con AutoStakkert! 4, deconvoluzione solare con ImPPG, mosaici uniti con Microsoft ICE, elaborazione finale in PixInsight.
 
-## Lontano dal telescopio
+## Di giorno
 
 Di giorno sono Senior Software Architect nel settore dell'aviazione, con 26 anni di esperienza, e DBA Oracle. Italiano e russo sono entrambe mie lingue madri: per questo il sito è in inglese, italiano e russo.
 
