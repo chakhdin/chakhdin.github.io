@@ -4,7 +4,7 @@ description: "Chi scatta le foto di questa galleria, da dove e con quale strumen
 type: page
 ---
 
-Sono Sergey Shakhdinarov, astrofotografo amatoriale e vivo vicino a Milano. Fotografo il cielo notturno da gennaio 2022.
+Sono Sergey Shakhdinarov, astrofotografo amatoriale e vivo vicino a Milano. Fotografo il cielo notturno da gennaio 2022 e sono socio del [Gruppo Astrofili Rozzano](https://www.astrofilirozzano.it), l'associazione di astrofili con sede al Civico Osservatorio Astronomico di Rozzano.
 
 ## Da dove
 
@@ -18,6 +18,12 @@ Tutti i miei setup in Italia montano sulla stessa montatura NEQ6 Pro; sono descr
 
 - **Profondo cielo:** acquisizione con NINA, elaborazione in PixInsight con gli strumenti RC Astro.
 - **Pianeti, Luna e Sole:** acquisizione con SharpCap, stacking con AutoStakkert! 4, deconvoluzione solare con ImPPG, mosaici uniti con Microsoft ICE, elaborazione finale in PixInsight.
+
+## Lontano dal telescopio
+
+Di giorno sono Senior Software Architect nel settore dell'aviazione, con 26 anni di esperienza, e DBA Oracle. Italiano e russo sono entrambe mie lingue madri: per questo il sito è in inglese, italiano e russo.
+
+Sono padre di tre figli e di un cane. Nel tempo libero gioco a Battlefield su PS5 e ascolto metal in molte sue forme: heavy metal classico, power metal, melodic death metal, metalcore e gothic metal.
 
 ## Altrove
 
