@@ -6,3 +6,8 @@
 :root {
     color-scheme: dark;
 }
+
+/* Viewer opener after closing the fullscreen view (site.js closeFullscreen). */
+.no-focus-ring:focus-visible {
+    outline: none;
+}

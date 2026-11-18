@@ -107,7 +107,14 @@ function closeFullscreen() {
     overlay.classList.add('hidden');
     document.body.style.overflow = '';
     resetZoom();
-    if (fullscreenOpener && fullscreenOpener.isConnected) fullscreenOpener.focus({ preventScroll: true });
+    const opener = fullscreenOpener;
+    if (opener && opener.isConnected) {
+        // Focus goes back to the image for keyboard users, but without the ring
+        // (Esc counts as keyboard use); it shows again once focus moves on.
+        opener.classList.add('no-focus-ring');
+        opener.addEventListener('blur', () => opener.classList.remove('no-focus-ring'), { once: true });
+        opener.focus({ preventScroll: true });
+    }
     fullscreenOpener = null;
 }
 
