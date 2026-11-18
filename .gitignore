@@ -1,4 +1,6 @@
 /public/
+# Full-size JPEGs for the zoom viewer, built by scripts/full-images.py and served from R2
+/full/
 /resources/
 .hugo_build.lock
 node_modules/

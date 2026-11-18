@@ -9,7 +9,7 @@
          themselves with style attributes, so those stay allowed; style elements do not.
          Production only: hugo server injects an inline live-reload script. */}}
     {{ if hugo.IsProduction }}
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; media-src 'self'{{ with site.Params.videoBaseURL }} {{ . }}{{ end }}; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; style-src 'self' 'unsafe-inline'; style-src-elem 'self'; img-src 'self'{{ with site.Params.videoBaseURL }} {{ . }}{{ end }}; media-src 'self'{{ with site.Params.videoBaseURL }} {{ . }}{{ end }}; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     {{ end }}
     {{ $pageTitle := .Title }}

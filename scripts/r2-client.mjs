@@ -10,7 +10,7 @@ for (const name of required) {
 
 export const bucket = process.env.R2_BUCKET;
 
-// Public bucket behind media.sleepytelescope.com: videos/ and social/ only.
+// Public bucket behind media.sleepytelescope.com: videos/, social/ and full/ (zoom viewer) only.
 export const mediaBucket = "media-sleepytelescope-com";
 
 export const s3 = new S3Client({

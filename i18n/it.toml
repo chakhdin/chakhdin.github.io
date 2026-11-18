@@ -74,9 +74,9 @@ other = "{{ .Count }} video"
 [fullscreen_view]
 other = "Visualizzatore immagine a schermo intero"
 [fullscreen_hint]
-other = "ESC: Chiudi | Frecce: Naviga"
+other = "Clic/Rotella: Zoom | Trascina: Sposta | ESC: Chiudi | Frecce: Naviga"
 [fullscreen_hint_touch]
-other = "Tocca per chiudere"
+other = "Doppio tocco/Pizzica: Zoom | Tocca: Chiudi"
 [fullscreen_close]
 other = "Chiudi"
 

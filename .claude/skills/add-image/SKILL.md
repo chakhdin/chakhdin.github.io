@@ -66,6 +66,9 @@ Put a poster frame PNG in the bundle, set `featured_image` and `video_poster` to
 
 This writes to external storage: state what will be uploaded and get confirmation first.
 
+### Full-size file for the zoom viewer (DSO, Australia, comets)
+`python scripts/full-images.py --only <section>/<slug>` builds `full/<page path>/<name>.jpg` (quality 95, 4:4:4) for each page image whose source is wider than 2400 px and updates `data/full_images.json` (committed; it adds `data-zoom` to the hero). The source is the bundle image unless `scripts/full-sources.json` names another file (e.g. the XISF of an image published smaller; never an `.annotated` file). Then `node scripts/r2-upload-full.mjs <section>/<slug>` (dry run) and, after confirmation, the same with `--yes`: it uploads to the public media bucket under `full/`. Upload before pushing, or the zoom falls back to the hero.
+
 ## 4. Test locally
 
 - `hugo server` or `hugo --minify`. Check the new page in EN, IT and RU, the section list, Latest, and the equipment pages.

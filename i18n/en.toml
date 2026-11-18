@@ -74,9 +74,9 @@ other = "{{ .Count }} videos"
 [fullscreen_view]
 other = "Fullscreen image viewer"
 [fullscreen_hint]
-other = "ESC: Close | Arrows: Navigate"
+other = "Click/Wheel: Zoom | Drag: Pan | ESC: Close | Arrows: Navigate"
 [fullscreen_hint_touch]
-other = "Tap to close"
+other = "Double-tap/Pinch: Zoom | Tap: Close"
 [fullscreen_close]
 other = "Close"
 

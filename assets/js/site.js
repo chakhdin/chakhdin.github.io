@@ -71,8 +71,9 @@ function initMedia() {
             if (e.key === ' ') openFullscreen(img);
         });
     });
-    // Also handles the close button, whose click bubbles up to the overlay.
-    overlay.addEventListener('click', closeFullscreen);
+    const closeBtn = document.getElementById('fullscreen-close');
+    if (closeBtn) closeBtn.addEventListener('click', closeFullscreen);
+    initZoom(overlay, fullscreenImg);
     overlay.addEventListener('keydown', (e) => {
         // The close button is the only focusable element: keep focus on it.
         if (e.key !== 'Tab') return;
@@ -89,7 +90,10 @@ function openFullscreen(img) {
     const fullscreenImg = document.getElementById('fullscreen-image');
     // data-full: a larger version than the one shown (rig photos).
     fullscreenImg.src = img.dataset.full || img.currentSrc || img.src;
+    // data-zoom: the full-size file, loaded only when the viewer zooms in.
+    fullscreenImg.dataset.zoom = img.dataset.zoom || img.dataset.full || img.src;
     fullscreenImg.alt = img.alt;
+    resetZoom();
     overlay.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
     fullscreenOpener = img;
@@ -102,9 +106,239 @@ function closeFullscreen() {
     if (!overlay || overlay.classList.contains('hidden')) return;
     overlay.classList.add('hidden');
     document.body.style.overflow = '';
+    resetZoom();
     if (fullscreenOpener && fullscreenOpener.isConnected) fullscreenOpener.focus({ preventScroll: true });
     fullscreenOpener = null;
 }
+
+// Zoom state of the fullscreen viewer. scale is screen px per image px; null
+// means fitted to the screen by the CSS classes, with no inline geometry.
+const zoom = { scale: null, x: 0, y: 0, pointers: new Map(), drag: null, pinch: null, pending: null, lastTap: 0, tapTimer: 0 };
+const ZOOM_MAX = 2;
+const TAP_SLOP = 6;
+const DOUBLE_TAP_MS = 300;
+
+function zoomImage() {
+    return document.getElementById('fullscreen-image');
+}
+
+// Scale at which the whole image fits inside the overlay padding (never above 1,
+// like the max-w-full / max-h-full classes).
+function fitScale(img) {
+    const overlay = img.parentElement;
+    const cs = getComputedStyle(overlay);
+    const w = overlay.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const h = overlay.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    return Math.min(1, w / img.naturalWidth, h / img.naturalHeight);
+}
+
+function needsZoomSource(img) {
+    return Boolean(img.dataset.zoom) && img.getAttribute('src') !== img.dataset.zoom;
+}
+
+function canZoom(img) {
+    return img.naturalWidth > 0 && (needsZoomSource(img) || fitScale(img) < 0.99);
+}
+
+function currentScale(img) {
+    return zoom.scale === null ? img.getBoundingClientRect().width / img.naturalWidth : zoom.scale;
+}
+
+function applyZoom() {
+    const img = zoomImage();
+    if (!img) return;
+    if (zoom.scale === null) {
+        img.removeAttribute('style');
+        img.style.cursor = canZoom(img) ? 'zoom-in' : '';
+        return;
+    }
+    const overlay = img.parentElement;
+    const vw = overlay.clientWidth;
+    const vh = overlay.clientHeight;
+    const w = img.naturalWidth * zoom.scale;
+    const h = img.naturalHeight * zoom.scale;
+    // Centre a side smaller than the screen; otherwise keep the screen covered.
+    zoom.x = w <= vw ? (vw - w) / 2 : Math.min(0, Math.max(vw - w, zoom.x));
+    zoom.y = h <= vh ? (vh - h) / 2 : Math.min(0, Math.max(vh - h, zoom.y));
+    Object.assign(img.style, {
+        position: 'absolute', left: zoom.x + 'px', top: zoom.y + 'px',
+        width: w + 'px', height: h + 'px', maxWidth: 'none', maxHeight: 'none',
+        cursor: zoom.drag && zoom.drag.moved ? 'grabbing' : 'grab',
+    });
+}
+
+function resetZoom() {
+    zoom.scale = null;
+    zoom.drag = null;
+    zoom.pinch = null;
+    zoom.pending = null;
+    zoom.pointers.clear();
+    clearTimeout(zoom.tapTimer);
+    applyZoom();
+}
+
+// Zooms to scale, keeping the image point under (cx, cy) in place.
+function zoomAt(scale, cx, cy) {
+    const img = zoomImage();
+    if (!img || !img.naturalWidth) return;
+    const fit = fitScale(img);
+    const current = currentScale(img);
+    if (zoom.scale === null) {
+        const rect = img.getBoundingClientRect();
+        zoom.x = rect.left;
+        zoom.y = rect.top;
+    }
+    scale = Math.min(Math.max(ZOOM_MAX, fit), scale);
+    if (scale <= fit * 1.001) { resetZoom(); return; }
+    zoom.x = cx - (cx - zoom.x) * scale / current;
+    zoom.y = cy - (cy - zoom.y) * scale / current;
+    zoom.scale = scale;
+    applyZoom();
+}
+
+// Swaps in the full-size file; until it has loaded the current one stays on screen.
+function loadZoomSource(img) {
+    if (!needsZoomSource(img)) return false;
+    img.addEventListener('load', () => {
+        if (zoom.pending) {
+            const { cx, cy } = zoom.pending;
+            zoom.pending = null;
+            applyZoom();
+            zoomAt(1, cx, cy);
+        } else if (zoom.scale !== null) {
+            // Same size on screen, now drawn from the larger file.
+            zoom.scale = parseFloat(img.style.width) / img.naturalWidth;
+            applyZoom();
+        } else {
+            applyZoom();
+        }
+    }, { once: true });
+    // Missing or unreachable full-size file: go on zooming the image already shown.
+    const previous = img.getAttribute('src');
+    img.addEventListener('error', () => {
+        img.dataset.zoom = '';
+        img.src = previous;
+    }, { once: true });
+    img.src = img.dataset.zoom;
+    return true;
+}
+
+// Fit <-> 100 % around the clicked or tapped point.
+function toggleZoom(cx, cy) {
+    const img = zoomImage();
+    if (zoom.scale !== null) { resetZoom(); return; }
+    if (loadZoomSource(img)) {
+        zoom.pending = { cx, cy };
+        img.style.cursor = 'progress';
+        return;
+    }
+    zoomAt(1, cx, cy);
+}
+
+function onTap(e, img, target) {
+    // Pointer capture retargets pointerup to the overlay: use the pointerdown target.
+    const onImage = target === img;
+    if (e.pointerType === 'mouse') {
+        if (onImage && (zoom.scale !== null || canZoom(img))) toggleZoom(e.clientX, e.clientY);
+        else closeFullscreen();
+        return;
+    }
+    // Touch: a double tap zooms; a single tap closes the fitted image.
+    const now = Date.now();
+    if (now - zoom.lastTap < DOUBLE_TAP_MS) {
+        clearTimeout(zoom.tapTimer);
+        zoom.lastTap = 0;
+        if (zoom.scale !== null || canZoom(img)) toggleZoom(e.clientX, e.clientY);
+        return;
+    }
+    zoom.lastTap = now;
+    zoom.tapTimer = setTimeout(() => {
+        if (zoom.scale === null && !zoom.pending) closeFullscreen();
+    }, DOUBLE_TAP_MS);
+}
+
+function pinchState() {
+    const [a, b] = [...zoom.pointers.values()];
+    return { dist: Math.hypot(a.x - b.x, a.y - b.y), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 };
+}
+
+function initZoom(overlay, img) {
+    img.addEventListener('load', () => { if (zoom.scale === null && !zoom.pending) applyZoom(); });
+    overlay.addEventListener('pointerdown', (e) => {
+        if (e.target.closest('#fullscreen-close')) return;
+        if (e.pointerType === 'mouse') {
+            // No native image drag or text selection.
+            e.preventDefault();
+            if (e.button !== 0) return;
+        }
+        overlay.setPointerCapture(e.pointerId);
+        zoom.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        if (zoom.pointers.size === 2) {
+            loadZoomSource(img);
+            zoom.pinch = { ...pinchState(), scale: currentScale(img) };
+            zoom.drag = null;
+        } else if (zoom.pointers.size === 1) {
+            zoom.drag = { sx: e.clientX, sy: e.clientY, x0: zoom.x, y0: zoom.y, moved: false, multi: false, target: e.target };
+        }
+    });
+    overlay.addEventListener('pointermove', (e) => {
+        if (!zoom.pointers.has(e.pointerId)) return;
+        zoom.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+        if (zoom.pinch && zoom.pointers.size === 2) {
+            const p = pinchState();
+            zoomAt(zoom.pinch.scale * p.dist / zoom.pinch.dist, p.cx, p.cy);
+            // Follow the fingers' midpoint as well.
+            if (zoom.scale !== null) {
+                zoom.x += p.cx - zoom.pinch.cx;
+                zoom.y += p.cy - zoom.pinch.cy;
+                applyZoom();
+            }
+            zoom.pinch.cx = p.cx;
+            zoom.pinch.cy = p.cy;
+            return;
+        }
+        const d = zoom.drag;
+        if (!d) return;
+        if (!d.moved && Math.hypot(e.clientX - d.sx, e.clientY - d.sy) > TAP_SLOP) {
+            d.moved = true;
+            d.sx = e.clientX;
+            d.sy = e.clientY;
+            d.x0 = zoom.x;
+            d.y0 = zoom.y;
+        }
+        if (d.moved && zoom.scale !== null) {
+            zoom.x = d.x0 + e.clientX - d.sx;
+            zoom.y = d.y0 + e.clientY - d.sy;
+            applyZoom();
+        }
+    });
+    const end = (e) => {
+        if (!zoom.pointers.has(e.pointerId)) return;
+        zoom.pointers.delete(e.pointerId);
+        const d = zoom.drag;
+        if (zoom.pinch) {
+            // The finger left on screen goes on panning from where it is.
+            zoom.pinch = null;
+            const rest = [...zoom.pointers.values()][0];
+            zoom.drag = rest ? { sx: rest.x, sy: rest.y, x0: zoom.x, y0: zoom.y, moved: true, multi: true } : null;
+            return;
+        }
+        zoom.drag = null;
+        if (e.type === 'pointerup' && d && !d.moved && !d.multi) onTap(e, img, d.target);
+        else applyZoom();
+    };
+    overlay.addEventListener('pointerup', end);
+    overlay.addEventListener('pointercancel', end);
+    overlay.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        if (!img.naturalWidth || (zoom.scale === null && !canZoom(img))) return;
+        const scale = currentScale(img) * Math.exp(-e.deltaY * 0.002);
+        loadZoomSource(img);
+        zoomAt(scale, e.clientX, e.clientY);
+    }, { passive: false });
+}
+
+window.addEventListener('resize', () => { if (zoom.scale !== null) applyZoom(); });
 
 async function fetchPage(url) {
     const cacheKey = url.split('#')[0];

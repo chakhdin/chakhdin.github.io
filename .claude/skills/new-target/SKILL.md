@@ -44,6 +44,7 @@ which channels to skip. Repeat this check right before `create_post` (step 12).
 5. **Show and stop.** Show the user: page text in all three languages, figures with the arithmetic, post texts with character counts,
    `claims.txt`, and the page JPEG and both social JPEGs. List exactly what the R2 uploads will be:
    - Social: the output of `node scripts/r2-upload-social.mjs <slug>` (dry run, no network).
+   - Full-size zoom file: run `python scripts/full-images.py --only <section>/<slug>`, then show `node scripts/r2-upload-full.mjs <section>/<slug>` (dry run).
    - Page images: `r2-upload.mjs` has no dry run and uploads every `content/**/*.png|jpg` whose MD5 differs from R2, not only this target's.
      These files are git-ignored, so `git status` does not show them. List the new and changed image files under `content/`
      (the bundle's files plus any other recently modified image, e.g. with `Get-ChildItem content -Recurse -Include *.png,*.jpg | Sort-Object LastWriteTime -Descending | Select-Object -First 20 FullName, LastWriteTime`).
@@ -52,6 +53,7 @@ which channels to skip. Repeat this check right before `create_post` (step 12).
    Wait for approval.
 6. **R2 uploads (after approval).** Page images: `node scripts/r2-upload.mjs` (skips files whose MD5 matches).
    Social JPEGs: `node scripts/r2-upload-social.mjs <slug> --yes` uploads to `social/<slug>/`.
+   Full-size zoom file: `node scripts/r2-upload-full.mjs <section>/<slug> --yes` uploads to `full/`; commit `data/full_images.json` with the page.
    The `R2_ACCOUNT_ID`, `R2_BUCKET`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` variables are in the user's environment;
    never write them into files or commands, and if one is missing, name it and stop.
    Public check: `https://media.sleepytelescope.com/social/<slug>/instagram.jpg` with curl (Python urllib gets 403).

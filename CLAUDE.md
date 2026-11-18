@@ -16,7 +16,8 @@ Hugo 0.168.0 (extended), Node 24. Match them locally.
 ## Images and video
 - PNGs are **not committed** (`content/**/*.png` is git-ignored). They live in R2 and CI fetches them before building. Upload to R2 *before* pushing.
 - Videos/time-lapses are served directly from R2 (`videoBaseURL` in `hugo.toml`, keys under `videos/`) and are never synced into `content/`.
-- Two buckets: `astro-site` (private originals, `R2_BUCKET`) and `media-sleepytelescope-com` (public via media.sleepytelescope.com, `videos/` and `social/` only; `mediaBucket` in `scripts/r2-client.mjs`).
+- Two buckets: `astro-site` (private originals, `R2_BUCKET`) and `media-sleepytelescope-com` (public via media.sleepytelescope.com, `videos/`, `social/` and `full/` only; `mediaBucket` in `scripts/r2-client.mjs`).
+- `full/` holds the full-size JPEGs the fullscreen viewer loads when zooming (DSO, Australia, comets wider than 2400 px): `scripts/full-images.py` builds them and `data/full_images.json`, `scripts/r2-upload-full.mjs` uploads them.
 - To add or edit an image page use the project skill `add-image` (`.claude/skills/add-image/SKILL.md`).
 
 ## Rules

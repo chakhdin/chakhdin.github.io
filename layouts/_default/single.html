@@ -121,8 +121,11 @@
                 </video>
                 {{ end }}
             {{ else }}
+                {{/* Full-size file in the media bucket (scripts/full-images.py), loaded only when the viewer zooms in. */}}
+                {{ $zoom := "" }}
+                {{ with index (site.Data.full_images | default dict) (printf "%s/%s" (replace $.File.Dir "\\" "/" | strings.TrimSuffix "/") ($v.data.image | default $.Params.featured_image)) }}{{ $zoom = printf "%s/%s" site.Params.videoBaseURL . }}{{ end }}
                 {{ with $v.image }}
-                <img id="hero-{{ $v.id }}" class="hero-image w-auto min-w-0 object-contain" tabindex="0" role="button" aria-haspopup="dialog" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
+                <img id="hero-{{ $v.id }}" {{ with $zoom }}data-zoom="{{ . }}"{{ end }} class="hero-image w-auto min-w-0 object-contain" tabindex="0" role="button" aria-haspopup="dialog" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
                 {{ end }}
             {{ end }}
             {{ end }}
@@ -160,10 +163,10 @@
         </div>
         {{ end }}
 
-        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out" role="dialog" aria-modal="true" aria-label="{{ i18n "fullscreen_view" }}">
+        <div id="fullscreen-overlay" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center p-4 cursor-zoom-out overflow-hidden touch-none select-none" role="dialog" aria-modal="true" aria-label="{{ i18n "fullscreen_view" }}">
             {{/* No src until opened (site.js sets it), so the hidden overlay downloads nothing. */}}
-            <img id="fullscreen-image" alt="" class="max-w-full max-h-full object-contain">
-            <div class="absolute top-4 left-4 md:top-6 md:left-8 text-gray-400 text-sm font-mono"><span class="pointer-coarse:hidden">{{ i18n "fullscreen_hint" }}</span><span class="hidden pointer-coarse:inline">{{ i18n "fullscreen_hint_touch" }}</span></div>
+            <img id="fullscreen-image" alt="" draggable="false" class="max-w-full max-h-full object-contain">
+            <div class="absolute top-4 left-4 right-16 md:top-6 md:left-8 text-gray-400 text-sm font-mono pointer-events-none [text-shadow:0_1px_2px_black]"><span class="pointer-coarse:hidden">{{ i18n "fullscreen_hint" }}</span><span class="hidden pointer-coarse:inline">{{ i18n "fullscreen_hint_touch" }}</span></div>
             <button type="button" id="fullscreen-close" aria-label="{{ i18n "fullscreen_close" }}" class="absolute top-2 right-2 md:top-4 md:right-6 flex items-center justify-center w-11 h-11 rounded-full bg-gray-900/80 text-gray-300 hover:text-white hover:bg-gray-800 transition-colors cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
