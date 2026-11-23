@@ -18,7 +18,7 @@
                     
                     {{/* Floating Date Badge */}}
                     <div class="absolute top-3 right-3 bg-gray-900/80 backdrop-blur-md text-gray-300 text-xs font-mono font-bold px-3 py-1.5 rounded border border-gray-700 shadow-sm">
-                        {{ .Date.Format "2006-01-02" }}
+                        {{ .Date | time.Format ":date_medium" }}
                     </div>
                 </div>
                 

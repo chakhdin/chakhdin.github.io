@@ -5,28 +5,47 @@
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 {{ end }}
 {{ define "main" }}
+{{/* Hero: the most recently published image, cropped wide on desktop and 4:3 on phones. */}}
+{{ $pages := where .Site.RegularPages "Params.featured_image" "!=" nil }}
+{{ with index $pages.ByDate.Reverse 0 }}
+{{ $hero := . }}
+{{ with .Resources.GetMatch .Params.featured_image }}
+{{ $wide := .Fill "1600x640 Center webp q80" }}
+{{ $narrow := .Fill "800x600 Center webp q80" }}
+<a href="{{ $hero.RelPermalink }}" class="group relative block -mx-4 md:mx-0 mb-10 md:mb-14 md:rounded-3xl overflow-hidden border-y md:border border-gray-800 shadow-2xl bg-black">
+    <picture>
+        <source media="(min-width: 768px)" srcset="{{ $wide.RelPermalink }}" width="{{ $wide.Width }}" height="{{ $wide.Height }}">
+        <img src="{{ $narrow.RelPermalink }}" width="{{ $narrow.Width }}" height="{{ $narrow.Height }}" alt="{{ $hero.Title }}" fetchpriority="high" class="w-full aspect-[4/3] md:aspect-[5/2] object-cover group-hover:scale-[1.02] transition duration-700 ease-out">
+    </picture>
+    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent px-5 pt-16 pb-5 md:px-8 md:pb-7">
+        <div class="text-xs md:text-sm text-blue-300 uppercase tracking-widest font-semibold">{{ i18n "hero_latest" }}</div>
+        <div class="mt-1 text-xl md:text-3xl font-bold text-white group-hover:text-blue-300 transition">{{ $hero.Title }}</div>
+    </div>
+</a>
+{{ end }}
+{{ end }}
 <div class="text-center mb-10 md:mb-16">
     <h1 class="text-4xl sm:text-5xl font-bold mb-6 text-white">{{ .Title }}</h1>
     <div class="max-w-2xl mx-auto text-lg text-gray-400">{{ .Content }}</div>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
     {{ range where site.Sections "Section" "in" (slice "dso" "sso" "australia") }}
     <article class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 hover:border-blue-500 hover:-translate-y-1 transition duration-300 flex flex-col">
         <a href="{{ .RelPermalink }}" class="shrink-0">
             {{ $image := .Resources.GetMatch .Params.featured_image }}
             {{ if $image }}
                 {{ $thumb := $image.Fill "800x500 Center webp q80" }}
-                <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="w-full h-56 md:h-80 object-cover">
+                <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="w-full h-56 md:h-48 lg:h-64 object-cover">
             {{ else if hugo.IsProduction }}
                 <div class="w-full h-80 bg-gray-700"></div>
             {{ else }}
                 <div class="w-full h-80 bg-gray-700 flex items-center justify-center text-gray-500">Add {{ .Params.featured_image }} to {{ .File.Dir }}</div>
             {{ end }}
         </a>
-        <div class="p-5 md:p-8 flex flex-col flex-grow text-center">
-            <a href="{{ .RelPermalink }}"><h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-blue-300">{{ .Title }}</h2></a>
-            <p class="text-lg text-gray-400">{{ .Params.description }}</p>
+        <div class="p-5 lg:p-7 flex flex-col flex-grow text-center">
+            <a href="{{ .RelPermalink }}"><h2 class="text-3xl md:text-2xl lg:text-3xl font-extrabold mb-4 text-blue-300">{{ .Title }}</h2></a>
+            <p class="text-lg md:text-base text-gray-400">{{ .Params.description }}</p>
         </div>
     </article>
     {{ end }}
@@ -38,8 +57,8 @@
     </h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {{ $pages := where .Site.RegularPages "Params.featured_image" "!=" nil }}
-        {{ $latest := $pages.ByDate.Reverse | first 6 }}
+        {{/* The newest image is already the hero above, so the grid starts from the next one. */}}
+        {{ $latest := after 1 $pages.ByDate.Reverse | first 6 }}
         
         {{ range $latest }}
             <a href="{{ .RelPermalink }}" class="block group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-500 transition shadow-lg">
@@ -51,8 +70,8 @@
                     {{ end }}
                 </div>
                 <div class="p-4">
-                    <h3 class="text-lg font-bold text-gray-200 group-hover:text-blue-400 transition truncate">{{ .Title }}</h3>
-                    <div class="text-xs text-gray-400 mt-2">{{ .Date.Format "2006-01-02" }}</div>
+                    <h3 class="text-lg font-bold text-gray-200 group-hover:text-blue-400 transition line-clamp-2">{{ .Title }}</h3>
+                    <div class="text-xs text-gray-400 mt-2">{{ .Date | time.Format ":date_medium" }}</div>
                 </div>
             </a>
         {{ end }}

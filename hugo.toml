@@ -50,3 +50,16 @@ enableGitInfo = true
     label = "RU"
     title = "Sleepy Telescope"
     weight = 3
+
+# "More like this" on image pages: same category first (one shared category outweighs
+# a full set of shared equipment), then shared equipment.
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = false
+  [[related.indices]]
+    name = "categories"
+    weight = 400
+  [[related.indices]]
+    name = "equipment"
+    weight = 40

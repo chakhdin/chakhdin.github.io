@@ -12,7 +12,7 @@ locations:
     dates: ["2024-07-10"]
 featured_image: "NGC6781_3.bxt.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "25 x 600s"
     integration: "4h 10m"
 ---

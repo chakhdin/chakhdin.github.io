@@ -12,7 +12,7 @@ locations:
     dates: ["2022-11-21", "2022-11-24", "2022-11-26", "2022-11-30"]
 featured_image: "M45_3.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-Pro)"
     subs: "87 x 300s"
     integration: "7h 15m"
 ---

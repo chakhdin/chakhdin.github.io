@@ -12,7 +12,7 @@ locations:
     dates: ["2025-05-30"]
 featured_image: "NGC 5395_2.comb.crop.png"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "28 x 600s"
     integration: "4h 40m"
 

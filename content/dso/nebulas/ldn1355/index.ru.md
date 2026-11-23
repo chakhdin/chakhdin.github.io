@@ -12,7 +12,7 @@ locations:
     dates: ["2024-09-28"]
 featured_image: "LDN1355_1.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "50 x 600s"
     integration: "8h 20m"
 ---

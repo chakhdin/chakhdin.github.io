@@ -12,7 +12,7 @@ locations:
     dates: ["2024-08-09"]
 featured_image: "IC5146_1.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "32 x 600s"
     integration: "5h 20m"
 ---

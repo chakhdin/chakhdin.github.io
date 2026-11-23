@@ -12,7 +12,7 @@ locations:
     dates: ["2024-08-01"]
 featured_image: "NGC6946_2.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "22 x 600s"
     integration: "3h 40m"
 ---

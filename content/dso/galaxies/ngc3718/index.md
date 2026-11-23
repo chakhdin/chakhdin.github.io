@@ -15,7 +15,7 @@ locations:
     dates: ["2024-05-09"]
 featured_image: "NGC3718_2.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "49 x 600s"
     integration: "8h 10m"
 ---

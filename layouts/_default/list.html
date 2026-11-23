@@ -94,7 +94,7 @@
                          capture, not a meaningful integration time), so the card shows the actual
                          capture date instead of exposure + year. */}}
                     {{ with .Params.locations }}{{ with index . 0 }}{{ with .dates }}{{ with index . 0 }}
-                        {{ $meta = $meta | append (time.AsTime . | time.Format "2006-01-02") }}
+                        {{ $meta = $meta | append (time.AsTime . | time.Format ":date_medium") }}
                     {{ end }}{{ end }}{{ end }}{{ end }}
                 {{ else }}
                     {{/* With several versions, the card shows their combined exposure. */}}

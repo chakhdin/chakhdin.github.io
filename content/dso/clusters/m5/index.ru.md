@@ -12,7 +12,7 @@ locations:
     dates: ["2024-05-23", "2024-05-25"]
 featured_image: "M5_4.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "32 x 300s"
     integration: "2h 40m"
 # Each entry is one capture of M5, switchable on the page. The first is
@@ -32,7 +32,7 @@ versions:
         bortle: "Класс 7"
         dates: ["2024-05-23", "2024-05-25"]
     filters:
-      - name: "L"
+      - name: "OSC (L-2 UV-IR)"
         subs: "32 x 300s"
         integration: "2h 40m"
   - id: "fsq85"

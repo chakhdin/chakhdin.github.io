@@ -12,7 +12,7 @@ locations:
     dates: ["2024-08-29"]
 featured_image: "NGC7635_1.crop.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "34 x 600s"
     integration: "5h 40m"
 ---

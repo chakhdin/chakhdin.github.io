@@ -99,3 +99,16 @@ other = "”"
 other = "Category"
 [credit_swan_reach]
 other = "Swan Reach group"
+
+[captured]
+other = "Captured {{ .Period }}"
+
+[hero_latest]
+other = "Latest image"
+
+[more_in_section]
+other = "More in {{ .Title }}"
+[more_like_this]
+other = "More like this"
+[follow_new_images]
+other = "Follow new images on"

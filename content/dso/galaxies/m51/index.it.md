@@ -16,7 +16,7 @@ locations:
 
 featured_image: "M51_3.crop.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "29 x 600s"
     integration: "4h 50m"
 

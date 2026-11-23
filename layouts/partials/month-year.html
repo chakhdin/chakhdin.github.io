@@ -1,0 +1,5 @@
+{{/* "Month Year" for a time value. Russian needs the nominative month name
+     (Hugo's localized layouts give the genitive), so it comes from i18n when set. */}}
+{{ $name := i18n (printf "month_%d" (int .Month)) }}
+{{ if $name }}{{ return printf "%s %d" $name .Year }}{{ end }}
+{{ return time.Format "January 2006" . }}

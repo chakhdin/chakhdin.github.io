@@ -12,7 +12,7 @@ locations:
     dates: ["2025-04-25"]
 featured_image: "M106_1.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "39 x 600s"
     integration: "6h 30m"
 ---

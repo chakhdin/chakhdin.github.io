@@ -99,3 +99,16 @@ other = "»"
 other = "Categoria"
 [credit_swan_reach]
 other = "Gruppo Swan Reach"
+
+[captured]
+other = "Ripresa: {{ .Period }}"
+
+[hero_latest]
+other = "Ultima immagine"
+
+[more_in_section]
+other = "Altro in {{ .Title }}"
+[more_like_this]
+other = "Immagini simili"
+[follow_new_images]
+other = "Segui le nuove immagini su"

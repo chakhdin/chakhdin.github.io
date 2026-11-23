@@ -105,3 +105,40 @@ other = "»"
 other = "Категория"
 [credit_swan_reach]
 other = "Группа Суон-Рич"
+
+[captured]
+other = "Снято: {{ .Period }}"
+[month_1]
+other = "январь"
+[month_2]
+other = "февраль"
+[month_3]
+other = "март"
+[month_4]
+other = "апрель"
+[month_5]
+other = "май"
+[month_6]
+other = "июнь"
+[month_7]
+other = "июль"
+[month_8]
+other = "август"
+[month_9]
+other = "сентябрь"
+[month_10]
+other = "октябрь"
+[month_11]
+other = "ноябрь"
+[month_12]
+other = "декабрь"
+
+[hero_latest]
+other = "Последний снимок"
+
+[more_in_section]
+other = "Ещё в разделе «{{ .Title }}»"
+[more_like_this]
+other = "Похожие снимки"
+[follow_new_images]
+other = "Новые снимки —"

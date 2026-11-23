@@ -12,7 +12,7 @@ locations:
     dates: ["2024-09-06"]
 featured_image: "vdB142_1.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "32 x 600s"
     integration: "5h 20m"
 ---

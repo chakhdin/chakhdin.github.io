@@ -12,7 +12,7 @@ locations:
     dates: ["2023-06-15"]
 featured_image: "M13_1.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-Pro)"
     subs: "3 x 120s"
     integration: "6m"
 ---

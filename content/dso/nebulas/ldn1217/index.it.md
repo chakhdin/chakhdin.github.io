@@ -12,7 +12,7 @@ locations:
     dates: ["2024-11-29", "2024-11-30"]
 featured_image: "LDN1217_1.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-2 UV-IR)"
     subs: "67 x 600s"
     integration: "11h 10m"
   - name: "L-eXtreme"

@@ -12,7 +12,7 @@ locations:
     dates: ["2023-09-24", "2023-09-25", "2023-09-26", "2023-09-27", "2023-09-28", "2023-10-07", "2023-10-09", "2023-10-11"]
 featured_image: "M22_2.jpg"
 filters:
-  - name: "L"
+  - name: "OSC (L-Pro)"
     subs: "74 x 300s"
     integration: "6h 10m"
 ---
