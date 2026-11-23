@@ -142,3 +142,10 @@ other = "Ещё в разделе «{{ .Title }}»"
 other = "Похожие снимки"
 [follow_new_images]
 other = "Новые снимки —"
+
+[seo_astrophoto]
+other = "астрофото"
+[seo_gallery]
+other = "галерея астрофото"
+[seo_facts]
+other = "{{ .Obj }}, астрофото: {{ with .Exposure }}{{ . }}, {{ end }}{{ .Scope }}{{ with .Camera }} и {{ . }}{{ end }}."

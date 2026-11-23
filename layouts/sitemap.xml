@@ -1,0 +1,26 @@
+{{/* gotmplfmt-ignore-all */ -}}
+{{/* Hugo 0.168.0 embedded sitemap.xml plus Google's image extension: one <image:image>
+     per photo shown on an image page (the hero, and every version's hero). */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  {{ range where .Pages "Sitemap.Disable" "ne" true }}
+    {{- if .Permalink -}}
+  <url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>{{ end }}{{ if ge .Sitemap.Priority 0.0 }}
+    <priority>{{ .Sitemap.Priority }}</priority>{{ end }}{{ if .IsTranslated }}{{ range .AllTranslations }}
+    <xhtml:link
+                rel="alternate"
+                hreflang="{{ .Language.Locale }}"
+                href="{{ .Permalink }}"
+                />{{ end }}{{ end }}{{ if and .IsPage .Params.featured_image (ne .Section "rigs") }}{{ $images := slice }}{{ with partial "hero-image.html" . }}{{ $images = $images | append .Permalink }}{{ end }}{{ $page := . }}{{ range .Params.versions }}{{ with $page.Resources.GetMatch .image }}{{ $images = $images | append (partial "hero-resize.html" .).Permalink }}{{ end }}{{ end }}{{ range uniq $images }}
+    <image:image>
+      <image:loc>{{ . }}</image:loc>
+    </image:image>{{ end }}{{ end }}
+  </url>
+    {{- end -}}
+  {{ end }}
+</urlset>

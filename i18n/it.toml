@@ -112,3 +112,10 @@ other = "Altro in {{ .Title }}"
 other = "Immagini simili"
 [follow_new_images]
 other = "Segui le nuove immagini su"
+
+[seo_astrophoto]
+other = "astrofotografia"
+[seo_gallery]
+other = "galleria di astrofotografia"
+[seo_facts]
+other = "{{ .Obj }} astrofotografia: {{ with .Exposure }}{{ . }} con {{ else }}ripresa con {{ end }}{{ .Scope }}{{ with .Camera }} e {{ . }}{{ end }}."

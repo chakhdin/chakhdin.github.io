@@ -16,8 +16,20 @@
     {{ if eq .Kind "404" }}{{ $pageTitle = i18n "not_found_title" }}{{ end }}
     {{/* Category pages share names with the solar-system sections (Jupiter, Moon...). */}}
     {{ if and (eq .Kind "term") (eq .Data.Plural "categories") }}{{ $pageTitle = printf "%s · %s" .Title (i18n "category_label") }}{{ end }}
-    {{/* Search results cut titles at about 60-65 characters: drop the site name from long ones. */}}
-    {{ $docTitle := printf "%s | %s" $pageTitle site.Title }}
+    {{/* Search titles name what people search for: image pages add "astrophotography",
+         gallery sections "astrophotography gallery". The visible h1 and og:title keep the plain title. */}}
+    {{ $isImagePage := and .IsPage .Params.featured_image (ne .Section "rigs") (ne .Type "page") }}
+    {{ $searchTitle := $pageTitle }}
+    {{ if $isImagePage }}
+    {{ $searchTitle = printf "%s – %s" $pageTitle (i18n "seo_astrophoto") }}
+    {{ else if and (eq .Kind "section") (in (slice "dso" "sso" "australia") .Section) }}
+    {{ $searchTitle = printf "%s – %s" $pageTitle (i18n "seo_gallery") }}
+    {{ end }}
+    {{/* Search results cut titles at about 60-65 characters: drop the site name from long
+         ones, then the added keyword. */}}
+    {{ $docTitle := printf "%s | %s" $searchTitle site.Title }}
+    {{ if gt (strings.RuneCount $docTitle) 65 }}{{ $docTitle = $searchTitle }}{{ end }}
+    {{ if gt (strings.RuneCount $docTitle) 65 }}{{ $docTitle = printf "%s | %s" $pageTitle site.Title }}{{ end }}
     {{ if gt (strings.RuneCount $docTitle) 65 }}{{ $docTitle = $pageTitle }}{{ end }}
     <title>{{ $docTitle }}</title>
 
@@ -25,7 +37,21 @@
     {{ if not $description }}{{ $description = .Summary }}{{ end }}
     {{/* plainify keeps the typographer's entities (&rsquo;); unescape them so
          the attribute does not escape them a second time. */}}
-    {{ $description = $description | plainify | htmlUnescape | strings.TrimSpace | truncate 160 }}
+    {{ $description = $description | plainify | htmlUnescape | strings.TrimSpace }}
+    {{/* Image pages: the facts people search for (exposure, telescope, camera) come first.
+         Object = the planet's section for Sun/Moon/planets, else the title before the colon.
+         Solar-system exposure figures are video captures, so they are left out. */}}
+    {{ if and $isImagePage .Params.equipment }}
+    {{ $obj := index (split .Title ":") 0 }}
+    {{ if and (eq .Section "sso") (ne .Parent.File.ContentBaseName "comets") }}{{ $obj = .Parent.Title }}{{ end }}
+    {{ $camera := "" }}
+    {{ range .Params.equipment }}{{ if and (not $camera) (hasPrefix . "ASI") }}{{ $camera = . }}{{ end }}{{ end }}
+    {{ $exposure := "" }}
+    {{ if ne .Section "sso" }}{{ $exposure = .Params.total_exposure }}{{ end }}
+    {{ $facts := i18n "seo_facts" (dict "Obj" (strings.TrimSpace $obj) "Exposure" $exposure "Scope" (index .Params.equipment 0) "Camera" $camera) }}
+    {{ $description = printf "%s %s" $facts $description }}
+    {{ end }}
+    {{ $description = $description | truncate 160 }}
     {{ if $description }}<meta name="description" content="{{ $description }}">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ $defaultLang := hugo.Sites.Default.Language.Lang }}
