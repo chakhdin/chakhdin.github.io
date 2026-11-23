@@ -1,6 +1,7 @@
 ---
 title: "Takahashi FSQ85-EDX"
 description: "Takahashi FSQ-85EDX: 85 mm f/5.3 Petzval astrograph, one of my two main deep-sky telescopes."
+photo: "photo.jpg"
 ---
 The Takahashi FSQ-85EDX is an 85 mm Petzval refractor with four lens elements, 450 mm focal length at f/5.3. It is one of my two main deep-sky telescopes, with the [ASI2600MM Pro](/equipment/asi2600mm-pro/) imaging train on the [NEQ6 Pro](/equipment/neq6-pro/).
 

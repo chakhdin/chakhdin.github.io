@@ -1,6 +1,7 @@
 ---
 title: "Takahashi FSQ85-EDX"
 description: "Takahashi FSQ-85EDX: astrografo Petzval da 85 mm f/5,3, uno dei miei due telescopi principali per il profondo cielo."
+photo: "photo.jpg"
 ---
 Il Takahashi FSQ-85EDX è un rifrattore Petzval da 85 mm a quattro lenti, con 450 mm di focale a f/5,3. È uno dei miei due telescopi principali per il profondo cielo, con il treno di ripresa della [ASI2600MM Pro](/it/equipment/asi2600mm-pro/) sulla [NEQ6 Pro](/it/equipment/neq6-pro/).
 
