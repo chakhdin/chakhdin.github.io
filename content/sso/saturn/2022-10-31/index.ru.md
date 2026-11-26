@@ -1,5 +1,5 @@
 ---
-title: "Сатурн: Самый Четкий Снимок 2022 Года"
+title: "Сатурн: самый четкий снимок 2022 года"
 date: 2022-10-31T18:02:00Z
 categories: ["Сатурн"]
 equipment: ["Meade Maksutov 127/1900", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]

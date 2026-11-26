@@ -1,5 +1,5 @@
 ---
-title: "Юпитер: Детали Конца Периода Видимости"
+title: "Юпитер: детали конца периода видимости"
 date: 2025-03-18T21:05:00Z
 categories: ["Юпитер"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

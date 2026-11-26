@@ -24,7 +24,7 @@ Hugo 0.168.0 (extended), Node 24. Match them locally.
 - To add or edit an image page use the project skill `add-image` (`.claude/skills/add-image/SKILL.md`).
 
 ## Rules
-- Every image taken from Italy lists `NEQ6 Pro` in `equipment` without asking. Exception: the Swan Reach remote rig (Paramount ME, no NEQ6 Pro); see the skill.
+- Every image taken from Italy lists `NEQ6 Pro` in `equipment` without asking. Exceptions: the Swan Reach remote rig (Paramount ME, no NEQ6 Pro; see the skill) and GAR's Merz-Dallmeyer 162mm, which sits on its own Dallmeyer mount in the Rozzano dome (no NEQ6 Pro).
 - Do not guess exposure figures; `total_exposure` is the sum of the filter integrations.
 - Dates in front matter are `YYYY-MM-DD`.
 - Every factual claim in a body text (distance, size, discoverer, year, magnitude, classification) must be checked against a source (Wikipedia plus ESO/NASA/ESA, SIMBAD or the literature) before it goes on the site. Where sources disagree, say so or give a range; never state it from memory. The Russian place name for Swan Reach is `Суон-Рич` (no official transcription exists; confirmed by the user).

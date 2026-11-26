@@ -1,5 +1,5 @@
 ---
-title: "Луна и Кратер Клавий"
+title: "Луна и кратер Клавий"
 date: 2024-10-11T20:06:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

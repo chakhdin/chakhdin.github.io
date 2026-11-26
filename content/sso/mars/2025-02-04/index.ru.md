@@ -1,5 +1,5 @@
 ---
-title: "Марс: Детали Смягчаются После Противостояния"
+title: "Марс: детали смягчаются после противостояния"
 date: 2025-02-04T23:40:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

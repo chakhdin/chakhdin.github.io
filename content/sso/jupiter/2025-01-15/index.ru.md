@@ -1,5 +1,5 @@
 ---
-title: "Юпитер: Большое Красное Пятно на Центральном Меридиане"
+title: "Юпитер: Большое Красное Пятно на центральном меридиане"
 date: 2025-01-15T23:31:00Z
 categories: ["Юпитер"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

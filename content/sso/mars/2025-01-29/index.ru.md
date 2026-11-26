@@ -1,5 +1,5 @@
 ---
-title: "Марс: Полярная Шапка в Чётком Рельефе"
+title: "Марс: полярная шапка в чётком рельефе"
 date: 2025-01-29T00:38:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

@@ -1,5 +1,5 @@
 ---
-title: "Венера: Тонкий Утренний Серп"
+title: "Венера: тонкий утренний серп"
 date: 2023-09-11T03:55:00Z
 categories: ["Венера"]
 equipment: ["Meade Maksutov 127/1900", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]

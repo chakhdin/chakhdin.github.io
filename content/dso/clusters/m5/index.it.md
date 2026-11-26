@@ -62,6 +62,6 @@ Questa immagine presenta M5, uno spettacolare ammasso globulare nella costellazi
 
 L'immagine mostra il nucleo brillante e fortemente concentrato dell'ammasso, circondato da un ampio alone di stelle risolte. I colori naturali delle stelle sono ben preservati, con numerose giganti rosse arancioni che spiccano sul bagliore bianco-azzurro della densa popolazione stellare, offrendo uno sguardo vivido su uno dei sistemi stellari più antichi della Via Lattea.
 
-M5 ha una magnitudine apparente di 5,6 e un diametro apparente di circa 23 primi d'arco. William Herschel la risolse in singole stelle nel 1791, contandone circa 200. Contiene 105 stelle variabili note, 97 delle quali di tipo RR Lyrae, e due pulsar al millisecondo.
+M5 ha una magnitudine apparente di 5,6 e un diametro apparente di circa 23 primi d'arco. William Herschel lo risolse in singole stelle nel 1791, contandone circa 200. Contiene 105 stelle variabili note, 97 delle quali di tipo RR Lyrae, e due pulsar al millisecondo.
 
 Sommato ed elaborato in PixInsight.

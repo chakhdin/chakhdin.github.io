@@ -1,5 +1,5 @@
 ---
-title: "Юпитер: Большое Красное Пятно у Края Диска"
+title: "Юпитер: Большое Красное Пятно у края диска"
 date: 2025-02-04T21:29:00Z
 categories: ["Юпитер"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

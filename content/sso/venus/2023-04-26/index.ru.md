@@ -1,5 +1,5 @@
 ---
-title: "Венера на Пути к Дихотомии"
+title: "Венера на пути к дихотомии"
 date: 2023-04-26T18:34:00Z
 categories: ["Венера"]
 equipment: ["Meade Maksutov 127/1900", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]

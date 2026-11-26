@@ -1,5 +1,5 @@
 ---
-title: "Марс: Детали Поверхности Становятся Четче"
+title: "Марс: детали поверхности становятся четче"
 date: 2024-12-17T03:50:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

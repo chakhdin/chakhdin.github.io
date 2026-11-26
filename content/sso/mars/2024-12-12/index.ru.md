@@ -1,5 +1,5 @@
 ---
-title: "Марс: Раннее Приближение к Противостоянию"
+title: "Марс: раннее приближение к противостоянию"
 date: 2024-12-12T04:01:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

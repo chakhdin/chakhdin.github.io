@@ -10,7 +10,7 @@ locations:
   - name: "Il Pratone, Lombardy, Italy"
     bortle: "Class 4"
     dates: ["2025-09-20"]
-  - name: "Ca' del Monte, Lombardia, Italy"
+  - name: "Ca' del Monte, Lombardy, Italy"
     bortle: "Class 4"
     dates: ["2025-09-28", "2025-10-05"]
 featured_image: "M31_2.resample2.jpg"

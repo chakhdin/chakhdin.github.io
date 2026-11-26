@@ -16,7 +16,7 @@ filters:
     subs: "25 x 600s"
     integration: "4h 10m"
 ---
-Questa immagine cattura NGC 6781, ampiamente conosciuta come la Nebulosa Palla di Neve (Snowglobe Nebula), una bellissima nebulosa planetaria situata nella costellazione dell'Aquila. La struttura a bolla è formata dagli strati esterni espulsi nello spazio da una stella morente simile al Sole. L'intensa radiazione ultravioletta del nucleo della nana bianca esposto illumina il gas in espansione, creando la netta separazione cromatica che si vede qui: un centro blu, caldo e luminoso, dominato dall'ossigeno ionizzato (OIII) e un guscio esterno rosso, più freddo e delicato, composto principalmente da idrogeno (H-alpha).
+Questa immagine cattura NGC 6781, ampiamente conosciuta come la Nebulosa Palla di Neve (Snowglobe Nebula), una bellissima nebulosa planetaria situata nella costellazione dell'Aquila. La struttura a bolla è formata dagli strati esterni espulsi nello spazio da una stella morente simile al Sole. L'intensa radiazione ultravioletta del nucleo della nana bianca esposto illumina il gas in espansione, creando la netta separazione cromatica che si vede qui: un centro blu, caldo e luminoso, dominato dall'ossigeno ionizzato (OIII) e un guscio esterno rosso, più freddo e delicato, composto principalmente da idrogeno (H-alfa).
 
 Questa immagine è frutto di una collaborazione tra Rino Morra e Sergey Shakhdinarov.
 

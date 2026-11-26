@@ -1,5 +1,5 @@
 ---
-title: "Марс Вблизи Противостояния"
+title: "Марс вблизи противостояния"
 date: 2025-01-16T00:51:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

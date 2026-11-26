@@ -2,7 +2,7 @@
 title: "Jupiter Through a 19th-Century Refractor"
 date: 2023-09-09T00:29:00Z
 categories: ["Jupiter"]
-equipment: ["GAR's Merz-Dallmeyer 162mm", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]
+equipment: ["GAR's Merz-Dallmeyer 162mm", "Televue Barlow 2x", "ASI224MC"]
 description: "Jupiter's cloud belts captured through GAR's 162mm Merz-Dallmeyer refractor from around 1870."
 total_exposure: "Single video capture"
 focal_length: "4860mm"

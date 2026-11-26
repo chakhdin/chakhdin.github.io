@@ -1,5 +1,5 @@
 ---
-title: "Луна и Кратер Коперник"
+title: "Луна и кратер Коперник"
 date: 2024-10-11T20:12:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

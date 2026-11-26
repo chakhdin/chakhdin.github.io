@@ -1,5 +1,5 @@
 ---
-title: "Юпитер: Турбулентные Фестоны и Яркий Овал"
+title: "Юпитер: турбулентные фестоны и яркий овал"
 date: 2025-02-05T20:56:00Z
 categories: ["Юпитер"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

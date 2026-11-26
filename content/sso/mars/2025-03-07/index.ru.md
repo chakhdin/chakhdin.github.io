@@ -1,5 +1,5 @@
 ---
-title: "Марс: Детали Конца Сезона"
+title: "Марс: детали конца сезона"
 date: 2025-03-07T23:36:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

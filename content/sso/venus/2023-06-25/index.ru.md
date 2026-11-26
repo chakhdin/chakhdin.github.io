@@ -1,5 +1,5 @@
 ---
-title: "Венера: Отчетливый Серп"
+title: "Венера: отчетливый серп"
 date: 2023-06-25T19:52:00Z
 categories: ["Венера"]
 equipment: ["Meade Maksutov 127/1900", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]

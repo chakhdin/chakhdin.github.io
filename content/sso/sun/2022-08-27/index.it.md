@@ -3,7 +3,7 @@ title: "Una protuberanza alla deriva dal bordo"
 date: 2022-08-27T14:13:00Z
 categories: ["Sole"]
 equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
-description: "Un time-lapse in H-alpha di una sottile protuberanza staccata dal bordo solare."
+description: "Un time-lapse in H-alfa di una sottile protuberanza staccata dal bordo solare."
 total_exposure: "Video time-lapse"
 locations:
   - name: "San Giuliano Milanese, Lombardia, Italia"
@@ -18,6 +18,6 @@ filters:
     subs: "1 video"
     integration: "singola cattura"
 ---
-Una delicata protuberanza si staglia dal bordo in H-alpha, i suoi filamenti di plasma si spostano e derivano durante la sequenza. Lungo il margine del disco è visibile la texture frastagliata delle spicole.
+Una delicata protuberanza si staglia dal bordo in H-alfa, i suoi filamenti di plasma si spostano e derivano durante la sequenza. Lungo il margine del disco è visibile la texture frastagliata delle spicole.
 
 I fotogrammi sono stati ripresi in video, ciascuno sommato in AutoStakkert!3 e affinato in ImPPG, quindi allineati e assemblati nel time-lapse.

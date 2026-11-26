@@ -3,7 +3,7 @@ title: "NGC 300: Galassia a Spirale nello Scultore"
 date: 2026-11-14T00:00:00+01:00
 categories: ["Galassie"]
 equipment: ["RCOS 16", "ASI2600MM Pro", "Paramount ME", "Astrodon LRGBSHO 2 filters"]
-description: "Una galassia a spirale di tipo tardo a circa 6 milioni di anni luce nello Scultore, nota anche come Sculptor Pinwheel Galaxy, con bracci poco avvolti."
+description: "Una galassia a spirale di tipo tardo a circa 6 milioni di anni luce nello Scultore, nota anche come Girandola dello Scultore, con bracci poco avvolti."
 total_exposure: "40h 55m"
 focal_length: "3660mm"
 locations:
@@ -28,7 +28,7 @@ filters:
     subs: "47 x 1200s"
     integration: "15h 40m"
 ---
-NGC 300 è una galassia a spirale di tipo tardo (SA(s)d) nella costellazione dello Scultore, a circa 6 milioni di anni luce. È nota anche come Sculptor Pinwheel Galaxy ed è catalogata come Caldwell 70. Le sue dimensioni apparenti sono circa 22 per 15,5 primi d'arco e i suoi bracci sono poco avvolti. Fu scoperta da James Dunlop nel 1826.
+NGC 300 è una galassia a spirale di tipo tardo (SA(s)d) nella costellazione dello Scultore, a circa 6 milioni di anni luce. È nota anche come Girandola dello Scultore ed è catalogata come Caldwell 70. Le sue dimensioni apparenti sono circa 22 per 15,5 primi d'arco e i suoi bracci sono poco avvolti. Fu scoperta da James Dunlop nel 1826.
 
 La sua distanza è stata misurata attraverso le stelle variabili Cefeidi. NGC 300 era tradizionalmente considerata un membro del Gruppo dello Scultore, ma misure di distanza recenti la collocano in primo piano, probabilmente in coppia gravitazionale con NGC 55.
 

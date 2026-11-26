@@ -1,8 +1,8 @@
 ---
-title: "Юпитер Через Рефрактор XIX Века"
+title: "Юпитер через рефрактор XIX века"
 date: 2023-09-09T00:29:00Z
 categories: ["Юпитер"]
-equipment: ["GAR's Merz-Dallmeyer 162mm", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]
+equipment: ["GAR's Merz-Dallmeyer 162mm", "Televue Barlow 2x", "ASI224MC"]
 description: "Облачные пояса Юпитера, снятые через рефрактор Merz-Dallmeyer 162мм Группы астрофилов Роццано, созданный около 1870 года."
 total_exposure: "Одиночная видеосъемка"
 focal_length: "4860mm"

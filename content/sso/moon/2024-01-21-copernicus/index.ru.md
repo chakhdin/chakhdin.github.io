@@ -1,5 +1,5 @@
 ---
-title: "Луна: Коперник и Его Выбросы"
+title: "Луна: Коперник и его выбросы"
 date: 2024-01-22T00:09:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

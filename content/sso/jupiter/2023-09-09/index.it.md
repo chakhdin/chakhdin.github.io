@@ -2,7 +2,7 @@
 title: "Giove Attraverso un Rifrattore dell'Ottocento"
 date: 2023-09-09T00:29:00Z
 categories: ["Giove"]
-equipment: ["GAR's Merz-Dallmeyer 162mm", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]
+equipment: ["GAR's Merz-Dallmeyer 162mm", "Televue Barlow 2x", "ASI224MC"]
 description: "Le fasce nuvolose di Giove catturate attraverso il rifrattore Merz-Dallmeyer da 162mm del GAR, risalente a circa il 1870."
 total_exposure: "Singola ripresa video"
 focal_length: "4860mm"

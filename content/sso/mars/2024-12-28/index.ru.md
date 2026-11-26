@@ -1,5 +1,5 @@
 ---
-title: "Марс с Ярким Полярным Капюшоном"
+title: "Марс с ярким полярным капюшоном"
 date: 2024-12-28T03:28:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

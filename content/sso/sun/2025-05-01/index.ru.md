@@ -1,9 +1,9 @@
 ---
-title: "Змеевидное волокно в H-alpha"
+title: "Змеевидное волокно в H-альфа"
 date: 2025-05-01T11:52:00Z
 categories: ["Солнце"]
 equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
-description: "Цветной вид длинного S-образного волокна, изгибающегося по хромосфере у лимба, в H-alpha."
+description: "Цветной вид длинного S-образного волокна, изгибающегося по хромосфере у лимба, в H-альфа."
 total_exposure: "Мозаика из видеосъемок"
 locations:
   - name: "Сан-Джулиано-Миланезе, Ломбардия, Италия"

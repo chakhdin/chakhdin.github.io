@@ -1,5 +1,5 @@
 ---
-title: "Марс: Уменьшающийся Диск"
+title: "Марс: уменьшающийся диск"
 date: 2025-02-20T22:53:00Z
 categories: ["Марс"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

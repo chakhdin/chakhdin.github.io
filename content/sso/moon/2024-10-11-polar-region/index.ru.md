@@ -1,5 +1,5 @@
 ---
-title: "Полярная Область Луны"
+title: "Полярная область Луны"
 date: 2024-10-11T20:13:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

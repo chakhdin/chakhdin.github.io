@@ -10,7 +10,7 @@ locations:
   - name: "Saint Barthélemy, Valle d'Aosta, Italy"
     bortle: "Class 4"
     dates: ["2026-03-19", "2026-04-20"]
-  - name: "Ca' del Monte, Lombardia, Italy"
+  - name: "Ca' del Monte, Lombardy, Italy"
     bortle: "Class 4"
     dates: ["2026-04-24"]
 featured_image: "M81_M82_4.resample.jpg"

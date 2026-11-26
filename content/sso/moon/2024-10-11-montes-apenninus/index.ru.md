@@ -1,5 +1,5 @@
 ---
-title: "Луна и Горы Монтес Апеннины"
+title: "Луна и горы Апеннины"
 date: 2024-10-11T20:18:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

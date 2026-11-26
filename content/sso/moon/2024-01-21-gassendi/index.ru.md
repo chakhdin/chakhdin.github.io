@@ -1,5 +1,5 @@
 ---
-title: "Луна и Кратер Гассенди"
+title: "Луна и кратер Гассенди"
 date: 2024-01-22T00:10:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

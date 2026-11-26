@@ -38,14 +38,14 @@ other = "Панель"
 other = "Местоположения"
 
 [latest_additions]
-other = "Последние Добавления"
+other = "Последние добавления"
 [view_full_gallery]
-other = "Смотреть Всю Галерею"
+other = "Смотреть всю галерею"
 
 [browse_object_type]
-other = "Обзор по Типу Объекта"
+other = "Обзор по типу объекта"
 [browse_equipment]
-other = "Обзор по Оборудованию"
+other = "Обзор по оборудованию"
 
 [wip_message]
 other = "Новые изображения для этого раздела скоро появятся. Загляните позже!"
@@ -58,7 +58,7 @@ other = "Видео"
 [video_unsupported]
 other = "Ваш браузер не поддерживает встроенное воспроизведение видео."
 [processed_image_heading]
-other = "Обработанный Результат"
+other = "Обработанный результат"
 
 [object_count]
 one = "{{ .Count }} объект"

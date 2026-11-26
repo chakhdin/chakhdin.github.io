@@ -1,5 +1,5 @@
 ---
-title: "Минеральная Луна в Фазе Убывающей Гиббозности"
+title: "Минеральная убывающая Луна"
 date: 2024-09-15T21:48:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

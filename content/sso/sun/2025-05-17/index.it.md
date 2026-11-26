@@ -3,7 +3,7 @@ title: "Protuberanza sul bordo: maggio 2025"
 date: 2025-05-17T12:09:00Z
 categories: ["Sole"]
 equipment: ["Bresser 127L", "Daystar Quark Chromosphere", "Lunt LS35THa B600", "ASI174MM", "NEQ6 Pro"]
-description: "Un time-lapse in H-alpha colorato di una protuberanza che si leva sul bordo, con la texture granulare della cromosfera sotto."
+description: "Un time-lapse in H-alfa colorato di una protuberanza che si leva sul bordo, con la texture granulare della cromosfera sotto."
 total_exposure: "Video time-lapse"
 locations:
   - name: "San Giuliano Milanese, Lombardia, Italia"
@@ -18,6 +18,6 @@ filters:
     subs: "1 video"
     integration: "singola cattura"
 ---
-Una protuberanza si leva sul bordo in H-alpha colorato, con la cromosfera finemente a chiazze che riempie la parte bassa dell'inquadratura. In movimento, la struttura della protuberanza cambia lentamente ma in modo visibile.
+Una protuberanza si leva sul bordo in H-alfa colorato, con la cromosfera finemente a chiazze che riempie la parte bassa dell'inquadratura. In movimento, la struttura della protuberanza cambia lentamente ma in modo visibile.
 
 I fotogrammi sono stati ripresi in video, ciascuno sommato in AutoStakkert!3 e affinato in ImPPG, quindi allineati e assemblati nel time-lapse.

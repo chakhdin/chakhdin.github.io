@@ -1,5 +1,5 @@
 ---
-title: "Юпитер: Большое Красное Пятно в Четкой Детализации"
+title: "Юпитер: Большое Красное Пятно в четкой детализации"
 date: 2024-12-27T23:28:00Z
 categories: ["Юпитер"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]

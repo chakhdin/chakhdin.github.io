@@ -1,5 +1,5 @@
 ---
-title: "Венера: Начало Новой Видимости"
+title: "Венера: начало новой видимости"
 date: 2024-11-14T16:44:00Z
 categories: ["Венера"]
 equipment: ["Meade Maksutov 127/1900", "Televue Barlow 2x", "ASI224MC", "NEQ6 Pro"]

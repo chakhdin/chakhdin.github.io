@@ -1,5 +1,5 @@
 ---
-title: "Луна: Кратерированный Терминатор"
+title: "Луна: терминатор в кратерах"
 date: 2024-10-11T20:08:00Z
 categories: ["Луна"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
