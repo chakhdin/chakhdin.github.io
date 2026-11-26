@@ -25,7 +25,7 @@ filters:
     subs: "10 x 120s"
     integration: "20m"
 ---
-NGC 346 is a young open cluster with an associated nebula in the constellation Tucana, about 200,000 light-years away. It lies near the centre of N66, the brightest H II region of the Small Magellanic Cloud, a satellite galaxy of the Milky Way. About thirty of its stars are hot, massive stars of spectral type O, and their radiation ionises the surrounding hydrogen. James Dunlop discovered it in 1826.
+NGC 346 is a young open cluster with an associated nebula in the constellation Tucana, about 200,000 light-years away. It lies near the centre of N66, the brightest H II region of the Small Magellanic Cloud, a satellite galaxy of the Milky Way. Dozens of its stars are hot, massive stars of spectral type O (studies count about 20 to 50, depending on the area covered), and their radiation ionises the surrounding hydrogen. James Dunlop discovered it in 1826.
 
 The Small Magellanic Cloud contains lower concentrations of elements heavier than hydrogen and helium than the Milky Way, so its star-forming regions resemble the conditions of galaxies billions of years ago. NGC 346 has also been observed by the James Webb Space Telescope, which found more dust there than expected.
 

@@ -1,9 +1,9 @@
 ---
-title: "Marte: Un Volto di Rotazione Diverso"
+title: "Marte: Lo Stesso Volto Due Giorni Dopo"
 date: 2025-01-18T01:47:00Z
 categories: ["Marte"]
 equipment: ["Meade 8 ACF", "Televue Barlow 2x", "ASI174MM", "Optolong LRGB filters", "NEQ6 Pro"]
-description: "Ancora vicino all'opposizione, ma che mostra un lato diverso di Marte grazie alla rotazione del pianeta di circa 24,6 ore."
+description: "Ancora vicino all'opposizione, due giorni dopo: quasi esattamente due rotazioni di circa 24,6 ore hanno riportato in vista la stessa faccia di Marte."
 total_exposure: "~3 min video, derotati con WinJUPOS"
 focal_length: "4000mm"
 locations:
@@ -25,6 +25,6 @@ filters:
     subs: "1 video"
     integration: "~3 min totali (derotati)"
 ---
-Appena due giorni dopo la ripresa precedente, la rotazione di Marte di circa 24,6 ore, solo leggermente più lunga di quella terrestre, ha portato in vista un emisfero diverso, con una marcatura scura distinta vicino al centro del disco e un pallido cappuccio polare sopra.
+Due giorni dopo la ripresa precedente, Marte aveva compiuto quasi esattamente due rotazioni: con un periodo di circa 24,6 ore, solo leggermente più lungo di quello terrestre, verso la Terra era rivolto di nuovo lo stesso emisfero, con il meridiano centrale spostato di appena 4° circa. Vicino al centro del disco spicca una marcatura scura, con un pallido cappuccio polare sopra.
 
 Ripreso come sequenze video in luminanza e RGB, derotate in WinJUPOS, sommate in AutoStakkert!3 ed elaborate in PixInsight.

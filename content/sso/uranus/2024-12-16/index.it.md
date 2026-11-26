@@ -22,6 +22,6 @@ filters:
     subs: "1 video"
     integration: "~3 min totali (derotati)"
 ---
-A oltre 2,8 miliardi di chilometri di distanza, Urano si risolve in poco più di un piccolo disco verde-azzurro debolmente luminoso anche ad alto ingrandimento: le sue tenui fasce nuvolose e i suoi anelli restano ben oltre la portata della strumentazione amatoriale. Il colore caratteristico deriva dal metano nella sua atmosfera, che assorbe la luce rossa riflettendo il verde-azzurro.
+A circa 2,8 miliardi di chilometri di distanza, Urano si risolve in poco più di un piccolo disco verde-azzurro debolmente luminoso anche ad alto ingrandimento: le sue tenui fasce nuvolose e i suoi anelli restano ben oltre la portata della strumentazione amatoriale. Il colore caratteristico deriva dal metano nella sua atmosfera, che assorbe la luce rossa riflettendo il verde-azzurro.
 
 Ripreso come sequenze video RGB, derotate in WinJUPOS, sommate in AutoStakkert!3 ed elaborate in PixInsight.

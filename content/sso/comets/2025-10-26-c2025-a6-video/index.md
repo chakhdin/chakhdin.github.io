@@ -22,4 +22,6 @@ filters:
 ---
 A short time-lapse of comet C/2025 A6 (Lemmon) moving against the background stars.
 
+Five days earlier, on 21 October 2025, the comet had passed closest to Earth at 0.60 AU (89 million km); it reached perihelion on 8 November.
+
 Frames were calibrated, aligned and assembled into the video.

@@ -16,6 +16,6 @@ filters:
     subs: "1 video"
     integration: "singola cattura, senza derotazione"
 ---
-Alla fine del 2023, gli anelli di Saturno si sono visibilmente ristretti rispetto alle viste ben aperte del 2022, parte della progressione pluriennale verso l'aspetto di taglio che gli anelli raggiungeranno più avanti in questa collezione. Questa ripresa è nitida e ben esposta, con un buon equilibrio tonale tra anelli e globo.
+Alla fine del 2023, gli anelli di Saturno si sono visibilmente ristretti rispetto alle viste ben aperte del 2022, parte della progressione pluriennale verso la vista di taglio del 23 marzo 2025, che cadde troppo vicino alla congiunzione con il Sole per essere osservata. Questa ripresa è nitida e ben esposta, con un buon equilibrio tonale tra anelli e globo.
 
 Ripreso come singolo video e sommato in AutoStakkert!3, quindi elaborato in PixInsight.

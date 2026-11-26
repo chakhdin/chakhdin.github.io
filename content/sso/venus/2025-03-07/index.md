@@ -16,6 +16,6 @@ filters:
     subs: "1 video"
     integration: "~3 min total (derotated)"
 ---
-Just three days later and even closer to inferior conjunction, Venus has thinned to a razor-sharp crescent, its largest apparent size of the entire apparition. The cusps extend further than half the disk's circumference, a striking geometry unique to the inferior planets.
+Just three days later and even closer to inferior conjunction, Venus has thinned to a razor-sharp crescent, its largest apparent size in this series, about 53 arcseconds; the disk kept growing until inferior conjunction on 23 March. The cusps extend further than half the disk's circumference, a striking geometry unique to the inferior planets.
 
 Captured as a luminance video sequence, derotated in WinJUPOS, stacked in AutoStakkert!3, and processed in PixInsight.

@@ -29,4 +29,6 @@ This deep exposure focuses on LDN 1228 and the surrounding LBN 552 region, an ex
 
 The image reveals dramatic, sweeping filaments of dark brownish dust contrasting against the starry background. The long exposure times, particularly through the luminance filter, were crucial to pull out the incredibly faint details and delicate textures of this elusive cosmic landscape.
 
+LDN 1228 belongs to the Cepheus Flare, a complex of dark clouds in Cepheus. Its distance is uncertain: studies of its young stars give about 650 light-years (200 parsecs), a Gaia-based study about 1,200 light-years. The cloud is still forming stars: two protostars hidden inside it drive the outflows HH 199 and HH 200. LBN 552, about one degree to the north, is a faint nebula from Beverly Lynds's catalogue of bright nebulae.
+
 Stacked and processed in PixInsight.

@@ -22,4 +22,6 @@ filters:
 ---
 Un breve timelapse della cometa C/2025 A6 (Lemmon) che si sposta rispetto alle stelle di fondo.
 
+Cinque giorni prima, il 21 ottobre 2025, la cometa era passata alla minima distanza dalla Terra, 0,60 UA (89 milioni di km); il perielio arrivò l'8 novembre.
+
 I fotogrammi sono stati calibrati, allineati e assemblati nel video.

@@ -29,4 +29,6 @@ Questa profonda esposizione mostra LDN 1295, popolarmente conosciuta come la Neb
 
 L'integrazione profonda della luminanza è stata fondamentale per estrarre le morbide sfumature, i delicati bordi esterni e la sottile riflessione della polvere interstellare. In combinazione con i dati RGB a banda larga per i colori naturali delle stelle, l'immagine mette in risalto le vaste e silenziose corsie di polvere che attraversano la Via Lattea.
 
+LDN 1295 è la voce 1295 del catalogo delle nebulose oscure compilato da Beverly Lynds nel 1962, che classifica l'opacità da 1 a 6: ha classe 5, tra le più scure. Si trova in Cassiopea, circa 10° sotto il piano della Via Lattea.
+
 Sommato ed elaborato in PixInsight.

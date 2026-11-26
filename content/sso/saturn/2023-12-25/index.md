@@ -16,6 +16,6 @@ filters:
     subs: "1 video"
     integration: "single capture, no derotation"
 ---
-By the end of 2023, Saturn's rings have visibly narrowed compared to the wide-open views from 2022, part of the multi-year progression toward the edge-on appearance the rings will reach later in this collection. This capture is crisp and well-exposed, with good tonal balance between rings and globe.
+By the end of 2023, Saturn's rings have visibly narrowed compared to the wide-open views from 2022, part of the multi-year progression toward the edge-on view of 23 March 2025, which fell too close to solar conjunction to be observed. This capture is crisp and well-exposed, with good tonal balance between rings and globe.
 
 Captured as a single video and stacked in AutoStakkert!3, then processed in PixInsight.

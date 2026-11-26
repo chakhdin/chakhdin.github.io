@@ -16,7 +16,7 @@ filters:
     subs: "39 x 600s"
     integration: "6h 30m"
 ---
-Questa profonda esposizione cattura M106 (NGC 4258), una galassia a spirale intermedia prominente e luminosa situata a circa 23 milioni di anni luce di distanza nella costellazione dei Cani da Caccia. L'immagine mette in risalto il nucleo della galassia, intensamente luminoso e attivo (alimentato da un buco nero supermassiccio), circondato da un rigonfiamento centrale caldo e giallastro.
+Questa profonda esposizione cattura M106 (NGC 4258), una galassia a spirale intermedia prominente e luminosa situata nella costellazione dei Cani da Caccia. L'immagine mette in risalto il nucleo della galassia, intensamente luminoso e attivo (alimentato da un buco nero supermassiccio), circondato da un rigonfiamento centrale caldo e giallastro.
 
 Dal centro si dipartono bracci a spirale ben definiti e strettamente avvolti, segnati da spesse e scure bande di polvere. Le frange esterne della galassia sono fittamente tempestate di brillanti ammassi stellari blu e regioni rosate di attiva formazione stellare. Visibile in basso a sinistra nell'inquadratura è la piccola galassia NGC 4248, possibile satellite di M106, che aggiunge profondità al ricco campo stellare di fondo.
 

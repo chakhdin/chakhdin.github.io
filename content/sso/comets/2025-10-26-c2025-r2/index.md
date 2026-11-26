@@ -18,4 +18,6 @@ filters:
 ---
 Comet C/2025 R2 (SWAN) shows a large, luminous green coma with a faint tail stretching sideways across a rich star field; a small group of galaxies sits upper left.
 
+The amateur astronomer Vladimir Bezugly discovered the comet on 11 September 2025 in images from the SWAN instrument on the SOHO spacecraft. It passed perihelion the next day at 0.50 AU (75 million km) from the Sun, peaked around magnitude 6 in September and came closest to Earth on 20 October at 0.26 AU (39 million km), six days before this image.
+
 Stacked on the comet to keep the coma sharp and processed in PixInsight.

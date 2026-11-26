@@ -18,4 +18,6 @@ filters:
 ---
 La cometa C/2025 R2 (SWAN) mostra una grande e luminosa chioma verde con una debole coda che si allunga lateralmente su un ricco campo stellare; in alto a sinistra un piccolo gruppo di galassie.
 
+L'astrofilo Vladimir Bezugly scoprì la cometa l'11 settembre 2025 nelle immagini dello strumento SWAN della sonda SOHO. Passò al perielio il giorno dopo a 0,50 UA (75 milioni di km) dal Sole, toccò il massimo intorno alla magnitudine 6 a settembre e raggiunse la minima distanza dalla Terra il 20 ottobre a 0,26 UA (39 milioni di km), sei giorni prima di questa immagine.
+
 Sommata allineando sulla cometa per mantenere nitida la chioma ed elaborata in PixInsight.

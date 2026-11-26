@@ -29,4 +29,6 @@ This deep exposure showcases LDN 1295, popularly known as the Giraffe Nebula, si
 
 Deep luminance integration was essential to reveal the soft gradients, delicate outer fringes, and subtle illumination along the dust structures. Combined with broadband RGB data for natural star colors, this field highlights the vast, quiet expanse of dust lanes threading across our Milky Way.
 
+LDN 1295 is entry 1295 in Beverly Lynds's 1962 catalogue of dark nebulae, which rates opacity from 1 to 6: it has class 5, among the darkest. It lies in Cassiopeia, about 10° below the plane of the Milky Way.
+
 Stacked and processed in PixInsight.

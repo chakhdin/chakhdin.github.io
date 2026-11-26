@@ -16,6 +16,6 @@ filters:
     subs: "1 video"
     integration: "~3 min totali (derotati)"
 ---
-Appena tre giorni dopo e ancora più vicina alla congiunzione inferiore, Venere si è assottigliata in una falce nitidissima, alla sua massima dimensione apparente dell'intera apparizione. Le cuspidi si estendono per più di metà della circonferenza del disco, una geometria suggestiva propria dei pianeti inferiori.
+Appena tre giorni dopo e ancora più vicina alla congiunzione inferiore, Venere si è assottigliata in una falce nitidissima, alla dimensione apparente più grande di questa serie, circa 53 secondi d'arco; il disco continuò a crescere fino alla congiunzione inferiore del 23 marzo. Le cuspidi si estendono per più di metà della circonferenza del disco, una geometria suggestiva propria dei pianeti inferiori.
 
 Ripreso come sequenza video in luminanza, derotata in WinJUPOS, sommata in AutoStakkert!3 ed elaborata in PixInsight.

@@ -22,6 +22,6 @@ filters:
     subs: "1 video"
     integration: "~3 min total (derotated)"
 ---
-At over 2.8 billion kilometers away, Uranus resolves as little more than a small, softly glowing teal-green disk even at high magnification — its faint cloud bands and rings lie well beyond the reach of amateur equipment. The distinct color comes from methane in its atmosphere absorbing red sunlight while reflecting blue-green.
+At about 2.8 billion kilometers away, Uranus resolves as little more than a small, softly glowing teal-green disk even at high magnification — its faint cloud bands and rings lie well beyond the reach of amateur equipment. The distinct color comes from methane in its atmosphere absorbing red sunlight while reflecting blue-green.
 
 Captured as RGB video sequences, derotated in WinJUPOS, stacked in AutoStakkert!3, and processed in PixInsight.

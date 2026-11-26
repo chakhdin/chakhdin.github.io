@@ -29,4 +29,6 @@ Questa profonda esposizione si concentra su LDN 1228 e sulla regione circostante
 
 L'immagine rivela filamenti drammatici e sinuosi di polvere marrone scuro che contrastano con lo sfondo stellato. I lunghi tempi di esposizione, in particolare attraverso il filtro di luminanza, sono stati cruciali per far emergere i dettagli incredibilmente deboli e le delicate consistenze di questo elusivo paesaggio cosmico.
 
+LDN 1228 fa parte del Cepheus Flare, un complesso di nubi oscure nel Cefeo. La sua distanza è incerta: gli studi sulle sue stelle giovani danno circa 650 anni luce (200 parsec), uno studio basato su Gaia circa 1.200 anni luce. La nube forma ancora stelle: due protostelle nascoste al suo interno alimentano i getti HH 199 e HH 200. LBN 552, circa un grado più a nord, è una debole nebulosa del catalogo delle nebulose brillanti di Beverly Lynds.
+
 Sommato ed elaborato in PixInsight.
