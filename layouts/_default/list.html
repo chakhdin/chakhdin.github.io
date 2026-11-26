@@ -120,7 +120,7 @@
                     {{ with $years }}{{ $meta = $meta | append (delimit (sort (uniq .)) ", ") }}{{ end }}
                 {{ end }}
                 {{ with $meta }}
-                <div class="mt-4 flex items-center text-xs font-mono text-blue-500 uppercase tracking-widest">
+                <div class="mt-4 flex items-center text-xs font-mono text-blue-500 {{ if ne $_.Section "sso" }}uppercase {{ end }}tracking-widest">
                     {{ delimit . " • " }}
                 </div>
                 {{ end }}

@@ -38,6 +38,8 @@
     {{/* plainify keeps the typographer's entities (&rsquo;); unescape them so
          the attribute does not escape them a second time. */}}
     {{ $description = $description | plainify | htmlUnescape | strings.TrimSpace }}
+    {{/* Share previews show the page's own description, without the search facts below. */}}
+    {{ $shareDescription := $description | truncate 160 }}
     {{/* Image pages: the facts people search for (exposure, telescope, camera) come first.
          Object = the planet's section for Sun/Moon/planets, else the title before the colon.
          Solar-system exposure figures are video captures, so they are left out. */}}
@@ -47,7 +49,8 @@
     {{ $camera := "" }}
     {{ range .Params.equipment }}{{ if and (not $camera) (hasPrefix . "ASI") }}{{ $camera = . }}{{ end }}{{ end }}
     {{ $exposure := "" }}
-    {{ if ne .Section "sso" }}{{ $exposure = .Params.total_exposure }}{{ end }}
+    {{/* Pages with several versions: the top-level figure covers only the first one. */}}
+    {{ if and (ne .Section "sso") (not .Params.versions) }}{{ $exposure = .Params.total_exposure }}{{ end }}
     {{ $facts := i18n "seo_facts" (dict "Obj" (strings.TrimSpace $obj) "Exposure" $exposure "Scope" (index .Params.equipment 0) "Camera" $camera) }}
     {{ $description = printf "%s %s" $facts $description }}
     {{ end }}
@@ -68,7 +71,7 @@
 
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:title" content="{{ $pageTitle }} | {{ site.Title }}">
-    {{ if $description }}<meta property="og:description" content="{{ $description }}">{{ end }}
+    {{ if $shareDescription }}<meta property="og:description" content="{{ $shareDescription }}">{{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ $ogImage := .Resources.GetMatch .Params.featured_image }}
     {{ $ogImageAlt := .Title }}
@@ -76,7 +79,7 @@
          fall back to the most recently published photo, so a share of the
          homepage URL still carries a preview image instead of none at all. */}}
     {{ if not $ogImage }}
-    {{ with (where site.RegularPages "Params.featured_image" "!=" nil).ByDate.Reverse }}
+    {{ with (where (where site.RegularPages "Params.featured_image" "!=" nil) "Section" "ne" "rigs").ByDate.Reverse }}
     {{ with index . 0 }}
     {{ $ogImage = .Resources.GetMatch .Params.featured_image }}
     {{ $ogImageAlt = .Title }}
@@ -93,7 +96,7 @@
 
     <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
     <meta name="twitter:title" content="{{ $pageTitle }} | {{ site.Title }}">
-    {{ if $description }}<meta name="twitter:description" content="{{ $description }}">{{ end }}
+    {{ if $shareDescription }}<meta name="twitter:description" content="{{ $shareDescription }}">{{ end }}
     {{ if $ogImage }}
     <meta name="twitter:image" content="{{ $ogImage.Permalink }}">
     <meta name="twitter:image:alt" content="{{ $ogImageAlt }}">

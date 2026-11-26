@@ -6,16 +6,17 @@
 {{ end }}
 {{ define "main" }}
 {{/* Hero: the most recently published image, cropped wide on desktop and 4:3 on phones. */}}
-{{ $pages := where .Site.RegularPages "Params.featured_image" "!=" nil }}
+{{ $pages := where (where .Site.RegularPages "Params.featured_image" "!=" nil) "Section" "ne" "rigs" }}
 {{ with index $pages.ByDate.Reverse 0 }}
 {{ $hero := . }}
 {{ with .Resources.GetMatch .Params.featured_image }}
 {{ $wide := .Fill "1600x640 Center webp q80" }}
 {{ $narrow := .Fill "800x600 Center webp q80" }}
+{{ $narrow2x := .Fill "1200x900 Center webp q80" }}
 <a href="{{ $hero.RelPermalink }}" class="group relative block -mx-4 md:mx-0 mb-10 md:mb-14 md:rounded-3xl overflow-hidden border-y md:border border-gray-800 shadow-2xl bg-black">
     <picture>
         <source media="(min-width: 768px)" srcset="{{ $wide.RelPermalink }}" width="{{ $wide.Width }}" height="{{ $wide.Height }}">
-        <img src="{{ $narrow.RelPermalink }}" width="{{ $narrow.Width }}" height="{{ $narrow.Height }}" alt="{{ $hero.Title }}" fetchpriority="high" class="w-full aspect-[4/3] md:aspect-[5/2] object-cover group-hover:scale-[1.02] transition duration-700 ease-out">
+        <img src="{{ $narrow.RelPermalink }}" srcset="{{ $narrow.RelPermalink }} 800w, {{ $narrow2x.RelPermalink }} 1200w" sizes="100vw" width="{{ $narrow.Width }}" height="{{ $narrow.Height }}" alt="{{ $hero.Title }}" fetchpriority="high" class="w-full aspect-[4/3] md:aspect-[5/2] object-cover group-hover:scale-[1.02] transition duration-700 ease-out">
     </picture>
     <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent px-5 pt-16 pb-5 md:px-8 md:pb-7">
         <div class="text-xs md:text-sm text-blue-300 uppercase tracking-widest font-semibold">{{ i18n "hero_latest" }}</div>

@@ -381,6 +381,7 @@ const HEAD_META_SELECTOR = [
     'meta[name="description"]',
     'link[rel="canonical"]',
     'link[rel="alternate"][hreflang]',
+    'link[rel="alternate"][type]',
     'meta[property^="og:"]',
     'meta[name^="twitter:"]',
     'script[type="application/ld+json"]',

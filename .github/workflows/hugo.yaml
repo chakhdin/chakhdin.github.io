@@ -34,7 +34,7 @@ jobs:
       - name: Sync images from R2
         run: node scripts/r2-sync.mjs
         env:
-          R2_ACCOUNT_ID: d7c2da0fda91b01d11f378190c07e947
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
           R2_BUCKET: astro-site
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
@@ -42,7 +42,7 @@ jobs:
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: resources/_gen
-          key: hugo-resources-${{ hashFiles('content/**/*.png', 'content/**/*.jpg', 'layouts/partials/hero-*.html', 'layouts/_default/list.html', 'layouts/latest/list.html', 'layouts/index.html') }}
+          key: hugo-resources-${{ hashFiles('content/**/*.png', 'content/**/*.jpg', 'layouts/partials/hero-*.html', 'layouts/_default/baseof.html', 'layouts/_default/single.html', 'layouts/_default/list.html', 'layouts/latest/list.html', 'layouts/rigs/single.html', 'layouts/index.html') }}
           restore-keys: |
             hugo-resources-
       - name: Build

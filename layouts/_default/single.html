@@ -123,7 +123,7 @@
             {{ else }}
                 {{/* Full-size file in the media bucket (scripts/full-images.py), loaded only when the viewer zooms in. */}}
                 {{ $zoom := "" }}
-                {{ with index (site.Data.full_images | default dict) (printf "%s/%s" (replace $.File.Dir "\\" "/" | strings.TrimSuffix "/") ($v.data.image | default $.Params.featured_image)) }}{{ $zoom = printf "%s/%s" site.Params.videoBaseURL . }}{{ end }}
+                {{ with index (hugo.Data.full_images | default dict) (printf "%s/%s" (replace $.File.Dir "\\" "/" | strings.TrimSuffix "/") ($v.data.image | default $.Params.featured_image)) }}{{ $zoom = printf "%s/%s" site.Params.videoBaseURL . }}{{ end }}
                 {{ with $v.image }}
                 <img id="hero-{{ $v.id }}" {{ with $zoom }}data-zoom="{{ . }}"{{ end }} class="hero-image w-auto min-w-0 object-contain" tabindex="0" role="button" aria-haspopup="dialog" {{ if $multi }}data-version="{{ $v.id }}"{{ end }} {{ if $i }}hidden loading="lazy"{{ else }}fetchpriority="high"{{ end }} src="{{ .RelPermalink }}" {{ with $v.srcset }}srcset="{{ . }}" sizes="(min-width: 1200px) 1120px, 100vw"{{ end }} width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}{{ with $v.label }} ({{ . }}){{ end }}" style="aspect-ratio: {{ .Width }} / {{ .Height }}; max-width: {{ .Width }}px; max-height: min(85vh, {{ .Height }}px);">
                 {{ end }}
@@ -239,7 +239,7 @@
         {{ $side := $n.side }}
         {{ with $n.p }}
         {{ $thumb := "" }}
-        {{ with .Resources.GetMatch .Params.featured_image }}{{ $thumb = .Fill "800x500 Center webp q80" }}{{ end }}
+        {{ with .Resources.GetMatch .Params.featured_image }}{{ $thumb = .Fill "192x120 Center webp q80" }}{{ end }}
         <a href="{{ .RelPermalink }}" class="group flex items-center gap-3 md:gap-4 bg-gray-900 border border-gray-800 hover:border-gray-600 rounded-xl p-2 md:p-3 transition {{ if eq $side "right" }}col-start-2 flex-row-reverse text-right{{ end }}">
             {{ with $thumb }}<img src="{{ .RelPermalink }}" alt="" loading="lazy" width="96" height="60" class="hidden sm:block w-24 h-15 object-cover rounded-lg shrink-0">{{ end }}
             <span class="min-w-0 flex items-center gap-2 {{ if eq $side "right" }}flex-row-reverse{{ end }}">
@@ -254,9 +254,14 @@
     </nav>
     {{ end }}
 
-    {{/* Related images by category and equipment (the [related] settings in hugo.toml), minus the two neighbours above. */}}
+    {{/* Related images by category and equipment (the [related] settings in hugo.toml), minus the two neighbours above.
+         Only images sharing a category count: shared gear alone linked comets to dark nebulae. */}}
     {{ $neighbours := slice }}{{ with .NextInSection }}{{ $neighbours = $neighbours | append . }}{{ end }}{{ with .PrevInSection }}{{ $neighbours = $neighbours | append . }}{{ end }}
-    {{ $related := where (where (site.RegularPages.Related .) "Params.featured_image" "!=" nil) "Section" "ne" "rigs" }}
+    {{ $cats := .Params.categories }}
+    {{ $related := slice }}
+    {{ range where (where (site.RegularPages.Related .) "Params.featured_image" "!=" nil) "Section" "ne" "rigs" }}
+    {{ if intersect $cats .Params.categories }}{{ $related = $related | append . }}{{ end }}
+    {{ end }}
     {{ $related = complement $neighbours $related | first 4 }}
     {{ with $related }}
     <section class="mt-12 md:mt-16 px-4 md:px-0">
